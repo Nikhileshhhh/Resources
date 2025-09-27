@@ -7,10 +7,13 @@
 
 ## Mentor Details:
 
- 1. Name:  **Vishnu Sai Nadella (SD)**
- 2. LinkedIn: [Click Here](https://www.linkedin.com/in/vishnu-nadella-007/)
- 3. GitHub: [Click Here](https://www.github.com/VishnuNadella)
+ 1. Name:  **Jadav Gajanand (SD)**
+    LinkedIn: [Click Here](https://www.linkedin.com/in/jadav-gajanand-3aa946290/)
+    GitHub: [Click Here](https://github.com/Jadav-Gajanand-19)
 
+ 2. Name:  **Nikhilesh Kamalapurkar (SD)**
+    LinkedIn: [Click Here](https://www.linkedin.com/in/nikhileshkamalapurkar/)
+    GitHub: [Click Here](https://github.com/Nikhileshhhh)
 
 # Introduction to Ai / Ml
 Artificial Intelligence (AI) and Machine Learning (ML) are two related fields that involve using computer algorithms to perform tasks that typically require human intelligence.
@@ -121,3 +124,4 @@ Video Tutorial: [Click Here](https://www.youtube.com/watch?v=pqNCD_5r0IU&t=748s)
 - OpenAI chatGPT: [Click Here](https://chat.openai.com/chat)
 - OpenAI Dall-E2: [Click Here](https://openai.com/blog/dall-e/)
 - Google: [Click Here](https://ai.google/)
+
