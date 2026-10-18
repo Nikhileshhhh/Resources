@@ -1,0 +1,9 @@
+01 gpt4omini_cedar 23.200000
+02 gpt4omini_onyx 27.150000
+03 gpt4omini_ash 28.500000
+04 gpt4omini_ballad 27.500000
+05 gpt4omini_marin 24.450000
+06 tts1hd_onyx 23.725000
+07 kokoro_bm_george 23.274667
+08 kokoro_am_michael 25.600000
+09 kokoro_bm_fable 19.733333

@@ -1,0 +1,27 @@
+# secrets
+.env
+.env.*
+!.env.example
+# dependencies / caches
+node_modules/
+.venv/
+.cache/
+models/
+# heavy media (deliver directly, never commit)
+*.mp4
+*.mov
+*.wav
+*.flac
+*.m4a
+*.mp3
+*.zip
+episodes/*/renders/
+episodes/*/audio/chunks/
+episodes/*/audio/raw/
+episodes/*/frames/
+out/
+episodes/*/thumbnails/*_3840x2160.png
+voice_samples/norm/
+__pycache__/
+voice_samples/list.txt
+voice_samples/beep.wav

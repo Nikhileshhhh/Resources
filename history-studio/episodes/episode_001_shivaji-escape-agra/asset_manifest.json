@@ -1,0 +1,14 @@
+{
+  "episode": "episode_001_shivaji-escape-agra",
+  "checked": "2026-10-18",
+  "assets": [
+    {"asset": "All characters, sets, props, maps styling, diagrams, thumbnails", "origin": "Original vector art written as code in src/remotion for this channel", "license": "Owned by the channel creator", "attribution": "none required"},
+    {"asset": "Narration audio", "origin": "Generated with OpenAI gpt-4o-mini-tts (voice 'cedar') via AI Credits (api.aicredits.in)", "license": "Output owned by the user under OpenAI's terms; usage policy requires disclosing to listeners that the voice is AI-generated", "attribution": "Disclosure on screen (first 8 s) and in the description"},
+    {"asset": "Music, ambience, sound effects", "origin": "Procedurally synthesized by py/audio_synth.py (numpy/scipy), no samples, no generative AI", "license": "Owned by the channel creator", "attribution": "none required"},
+    {"asset": "Map coastline and rivers", "origin": "Natural Earth 1:50m land and rivers (github.com/nvkelso/natural-earth-vector)", "license": "Public domain", "attribution": "Credited in description (courtesy)"},
+    {"asset": "Fonts: Cinzel, Source Sans 3", "origin": "@fontsource npm packages 5.3.x", "license": "SIL Open Font License 1.1", "attribution": "Credited in description (courtesy)"},
+    {"asset": "Rendering engine", "origin": "Remotion 4.0.536", "license": "Remotion Free License (individuals and companies with up to 3 employees; commercial use allowed)", "attribution": "Mentioned in description (courtesy)"},
+    {"asset": "Quoted passages on screen", "origin": "Short quotations from English translations of 1666 letters and chronicles (J. Sarkar, S. N. Sen, W. Irvine)", "license": "Brief quotation with attribution for commentary/education; 1907/1920 translations are public domain", "attribution": "On-screen attribution under each quote; sources listed in description"},
+    {"asset": "Local fallback voice (not used in this episode)", "origin": "Kokoro-82M (kokoro-onnx 0.6.1, model files from GitHub release)", "license": "Apache-2.0", "attribution": "Disclose AI voice if used"}
+  ]
+}

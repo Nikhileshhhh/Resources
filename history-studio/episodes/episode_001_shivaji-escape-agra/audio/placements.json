@@ -1,0 +1,105 @@
+{
+  "totalSeconds": 534.7666666666667,
+  "placements": [
+    {
+      "id": "s01",
+      "start": 0.6,
+      "file": "audio/chunks/s01_b5f1762573a8106c.wav"
+    },
+    {
+      "id": "s02",
+      "start": 21.200000000000003,
+      "file": "audio/chunks/s02_260e749129f1894f.wav"
+    },
+    {
+      "id": "s03",
+      "start": 34.50000000000001,
+      "file": "audio/chunks/s03_728e6003d60871a3.wav"
+    },
+    {
+      "id": "s04",
+      "start": 52.15000000000001,
+      "file": "audio/chunks/s04_773c5e2b5e4abe9a.wav"
+    },
+    {
+      "id": "s05",
+      "start": 80.95,
+      "file": "audio/chunks/s05_87c4c6a4b6b83cae.wav"
+    },
+    {
+      "id": "s06",
+      "start": 103.15,
+      "file": "audio/chunks/s06_4ce365fe1d654c67.wav"
+    },
+    {
+      "id": "s07",
+      "start": 132.3,
+      "file": "audio/chunks/s07_ad8250ec0fc6d931.wav"
+    },
+    {
+      "id": "s08",
+      "start": 156.3,
+      "file": "audio/chunks/s08_0d0925d42370f067.wav"
+    },
+    {
+      "id": "s09",
+      "start": 184.95000000000002,
+      "file": "audio/chunks/s09_9241d26e7897f0f5.wav"
+    },
+    {
+      "id": "s10",
+      "start": 211.05,
+      "file": "audio/chunks/s10_59ccaf6b84c134bb.wav"
+    },
+    {
+      "id": "s11",
+      "start": 233.55,
+      "file": "audio/chunks/s11_314d5b742701c41f.wav"
+    },
+    {
+      "id": "s12",
+      "start": 266.6,
+      "file": "audio/chunks/s12_5bd65817e9f5a4fc.wav"
+    },
+    {
+      "id": "s13",
+      "start": 287.65000000000003,
+      "file": "audio/chunks/s13_44ebff4043f48b65.wav"
+    },
+    {
+      "id": "s14",
+      "start": 319.95000000000005,
+      "file": "audio/chunks/s14_0b39e5acdd1ca510.wav"
+    },
+    {
+      "id": "s15",
+      "start": 339.70000000000005,
+      "file": "audio/chunks/s15_dcbfd323003cfc42.wav"
+    },
+    {
+      "id": "s16",
+      "start": 370.45000000000005,
+      "file": "audio/chunks/s16_d02a227cc0966191.wav"
+    },
+    {
+      "id": "s17",
+      "start": 399.00000000000006,
+      "file": "audio/chunks/s17_1a06fa2dbf36846f.wav"
+    },
+    {
+      "id": "s18",
+      "start": 444.2000000000001,
+      "file": "audio/chunks/s18_528a409e44291794.wav"
+    },
+    {
+      "id": "s19",
+      "start": 467.40000000000015,
+      "file": "audio/chunks/s19_8b25add45f824d2b.wav"
+    },
+    {
+      "id": "s20",
+      "start": 495.70000000000016,
+      "file": "audio/chunks/s20_f1ce9caee0ba2717.wav"
+    }
+  ]
+}

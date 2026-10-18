@@ -1,0 +1,59 @@
+{
+  "accessed": "2026-10-18",
+  "sources": [
+    {
+      "id": "S1",
+      "type": "primary documents in translation (contemporary letters)",
+      "citation": "Jadunath Sarkar, House of Shivaji: Studies and Documents on Maratha History, Royal Period, 3rd ed. (Calcutta: Orient Longman, 1955; 1978 reprint), chapter 'Shivaji's Visit to Aurangzib', pp. 186-203.",
+      "url": "https://archive.org/details/house-of-shivaji-jadunath-sarkar",
+      "what_it_is": "Sarkar's English translations of Rajasthani (Dingal) letters written at Agra in 1666 by officers of Kumar Ram Singh (Shivaji's custodian), found in the Jaipur state archives in 1939, plus Persian newsletters (akhbarat).",
+      "reliability": "Highest available: contemporary, written by Ram Singh's own staff days or weeks after events. Limits: English translation by one editor; letter writers had an interest in clearing Ram Singh of blame. OCR page numbers in the scan are partly garbled (e.g. '140' = 190).",
+      "rights": "Quoted briefly for factual attribution only. 1955 edition; not reproduced."
+    },
+    {
+      "id": "S2",
+      "type": "established scholarship",
+      "citation": "Jadunath Sarkar, Shivaji and His Times, 2nd ed. (London/Calcutta: Longmans, Green & Co.; M. C. Sarkar, 1920), ch. V 'Shivaji and Jai Singh' and ch. VI 'Visit to Aurangzib, 1666', pp. 111-179.",
+      "url": "https://archive.org/details/cu31924024056750",
+      "what_it_is": "Detailed narrative with footnotes to Persian, Marathi and English Factory sources, including Jai Singh's despatches (Haft Anjuman).",
+      "reliability": "Strong on Mughal documents, but written before the 1939 Jaipur letters were found. Sarkar himself later revised the escape route and homecoming date (see S1, p. 187).",
+      "rights": "Public domain (1920)."
+    },
+    {
+      "id": "S3",
+      "type": "Maratha court chronicle in translation",
+      "citation": "Krishnaji Anant Sabhasad, Sabhasad Bakhar (c. 1694), trans. Surendranath Sen, Siva Chhatrapati (Calcutta: University of Calcutta, 1920), pp. 66-70.",
+      "url": "https://archive.org/details/sivachhatrapatib00sensuoft",
+      "what_it_is": "Earliest Maratha biography, written by a courtier about 28 years after the escape.",
+      "reliability": "Valuable Maratha-side tradition; includes devotional and miraculous elements (a dream of the goddess Bhavani) and a geographic error (places the episode at 'Delhi'). Treat specifics as tradition unless corroborated.",
+      "rights": "Public domain (1920)."
+    },
+    {
+      "id": "S4",
+      "type": "official Mughal chronicle in translation",
+      "citation": "Saqi Must'ad Khan, Maasir-i-Alamgiri (compiled c. 1710), trans. Jadunath Sarkar (Calcutta: Royal Asiatic Society of Bengal, 1947), pp. 36-37.",
+      "url": "https://archive.org/details/maasir-i-alamgiri-ed.-jadunath-sarkar",
+      "what_it_is": "Court history of Aurangzeb's reign compiled from state papers.",
+      "reliability": "Official Mughal perspective (hostile language toward Shivaji); terse but dated. Gives the flight as 'Sunday, the 19th August / 27th Safar'.",
+      "rights": "Translation published 1947; quoted briefly."
+    },
+    {
+      "id": "S5",
+      "type": "European contemporary memoir",
+      "citation": "Niccolao Manucci, Storia do Mogor, or Mogul India 1653-1708, trans. William Irvine, vol. 2 (London: John Murray, 1907), pp. 138-140.",
+      "url": "https://archive.org/details/in.ernet.dli.2015.21899",
+      "what_it_is": "Memoir of a Venetian who lived in Mughal India; written decades later.",
+      "reliability": "Lively but secondhand on this episode; credits Ram Singh with advising the baskets. Irvine's note converts 27 Safar 1077 H to 29 August 1666, which conflicts with S1 and S4.",
+      "rights": "Public domain (1907)."
+    },
+    {
+      "id": "S6",
+      "type": "tertiary cross-check",
+      "citation": "Wikipedia contributors, 'Shivaji', 'Ram Singh I', 'Battle of Saraighat', English Wikipedia (accessed 2026-10-18).",
+      "url": "https://en.wikipedia.org/wiki/Ram_Singh_I",
+      "what_it_is": "Used only to cross-check later career of Ram Singh I and Saraighat (1671) and to note that some modern historians doubt the basket story.",
+      "reliability": "Tertiary. The doubt attributed there to Stewart Gordon (The Marathas 1600-1818, Cambridge, 1993) could not be checked directly: that book is lending-only on archive.org. The script therefore does not attribute any view to Gordon.",
+      "rights": "CC BY-SA text, not reproduced."
+    }
+  ]
+}

@@ -1,0 +1,1462 @@
+{
+  "capInr": 100,
+  "spentInr": 38.69,
+  "entries": [
+    {
+      "stage": "M0 capability probes + voice A/B",
+      "provider": "aicredits",
+      "model": "openai/gpt-4o-mini-tts",
+      "units": 3.22,
+      "unit": "1k_chars",
+      "estInr": 5.11,
+      "priceBasis": "ESTIMATED (see config/pricing.json)",
+      "note": "Reconstructed from the probe log: 13 short probes + 5 voice samples",
+      "at": "2026-10-18T07:50:00Z"
+    },
+    {
+      "stage": "M0 capability probes + voice A/B",
+      "provider": "aicredits",
+      "model": "openai/tts-1",
+      "units": 0.05,
+      "unit": "1k_chars",
+      "estInr": 0.07,
+      "priceBasis": "AI Credits docs",
+      "note": "1 probe",
+      "at": "2026-10-18T07:50:00Z"
+    },
+    {
+      "stage": "M0 capability probes + voice A/B",
+      "provider": "aicredits",
+      "model": "openai/tts-1-hd",
+      "units": 0.39,
+      "unit": "1k_chars",
+      "estInr": 1.11,
+      "priceBasis": "AI Credits docs",
+      "note": "1 sample",
+      "at": "2026-10-18T07:50:00Z"
+    },
+    {
+      "stage": "M0 capability probes + voice A/B",
+      "provider": "aicredits",
+      "model": "openai/whisper-1",
+      "units": 3.72,
+      "unit": "audio_min",
+      "estInr": 2.12,
+      "priceBasis": "AI Credits docs",
+      "note": "Intelligibility check of 9 samples",
+      "at": "2026-10-18T07:50:00Z"
+    },
+    {
+      "stage": "M0 capability probes + voice A/B",
+      "provider": "aicredits",
+      "model": "sarvam/bulbul-v2|v3",
+      "units": 0,
+      "unit": "requests",
+      "estInr": 0,
+      "priceBasis": "requests rejected with HTTP 400 (gateway forced speaker 'meera')",
+      "note": "4 failed requests",
+      "at": "2026-10-18T07:50:00Z"
+    },
+    {
+      "at": "2026-10-18T08:13:30Z",
+      "stage": "pron-test",
+      "provider": "api.aicredits.in",
+      "model": "openai/gpt-4o-mini-tts",
+      "units": 0.07,
+      "unit": "1k_chars",
+      "estInr": 0.111,
+      "priceBasis": "ESTIMATED",
+      "note": "Billed call whose output was lost to a missing-directory bug (fixed)"
+    },
+    {
+      "at": "2026-10-18T08:13:07.411Z",
+      "stage": "pron-test",
+      "provider": "api.aicredits.in",
+      "model": "openai/gpt-4o-mini-tts",
+      "units": 0.059,
+      "unit": "1k_chars",
+      "estInr": 0.094,
+      "priceBasis": "ESTIMATED: not in AI Credits catalog; OpenAI list ~$0.015 per audio minute at ~900 chars/min. Check dashboard for the actual charge."
+    },
+    {
+      "at": "2026-10-18T08:13:10.387Z",
+      "stage": "pron-test",
+      "provider": "api.aicredits.in",
+      "model": "openai/whisper-1",
+      "units": 0.077,
+      "unit": "audio_min",
+      "estInr": 0.044,
+      "priceBasis": "AI Credits docs/audio billing table"
+    },
+    {
+      "at": "2026-10-18T08:13:14.185Z",
+      "stage": "pron-test",
+      "provider": "api.aicredits.in",
+      "model": "openai/gpt-4o-mini-tts",
+      "units": 0.063,
+      "unit": "1k_chars",
+      "estInr": 0.1,
+      "priceBasis": "ESTIMATED: not in AI Credits catalog; OpenAI list ~$0.015 per audio minute at ~900 chars/min. Check dashboard for the actual charge."
+    },
+    {
+      "at": "2026-10-18T08:13:17.937Z",
+      "stage": "pron-test",
+      "provider": "api.aicredits.in",
+      "model": "openai/whisper-1",
+      "units": 0.097,
+      "unit": "audio_min",
+      "estInr": 0.056,
+      "priceBasis": "AI Credits docs/audio billing table"
+    },
+    {
+      "at": "2026-10-18T08:13:20.979Z",
+      "stage": "pron-test",
+      "provider": "api.aicredits.in",
+      "model": "openai/gpt-4o-mini-tts",
+      "units": 0.043,
+      "unit": "1k_chars",
+      "estInr": 0.068,
+      "priceBasis": "ESTIMATED: not in AI Credits catalog; OpenAI list ~$0.015 per audio minute at ~900 chars/min. Check dashboard for the actual charge."
+    },
+    {
+      "at": "2026-10-18T08:13:23.394Z",
+      "stage": "pron-test",
+      "provider": "api.aicredits.in",
+      "model": "openai/whisper-1",
+      "units": 0.073,
+      "unit": "audio_min",
+      "estInr": 0.042,
+      "priceBasis": "AI Credits docs/audio billing table"
+    },
+    {
+      "at": "2026-10-18T08:13:25.423Z",
+      "stage": "pron-test",
+      "provider": "api.aicredits.in",
+      "model": "openai/gpt-4o-mini-tts",
+      "units": 0.045,
+      "unit": "1k_chars",
+      "estInr": 0.071,
+      "priceBasis": "ESTIMATED: not in AI Credits catalog; OpenAI list ~$0.015 per audio minute at ~900 chars/min. Check dashboard for the actual charge."
+    },
+    {
+      "at": "2026-10-18T08:13:27.434Z",
+      "stage": "pron-test",
+      "provider": "api.aicredits.in",
+      "model": "openai/whisper-1",
+      "units": 0.074,
+      "unit": "audio_min",
+      "estInr": 0.042,
+      "priceBasis": "AI Credits docs/audio billing table"
+    },
+    {
+      "at": "2026-10-18T08:13:29.525Z",
+      "stage": "pron-test",
+      "provider": "api.aicredits.in",
+      "model": "openai/gpt-4o-mini-tts",
+      "units": 0.053,
+      "unit": "1k_chars",
+      "estInr": 0.084,
+      "priceBasis": "ESTIMATED: not in AI Credits catalog; OpenAI list ~$0.015 per audio minute at ~900 chars/min. Check dashboard for the actual charge."
+    },
+    {
+      "at": "2026-10-18T08:13:31.560Z",
+      "stage": "pron-test",
+      "provider": "api.aicredits.in",
+      "model": "openai/whisper-1",
+      "units": 0.072,
+      "unit": "audio_min",
+      "estInr": 0.041,
+      "priceBasis": "AI Credits docs/audio billing table"
+    },
+    {
+      "at": "2026-10-18T08:13:33.636Z",
+      "stage": "pron-test",
+      "provider": "api.aicredits.in",
+      "model": "openai/gpt-4o-mini-tts",
+      "units": 0.055,
+      "unit": "1k_chars",
+      "estInr": 0.087,
+      "priceBasis": "ESTIMATED: not in AI Credits catalog; OpenAI list ~$0.015 per audio minute at ~900 chars/min. Check dashboard for the actual charge."
+    },
+    {
+      "at": "2026-10-18T08:13:35.668Z",
+      "stage": "pron-test",
+      "provider": "api.aicredits.in",
+      "model": "openai/whisper-1",
+      "units": 0.09,
+      "unit": "audio_min",
+      "estInr": 0.051,
+      "priceBasis": "AI Credits docs/audio billing table"
+    },
+    {
+      "at": "2026-10-18T08:13:37.533Z",
+      "stage": "pron-test",
+      "provider": "api.aicredits.in",
+      "model": "openai/gpt-4o-mini-tts",
+      "units": 0.043,
+      "unit": "1k_chars",
+      "estInr": 0.068,
+      "priceBasis": "ESTIMATED: not in AI Credits catalog; OpenAI list ~$0.015 per audio minute at ~900 chars/min. Check dashboard for the actual charge."
+    },
+    {
+      "at": "2026-10-18T08:13:39.453Z",
+      "stage": "pron-test",
+      "provider": "api.aicredits.in",
+      "model": "openai/whisper-1",
+      "units": 0.072,
+      "unit": "audio_min",
+      "estInr": 0.041,
+      "priceBasis": "AI Credits docs/audio billing table"
+    },
+    {
+      "at": "2026-10-18T08:13:41.876Z",
+      "stage": "pron-test",
+      "provider": "api.aicredits.in",
+      "model": "openai/gpt-4o-mini-tts",
+      "units": 0.045,
+      "unit": "1k_chars",
+      "estInr": 0.071,
+      "priceBasis": "ESTIMATED: not in AI Credits catalog; OpenAI list ~$0.015 per audio minute at ~900 chars/min. Check dashboard for the actual charge."
+    },
+    {
+      "at": "2026-10-18T08:13:43.452Z",
+      "stage": "pron-test",
+      "provider": "api.aicredits.in",
+      "model": "openai/whisper-1",
+      "units": 0.077,
+      "unit": "audio_min",
+      "estInr": 0.044,
+      "priceBasis": "AI Credits docs/audio billing table"
+    },
+    {
+      "at": "2026-10-18T08:13:45.394Z",
+      "stage": "pron-test",
+      "provider": "api.aicredits.in",
+      "model": "openai/gpt-4o-mini-tts",
+      "units": 0.063,
+      "unit": "1k_chars",
+      "estInr": 0.1,
+      "priceBasis": "ESTIMATED: not in AI Credits catalog; OpenAI list ~$0.015 per audio minute at ~900 chars/min. Check dashboard for the actual charge."
+    },
+    {
+      "at": "2026-10-18T08:13:47.598Z",
+      "stage": "pron-test",
+      "provider": "api.aicredits.in",
+      "model": "openai/whisper-1",
+      "units": 0.085,
+      "unit": "audio_min",
+      "estInr": 0.048,
+      "priceBasis": "AI Credits docs/audio billing table"
+    },
+    {
+      "at": "2026-10-18T08:13:49.923Z",
+      "stage": "pron-test",
+      "provider": "api.aicredits.in",
+      "model": "openai/gpt-4o-mini-tts",
+      "units": 0.069,
+      "unit": "1k_chars",
+      "estInr": 0.11,
+      "priceBasis": "ESTIMATED: not in AI Credits catalog; OpenAI list ~$0.015 per audio minute at ~900 chars/min. Check dashboard for the actual charge."
+    },
+    {
+      "at": "2026-10-18T08:13:51.756Z",
+      "stage": "pron-test",
+      "provider": "api.aicredits.in",
+      "model": "openai/whisper-1",
+      "units": 0.097,
+      "unit": "audio_min",
+      "estInr": 0.056,
+      "priceBasis": "AI Credits docs/audio billing table"
+    },
+    {
+      "at": "2026-10-18T08:13:53.617Z",
+      "stage": "pron-test",
+      "provider": "api.aicredits.in",
+      "model": "openai/gpt-4o-mini-tts",
+      "units": 0.049,
+      "unit": "1k_chars",
+      "estInr": 0.078,
+      "priceBasis": "ESTIMATED: not in AI Credits catalog; OpenAI list ~$0.015 per audio minute at ~900 chars/min. Check dashboard for the actual charge."
+    },
+    {
+      "at": "2026-10-18T08:13:55.006Z",
+      "stage": "pron-test",
+      "provider": "api.aicredits.in",
+      "model": "openai/whisper-1",
+      "units": 0.081,
+      "unit": "audio_min",
+      "estInr": 0.046,
+      "priceBasis": "AI Credits docs/audio billing table"
+    },
+    {
+      "at": "2026-10-18T08:13:57.164Z",
+      "stage": "pron-test",
+      "provider": "api.aicredits.in",
+      "model": "openai/gpt-4o-mini-tts",
+      "units": 0.053,
+      "unit": "1k_chars",
+      "estInr": 0.084,
+      "priceBasis": "ESTIMATED: not in AI Credits catalog; OpenAI list ~$0.015 per audio minute at ~900 chars/min. Check dashboard for the actual charge."
+    },
+    {
+      "at": "2026-10-18T08:13:59.108Z",
+      "stage": "pron-test",
+      "provider": "api.aicredits.in",
+      "model": "openai/whisper-1",
+      "units": 0.072,
+      "unit": "audio_min",
+      "estInr": 0.041,
+      "priceBasis": "AI Credits docs/audio billing table"
+    },
+    {
+      "at": "2026-10-18T08:14:00.933Z",
+      "stage": "pron-test",
+      "provider": "api.aicredits.in",
+      "model": "openai/gpt-4o-mini-tts",
+      "units": 0.039,
+      "unit": "1k_chars",
+      "estInr": 0.062,
+      "priceBasis": "ESTIMATED: not in AI Credits catalog; OpenAI list ~$0.015 per audio minute at ~900 chars/min. Check dashboard for the actual charge."
+    },
+    {
+      "at": "2026-10-18T08:14:02.817Z",
+      "stage": "pron-test",
+      "provider": "api.aicredits.in",
+      "model": "openai/whisper-1",
+      "units": 0.072,
+      "unit": "audio_min",
+      "estInr": 0.041,
+      "priceBasis": "AI Credits docs/audio billing table"
+    },
+    {
+      "at": "2026-10-18T08:14:04.845Z",
+      "stage": "pron-test",
+      "provider": "api.aicredits.in",
+      "model": "openai/gpt-4o-mini-tts",
+      "units": 0.041,
+      "unit": "1k_chars",
+      "estInr": 0.065,
+      "priceBasis": "ESTIMATED: not in AI Credits catalog; OpenAI list ~$0.015 per audio minute at ~900 chars/min. Check dashboard for the actual charge."
+    },
+    {
+      "at": "2026-10-18T08:14:06.075Z",
+      "stage": "pron-test",
+      "provider": "api.aicredits.in",
+      "model": "openai/whisper-1",
+      "units": 0.067,
+      "unit": "audio_min",
+      "estInr": 0.038,
+      "priceBasis": "AI Credits docs/audio billing table"
+    },
+    {
+      "at": "2026-10-18T08:14:08.239Z",
+      "stage": "pron-test",
+      "provider": "api.aicredits.in",
+      "model": "openai/gpt-4o-mini-tts",
+      "units": 0.047,
+      "unit": "1k_chars",
+      "estInr": 0.075,
+      "priceBasis": "ESTIMATED: not in AI Credits catalog; OpenAI list ~$0.015 per audio minute at ~900 chars/min. Check dashboard for the actual charge."
+    },
+    {
+      "at": "2026-10-18T08:14:10.200Z",
+      "stage": "pron-test",
+      "provider": "api.aicredits.in",
+      "model": "openai/whisper-1",
+      "units": 0.075,
+      "unit": "audio_min",
+      "estInr": 0.043,
+      "priceBasis": "AI Credits docs/audio billing table"
+    },
+    {
+      "at": "2026-10-18T08:14:12.641Z",
+      "stage": "pron-test",
+      "provider": "api.aicredits.in",
+      "model": "openai/gpt-4o-mini-tts",
+      "units": 0.049,
+      "unit": "1k_chars",
+      "estInr": 0.078,
+      "priceBasis": "ESTIMATED: not in AI Credits catalog; OpenAI list ~$0.015 per audio minute at ~900 chars/min. Check dashboard for the actual charge."
+    },
+    {
+      "at": "2026-10-18T08:14:14.825Z",
+      "stage": "pron-test",
+      "provider": "api.aicredits.in",
+      "model": "openai/whisper-1",
+      "units": 0.099,
+      "unit": "audio_min",
+      "estInr": 0.057,
+      "priceBasis": "AI Credits docs/audio billing table"
+    },
+    {
+      "at": "2026-10-18T08:14:16.572Z",
+      "stage": "pron-test",
+      "provider": "api.aicredits.in",
+      "model": "openai/gpt-4o-mini-tts",
+      "units": 0.047,
+      "unit": "1k_chars",
+      "estInr": 0.075,
+      "priceBasis": "ESTIMATED: not in AI Credits catalog; OpenAI list ~$0.015 per audio minute at ~900 chars/min. Check dashboard for the actual charge."
+    },
+    {
+      "at": "2026-10-18T08:14:17.853Z",
+      "stage": "pron-test",
+      "provider": "api.aicredits.in",
+      "model": "openai/whisper-1",
+      "units": 0.075,
+      "unit": "audio_min",
+      "estInr": 0.043,
+      "priceBasis": "AI Credits docs/audio billing table"
+    },
+    {
+      "at": "2026-10-18T08:14:19.571Z",
+      "stage": "pron-test",
+      "provider": "api.aicredits.in",
+      "model": "openai/gpt-4o-mini-tts",
+      "units": 0.053,
+      "unit": "1k_chars",
+      "estInr": 0.084,
+      "priceBasis": "ESTIMATED: not in AI Credits catalog; OpenAI list ~$0.015 per audio minute at ~900 chars/min. Check dashboard for the actual charge."
+    },
+    {
+      "at": "2026-10-18T08:14:21.033Z",
+      "stage": "pron-test",
+      "provider": "api.aicredits.in",
+      "model": "openai/whisper-1",
+      "units": 0.093,
+      "unit": "audio_min",
+      "estInr": 0.053,
+      "priceBasis": "AI Credits docs/audio billing table"
+    },
+    {
+      "at": "2026-10-18T08:14:22.863Z",
+      "stage": "pron-test",
+      "provider": "api.aicredits.in",
+      "model": "openai/gpt-4o-mini-tts",
+      "units": 0.051,
+      "unit": "1k_chars",
+      "estInr": 0.081,
+      "priceBasis": "ESTIMATED: not in AI Credits catalog; OpenAI list ~$0.015 per audio minute at ~900 chars/min. Check dashboard for the actual charge."
+    },
+    {
+      "at": "2026-10-18T08:14:24.387Z",
+      "stage": "pron-test",
+      "provider": "api.aicredits.in",
+      "model": "openai/whisper-1",
+      "units": 0.097,
+      "unit": "audio_min",
+      "estInr": 0.056,
+      "priceBasis": "AI Credits docs/audio billing table"
+    },
+    {
+      "at": "2026-10-18T08:14:27.003Z",
+      "stage": "pron-test",
+      "provider": "api.aicredits.in",
+      "model": "openai/gpt-4o-mini-tts",
+      "units": 0.055,
+      "unit": "1k_chars",
+      "estInr": 0.087,
+      "priceBasis": "ESTIMATED: not in AI Credits catalog; OpenAI list ~$0.015 per audio minute at ~900 chars/min. Check dashboard for the actual charge."
+    },
+    {
+      "at": "2026-10-18T08:14:29.954Z",
+      "stage": "pron-test",
+      "provider": "api.aicredits.in",
+      "model": "openai/whisper-1",
+      "units": 0.089,
+      "unit": "audio_min",
+      "estInr": 0.051,
+      "priceBasis": "AI Credits docs/audio billing table"
+    },
+    {
+      "at": "2026-10-18T08:14:31.941Z",
+      "stage": "pron-test",
+      "provider": "api.aicredits.in",
+      "model": "openai/gpt-4o-mini-tts",
+      "units": 0.045,
+      "unit": "1k_chars",
+      "estInr": 0.071,
+      "priceBasis": "ESTIMATED: not in AI Credits catalog; OpenAI list ~$0.015 per audio minute at ~900 chars/min. Check dashboard for the actual charge."
+    },
+    {
+      "at": "2026-10-18T08:14:33.195Z",
+      "stage": "pron-test",
+      "provider": "api.aicredits.in",
+      "model": "openai/whisper-1",
+      "units": 0.066,
+      "unit": "audio_min",
+      "estInr": 0.038,
+      "priceBasis": "AI Credits docs/audio billing table"
+    },
+    {
+      "at": "2026-10-18T08:14:35.135Z",
+      "stage": "pron-test",
+      "provider": "api.aicredits.in",
+      "model": "openai/gpt-4o-mini-tts",
+      "units": 0.047,
+      "unit": "1k_chars",
+      "estInr": 0.075,
+      "priceBasis": "ESTIMATED: not in AI Credits catalog; OpenAI list ~$0.015 per audio minute at ~900 chars/min. Check dashboard for the actual charge."
+    },
+    {
+      "at": "2026-10-18T08:14:37.259Z",
+      "stage": "pron-test",
+      "provider": "api.aicredits.in",
+      "model": "openai/whisper-1",
+      "units": 0.086,
+      "unit": "audio_min",
+      "estInr": 0.049,
+      "priceBasis": "AI Credits docs/audio billing table"
+    },
+    {
+      "at": "2026-10-18T08:14:39.281Z",
+      "stage": "pron-test",
+      "provider": "api.aicredits.in",
+      "model": "openai/gpt-4o-mini-tts",
+      "units": 0.047,
+      "unit": "1k_chars",
+      "estInr": 0.075,
+      "priceBasis": "ESTIMATED: not in AI Credits catalog; OpenAI list ~$0.015 per audio minute at ~900 chars/min. Check dashboard for the actual charge."
+    },
+    {
+      "at": "2026-10-18T08:14:41.158Z",
+      "stage": "pron-test",
+      "provider": "api.aicredits.in",
+      "model": "openai/whisper-1",
+      "units": 0.062,
+      "unit": "audio_min",
+      "estInr": 0.035,
+      "priceBasis": "AI Credits docs/audio billing table"
+    },
+    {
+      "at": "2026-10-18T08:14:43.856Z",
+      "stage": "pron-test",
+      "provider": "api.aicredits.in",
+      "model": "openai/gpt-4o-mini-tts",
+      "units": 0.051,
+      "unit": "1k_chars",
+      "estInr": 0.081,
+      "priceBasis": "ESTIMATED: not in AI Credits catalog; OpenAI list ~$0.015 per audio minute at ~900 chars/min. Check dashboard for the actual charge."
+    },
+    {
+      "at": "2026-10-18T08:14:46.080Z",
+      "stage": "pron-test",
+      "provider": "api.aicredits.in",
+      "model": "openai/whisper-1",
+      "units": 0.081,
+      "unit": "audio_min",
+      "estInr": 0.046,
+      "priceBasis": "AI Credits docs/audio billing table"
+    },
+    {
+      "at": "2026-10-18T08:15:09.375Z",
+      "stage": "pron-test",
+      "provider": "api.aicredits.in",
+      "model": "openai/whisper-1",
+      "units": 0.081,
+      "unit": "audio_min",
+      "estInr": 0.046,
+      "priceBasis": "AI Credits docs/audio billing table"
+    },
+    {
+      "at": "2026-10-18T08:15:12.142Z",
+      "stage": "pron-test",
+      "provider": "api.aicredits.in",
+      "model": "openai/gpt-4o-mini-tts",
+      "units": 0.053,
+      "unit": "1k_chars",
+      "estInr": 0.084,
+      "priceBasis": "ESTIMATED: not in AI Credits catalog; OpenAI list ~$0.015 per audio minute at ~900 chars/min. Check dashboard for the actual charge."
+    },
+    {
+      "at": "2026-10-18T08:15:14.290Z",
+      "stage": "pron-test",
+      "provider": "api.aicredits.in",
+      "model": "openai/whisper-1",
+      "units": 0.083,
+      "unit": "audio_min",
+      "estInr": 0.048,
+      "priceBasis": "AI Credits docs/audio billing table"
+    },
+    {
+      "at": "2026-10-18T08:15:16.497Z",
+      "stage": "pron-test",
+      "provider": "api.aicredits.in",
+      "model": "openai/gpt-4o-mini-tts",
+      "units": 0.045,
+      "unit": "1k_chars",
+      "estInr": 0.071,
+      "priceBasis": "ESTIMATED: not in AI Credits catalog; OpenAI list ~$0.015 per audio minute at ~900 chars/min. Check dashboard for the actual charge."
+    },
+    {
+      "at": "2026-10-18T08:15:18.636Z",
+      "stage": "pron-test",
+      "provider": "api.aicredits.in",
+      "model": "openai/whisper-1",
+      "units": 0.069,
+      "unit": "audio_min",
+      "estInr": 0.039,
+      "priceBasis": "AI Credits docs/audio billing table"
+    },
+    {
+      "at": "2026-10-18T08:15:21.144Z",
+      "stage": "pron-test",
+      "provider": "api.aicredits.in",
+      "model": "openai/gpt-4o-mini-tts",
+      "units": 0.045,
+      "unit": "1k_chars",
+      "estInr": 0.071,
+      "priceBasis": "ESTIMATED: not in AI Credits catalog; OpenAI list ~$0.015 per audio minute at ~900 chars/min. Check dashboard for the actual charge."
+    },
+    {
+      "at": "2026-10-18T08:15:22.445Z",
+      "stage": "pron-test",
+      "provider": "api.aicredits.in",
+      "model": "openai/whisper-1",
+      "units": 0.058,
+      "unit": "audio_min",
+      "estInr": 0.033,
+      "priceBasis": "AI Credits docs/audio billing table"
+    },
+    {
+      "at": "2026-10-18T08:15:24.372Z",
+      "stage": "pron-test",
+      "provider": "api.aicredits.in",
+      "model": "openai/gpt-4o-mini-tts",
+      "units": 0.039,
+      "unit": "1k_chars",
+      "estInr": 0.062,
+      "priceBasis": "ESTIMATED: not in AI Credits catalog; OpenAI list ~$0.015 per audio minute at ~900 chars/min. Check dashboard for the actual charge."
+    },
+    {
+      "at": "2026-10-18T08:15:25.892Z",
+      "stage": "pron-test",
+      "provider": "api.aicredits.in",
+      "model": "openai/whisper-1",
+      "units": 0.07,
+      "unit": "audio_min",
+      "estInr": 0.04,
+      "priceBasis": "AI Credits docs/audio billing table"
+    },
+    {
+      "at": "2026-10-18T08:15:27.730Z",
+      "stage": "pron-test",
+      "provider": "api.aicredits.in",
+      "model": "openai/gpt-4o-mini-tts",
+      "units": 0.041,
+      "unit": "1k_chars",
+      "estInr": 0.065,
+      "priceBasis": "ESTIMATED: not in AI Credits catalog; OpenAI list ~$0.015 per audio minute at ~900 chars/min. Check dashboard for the actual charge."
+    },
+    {
+      "at": "2026-10-18T08:15:28.930Z",
+      "stage": "pron-test",
+      "provider": "api.aicredits.in",
+      "model": "openai/whisper-1",
+      "units": 0.063,
+      "unit": "audio_min",
+      "estInr": 0.036,
+      "priceBasis": "AI Credits docs/audio billing table"
+    },
+    {
+      "at": "2026-10-18T08:15:30.816Z",
+      "stage": "pron-test",
+      "provider": "api.aicredits.in",
+      "model": "openai/gpt-4o-mini-tts",
+      "units": 0.045,
+      "unit": "1k_chars",
+      "estInr": 0.071,
+      "priceBasis": "ESTIMATED: not in AI Credits catalog; OpenAI list ~$0.015 per audio minute at ~900 chars/min. Check dashboard for the actual charge."
+    },
+    {
+      "at": "2026-10-18T08:15:32.880Z",
+      "stage": "pron-test",
+      "provider": "api.aicredits.in",
+      "model": "openai/whisper-1",
+      "units": 0.077,
+      "unit": "audio_min",
+      "estInr": 0.044,
+      "priceBasis": "AI Credits docs/audio billing table"
+    },
+    {
+      "at": "2026-10-18T08:15:34.580Z",
+      "stage": "pron-test",
+      "provider": "api.aicredits.in",
+      "model": "openai/gpt-4o-mini-tts",
+      "units": 0.045,
+      "unit": "1k_chars",
+      "estInr": 0.071,
+      "priceBasis": "ESTIMATED: not in AI Credits catalog; OpenAI list ~$0.015 per audio minute at ~900 chars/min. Check dashboard for the actual charge."
+    },
+    {
+      "at": "2026-10-18T08:15:35.978Z",
+      "stage": "pron-test",
+      "provider": "api.aicredits.in",
+      "model": "openai/whisper-1",
+      "units": 0.059,
+      "unit": "audio_min",
+      "estInr": 0.034,
+      "priceBasis": "AI Credits docs/audio billing table"
+    },
+    {
+      "at": "2026-10-18T08:15:37.892Z",
+      "stage": "pron-test",
+      "provider": "api.aicredits.in",
+      "model": "openai/gpt-4o-mini-tts",
+      "units": 0.047,
+      "unit": "1k_chars",
+      "estInr": 0.075,
+      "priceBasis": "ESTIMATED: not in AI Credits catalog; OpenAI list ~$0.015 per audio minute at ~900 chars/min. Check dashboard for the actual charge."
+    },
+    {
+      "at": "2026-10-18T08:15:39.495Z",
+      "stage": "pron-test",
+      "provider": "api.aicredits.in",
+      "model": "openai/whisper-1",
+      "units": 0.067,
+      "unit": "audio_min",
+      "estInr": 0.038,
+      "priceBasis": "AI Credits docs/audio billing table"
+    },
+    {
+      "at": "2026-10-18T08:15:41.566Z",
+      "stage": "pron-test",
+      "provider": "api.aicredits.in",
+      "model": "openai/gpt-4o-mini-tts",
+      "units": 0.053,
+      "unit": "1k_chars",
+      "estInr": 0.084,
+      "priceBasis": "ESTIMATED: not in AI Credits catalog; OpenAI list ~$0.015 per audio minute at ~900 chars/min. Check dashboard for the actual charge."
+    },
+    {
+      "at": "2026-10-18T08:15:42.846Z",
+      "stage": "pron-test",
+      "provider": "api.aicredits.in",
+      "model": "openai/whisper-1",
+      "units": 0.079,
+      "unit": "audio_min",
+      "estInr": 0.045,
+      "priceBasis": "AI Credits docs/audio billing table"
+    },
+    {
+      "at": "2026-10-18T08:15:44.800Z",
+      "stage": "pron-test",
+      "provider": "api.aicredits.in",
+      "model": "openai/gpt-4o-mini-tts",
+      "units": 0.041,
+      "unit": "1k_chars",
+      "estInr": 0.065,
+      "priceBasis": "ESTIMATED: not in AI Credits catalog; OpenAI list ~$0.015 per audio minute at ~900 chars/min. Check dashboard for the actual charge."
+    },
+    {
+      "at": "2026-10-18T08:15:47.168Z",
+      "stage": "pron-test",
+      "provider": "api.aicredits.in",
+      "model": "openai/whisper-1",
+      "units": 0.074,
+      "unit": "audio_min",
+      "estInr": 0.042,
+      "priceBasis": "AI Credits docs/audio billing table"
+    },
+    {
+      "at": "2026-10-18T08:15:49.656Z",
+      "stage": "pron-test",
+      "provider": "api.aicredits.in",
+      "model": "openai/gpt-4o-mini-tts",
+      "units": 0.041,
+      "unit": "1k_chars",
+      "estInr": 0.065,
+      "priceBasis": "ESTIMATED: not in AI Credits catalog; OpenAI list ~$0.015 per audio minute at ~900 chars/min. Check dashboard for the actual charge."
+    },
+    {
+      "at": "2026-10-18T08:15:50.955Z",
+      "stage": "pron-test",
+      "provider": "api.aicredits.in",
+      "model": "openai/whisper-1",
+      "units": 0.073,
+      "unit": "audio_min",
+      "estInr": 0.042,
+      "priceBasis": "AI Credits docs/audio billing table"
+    },
+    {
+      "at": "2026-10-18T08:16:28.526Z",
+      "stage": "tts s01",
+      "provider": "api.aicredits.in",
+      "model": "openai/gpt-4o-mini-tts",
+      "units": 0.296,
+      "unit": "1k_chars",
+      "estInr": 0.47,
+      "priceBasis": "ESTIMATED: not in AI Credits catalog; OpenAI list ~$0.015 per audio minute at ~900 chars/min. Check dashboard for the actual charge."
+    },
+    {
+      "at": "2026-10-18T08:16:32.028Z",
+      "stage": "tts s02",
+      "provider": "api.aicredits.in",
+      "model": "openai/gpt-4o-mini-tts",
+      "units": 0.215,
+      "unit": "1k_chars",
+      "estInr": 0.341,
+      "priceBasis": "ESTIMATED: not in AI Credits catalog; OpenAI list ~$0.015 per audio minute at ~900 chars/min. Check dashboard for the actual charge."
+    },
+    {
+      "at": "2026-10-18T08:16:35.740Z",
+      "stage": "tts s03",
+      "provider": "api.aicredits.in",
+      "model": "openai/gpt-4o-mini-tts",
+      "units": 0.28,
+      "unit": "1k_chars",
+      "estInr": 0.445,
+      "priceBasis": "ESTIMATED: not in AI Credits catalog; OpenAI list ~$0.015 per audio minute at ~900 chars/min. Check dashboard for the actual charge."
+    },
+    {
+      "at": "2026-10-18T08:16:41.531Z",
+      "stage": "tts s04",
+      "provider": "api.aicredits.in",
+      "model": "openai/gpt-4o-mini-tts",
+      "units": 0.448,
+      "unit": "1k_chars",
+      "estInr": 0.711,
+      "priceBasis": "ESTIMATED: not in AI Credits catalog; OpenAI list ~$0.015 per audio minute at ~900 chars/min. Check dashboard for the actual charge."
+    },
+    {
+      "at": "2026-10-18T08:16:49.026Z",
+      "stage": "tts s05",
+      "provider": "api.aicredits.in",
+      "model": "openai/gpt-4o-mini-tts",
+      "units": 0.325,
+      "unit": "1k_chars",
+      "estInr": 0.516,
+      "priceBasis": "ESTIMATED: not in AI Credits catalog; OpenAI list ~$0.015 per audio minute at ~900 chars/min. Check dashboard for the actual charge."
+    },
+    {
+      "at": "2026-10-18T08:16:55.161Z",
+      "stage": "tts s06",
+      "provider": "api.aicredits.in",
+      "model": "openai/gpt-4o-mini-tts",
+      "units": 0.424,
+      "unit": "1k_chars",
+      "estInr": 0.673,
+      "priceBasis": "ESTIMATED: not in AI Credits catalog; OpenAI list ~$0.015 per audio minute at ~900 chars/min. Check dashboard for the actual charge."
+    },
+    {
+      "at": "2026-10-18T08:17:00.221Z",
+      "stage": "tts s07",
+      "provider": "api.aicredits.in",
+      "model": "openai/gpt-4o-mini-tts",
+      "units": 0.402,
+      "unit": "1k_chars",
+      "estInr": 0.638,
+      "priceBasis": "ESTIMATED: not in AI Credits catalog; OpenAI list ~$0.015 per audio minute at ~900 chars/min. Check dashboard for the actual charge."
+    },
+    {
+      "at": "2026-10-18T08:17:10.540Z",
+      "stage": "tts s08",
+      "provider": "api.aicredits.in",
+      "model": "openai/gpt-4o-mini-tts",
+      "units": 0.464,
+      "unit": "1k_chars",
+      "estInr": 0.737,
+      "priceBasis": "ESTIMATED: not in AI Credits catalog; OpenAI list ~$0.015 per audio minute at ~900 chars/min. Check dashboard for the actual charge."
+    },
+    {
+      "at": "2026-10-18T08:17:17.001Z",
+      "stage": "tts s09",
+      "provider": "api.aicredits.in",
+      "model": "openai/gpt-4o-mini-tts",
+      "units": 0.387,
+      "unit": "1k_chars",
+      "estInr": 0.614,
+      "priceBasis": "ESTIMATED: not in AI Credits catalog; OpenAI list ~$0.015 per audio minute at ~900 chars/min. Check dashboard for the actual charge."
+    },
+    {
+      "at": "2026-10-18T08:17:20.356Z",
+      "stage": "tts s10",
+      "provider": "api.aicredits.in",
+      "model": "openai/gpt-4o-mini-tts",
+      "units": 0.337,
+      "unit": "1k_chars",
+      "estInr": 0.535,
+      "priceBasis": "ESTIMATED: not in AI Credits catalog; OpenAI list ~$0.015 per audio minute at ~900 chars/min. Check dashboard for the actual charge."
+    },
+    {
+      "at": "2026-10-18T08:17:25.072Z",
+      "stage": "tts s11",
+      "provider": "api.aicredits.in",
+      "model": "openai/gpt-4o-mini-tts",
+      "units": 0.483,
+      "unit": "1k_chars",
+      "estInr": 0.767,
+      "priceBasis": "ESTIMATED: not in AI Credits catalog; OpenAI list ~$0.015 per audio minute at ~900 chars/min. Check dashboard for the actual charge."
+    },
+    {
+      "at": "2026-10-18T08:17:29.639Z",
+      "stage": "tts s12",
+      "provider": "api.aicredits.in",
+      "model": "openai/gpt-4o-mini-tts",
+      "units": 0.301,
+      "unit": "1k_chars",
+      "estInr": 0.478,
+      "priceBasis": "ESTIMATED: not in AI Credits catalog; OpenAI list ~$0.015 per audio minute at ~900 chars/min. Check dashboard for the actual charge."
+    },
+    {
+      "at": "2026-10-18T08:17:36.355Z",
+      "stage": "tts s13",
+      "provider": "api.aicredits.in",
+      "model": "openai/gpt-4o-mini-tts",
+      "units": 0.448,
+      "unit": "1k_chars",
+      "estInr": 0.711,
+      "priceBasis": "ESTIMATED: not in AI Credits catalog; OpenAI list ~$0.015 per audio minute at ~900 chars/min. Check dashboard for the actual charge."
+    },
+    {
+      "at": "2026-10-18T08:17:39.782Z",
+      "stage": "tts s14",
+      "provider": "api.aicredits.in",
+      "model": "openai/gpt-4o-mini-tts",
+      "units": 0.329,
+      "unit": "1k_chars",
+      "estInr": 0.522,
+      "priceBasis": "ESTIMATED: not in AI Credits catalog; OpenAI list ~$0.015 per audio minute at ~900 chars/min. Check dashboard for the actual charge."
+    },
+    {
+      "at": "2026-10-18T08:17:46.462Z",
+      "stage": "tts s15",
+      "provider": "api.aicredits.in",
+      "model": "openai/gpt-4o-mini-tts",
+      "units": 0.511,
+      "unit": "1k_chars",
+      "estInr": 0.811,
+      "priceBasis": "ESTIMATED: not in AI Credits catalog; OpenAI list ~$0.015 per audio minute at ~900 chars/min. Check dashboard for the actual charge."
+    },
+    {
+      "at": "2026-10-18T08:17:52.640Z",
+      "stage": "tts s16",
+      "provider": "api.aicredits.in",
+      "model": "openai/gpt-4o-mini-tts",
+      "units": 0.51,
+      "unit": "1k_chars",
+      "estInr": 0.81,
+      "priceBasis": "ESTIMATED: not in AI Credits catalog; OpenAI list ~$0.015 per audio minute at ~900 chars/min. Check dashboard for the actual charge."
+    },
+    {
+      "at": "2026-10-18T08:18:01.412Z",
+      "stage": "tts s17",
+      "provider": "api.aicredits.in",
+      "model": "openai/gpt-4o-mini-tts",
+      "units": 0.709,
+      "unit": "1k_chars",
+      "estInr": 1.126,
+      "priceBasis": "ESTIMATED: not in AI Credits catalog; OpenAI list ~$0.015 per audio minute at ~900 chars/min. Check dashboard for the actual charge."
+    },
+    {
+      "at": "2026-10-18T08:18:06.204Z",
+      "stage": "tts s18",
+      "provider": "api.aicredits.in",
+      "model": "openai/gpt-4o-mini-tts",
+      "units": 0.341,
+      "unit": "1k_chars",
+      "estInr": 0.541,
+      "priceBasis": "ESTIMATED: not in AI Credits catalog; OpenAI list ~$0.015 per audio minute at ~900 chars/min. Check dashboard for the actual charge."
+    },
+    {
+      "at": "2026-10-18T08:18:15.215Z",
+      "stage": "tts s19",
+      "provider": "api.aicredits.in",
+      "model": "openai/gpt-4o-mini-tts",
+      "units": 0.39,
+      "unit": "1k_chars",
+      "estInr": 0.619,
+      "priceBasis": "ESTIMATED: not in AI Credits catalog; OpenAI list ~$0.015 per audio minute at ~900 chars/min. Check dashboard for the actual charge."
+    },
+    {
+      "at": "2026-10-18T08:18:19.254Z",
+      "stage": "tts s20",
+      "provider": "api.aicredits.in",
+      "model": "openai/gpt-4o-mini-tts",
+      "units": 0.27,
+      "unit": "1k_chars",
+      "estInr": 0.429,
+      "priceBasis": "ESTIMATED: not in AI Credits catalog; OpenAI list ~$0.015 per audio minute at ~900 chars/min. Check dashboard for the actual charge."
+    },
+    {
+      "at": "2026-10-18T08:18:45.453Z",
+      "stage": "stt-probe",
+      "provider": "api.aicredits.in",
+      "model": "openai/whisper-1",
+      "units": 0.207,
+      "unit": "audio_min",
+      "estInr": 0.118,
+      "priceBasis": "AI Credits docs/audio billing table"
+    },
+    {
+      "at": "2026-10-18T08:23:48.957Z",
+      "stage": "asr s01",
+      "provider": "api.aicredits.in",
+      "model": "openai/whisper-1",
+      "units": 0.329,
+      "unit": "audio_min",
+      "estInr": 0.188,
+      "priceBasis": "AI Credits docs/audio billing table"
+    },
+    {
+      "at": "2026-10-18T08:23:51.648Z",
+      "stage": "asr s02",
+      "provider": "api.aicredits.in",
+      "model": "openai/whisper-1",
+      "units": 0.207,
+      "unit": "audio_min",
+      "estInr": 0.118,
+      "priceBasis": "AI Credits docs/audio billing table"
+    },
+    {
+      "at": "2026-10-18T08:23:53.972Z",
+      "stage": "asr s03",
+      "provider": "api.aicredits.in",
+      "model": "openai/whisper-1",
+      "units": 0.28,
+      "unit": "audio_min",
+      "estInr": 0.16,
+      "priceBasis": "AI Credits docs/audio billing table"
+    },
+    {
+      "at": "2026-10-18T08:23:57.835Z",
+      "stage": "asr s04",
+      "provider": "api.aicredits.in",
+      "model": "openai/whisper-1",
+      "units": 0.466,
+      "unit": "audio_min",
+      "estInr": 0.266,
+      "priceBasis": "AI Credits docs/audio billing table"
+    },
+    {
+      "at": "2026-10-18T08:24:00.534Z",
+      "stage": "asr s05",
+      "provider": "api.aicredits.in",
+      "model": "openai/whisper-1",
+      "units": 0.356,
+      "unit": "audio_min",
+      "estInr": 0.203,
+      "priceBasis": "AI Credits docs/audio billing table"
+    },
+    {
+      "at": "2026-10-18T08:24:03.170Z",
+      "stage": "asr s06",
+      "provider": "api.aicredits.in",
+      "model": "openai/whisper-1",
+      "units": 0.472,
+      "unit": "audio_min",
+      "estInr": 0.269,
+      "priceBasis": "AI Credits docs/audio billing table"
+    },
+    {
+      "at": "2026-10-18T08:24:06.357Z",
+      "stage": "asr s07",
+      "provider": "api.aicredits.in",
+      "model": "openai/whisper-1",
+      "units": 0.37,
+      "unit": "audio_min",
+      "estInr": 0.211,
+      "priceBasis": "AI Credits docs/audio billing table"
+    },
+    {
+      "at": "2026-10-18T08:24:09.790Z",
+      "stage": "asr s08",
+      "provider": "api.aicredits.in",
+      "model": "openai/whisper-1",
+      "units": 0.463,
+      "unit": "audio_min",
+      "estInr": 0.264,
+      "priceBasis": "AI Credits docs/audio billing table"
+    },
+    {
+      "at": "2026-10-18T08:24:13.055Z",
+      "stage": "asr s09",
+      "provider": "api.aicredits.in",
+      "model": "openai/whisper-1",
+      "units": 0.421,
+      "unit": "audio_min",
+      "estInr": 0.24,
+      "priceBasis": "AI Credits docs/audio billing table"
+    },
+    {
+      "at": "2026-10-18T08:24:16.430Z",
+      "stage": "asr s10",
+      "provider": "api.aicredits.in",
+      "model": "openai/whisper-1",
+      "units": 0.321,
+      "unit": "audio_min",
+      "estInr": 0.183,
+      "priceBasis": "AI Credits docs/audio billing table"
+    },
+    {
+      "at": "2026-10-18T08:24:19.406Z",
+      "stage": "asr s11",
+      "provider": "api.aicredits.in",
+      "model": "openai/whisper-1",
+      "units": 0.484,
+      "unit": "audio_min",
+      "estInr": 0.276,
+      "priceBasis": "AI Credits docs/audio billing table"
+    },
+    {
+      "at": "2026-10-18T08:24:21.727Z",
+      "stage": "asr s12",
+      "provider": "api.aicredits.in",
+      "model": "openai/whisper-1",
+      "units": 0.337,
+      "unit": "audio_min",
+      "estInr": 0.192,
+      "priceBasis": "AI Credits docs/audio billing table"
+    },
+    {
+      "at": "2026-10-18T08:24:24.744Z",
+      "stage": "asr s13",
+      "provider": "api.aicredits.in",
+      "model": "openai/whisper-1",
+      "units": 0.524,
+      "unit": "audio_min",
+      "estInr": 0.299,
+      "priceBasis": "AI Credits docs/audio billing table"
+    },
+    {
+      "at": "2026-10-18T08:24:27.738Z",
+      "stage": "asr s14",
+      "provider": "api.aicredits.in",
+      "model": "openai/whisper-1",
+      "units": 0.315,
+      "unit": "audio_min",
+      "estInr": 0.18,
+      "priceBasis": "AI Credits docs/audio billing table"
+    },
+    {
+      "at": "2026-10-18T08:24:31.263Z",
+      "stage": "asr s15",
+      "provider": "api.aicredits.in",
+      "model": "openai/whisper-1",
+      "units": 0.498,
+      "unit": "audio_min",
+      "estInr": 0.284,
+      "priceBasis": "AI Credits docs/audio billing table"
+    },
+    {
+      "at": "2026-10-18T08:24:34.088Z",
+      "stage": "asr s16",
+      "provider": "api.aicredits.in",
+      "model": "openai/whisper-1",
+      "units": 0.462,
+      "unit": "audio_min",
+      "estInr": 0.263,
+      "priceBasis": "AI Credits docs/audio billing table"
+    },
+    {
+      "at": "2026-10-18T08:24:37.984Z",
+      "stage": "asr s17",
+      "provider": "api.aicredits.in",
+      "model": "openai/whisper-1",
+      "units": 0.739,
+      "unit": "audio_min",
+      "estInr": 0.422,
+      "priceBasis": "AI Credits docs/audio billing table"
+    },
+    {
+      "at": "2026-10-18T08:24:40.123Z",
+      "stage": "asr s18",
+      "provider": "api.aicredits.in",
+      "model": "openai/whisper-1",
+      "units": 0.372,
+      "unit": "audio_min",
+      "estInr": 0.212,
+      "priceBasis": "AI Credits docs/audio billing table"
+    },
+    {
+      "at": "2026-10-18T08:24:43.143Z",
+      "stage": "asr s19",
+      "provider": "api.aicredits.in",
+      "model": "openai/whisper-1",
+      "units": 0.457,
+      "unit": "audio_min",
+      "estInr": 0.261,
+      "priceBasis": "AI Credits docs/audio billing table"
+    },
+    {
+      "at": "2026-10-18T08:24:44.992Z",
+      "stage": "asr s20",
+      "provider": "api.aicredits.in",
+      "model": "openai/whisper-1",
+      "units": 0.284,
+      "unit": "audio_min",
+      "estInr": 0.162,
+      "priceBasis": "AI Credits docs/audio billing table"
+    },
+    {
+      "at": "2026-10-18T08:25:27.802Z",
+      "stage": "tts s07",
+      "provider": "api.aicredits.in",
+      "model": "openai/gpt-4o-mini-tts",
+      "units": 0.402,
+      "unit": "1k_chars",
+      "estInr": 0.638,
+      "priceBasis": "ESTIMATED: not in AI Credits catalog; OpenAI list ~$0.015 per audio minute at ~900 chars/min. Check dashboard for the actual charge."
+    },
+    {
+      "at": "2026-10-18T08:25:31.865Z",
+      "stage": "tts-check s07",
+      "provider": "api.aicredits.in",
+      "model": "openai/whisper-1",
+      "units": 0.354,
+      "unit": "audio_min",
+      "estInr": 0.202,
+      "priceBasis": "AI Credits docs/audio billing table"
+    },
+    {
+      "at": "2026-10-18T08:25:37.635Z",
+      "stage": "tts s07",
+      "provider": "api.aicredits.in",
+      "model": "openai/gpt-4o-mini-tts",
+      "units": 0.402,
+      "unit": "1k_chars",
+      "estInr": 0.638,
+      "priceBasis": "ESTIMATED: not in AI Credits catalog; OpenAI list ~$0.015 per audio minute at ~900 chars/min. Check dashboard for the actual charge."
+    },
+    {
+      "at": "2026-10-18T08:25:42.812Z",
+      "stage": "tts-check s07",
+      "provider": "api.aicredits.in",
+      "model": "openai/whisper-1",
+      "units": 0.372,
+      "unit": "audio_min",
+      "estInr": 0.212,
+      "priceBasis": "AI Credits docs/audio billing table"
+    },
+    {
+      "at": "2026-10-18T08:25:49.047Z",
+      "stage": "tts s07",
+      "provider": "api.aicredits.in",
+      "model": "openai/gpt-4o-mini-tts",
+      "units": 0.402,
+      "unit": "1k_chars",
+      "estInr": 0.638,
+      "priceBasis": "ESTIMATED: not in AI Credits catalog; OpenAI list ~$0.015 per audio minute at ~900 chars/min. Check dashboard for the actual charge."
+    },
+    {
+      "at": "2026-10-18T08:25:52.866Z",
+      "stage": "tts-check s07",
+      "provider": "api.aicredits.in",
+      "model": "openai/whisper-1",
+      "units": 0.37,
+      "unit": "audio_min",
+      "estInr": 0.211,
+      "priceBasis": "AI Credits docs/audio billing table"
+    },
+    {
+      "at": "2026-10-18T08:25:57.520Z",
+      "stage": "tts s10",
+      "provider": "api.aicredits.in",
+      "model": "openai/gpt-4o-mini-tts",
+      "units": 0.337,
+      "unit": "1k_chars",
+      "estInr": 0.535,
+      "priceBasis": "ESTIMATED: not in AI Credits catalog; OpenAI list ~$0.015 per audio minute at ~900 chars/min. Check dashboard for the actual charge."
+    },
+    {
+      "at": "2026-10-18T08:26:01.528Z",
+      "stage": "tts-check s10",
+      "provider": "api.aicredits.in",
+      "model": "openai/whisper-1",
+      "units": 0.361,
+      "unit": "audio_min",
+      "estInr": 0.206,
+      "priceBasis": "AI Credits docs/audio billing table"
+    },
+    {
+      "at": "2026-10-18T08:26:09.515Z",
+      "stage": "tts s11",
+      "provider": "api.aicredits.in",
+      "model": "openai/gpt-4o-mini-tts",
+      "units": 0.483,
+      "unit": "1k_chars",
+      "estInr": 0.767,
+      "priceBasis": "ESTIMATED: not in AI Credits catalog; OpenAI list ~$0.015 per audio minute at ~900 chars/min. Check dashboard for the actual charge."
+    },
+    {
+      "at": "2026-10-18T08:26:14.708Z",
+      "stage": "tts-check s11",
+      "provider": "api.aicredits.in",
+      "model": "openai/whisper-1",
+      "units": 0.537,
+      "unit": "audio_min",
+      "estInr": 0.306,
+      "priceBasis": "AI Credits docs/audio billing table"
+    },
+    {
+      "at": "2026-10-18T08:26:31.624Z",
+      "stage": "tts s07",
+      "provider": "api.aicredits.in",
+      "model": "openai/gpt-4o-mini-tts",
+      "units": 0.402,
+      "unit": "1k_chars",
+      "estInr": 0.638,
+      "priceBasis": "ESTIMATED: not in AI Credits catalog; OpenAI list ~$0.015 per audio minute at ~900 chars/min. Check dashboard for the actual charge."
+    },
+    {
+      "at": "2026-10-18T08:26:35.064Z",
+      "stage": "tts-check s07",
+      "provider": "api.aicredits.in",
+      "model": "openai/whisper-1",
+      "units": 0.386,
+      "unit": "audio_min",
+      "estInr": 0.22,
+      "priceBasis": "AI Credits docs/audio billing table"
+    },
+    {
+      "at": "2026-10-18T08:27:02.583Z",
+      "stage": "asr s01",
+      "provider": "api.aicredits.in",
+      "model": "openai/whisper-1",
+      "units": 0.329,
+      "unit": "audio_min",
+      "estInr": 0.188,
+      "priceBasis": "AI Credits docs/audio billing table"
+    },
+    {
+      "at": "2026-10-18T08:27:05.087Z",
+      "stage": "asr s02",
+      "provider": "api.aicredits.in",
+      "model": "openai/whisper-1",
+      "units": 0.207,
+      "unit": "audio_min",
+      "estInr": 0.118,
+      "priceBasis": "AI Credits docs/audio billing table"
+    },
+    {
+      "at": "2026-10-18T08:27:07.964Z",
+      "stage": "asr s03",
+      "provider": "api.aicredits.in",
+      "model": "openai/whisper-1",
+      "units": 0.28,
+      "unit": "audio_min",
+      "estInr": 0.16,
+      "priceBasis": "AI Credits docs/audio billing table"
+    },
+    {
+      "at": "2026-10-18T08:27:11.435Z",
+      "stage": "asr s04",
+      "provider": "api.aicredits.in",
+      "model": "openai/whisper-1",
+      "units": 0.466,
+      "unit": "audio_min",
+      "estInr": 0.266,
+      "priceBasis": "AI Credits docs/audio billing table"
+    },
+    {
+      "at": "2026-10-18T08:27:14.653Z",
+      "stage": "asr s05",
+      "provider": "api.aicredits.in",
+      "model": "openai/whisper-1",
+      "units": 0.356,
+      "unit": "audio_min",
+      "estInr": 0.203,
+      "priceBasis": "AI Credits docs/audio billing table"
+    },
+    {
+      "at": "2026-10-18T08:27:18.030Z",
+      "stage": "asr s06",
+      "provider": "api.aicredits.in",
+      "model": "openai/whisper-1",
+      "units": 0.472,
+      "unit": "audio_min",
+      "estInr": 0.269,
+      "priceBasis": "AI Credits docs/audio billing table"
+    },
+    {
+      "at": "2026-10-18T08:27:21.242Z",
+      "stage": "asr s07",
+      "provider": "api.aicredits.in",
+      "model": "openai/whisper-1",
+      "units": 0.386,
+      "unit": "audio_min",
+      "estInr": 0.22,
+      "priceBasis": "AI Credits docs/audio billing table"
+    },
+    {
+      "at": "2026-10-18T08:27:24.070Z",
+      "stage": "asr s08",
+      "provider": "api.aicredits.in",
+      "model": "openai/whisper-1",
+      "units": 0.463,
+      "unit": "audio_min",
+      "estInr": 0.264,
+      "priceBasis": "AI Credits docs/audio billing table"
+    },
+    {
+      "at": "2026-10-18T08:27:27.283Z",
+      "stage": "asr s09",
+      "provider": "api.aicredits.in",
+      "model": "openai/whisper-1",
+      "units": 0.421,
+      "unit": "audio_min",
+      "estInr": 0.24,
+      "priceBasis": "AI Credits docs/audio billing table"
+    },
+    {
+      "at": "2026-10-18T08:27:30.573Z",
+      "stage": "asr s10",
+      "provider": "api.aicredits.in",
+      "model": "openai/whisper-1",
+      "units": 0.361,
+      "unit": "audio_min",
+      "estInr": 0.206,
+      "priceBasis": "AI Credits docs/audio billing table"
+    },
+    {
+      "at": "2026-10-18T08:27:34.324Z",
+      "stage": "asr s11",
+      "provider": "api.aicredits.in",
+      "model": "openai/whisper-1",
+      "units": 0.537,
+      "unit": "audio_min",
+      "estInr": 0.306,
+      "priceBasis": "AI Credits docs/audio billing table"
+    },
+    {
+      "at": "2026-10-18T08:27:36.276Z",
+      "stage": "asr s12",
+      "provider": "api.aicredits.in",
+      "model": "openai/whisper-1",
+      "units": 0.337,
+      "unit": "audio_min",
+      "estInr": 0.192,
+      "priceBasis": "AI Credits docs/audio billing table"
+    },
+    {
+      "at": "2026-10-18T08:27:39.090Z",
+      "stage": "asr s13",
+      "provider": "api.aicredits.in",
+      "model": "openai/whisper-1",
+      "units": 0.524,
+      "unit": "audio_min",
+      "estInr": 0.299,
+      "priceBasis": "AI Credits docs/audio billing table"
+    },
+    {
+      "at": "2026-10-18T08:27:41.283Z",
+      "stage": "asr s14",
+      "provider": "api.aicredits.in",
+      "model": "openai/whisper-1",
+      "units": 0.315,
+      "unit": "audio_min",
+      "estInr": 0.18,
+      "priceBasis": "AI Credits docs/audio billing table"
+    },
+    {
+      "at": "2026-10-18T08:27:44.385Z",
+      "stage": "asr s15",
+      "provider": "api.aicredits.in",
+      "model": "openai/whisper-1",
+      "units": 0.498,
+      "unit": "audio_min",
+      "estInr": 0.284,
+      "priceBasis": "AI Credits docs/audio billing table"
+    }
+  ]
+}

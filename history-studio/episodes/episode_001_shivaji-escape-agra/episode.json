@@ -1,0 +1,2221 @@
+{
+  "id": "episode_001",
+  "slug": "shivaji-escape-agra",
+  "fileStem": "episode_001_shivaji_escape_from_agra",
+  "workingTitle": "The Basket Escape: How Shivaji Vanished from Aurangzeb's Agra (1666)",
+  "language": "en",
+  "series": null,
+  "render": {
+    "fps": 30,
+    "width": 1920,
+    "height": 1080
+  },
+  "timing": {
+    "leadInSec": 0.6,
+    "sceneGapSec": 0.85,
+    "tailAfterNarrationSec": 2.0,
+    "endScreenSec": 20
+  },
+  "voice": {
+    "engine": "openai-compatible",
+    "model": "openai/gpt-4o-mini-tts",
+    "voice": "cedar",
+    "format": "flac"
+  },
+  "disclosure": "Narration: AI-generated voice (OpenAI gpt-4o-mini-tts, voice 'cedar')",
+  "scenes": [
+    {
+      "id": "s01",
+      "title": "Hook",
+      "chapter": "A ring of guards",
+      "narration": "August, sixteen sixty-six. In the Mughal city of Agra, a ring of guards surrounds the quarters of one man. One letter from Agra puts the watch at a thousand men. Inside are a Maratha ruler from the Deccan and his nine-year-old son. Then, one morning, word spreads through the city. They are gone.",
+      "claims": [
+        "C01",
+        "C02",
+        "C03",
+        "C04"
+      ],
+      "music": "tension_low",
+      "ambience": "night_city",
+      "shots": [
+        {
+          "id": "s01a",
+          "at": null,
+          "comp": "FortExterior",
+          "props": {
+            "time": "night",
+            "patrol": true
+          },
+          "camera": {
+            "from": [
+              0,
+              0,
+              1.0
+            ],
+            "to": [
+              0,
+              -20,
+              1.12
+            ]
+          },
+          "text": {
+            "kind": "slate",
+            "value": "AGRA · AUGUST 1666"
+          },
+          "note": "Moonlit Agra Fort walls above the Yamuna; torch-bearing patrol walks the rampart; river shimmer.",
+          "continuity": "Fort wall red sandstone; moon top-right; river flows left-to-right."
+        },
+        {
+          "id": "s01b",
+          "at": "One letter from Agra",
+          "comp": "Compound",
+          "props": {
+            "time": "night",
+            "guardRing": 28,
+            "showHouseGlow": true
+          },
+          "camera": {
+            "from": [
+              0,
+              60,
+              1.25
+            ],
+            "to": [
+              0,
+              0,
+              1.0
+            ]
+          },
+          "text": {
+            "kind": "quote",
+            "value": "“…the thousand men of the watch around him.”",
+            "attribution": "Letter from Agra, 3 Sept 1666 (tr. J. Sarkar)"
+          },
+          "note": "Elevated view of the walled residence; guards with torches form a ring; camera pulls back to reveal the ring's size.",
+          "continuity": "Compound gate faces bottom; tents left; house centre."
+        },
+        {
+          "id": "s01c",
+          "at": "Inside are",
+          "comp": "WindowSilhouette",
+          "props": {
+            "figures": [
+              "shivaji",
+              "sambhaji"
+            ],
+            "time": "night"
+          },
+          "camera": {
+            "from": [
+              0,
+              0,
+              1.0
+            ],
+            "to": [
+              0,
+              0,
+              1.08
+            ]
+          },
+          "note": "Through a carved jali window: lamplit silhouettes of father and son; the father rests a hand on the boy's shoulder.",
+          "continuity": "Shivaji left, Sambhaji right."
+        },
+        {
+          "id": "s01d",
+          "at": "Then, one morning",
+          "comp": "EmptyBed",
+          "props": {
+            "time": "dawn",
+            "guardReacts": true
+          },
+          "camera": {
+            "from": [
+              80,
+              0,
+              1.15
+            ],
+            "to": [
+              0,
+              0,
+              1.0
+            ]
+          },
+          "note": "Dawn light through the window; a guard pulls back a quilt: the bed is empty; he steps back, arms raised.",
+          "continuity": "Bed along back wall; window right."
+        }
+      ]
+    },
+    {
+      "id": "s02",
+      "title": "The question",
+      "chapter": null,
+      "narration": "How do you disappear from under the eyes of one of the richest empires on earth? The famous answer involves baskets of sweets. But letters written in Agra that very summer let us check the legend against the record.",
+      "claims": [
+        "C05",
+        "C46"
+      ],
+      "music": "title_theme",
+      "ambience": null,
+      "shots": [
+        {
+          "id": "s02a",
+          "at": null,
+          "comp": "TitleCard",
+          "props": {
+            "title": "The Basket Escape",
+            "subtitle": "Shivaji · Agra · 1666"
+          },
+          "camera": {
+            "from": [
+              0,
+              0,
+              1.0
+            ],
+            "to": [
+              0,
+              0,
+              1.04
+            ]
+          },
+          "note": "Title assembles: a basket of sweets on a pole swings into frame; title letters rise.",
+          "continuity": "Saffron + ivory title palette."
+        },
+        {
+          "id": "s02b",
+          "at": "But letters written",
+          "comp": "LettersReveal",
+          "props": {
+            "count": 5
+          },
+          "camera": {
+            "from": [
+              0,
+              0,
+              1.0
+            ],
+            "to": [
+              0,
+              -10,
+              1.1
+            ]
+          },
+          "text": {
+            "kind": "caption",
+            "value": "Letters written in Agra, 1666 — found in the Jaipur archives in 1939"
+          },
+          "note": "Folded letters slide out of a bundle and fan across a desk; a lamp brightens.",
+          "continuity": "Letters are abstract script lines, not real text."
+        }
+      ]
+    },
+    {
+      "id": "s03",
+      "title": "Who",
+      "chapter": "Shivaji, Aurangzeb and Jai Singh",
+      "narration": "The ruler was Shivaji, the Maratha leader who had carved a kingdom out of the hill forts of western India, and who had spent years raiding Mughal territory. The emperor was Aurangzeb. And the man who brought them face to face was Aurangzeb's veteran general, Mirza Raja Jai Singh.",
+      "claims": [
+        "C06",
+        "C07"
+      ],
+      "music": "deccan_theme",
+      "ambience": "wind_hills",
+      "shots": [
+        {
+          "id": "s03a",
+          "at": null,
+          "comp": "DeccanForts",
+          "props": {
+            "time": "sunrise",
+            "hero": "shivaji"
+          },
+          "camera": {
+            "from": [
+              -120,
+              0,
+              1.1
+            ],
+            "to": [
+              60,
+              0,
+              1.0
+            ]
+          },
+          "text": {
+            "kind": "label",
+            "value": "Shivaji",
+            "sub": "Maratha leader"
+          },
+          "note": "Sunrise over ridges with hill forts; saffron flag ripples; Shivaji on a rampart, hand on sword hilt, turns toward camera.",
+          "continuity": "Shivaji: saffron turban, white angarkha, saffron sash, beard; faces right."
+        },
+        {
+          "id": "s03b",
+          "at": "raiding Mughal territory",
+          "comp": "MapScene",
+          "props": {
+            "preset": "deccanRaids"
+          },
+          "camera": {
+            "from": [
+              0,
+              0,
+              1.0
+            ],
+            "to": [
+              0,
+              0,
+              1.12
+            ]
+          },
+          "note": "Simplified map: Mughal north shaded; Deccan hills; raid arrows sweep to Surat with label 'Surat, 1664'.",
+          "continuity": "Map style: parchment, north up."
+        },
+        {
+          "id": "s03c",
+          "at": "The emperor was Aurangzeb",
+          "comp": "Portrait",
+          "props": {
+            "character": "aurangzeb",
+            "setting": "throne"
+          },
+          "camera": {
+            "from": [
+              0,
+              0,
+              1.0
+            ],
+            "to": [
+              0,
+              -10,
+              1.08
+            ]
+          },
+          "text": {
+            "kind": "label",
+            "value": "Aurangzeb",
+            "sub": "Mughal emperor"
+          },
+          "note": "Aurangzeb in profile on the throne, white robes and pearls; he lowers his prayer beads and looks up.",
+          "continuity": "Aurangzeb faces left, white turban, grey-black beard."
+        },
+        {
+          "id": "s03d",
+          "at": "And the man who brought",
+          "comp": "Portrait",
+          "props": {
+            "character": "jaisingh",
+            "setting": "camp"
+          },
+          "camera": {
+            "from": [
+              0,
+              0,
+              1.08
+            ],
+            "to": [
+              0,
+              0,
+              1.0
+            ]
+          },
+          "text": {
+            "kind": "label",
+            "value": "Mirza Raja Jai Singh",
+            "sub": "Mughal general"
+          },
+          "note": "Jai Singh in armour before army tents; banners stir; he folds his arms.",
+          "continuity": "Jai Singh: grey moustache, teal jama, steel helmet-turban."
+        }
+      ]
+    },
+    {
+      "id": "s04",
+      "title": "Purandar",
+      "chapter": "The deal at Purandar",
+      "narration": "In sixteen sixty-five, Jai Singh's army closed in on Shivaji's forts. Rather than lose everything, Shivaji made a deal at Purandar. Twenty-three forts went to the empire. He kept twelve, including his stronghold of Rajgad. Then Jai Singh pressed for something more. Shivaji should travel north and appear before the emperor in person. Jai Singh swore that he would come to no harm. At court, his son, the prince Ram Singh, pledged his word as well.",
+      "claims": [
+        "C08",
+        "C09"
+      ],
+      "music": "tension_low",
+      "ambience": "wind_hills",
+      "shots": [
+        {
+          "id": "s04a",
+          "at": null,
+          "comp": "Siege",
+          "props": {
+            "fort": "Purandar"
+          },
+          "camera": {
+            "from": [
+              0,
+              30,
+              1.15
+            ],
+            "to": [
+              0,
+              0,
+              1.0
+            ]
+          },
+          "text": {
+            "kind": "slate",
+            "value": "PURANDAR · 1665"
+          },
+          "note": "Hill fort under siege: Mughal tents and cannon at the foot of the hill; smoke puffs drift; no casualties shown.",
+          "continuity": "Fort top-right; Mughal camp bottom-left."
+        },
+        {
+          "id": "s04b",
+          "at": "Twenty-three forts",
+          "comp": "FortsGrid",
+          "props": {
+            "ceded": 23,
+            "kept": 12,
+            "highlight": "Rajgad"
+          },
+          "camera": {
+            "from": [
+              0,
+              0,
+              1.0
+            ],
+            "to": [
+              0,
+              0,
+              1.0
+            ]
+          },
+          "note": "35 fort icons: 23 change to Mughal green and slide left under 'To the empire'; 12 stay saffron, Rajgad glows.",
+          "continuity": "Saffron = Maratha; green = Mughal."
+        },
+        {
+          "id": "s04c",
+          "at": "Then Jai Singh pressed",
+          "comp": "TentTalk",
+          "props": {
+            "left": "jaisingh",
+            "right": "shivaji",
+            "mood": "persuade"
+          },
+          "camera": {
+            "from": [
+              -40,
+              0,
+              1.0
+            ],
+            "to": [
+              40,
+              0,
+              1.1
+            ]
+          },
+          "note": "Inside a campaign tent by lamplight: Jai Singh leans forward, gesturing north; Shivaji listens, arms crossed, then looks down.",
+          "continuity": "Jai Singh left, Shivaji right."
+        },
+        {
+          "id": "s04d",
+          "at": "Jai Singh swore",
+          "comp": "TentTalk",
+          "props": {
+            "left": "jaisingh",
+            "right": "shivaji",
+            "mood": "oath"
+          },
+          "camera": {
+            "from": [
+              0,
+              0,
+              1.12
+            ],
+            "to": [
+              0,
+              0,
+              1.2
+            ]
+          },
+          "text": {
+            "kind": "caption",
+            "value": "A guarantee of safety"
+          },
+          "note": "Jai Singh places his hand on his chest in an oath.",
+          "continuity": "Same tent."
+        },
+        {
+          "id": "s04e",
+          "at": "At court, his son",
+          "comp": "Portrait",
+          "props": {
+            "character": "ramsingh",
+            "setting": "court",
+            "gesture": "pledge"
+          },
+          "camera": {
+            "from": [
+              0,
+              0,
+              1.0
+            ],
+            "to": [
+              0,
+              -10,
+              1.06
+            ]
+          },
+          "text": {
+            "kind": "label",
+            "value": "Kumar Ram Singh",
+            "sub": "Jai Singh's son, at the Mughal court"
+          },
+          "note": "Ram Singh in crimson with a gold turban raises his right hand in pledge in a courtyard.",
+          "continuity": "Ram Singh: crimson jama, gold turban, moustache."
+        }
+      ]
+    },
+    {
+      "id": "s05",
+      "title": "Journey",
+      "chapter": "The road to Agra",
+      "narration": "In March sixteen sixty-six, Shivaji left Rajgad with his son Sambhaji and a small but splendid escort. In May, they reached Agra. One of Ram Singh's officers described him in a letter home. Lean, short, fair, bearded. And, he wrote, \"even without finding out who he is, one does feel instinctively that he is a ruler of men.\"",
+      "claims": [
+        "C10",
+        "C11",
+        "C12"
+      ],
+      "music": "journey",
+      "ambience": "road_day",
+      "shots": [
+        {
+          "id": "s05a",
+          "at": null,
+          "comp": "MapScene",
+          "props": {
+            "preset": "journeyNorth"
+          },
+          "camera": {
+            "from": [
+              0,
+              40,
+              1.15
+            ],
+            "to": [
+              0,
+              -40,
+              1.15
+            ]
+          },
+          "text": {
+            "kind": "caption",
+            "value": "March → May 1666 · about 1,100 km in a straight line"
+          },
+          "note": "Route line draws north from Rajgad to Agra; a small saffron flag icon travels along it.",
+          "continuity": "Rajgad south, Agra north."
+        },
+        {
+          "id": "s05b",
+          "at": "small but splendid escort",
+          "comp": "Procession",
+          "props": {
+            "kind": "escort"
+          },
+          "camera": {
+            "from": [
+              -200,
+              0,
+              1.0
+            ],
+            "to": [
+              200,
+              0,
+              1.0
+            ]
+          },
+          "note": "Side-on procession crossing frame left-to-right: elephant carrying an orange-vermilion flag, horsemen with silver trappings, a silver palanquin, Shivaji on horseback, Sambhaji beside him.",
+          "continuity": "Moves left-to-right (northbound convention)."
+        },
+        {
+          "id": "s05c",
+          "at": "One of Ram Singh's officers",
+          "comp": "Portrait",
+          "props": {
+            "character": "shivaji",
+            "setting": "tent",
+            "gesture": "calm"
+          },
+          "camera": {
+            "from": [
+              0,
+              0,
+              1.0
+            ],
+            "to": [
+              0,
+              -10,
+              1.1
+            ]
+          },
+          "text": {
+            "kind": "quote",
+            "value": "“…one does feel instinctively that he is a ruler of men.”",
+            "attribution": "Letter by Ram Singh's staff, Agra, 1666 (tr. J. Sarkar)"
+          },
+          "note": "Medium shot of Shivaji, composed, eyes steady; a quill writes in the corner then fades.",
+          "continuity": "Shivaji faces right."
+        }
+      ]
+    },
+    {
+      "id": "s06",
+      "title": "Audience",
+      "chapter": "The audience, 12 May 1666",
+      "narration": "On the twelfth of May, the emperor's fiftieth birthday by the lunar calendar, Ram Singh led Shivaji into the fort. Shivaji presented his gifts of gold. And then, nothing. The emperor did not say a word to him. Shivaji was led back to stand behind rows of other nobles. Robes of honour were handed out to princes and ministers, and to Maharaja Jaswant Singh, a general who had once besieged one of Shivaji's forts and failed.",
+      "claims": [
+        "C13",
+        "C14",
+        "C15",
+        "C16",
+        "C17",
+        "C18"
+      ],
+      "music": "court",
+      "ambience": "court_murmur",
+      "shots": [
+        {
+          "id": "s06a",
+          "at": null,
+          "comp": "FortExterior",
+          "props": {
+            "time": "day",
+            "procession": true
+          },
+          "camera": {
+            "from": [
+              0,
+              0,
+              1.0
+            ],
+            "to": [
+              0,
+              -30,
+              1.15
+            ]
+          },
+          "text": {
+            "kind": "slate",
+            "value": "AGRA FORT · 12 MAY 1666"
+          },
+          "note": "Daylight: Ram Singh leads Shivaji and Sambhaji through the great gate; banners; crowd silhouettes.",
+          "continuity": "Same fort as s01a, now day."
+        },
+        {
+          "id": "s06b",
+          "at": "Shivaji presented",
+          "comp": "CourtHall",
+          "props": {
+            "beat": "presentation"
+          },
+          "camera": {
+            "from": [
+              0,
+              0,
+              1.0
+            ],
+            "to": [
+              0,
+              -20,
+              1.12
+            ]
+          },
+          "note": "Marble hall of cusped arches; Aurangzeb on a raised throne; Shivaji bows three times; a tray of gold coins is set down.",
+          "continuity": "Throne centre-top; nobles in rows left and right."
+        },
+        {
+          "id": "s06c",
+          "at": "And then, nothing",
+          "comp": "CourtHall",
+          "props": {
+            "beat": "silence"
+          },
+          "camera": {
+            "from": [
+              0,
+              -20,
+              1.12
+            ],
+            "to": [
+              0,
+              -30,
+              1.2
+            ]
+          },
+          "note": "Hold: the emperor looks away; the hall freezes; music drops to a single drone.",
+          "continuity": "Same hall."
+        },
+        {
+          "id": "s06d",
+          "at": "led back to stand",
+          "comp": "CourtHall",
+          "props": {
+            "beat": "ranks"
+          },
+          "camera": {
+            "from": [
+              0,
+              60,
+              1.25
+            ],
+            "to": [
+              0,
+              40,
+              1.1
+            ]
+          },
+          "note": "Viewed from behind: Shivaji placed behind rows of standing nobles; their turbans block his view of the throne.",
+          "continuity": "Shivaji's saffron turban stands out among muted turbans."
+        },
+        {
+          "id": "s06e",
+          "at": "Robes of honour",
+          "comp": "CourtHall",
+          "props": {
+            "beat": "robes"
+          },
+          "camera": {
+            "from": [
+              0,
+              0,
+              1.05
+            ],
+            "to": [
+              40,
+              0,
+              1.12
+            ]
+          },
+          "text": {
+            "kind": "label",
+            "value": "Maharaja Jaswant Singh",
+            "sub": "failed to take Kondana, 1663–64"
+          },
+          "note": "Attendants carry folded robes on trays to princes and to Jaswant Singh, who bows to accept.",
+          "continuity": "Jaswant: maroon jama, white turban, moustache."
+        }
+      ]
+    },
+    {
+      "id": "s07",
+      "title": "Outburst",
+      "chapter": null,
+      "narration": "Shivaji's patience broke. According to a letter from Ram Singh's staff, he told the prince, \"I cast off your mansab,\" his imperial rank. Then he turned his back on the throne and walked away. At a court where nobles were expected to wait, as an English trader put it, \"with their hands before them, like mutes,\" it was a stunning act of defiance. Officials brought him a robe of honour. He refused it.",
+      "claims": [
+        "C19",
+        "C20",
+        "C21"
+      ],
+      "music": "tension_rise",
+      "ambience": "court_murmur",
+      "shots": [
+        {
+          "id": "s07a",
+          "at": null,
+          "comp": "TwoShot",
+          "props": {
+            "left": "ramsingh",
+            "right": "shivaji",
+            "mood": "anger"
+          },
+          "camera": {
+            "from": [
+              0,
+              0,
+              1.0
+            ],
+            "to": [
+              0,
+              0,
+              1.15
+            ]
+          },
+          "text": {
+            "kind": "quote",
+            "value": "“I cast off your mansab.”",
+            "attribution": "Shivaji, as reported in a letter by Ram Singh's staff (tr. J. Sarkar)"
+          },
+          "note": "Close two-shot: Shivaji's brows lower, fists clench; Ram Singh reaches for his hand.",
+          "continuity": "Ram Singh left, Shivaji right."
+        },
+        {
+          "id": "s07b",
+          "at": "Then he turned his back",
+          "comp": "CourtHall",
+          "props": {
+            "beat": "walkout"
+          },
+          "camera": {
+            "from": [
+              0,
+              0,
+              1.1
+            ],
+            "to": [
+              -60,
+              0,
+              1.0
+            ]
+          },
+          "note": "Shivaji turns away from the throne and strides toward the side recess; heads in the rows turn to follow him.",
+          "continuity": "He exits frame left."
+        },
+        {
+          "id": "s07c",
+          "at": "with their hands before them",
+          "comp": "CourtHall",
+          "props": {
+            "beat": "mutes"
+          },
+          "camera": {
+            "from": [
+              0,
+              0,
+              1.0
+            ],
+            "to": [
+              0,
+              0,
+              1.06
+            ]
+          },
+          "text": {
+            "kind": "quote",
+            "value": "“…with their hands before them, like mutes.”",
+            "attribution": "English East India Company report, Surat, 1666"
+          },
+          "note": "Rows of nobles standing perfectly still, hands clasped in front.",
+          "continuity": "Same hall, muted palette."
+        },
+        {
+          "id": "s07d",
+          "at": "Officials brought him",
+          "comp": "RobeRefusal",
+          "props": {},
+          "camera": {
+            "from": [
+              0,
+              0,
+              1.0
+            ],
+            "to": [
+              0,
+              -10,
+              1.1
+            ]
+          },
+          "note": "Three officials offer a gold-trimmed robe; Shivaji, seated in a recess, raises his palm and turns his head away.",
+          "continuity": "Recess archway frames Shivaji right."
+        }
+      ]
+    },
+    {
+      "id": "s08",
+      "title": "Danger",
+      "chapter": "From guest to prisoner",
+      "narration": "The backlash was swift. Powerful voices at court, the emperor's sister Jahanara among them, demanded punishment. A letter from Agra reports that the emperor weighed killing Shivaji, or locking him away in a fortress. Ram Singh stepped in. His father had guaranteed Shivaji's safety, he argued. If the emperor wanted Shivaji dead, he should kill Ram Singh first. The emperor's reply was simple. Then sign a security bond. If Shivaji escapes, you will answer for it.",
+      "claims": [
+        "C22",
+        "C23",
+        "C24"
+      ],
+      "music": "dark_pulse",
+      "ambience": "palace_night",
+      "shots": [
+        {
+          "id": "s08a",
+          "at": null,
+          "comp": "CourtIntrigue",
+          "props": {},
+          "camera": {
+            "from": [
+              0,
+              0,
+              1.0
+            ],
+            "to": [
+              0,
+              0,
+              1.1
+            ]
+          },
+          "text": {
+            "kind": "label",
+            "value": "Jahanara Begum",
+            "sub": "the emperor's sister"
+          },
+          "note": "Night palace: a silhouette behind a marble screen; courtiers lean in to whisper to the emperor; lamp shadows lengthen.",
+          "continuity": "Jahanara shown only as silhouette behind jali."
+        },
+        {
+          "id": "s08b",
+          "at": "the emperor weighed",
+          "comp": "Options",
+          "props": {
+            "items": [
+              "Execution?",
+              "A fortress prison?"
+            ]
+          },
+          "camera": {
+            "from": [
+              0,
+              0,
+              1.0
+            ],
+            "to": [
+              0,
+              0,
+              1.05
+            ]
+          },
+          "note": "A lamp flame gutters; two dark cards slide in with the options; a fortress silhouette looms.",
+          "continuity": "No violence depicted."
+        },
+        {
+          "id": "s08c",
+          "at": "Ram Singh stepped in",
+          "comp": "Portrait",
+          "props": {
+            "character": "ramsingh",
+            "setting": "palace",
+            "gesture": "plead"
+          },
+          "camera": {
+            "from": [
+              0,
+              0,
+              1.0
+            ],
+            "to": [
+              0,
+              -10,
+              1.08
+            ]
+          },
+          "text": {
+            "kind": "quote",
+            "value": "“…the Emperor should first kill me…”",
+            "attribution": "Ram Singh, as reported in a letter from Agra, May 1666"
+          },
+          "note": "Ram Singh, hand on chest, speaks urgently.",
+          "continuity": "Crimson jama."
+        },
+        {
+          "id": "s08d",
+          "at": "Then sign a security bond",
+          "comp": "Bond",
+          "props": {},
+          "camera": {
+            "from": [
+              0,
+              0,
+              1.1
+            ],
+            "to": [
+              0,
+              0,
+              1.0
+            ]
+          },
+          "text": {
+            "kind": "caption",
+            "value": "If Shivaji escapes, Ram Singh answers for it"
+          },
+          "note": "A document unrolls; a quill signs; a seal stamps down in red.",
+          "continuity": "Seal colour: red."
+        }
+      ]
+    },
+    {
+      "id": "s09",
+      "title": "Prisoner",
+      "chapter": null,
+      "narration": "Ram Singh signed. Shivaji was not executed, but he was not free. At one point he was ordered to march to Kabul, on the far north-western frontier. Days later, after petitions and payments to courtiers, the order was dropped. Troops of the city's police chief, Fulad Khan, ringed his quarters. Ram Singh's own Rajputs watched his bed at night. The emperor's guest had become his prisoner.",
+      "claims": [
+        "C25",
+        "C26"
+      ],
+      "music": "dark_pulse",
+      "ambience": "night_city",
+      "shots": [
+        {
+          "id": "s09s",
+          "at": null,
+          "comp": "Bond",
+          "props": {
+            "beat": "signed"
+          },
+          "camera": {
+            "from": [
+              0,
+              0,
+              1.0
+            ],
+            "to": [
+              0,
+              0,
+              1.06
+            ]
+          },
+          "note": "The signed bond is rolled up and carried away by a court official.",
+          "continuity": "Red seal as in s08d."
+        },
+        {
+          "id": "s09a",
+          "at": "At one point",
+          "comp": "MapScene",
+          "props": {
+            "preset": "kabulOrder"
+          },
+          "camera": {
+            "from": [
+              0,
+              0,
+              1.0
+            ],
+            "to": [
+              -60,
+              -40,
+              1.08
+            ]
+          },
+          "text": {
+            "kind": "caption",
+            "value": "Ordered to Kabul… then the order was dropped"
+          },
+          "note": "Arrow draws from Agra to Kabul; then it is struck out and fades.",
+          "continuity": "Kabul far north-west."
+        },
+        {
+          "id": "s09b",
+          "at": "Troops of the city's police chief",
+          "comp": "Compound",
+          "props": {
+            "time": "dusk",
+            "guardRing": 20,
+            "fuladKhan": true
+          },
+          "camera": {
+            "from": [
+              0,
+              0,
+              1.1
+            ],
+            "to": [
+              0,
+              30,
+              1.0
+            ]
+          },
+          "text": {
+            "kind": "label",
+            "value": "Fulad Khan",
+            "sub": "police chief (kotwal) of Agra"
+          },
+          "note": "Fulad Khan inspects guards at the gate; soldiers take positions around the walls; a small cannon is rolled up.",
+          "continuity": "Same compound as s01b."
+        },
+        {
+          "id": "s09c",
+          "at": "Ram Singh's own Rajputs",
+          "comp": "Bedroom",
+          "props": {
+            "beat": "watched"
+          },
+          "camera": {
+            "from": [
+              0,
+              0,
+              1.0
+            ],
+            "to": [
+              0,
+              0,
+              1.1
+            ]
+          },
+          "note": "Shivaji lies awake on the bed; two Rajput guards stand at the doorway; moonlight bars across the floor.",
+          "continuity": "Bed back wall; door left."
+        },
+        {
+          "id": "s09d",
+          "at": "The emperor's guest",
+          "comp": "WindowSilhouette",
+          "props": {
+            "figures": [
+              "shivaji"
+            ],
+            "time": "night",
+            "bars": true
+          },
+          "camera": {
+            "from": [
+              0,
+              0,
+              1.2
+            ],
+            "to": [
+              0,
+              0,
+              1.0
+            ]
+          },
+          "text": {
+            "kind": "caption",
+            "value": "Guest → prisoner"
+          },
+          "note": "Pull back through the lattice window; the pattern now reads like bars.",
+          "continuity": "Same window as s01c."
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "title": "Bargaining",
+      "chapter": null,
+      "narration": "Shivaji tried everything. He offered two crore rupees, twenty million, if his forts were returned. He offered to go and fight for the emperor against Bijapur. He asked to be moved to another house. He even asked to go to Benares and become a holy man. The reply came back: let him become a fakir, and live in Allahabad fort, under guard.",
+      "claims": [
+        "C27"
+      ],
+      "music": "dark_pulse",
+      "ambience": "night_city",
+      "shots": [
+        {
+          "id": "s10a",
+          "at": null,
+          "comp": "Petitions",
+          "props": {
+            "items": [
+              "₹2 crore — for my forts",
+              "Let me fight Bijapur for you",
+              "Move me to another house",
+              "Let me go to Benares as a holy man"
+            ]
+          },
+          "camera": {
+            "from": [
+              0,
+              0,
+              1.0
+            ],
+            "to": [
+              0,
+              0,
+              1.06
+            ]
+          },
+          "note": "Petition scrolls fly one by one toward the palace; each returns stamped REFUSED.",
+          "continuity": "Petitions are wax-sealed scrolls."
+        },
+        {
+          "id": "s10b",
+          "at": "The reply came back",
+          "comp": "MapScene",
+          "props": {
+            "preset": "allahabad"
+          },
+          "camera": {
+            "from": [
+              0,
+              0,
+              1.0
+            ],
+            "to": [
+              40,
+              10,
+              1.2
+            ]
+          },
+          "text": {
+            "kind": "quote",
+            "value": "“Let him turn faqir and live in Allahabad fort.”",
+            "attribution": "Aurangzeb's reply, as reported from Agra, June 1666"
+          },
+          "note": "Map zooms to Allahabad fort icon; a guard figure appears beside it.",
+          "continuity": "Allahabad east of Agra."
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "title": "Reversal",
+      "chapter": "The summer of waiting",
+      "narration": "Then came a blow from the man who had promised his safety. In July, Jai Singh wrote to his son from the Deccan. His war there was going badly, and it was, he said, \"not at all politic\" to let Shivaji come home. Keep him in Agra, he advised. Treat him well, but keep him. By now Shivaji's money was running low. He borrowed sixty-six thousand rupees from Ram Singh. And over the summer he sent his own escort home, leaving himself almost alone. To the court, it looked like surrender.",
+      "claims": [
+        "C28",
+        "C29",
+        "C30"
+      ],
+      "music": "melancholy",
+      "ambience": "monsoon_light",
+      "shots": [
+        {
+          "id": "s11a",
+          "at": null,
+          "comp": "TentTalk",
+          "props": {
+            "left": "jaisingh",
+            "right": null,
+            "mood": "writing"
+          },
+          "camera": {
+            "from": [
+              0,
+              0,
+              1.0
+            ],
+            "to": [
+              0,
+              -10,
+              1.12
+            ]
+          },
+          "text": {
+            "kind": "quote",
+            "value": "“…not at all politic to permit him to come to this region.”",
+            "attribution": "Jai Singh to Ram Singh, c. July 1666"
+          },
+          "note": "Jai Singh writes by lamplight in his Deccan camp, then seals the letter.",
+          "continuity": "Same tent as s04c."
+        },
+        {
+          "id": "s11b",
+          "at": "Keep him in Agra",
+          "comp": "Portrait",
+          "props": {
+            "character": "ramsingh",
+            "setting": "palace",
+            "gesture": "reading"
+          },
+          "camera": {
+            "from": [
+              0,
+              0,
+              1.0
+            ],
+            "to": [
+              0,
+              -10,
+              1.06
+            ]
+          },
+          "note": "Ram Singh reads his father's letter and lowers it slowly.",
+          "continuity": "Crimson jama."
+        },
+        {
+          "id": "s11c",
+          "at": "money was running low",
+          "comp": "Coins",
+          "props": {
+            "amount": "₹66,000",
+            "label": "borrowed from Ram Singh"
+          },
+          "camera": {
+            "from": [
+              0,
+              0,
+              1.0
+            ],
+            "to": [
+              0,
+              0,
+              1.08
+            ]
+          },
+          "note": "A chest's last coins trickle out; a ledger line writes itself.",
+          "continuity": "Gold coins."
+        },
+        {
+          "id": "s11d",
+          "at": "sent his own escort home",
+          "comp": "Procession",
+          "props": {
+            "kind": "departure"
+          },
+          "camera": {
+            "from": [
+              0,
+              0,
+              1.0
+            ],
+            "to": [
+              -60,
+              0,
+              1.05
+            ]
+          },
+          "note": "At dusk, horsemen ride out of the gate (right-to-left, southbound); Shivaji and Sambhaji watch from the rooftop.",
+          "continuity": "Southbound = right-to-left."
+        },
+        {
+          "id": "s11e",
+          "at": "To the court",
+          "comp": "CourtIntrigue",
+          "props": {
+            "mood": "smug"
+          },
+          "camera": {
+            "from": [
+              0,
+              0,
+              1.05
+            ],
+            "to": [
+              0,
+              0,
+              1.0
+            ]
+          },
+          "note": "Courtiers nod to one another; one shrugs dismissively.",
+          "continuity": "Same palace set as s08a."
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "title": "Baskets",
+      "chapter": "The baskets",
+      "narration": "It was preparation. Shivaji fell ill, or appeared to. Large baskets of sweets began to leave his quarters, gifts for Brahmins, holy men and courtiers. Each was slung from a pole and carried by two porters. At first, the guards opened them, and found sweets. After some days, they stopped opening them.",
+      "claims": [
+        "C31"
+      ],
+      "music": "plan_pulse",
+      "ambience": "evening_courtyard",
+      "shots": [
+        {
+          "id": "s12a",
+          "at": null,
+          "comp": "Bedroom",
+          "props": {
+            "beat": "illness"
+          },
+          "camera": {
+            "from": [
+              0,
+              0,
+              1.1
+            ],
+            "to": [
+              0,
+              0,
+              1.0
+            ]
+          },
+          "note": "Shivaji lies with a cloth on his forehead; a servant stacks sweets into large woven baskets beside him.",
+          "continuity": "Bedroom set from s09c, warmer lamp light."
+        },
+        {
+          "id": "s12b",
+          "at": "Each was slung from a pole",
+          "comp": "Compound",
+          "props": {
+            "time": "dusk",
+            "baskets": "parade",
+            "guardRing": 8
+          },
+          "camera": {
+            "from": [
+              -80,
+              20,
+              1.3
+            ],
+            "to": [
+              40,
+              20,
+              1.3
+            ]
+          },
+          "note": "Pairs of porters carry baskets on poles through the gate (left-to-right).",
+          "continuity": "Gate bottom of compound."
+        },
+        {
+          "id": "s12c",
+          "at": "At first, the guards",
+          "comp": "GateCheck",
+          "props": {
+            "days": 6
+          },
+          "camera": {
+            "from": [
+              0,
+              0,
+              1.0
+            ],
+            "to": [
+              0,
+              0,
+              1.0
+            ]
+          },
+          "note": "A guard lifts a lid and sees sweets; a day counter ticks; by the last day he waves baskets through without looking.",
+          "continuity": "Guard: khaki jama, red turban, spear."
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "title": "The night",
+      "chapter": "The night of the escape",
+      "narration": "Then, one evening in the third week of August, the plan went into motion. According to later accounts, Shivaji's half-brother, Hiroji Farzand, lay down on Shivaji's bed beneath a quilt, with one arm showing, and Shivaji's gold bracelet on the wrist. A boy sat by the bed, massaging his feet. And inside the baskets, among others filled with real sweets, crouched Shivaji and his son. The porters carried them past the guards, and out into the dark.",
+      "claims": [
+        "C32",
+        "C33"
+      ],
+      "music": "escape_build",
+      "ambience": "night_rain",
+      "shots": [
+        {
+          "id": "s13a",
+          "at": null,
+          "comp": "Compound",
+          "props": {
+            "time": "dusk",
+            "clouds": true,
+            "guardRing": 16
+          },
+          "camera": {
+            "from": [
+              0,
+              -40,
+              1.0
+            ],
+            "to": [
+              0,
+              0,
+              1.15
+            ]
+          },
+          "text": {
+            "kind": "slate",
+            "value": "THIRD WEEK OF AUGUST 1666"
+          },
+          "note": "Monsoon clouds over the compound at dusk; torches being lit.",
+          "continuity": "Same compound."
+        },
+        {
+          "id": "s13b",
+          "at": "According to later accounts",
+          "comp": "Bedroom",
+          "props": {
+            "beat": "decoy"
+          },
+          "camera": {
+            "from": [
+              0,
+              0,
+              1.0
+            ],
+            "to": [
+              40,
+              10,
+              1.25
+            ]
+          },
+          "text": {
+            "kind": "label",
+            "value": "Hiroji Farzand",
+            "sub": "according to later accounts"
+          },
+          "note": "Hiroji lies down; the quilt is drawn up; one arm stays out, a gold bracelet glints; a boy massages his feet in a slow rhythm.",
+          "continuity": "Bracelet on right wrist."
+        },
+        {
+          "id": "s13c",
+          "at": "And inside the baskets",
+          "comp": "BasketCutaway",
+          "props": {},
+          "camera": {
+            "from": [
+              0,
+              0,
+              1.0
+            ],
+            "to": [
+              0,
+              0,
+              1.1
+            ]
+          },
+          "note": "Cutaway: inside a large basket, Shivaji crouches beneath a layer of sweets; a second basket holds Sambhaji.",
+          "continuity": "Reconstruction, labelled as such."
+        },
+        {
+          "id": "s13d",
+          "at": "The porters carried them",
+          "comp": "GateNight",
+          "props": {},
+          "camera": {
+            "from": [
+              -120,
+              0,
+              1.1
+            ],
+            "to": [
+              160,
+              0,
+              1.0
+            ]
+          },
+          "note": "Torchlit gate: baskets pass between guards; one guard glances, then looks away; the procession disappears into the rain and darkness.",
+          "continuity": "Movement left-to-right, out of the city."
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "title": "Discovery",
+      "chapter": null,
+      "narration": "How long did the trick hold? The chronicles say the guards were fooled for most of the next day, until the house fell strangely quiet and they found the bed empty. The contemporary letters suggest it was quicker. One, written in Agra and dated the eighteenth of August, says simply, \"This morning Shivaji was found to have fled.\"",
+      "claims": [
+        "C34",
+        "C04"
+      ],
+      "music": "suspense_hold",
+      "ambience": "morning_city",
+      "shots": [
+        {
+          "id": "s14a",
+          "at": null,
+          "comp": "SplitCompare",
+          "props": {
+            "left": "Later chronicles: fooled for most of a day",
+            "right": "Contemporary letters: found that morning"
+          },
+          "camera": {
+            "from": [
+              0,
+              0,
+              1.0
+            ],
+            "to": [
+              0,
+              0,
+              1.04
+            ]
+          },
+          "note": "Split frame: left, a sun arcs across the sky over the house while guards peek in at the sleeping figure; right, a guard bursts in at dawn.",
+          "continuity": "Left = tradition (sepia), right = letters (cool)."
+        },
+        {
+          "id": "s14b",
+          "at": "One, written in Agra",
+          "comp": "EmptyBed",
+          "props": {
+            "time": "morning",
+            "guardReacts": false
+          },
+          "camera": {
+            "from": [
+              0,
+              0,
+              1.0
+            ],
+            "to": [
+              0,
+              -10,
+              1.12
+            ]
+          },
+          "text": {
+            "kind": "quote",
+            "value": "“This morning Shivaji was found to have fled.”",
+            "attribution": "Letter from Agra, 18 August 1666 (tr. J. Sarkar)"
+          },
+          "note": "The quilt lies flat on an empty bed; dust drifts in the light.",
+          "continuity": "Same bed as s01d."
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "title": "Pursuit",
+      "chapter": "The hunt",
+      "narration": "The city erupted. Ram Singh's own staff wrote home urging that every pass and river crossing be watched, and that anyone dressed as a yogi or a sannyasi be questioned and searched. Fulad Khan, whose men had ringed the house, told the emperor the escape had happened on Ram Singh's side of the watch. Ram Singh's men were seized and threatened until they said their master had helped. Some later took it back, saying they had spoken out of fear. The emperor, angry, cut Ram Singh's rank and took away his lands.",
+      "claims": [
+        "C35",
+        "C36"
+      ],
+      "music": "chase",
+      "ambience": "hooves",
+      "shots": [
+        {
+          "id": "s15a",
+          "at": null,
+          "comp": "MapScene",
+          "props": {
+            "preset": "manhunt"
+          },
+          "camera": {
+            "from": [
+              0,
+              0,
+              1.25
+            ],
+            "to": [
+              0,
+              0,
+              1.0
+            ]
+          },
+          "text": {
+            "kind": "quote",
+            "value": "“…watch should be kept at all the paths and ghats…”",
+            "attribution": "Letter from Agra, 18 August 1666"
+          },
+          "note": "Rider icons fan out from Agra; river-crossing markers light up one after another.",
+          "continuity": "Map style as before."
+        },
+        {
+          "id": "s15b",
+          "at": "anyone dressed as a yogi",
+          "comp": "Checkpoint",
+          "props": {},
+          "camera": {
+            "from": [
+              0,
+              0,
+              1.0
+            ],
+            "to": [
+              30,
+              0,
+              1.08
+            ]
+          },
+          "note": "At a river ghat, soldiers stop an ash-smeared ascetic (not Shivaji) and search his bundle.",
+          "continuity": "Ascetic: grey ash, orange loincloth, staff."
+        },
+        {
+          "id": "s15c",
+          "at": "Fulad Khan, whose men",
+          "comp": "CourtHall",
+          "props": {
+            "beat": "accuse"
+          },
+          "camera": {
+            "from": [
+              0,
+              0,
+              1.0
+            ],
+            "to": [
+              0,
+              -20,
+              1.12
+            ]
+          },
+          "note": "Fulad Khan bows before the throne and points toward Ram Singh, who stands stiffly.",
+          "continuity": "Same hall."
+        },
+        {
+          "id": "s15d",
+          "at": "Ram Singh's men were seized",
+          "comp": "Interrogation",
+          "props": {},
+          "camera": {
+            "from": [
+              0,
+              0,
+              1.0
+            ],
+            "to": [
+              0,
+              0,
+              1.06
+            ]
+          },
+          "note": "Silhouettes of Ram Singh's men held by soldiers; a scroll of 'confession' is written, then later torn in two. No violence shown.",
+          "continuity": "Silhouette treatment."
+        },
+        {
+          "id": "s15e",
+          "at": "The emperor, angry",
+          "comp": "RankLoss",
+          "props": {},
+          "camera": {
+            "from": [
+              0,
+              0,
+              1.0
+            ],
+            "to": [
+              0,
+              0,
+              1.08
+            ]
+          },
+          "text": {
+            "kind": "caption",
+            "value": "Ram Singh: rank reduced, lands taken"
+          },
+          "note": "Ram Singh's rank insignia cracks and falls; parcels of land on a small map fade out.",
+          "continuity": "Crimson / gold insignia."
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "title": "Evidence",
+      "chapter": "Was it really the baskets?",
+      "narration": "So, was it really the baskets? About two weeks after the escape, one of Ram Singh's officers wrote that the trick had become known. Shivaji had slipped out \"by crouching down in the baskets.\" Later Mughal and Maratha histories tell the same story. But the Mughal court suspected inside help as well. And a European writer of the period, Niccolao Manucci, claimed that Ram Singh himself had quietly arranged it. With frightened guards and partisan witnesses, we may never know exactly who looked the other way.",
+      "claims": [
+        "C37",
+        "C38"
+      ],
+      "music": "investigation",
+      "ambience": "archive_room",
+      "shots": [
+        {
+          "id": "s16a",
+          "at": null,
+          "comp": "EvidenceBoard",
+          "props": {
+            "beat": "intro"
+          },
+          "camera": {
+            "from": [
+              0,
+              0,
+              1.2
+            ],
+            "to": [
+              0,
+              0,
+              1.0
+            ]
+          },
+          "note": "A board with a basket sketch in the centre; source cards pin on around it.",
+          "continuity": "Board: dark wood, parchment cards, red thread."
+        },
+        {
+          "id": "s16b",
+          "at": "About two weeks after",
+          "comp": "EvidenceBoard",
+          "props": {
+            "beat": "letter"
+          },
+          "camera": {
+            "from": [
+              0,
+              0,
+              1.0
+            ],
+            "to": [
+              -120,
+              -40,
+              1.5
+            ]
+          },
+          "text": {
+            "kind": "quote",
+            "value": "“…by crouching down in the baskets.”",
+            "attribution": "Letter from Agra, 3 September 1666 (tr. J. Sarkar)"
+          },
+          "note": "Camera pushes into the 3 Sept 1666 letter card; red thread links it to the basket.",
+          "continuity": "Letter card top-left."
+        },
+        {
+          "id": "s16c",
+          "at": "Later Mughal and Maratha",
+          "comp": "EvidenceBoard",
+          "props": {
+            "beat": "histories"
+          },
+          "camera": {
+            "from": [
+              -120,
+              -40,
+              1.5
+            ],
+            "to": [
+              0,
+              0,
+              1.1
+            ]
+          },
+          "note": "Cards for 'Maasir-i-Alamgiri' and 'Sabhasad Bakhar, 1694' get threads to the basket.",
+          "continuity": "Same board."
+        },
+        {
+          "id": "s16d",
+          "at": "But the Mughal court suspected",
+          "comp": "EvidenceBoard",
+          "props": {
+            "beat": "insidehelp"
+          },
+          "camera": {
+            "from": [
+              0,
+              0,
+              1.1
+            ],
+            "to": [
+              120,
+              30,
+              1.45
+            ]
+          },
+          "text": {
+            "kind": "label",
+            "value": "Niccolao Manucci",
+            "sub": "Venetian writer in Mughal India"
+          },
+          "note": "A card with Ram Singh's portrait and a question mark; a card for Manucci links to it.",
+          "continuity": "Ram Singh card right."
+        },
+        {
+          "id": "s16e",
+          "at": "we may never know",
+          "comp": "EvidenceBoard",
+          "props": {
+            "beat": "unknown"
+          },
+          "camera": {
+            "from": [
+              120,
+              30,
+              1.45
+            ],
+            "to": [
+              0,
+              0,
+              1.0
+            ]
+          },
+          "note": "Pull back; the lamp dims; the question mark remains.",
+          "continuity": "Same board."
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "title": "The road home",
+      "chapter": "Legend vs. letters: the road home",
+      "narration": "What happened next grew into legend. For generations, Shivaji's flight was told as a long pilgrimage, through Benares, Gaya, even Puri, full of narrow escapes in disguise. The chronicles say he smeared himself with ash and travelled as a wandering ascetic. Then, in nineteen thirty-nine, letters were found in the Jaipur archives. Spy reports quoted in them said Shivaji reached his fort just twenty-five days after slipping out of Agra. The historian Jadunath Sarkar, who had once told the long version himself, now called those pilgrimage stories fiction. Twenty-five days, over more than a thousand kilometres, meant hard, fast travel on hidden paths. It cost him. He lay ill for weeks after he got home.",
+      "claims": [
+        "C39",
+        "C40"
+      ],
+      "music": "journey_dark",
+      "ambience": "night_wind",
+      "shots": [
+        {
+          "id": "s17a",
+          "at": null,
+          "comp": "MapScene",
+          "props": {
+            "preset": "legendLoop"
+          },
+          "camera": {
+            "from": [
+              0,
+              0,
+              1.0
+            ],
+            "to": [
+              40,
+              0,
+              1.08
+            ]
+          },
+          "text": {
+            "kind": "caption",
+            "value": "The legend (later accounts)"
+          },
+          "note": "A dotted sepia route loops east from Agra through Mathura, Allahabad, Benares, Gaya, Puri, then back west to Rajgad.",
+          "continuity": "Legend route: dotted sepia."
+        },
+        {
+          "id": "s17b",
+          "at": "The chronicles say he smeared",
+          "comp": "AsceticWalk",
+          "props": {},
+          "camera": {
+            "from": [
+              -100,
+              0,
+              1.0
+            ],
+            "to": [
+              100,
+              0,
+              1.05
+            ]
+          },
+          "note": "Night road: Shivaji, ash-smeared, with a staff and two companions, walks past a sleeping village; fireflies.",
+          "continuity": "Moves right-to-left (southbound). Clean-shaven and ash-grey per tradition (Sarkar 1920, p. 170), carrying a staff."
+        },
+        {
+          "id": "s17c",
+          "at": "Then, in nineteen thirty-nine",
+          "comp": "ArchiveRoom",
+          "props": {},
+          "camera": {
+            "from": [
+              0,
+              0,
+              1.0
+            ],
+            "to": [
+              0,
+              -20,
+              1.15
+            ]
+          },
+          "text": {
+            "kind": "slate",
+            "value": "JAIPUR ARCHIVES · 1939"
+          },
+          "note": "Dusty shelves; a cloth bundle is untied revealing folded letters; dust drifts in a beam of light.",
+          "continuity": "Same letter design as s02b."
+        },
+        {
+          "id": "s17d",
+          "at": "twenty-five days after",
+          "comp": "MapScene",
+          "props": {
+            "preset": "fastReturn"
+          },
+          "camera": {
+            "from": [
+              0,
+              0,
+              1.1
+            ],
+            "to": [
+              0,
+              0,
+              1.0
+            ]
+          },
+          "text": {
+            "kind": "caption",
+            "value": "25 days · c. 12 September 1666 (spy reports)"
+          },
+          "note": "The legend loop fades; a solid saffron line runs fast from Agra south-west to Rajgad as a day counter climbs to 25.",
+          "continuity": "Fact route: solid saffron."
+        },
+        {
+          "id": "s17e",
+          "at": "The historian Jadunath Sarkar",
+          "comp": "Portrait",
+          "props": {
+            "character": "historian",
+            "setting": "study"
+          },
+          "camera": {
+            "from": [
+              0,
+              0,
+              1.0
+            ],
+            "to": [
+              0,
+              -10,
+              1.08
+            ]
+          },
+          "text": {
+            "kind": "label",
+            "value": "Jadunath Sarkar (1870–1958)",
+            "sub": "historian (illustrative figure, not a likeness)"
+          },
+          "note": "Stylised generic scholar at a desk crossing out a page of an old draft (not a likeness).",
+          "continuity": "Generic figure; not a portrait likeness."
+        },
+        {
+          "id": "s17f",
+          "at": "It cost him",
+          "comp": "DeccanForts",
+          "props": {
+            "time": "dawn",
+            "hero": "arrival"
+          },
+          "camera": {
+            "from": [
+              0,
+              0,
+              1.15
+            ],
+            "to": [
+              0,
+              0,
+              1.0
+            ]
+          },
+          "note": "Rajgad at dawn: a weary rider reaches the gate and is helped down; inside, a lamp by a sickbed.",
+          "continuity": "Same fort art as s03a."
+        }
+      ]
+    },
+    {
+      "id": "s18",
+      "title": "Sambhaji",
+      "chapter": null,
+      "narration": "And Sambhaji? Maratha accounts say the boy was left behind in Mathura, with a trusted Brahmin family. The spy reports that reached the emperor even said that Shivaji's son had died on the road. That rumour may have protected him. Months later, Sambhaji travelled home in disguise, passed off as a young relative of the family sheltering him.",
+      "claims": [
+        "C41"
+      ],
+      "music": "tender",
+      "ambience": "river_dawn",
+      "shots": [
+        {
+          "id": "s18a",
+          "at": null,
+          "comp": "MathuraGhat",
+          "props": {},
+          "camera": {
+            "from": [
+              0,
+              0,
+              1.0
+            ],
+            "to": [
+              -40,
+              0,
+              1.1
+            ]
+          },
+          "text": {
+            "kind": "label",
+            "value": "Mathura",
+            "sub": "according to Maratha accounts"
+          },
+          "note": "Riverside steps at dawn; a Brahmin elder takes the boy's hand; temple spires behind.",
+          "continuity": "Sambhaji: pale yellow jama, small saffron turban."
+        },
+        {
+          "id": "s18b",
+          "at": "The spy reports",
+          "comp": "CourtIntrigue",
+          "props": {
+            "mood": "rumour"
+          },
+          "camera": {
+            "from": [
+              0,
+              0,
+              1.0
+            ],
+            "to": [
+              0,
+              0,
+              1.08
+            ]
+          },
+          "text": {
+            "kind": "caption",
+            "value": "Rumour reaching the court: “his son … had died on the way”"
+          },
+          "note": "A spy whispers to an official; a small lamp flickers.",
+          "continuity": "Palace set."
+        },
+        {
+          "id": "s18c",
+          "at": "Months later",
+          "comp": "Procession",
+          "props": {
+            "kind": "family"
+          },
+          "camera": {
+            "from": [
+              100,
+              0,
+              1.0
+            ],
+            "to": [
+              -100,
+              0,
+              1.0
+            ]
+          },
+          "note": "A Brahmin family on the road south (right-to-left) with a bullock cart; Sambhaji in plain dhoti and sacred thread walks among them past a calm checkpoint.",
+          "continuity": "Southbound = right-to-left."
+        }
+      ]
+    },
+    {
+      "id": "s19",
+      "title": "Aftermath",
+      "chapter": "What the escape changed",
+      "narration": "The escape changed the course of the Deccan wars. Within four years, Shivaji was retaking the forts he had surrendered at Purandar. In sixteen seventy-four, he was crowned Chhatrapati at Raigad. And in a collection of sayings attributed to Aurangzeb, the emperor laments that one moment of carelessness, the flight of Shivaji, dragged him into campaigns that lasted to the end of his days.",
+      "claims": [
+        "C42",
+        "C43",
+        "C44"
+      ],
+      "music": "triumph_restrained",
+      "ambience": "wind_hills",
+      "shots": [
+        {
+          "id": "s19a",
+          "at": null,
+          "comp": "FortsGrid",
+          "props": {
+            "ceded": 23,
+            "kept": 12,
+            "reverse": true
+          },
+          "camera": {
+            "from": [
+              0,
+              0,
+              1.0
+            ],
+            "to": [
+              0,
+              0,
+              1.0
+            ]
+          },
+          "text": {
+            "kind": "caption",
+            "value": "1670: forts retaken, including Kondana and Purandar"
+          },
+          "note": "The 23 green fort icons flip back to saffron one by one.",
+          "continuity": "Same grid as s04b."
+        },
+        {
+          "id": "s19b",
+          "at": "In sixteen seventy-four",
+          "comp": "Coronation",
+          "props": {},
+          "camera": {
+            "from": [
+              0,
+              20,
+              1.15
+            ],
+            "to": [
+              0,
+              0,
+              1.0
+            ]
+          },
+          "text": {
+            "kind": "slate",
+            "value": "RAIGAD · 6 JUNE 1674"
+          },
+          "note": "Shivaji seated on a throne under a canopy; petals drift; courtiers bow.",
+          "continuity": "Raigad (not Rajgad): label clearly."
+        },
+        {
+          "id": "s19c",
+          "at": "a collection of sayings",
+          "comp": "Portrait",
+          "props": {
+            "character": "aurangzeb_old",
+            "setting": "camp"
+          },
+          "camera": {
+            "from": [
+              0,
+              0,
+              1.0
+            ],
+            "to": [
+              0,
+              -10,
+              1.08
+            ]
+          },
+          "text": {
+            "kind": "quote",
+            "value": "“…the flight of the wretch Shiva was due to carelessness…”",
+            "attribution": "Attributed to Aurangzeb, Anecdotes of Aurangzib (tr. J. Sarkar)"
+          },
+          "note": "An aged Aurangzeb with a white beard in a campaign tent, writing.",
+          "continuity": "Aurangzeb aged, white beard."
+        }
+      ]
+    },
+    {
+      "id": "s20",
+      "title": "Bridge",
+      "chapter": "Ram Singh's next war",
+      "narration": "And Ram Singh? The prince who paid for the escape with his rank was later sent east, to lead a Mughal army into Assam. There, in sixteen seventy-one, on the Brahmaputra at Saraighat, he faced an Ahom general named Lachit Borphukan. That is a story for another episode.",
+      "claims": [
+        "C45"
+      ],
+      "music": "outro",
+      "ambience": "river_dusk",
+      "shots": [
+        {
+          "id": "s20a",
+          "at": null,
+          "comp": "MapScene",
+          "props": {
+            "preset": "assam"
+          },
+          "camera": {
+            "from": [
+              0,
+              0,
+              1.0
+            ],
+            "to": [
+              120,
+              -20,
+              1.25
+            ]
+          },
+          "note": "A line runs east from Agra to Assam along the Ganges plain to the Brahmaputra.",
+          "continuity": "East = right."
+        },
+        {
+          "id": "s20b",
+          "at": "There, in sixteen seventy-one",
+          "comp": "Brahmaputra",
+          "props": {},
+          "camera": {
+            "from": [
+              0,
+              0,
+              1.0
+            ],
+            "to": [
+              0,
+              -10,
+              1.1
+            ]
+          },
+          "text": {
+            "kind": "label",
+            "value": "Lachit Borphukan",
+            "sub": "Saraighat, 1671"
+          },
+          "note": "Dusk on a wide river; boats with lanterns; a silhouetted commander at a prow.",
+          "continuity": "Silhouette only."
+        },
+        {
+          "id": "s20c",
+          "at": "@end",
+          "comp": "EndScreen",
+          "props": {},
+          "camera": {
+            "from": [
+              0,
+              0,
+              1.0
+            ],
+            "to": [
+              0,
+              0,
+              1.04
+            ]
+          },
+          "note": "Calm dusk over the Agra skyline; safe zones left/right for YouTube end-screen elements; small text: 'Sources & notes in the description'.",
+          "continuity": "Keep the central band clear."
+        }
+      ]
+    }
+  ]
+}

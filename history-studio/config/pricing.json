@@ -1,0 +1,12 @@
+{
+  "usdInr": 95.075677,
+  "usdInrSource": "AI Credits public model catalog exchange_rate field, read 2026-10-18 (includes their buffer)",
+  "models": {
+    "openai/gpt-4o-mini-tts": { "unit": "1k_chars", "usdPerUnit": 0.0167, "basis": "ESTIMATED: not in AI Credits catalog; OpenAI list ~$0.015 per audio minute at ~900 chars/min. Check dashboard for the actual charge." },
+    "openai/tts-1": { "unit": "1k_chars", "usdPerUnit": 0.015, "basis": "AI Credits docs/audio billing table" },
+    "openai/tts-1-hd": { "unit": "1k_chars", "usdPerUnit": 0.03, "basis": "AI Credits docs/audio billing table" },
+    "openai/whisper-1": { "unit": "audio_min", "usdPerUnit": 0.006, "basis": "AI Credits docs/audio billing table" },
+    "openai/gpt-4o-mini": { "unit": "1k_tokens_blended", "usdPerUnit": 0.0006, "basis": "AI Credits catalog: $0.15/1M input, $0.60/1M output (upper bound used)" },
+    "kokoro-82m-local": { "unit": "1k_chars", "usdPerUnit": 0, "basis": "local CPU, no API cost" }
+  }
+}

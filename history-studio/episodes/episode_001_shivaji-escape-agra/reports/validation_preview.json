@@ -1,0 +1,143 @@
+{
+  "file": "renders/episode_001_shivaji_escape_from_agra_preview.mp4",
+  "measuredAt": "2026-10-18T08:58:30.002Z",
+  "ok": true,
+  "checks": [
+    {
+      "name": "Container",
+      "ok": true,
+      "value": "mov,mp4,m4a,3gp,3g2,mj2",
+      "expect": "mp4"
+    },
+    {
+      "name": "Video codec",
+      "ok": true,
+      "value": "h264 High",
+      "expect": "h264"
+    },
+    {
+      "name": "Resolution",
+      "ok": true,
+      "value": "1920x1080",
+      "expect": "1920x1080"
+    },
+    {
+      "name": "Pixel format",
+      "ok": true,
+      "value": "yuv420p",
+      "expect": "yuv420p"
+    },
+    {
+      "name": "Frame rate",
+      "ok": true,
+      "value": "30/1 (avg 30/1)",
+      "expect": "30/1 constant"
+    },
+    {
+      "name": "Scan",
+      "ok": true,
+      "value": "progressive",
+      "expect": "progressive"
+    },
+    {
+      "name": "Colour",
+      "ok": true,
+      "value": "bt709/bt709/bt709",
+      "expect": "bt709 (SDR)"
+    },
+    {
+      "name": "Audio codec",
+      "ok": true,
+      "value": "aac LC",
+      "expect": "AAC-LC"
+    },
+    {
+      "name": "Audio sample rate",
+      "ok": true,
+      "value": "48000",
+      "expect": "48000 Hz"
+    },
+    {
+      "name": "Audio channels",
+      "ok": true,
+      "value": "2",
+      "expect": "2 (stereo)"
+    },
+    {
+      "name": "Video bitrate",
+      "ok": true,
+      "value": "3.00 Mb/s",
+      "expect": "info (CRF 18)"
+    },
+    {
+      "name": "Preview duration",
+      "ok": true,
+      "value": "25.00 s",
+      "expect": "20–30 s"
+    },
+    {
+      "name": "Duration matches timeline",
+      "ok": true,
+      "value": "25.00 vs 534.77",
+      "expect": "±0.2 s"
+    },
+    {
+      "name": "File size",
+      "ok": true,
+      "value": "10.4 MB",
+      "expect": "meaningful size"
+    },
+    {
+      "name": "Fast start (moov before mdat)",
+      "ok": true,
+      "value": "yes",
+      "expect": "yes"
+    },
+    {
+      "name": "Full decode errors",
+      "ok": true,
+      "value": "none",
+      "expect": "none"
+    },
+    {
+      "name": "Black segments ≥0.5 s",
+      "ok": true,
+      "value": "none",
+      "expect": "none"
+    },
+    {
+      "name": "Frozen video ≥4 s (outside end screen)",
+      "ok": true,
+      "value": "none",
+      "expect": "none"
+    },
+    {
+      "name": "Audio silence ≥2.5 s below −50 dB",
+      "ok": true,
+      "value": "none",
+      "expect": "none"
+    },
+    {
+      "name": "Sample peak (no clipping)",
+      "ok": true,
+      "value": "-1.486276 dBFS",
+      "expect": "< −0.5 dBFS"
+    },
+    {
+      "name": "Integrated loudness",
+      "ok": true,
+      "value": "-14.8 LUFS",
+      "expect": "−16 to −14 LUFS (production target)"
+    },
+    {
+      "name": "True peak",
+      "ok": true,
+      "value": "-1.5 dBTP",
+      "expect": "≤ −1 dBTP"
+    }
+  ],
+  "blacks": [],
+  "freezes": [],
+  "silences": [],
+  "asr": null
+}

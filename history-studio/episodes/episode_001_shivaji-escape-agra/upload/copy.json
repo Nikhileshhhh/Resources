@@ -1,0 +1,46 @@
+{
+  "titles": {
+    "recommended": "Shivaji's Escape from Agra: How He Vanished from Aurangzeb's Guards (1666)",
+    "alternatives": [
+      "The Basket Escape: What 1666 Letters Reveal About Shivaji's Flight from Agra",
+      "Trapped by Aurangzeb: Shivaji's Real Escape from Agra, Legend vs Letters"
+    ]
+  },
+  "descriptionOpening": "In 1666, Shivaji walked into Aurangzeb's court as a guest and became a prisoner. Three months later, guarded by what one letter calls a thousand men, he and his nine-year-old son vanished. The famous story says baskets of sweets. Letters written in Agra that summer let us check the legend against the record.",
+  "descriptionSummary": "This animated history explains why Shivaji went to Agra after the Treaty of Purandar (1665), what happened at the audience of 12 May 1666, how his visit turned into captivity, and how the escape in the third week of August 1666 worked, according to contemporary Rajasthani letters, the Mughal court history Maasir-i-Alamgiri, the Maratha chronicle Sabhasad Bakhar and the memoir of Niccolao Manucci. We also look at what later legend added, what the letters found in 1939 changed, and what the escape meant for the Deccan.",
+  "notes": [
+    "Sources disagree on the exact date: a letter from Agra dated 18 August 1666 says Shivaji was found gone 'this morning'; Maasir-i-Alamgiri gives Sunday 19 August.",
+    "The decoy (Hiroji Farzand) and Sambhaji's stay in Mathura come from later Maratha accounts and are presented as such.",
+    "Dialogue quoted on screen comes from English translations of contemporary letters (J. Sarkar); no dialogue was invented.",
+    "Animation is an illustrated reconstruction, not a likeness of any historical person."
+  ],
+  "sources": [
+    { "label": "J. Sarkar, House of Shivaji (3rd ed., 1955) — translated Rajasthani letters from Agra, 1666", "url": "https://archive.org/details/house-of-shivaji-jadunath-sarkar" },
+    { "label": "J. Sarkar, Shivaji and His Times (1920), ch. V–VI", "url": "https://archive.org/details/cu31924024056750" },
+    { "label": "Sabhasad Bakhar, trans. S. N. Sen, Siva Chhatrapati (1920)", "url": "https://archive.org/details/sivachhatrapatib00sensuoft" },
+    { "label": "Saqi Must'ad Khan, Maasir-i-Alamgiri, trans. J. Sarkar (1947)", "url": "https://archive.org/details/maasir-i-alamgiri-ed.-jadunath-sarkar" },
+    { "label": "N. Manucci, Storia do Mogor, trans. W. Irvine, vol. 2 (1907)", "url": "https://archive.org/details/in.ernet.dli.2015.21899" }
+  ],
+  "credits": [
+    "Script, research, animation and sound design: original work for this channel.",
+    "Narration: AI-generated voice (OpenAI gpt-4o-mini-tts, voice 'cedar', via AI Credits). The voice is synthetic, not a human narrator.",
+    "Music, ambience and sound effects: synthesized procedurally in code for this video (no third-party audio).",
+    "Map data: Natural Earth (public domain).",
+    "Fonts: Cinzel and Source Sans 3 (SIL Open Font License).",
+    "Animation rendered with Remotion."
+  ],
+  "hashtags": ["#Shivaji", "#IndianHistory", "#History"],
+  "tags": ["Shivaji", "Shivaji Maharaj", "Chhatrapati Shivaji", "Shivaji escape from Agra", "Agra escape 1666", "Shivaji basket escape", "Aurangzeb", "Aurangzib", "Sambhaji", "Ram Singh", "Maratha history", "Mughal history", "Indian history", "Sivaji", "Shivajee", "Jadunath Sarkar", "animated history", "history documentary"],
+  "playlist": {
+    "name": "Great Escapes of History",
+    "description": "Real escapes that changed what happened next — told with suspense and checked against the sources, about nine minutes each."
+  },
+  "pinnedComment": "The letters from Agra say the trick 'became known' two weeks later — but Mughal officials still suspected inside help. Which account do you find most convincing, and why? All sources are linked in the description; if you spot an error, reply with a source and we'll add a correction.",
+  "publish": { "date": "2026-10-22", "time": "18:30", "timezone": "Asia/Kolkata (UTC+05:30)", "uploadPrivatelyBy": "2026-10-21 18:30 IST (24 h earlier, so HD processing and checks finish)" },
+  "recommendedThumbnail": "A",
+  "thumbnailNotes": {
+    "A": "THE BASKET ESCAPE — eyes peering out of a sweets basket at a torchlit gate. Matches the title's promise directly.",
+    "B": "HE TURNED HIS BACK — Shivaji walking away from Aurangzeb's throne. Emotional hook from the 12 May audience.",
+    "C": "VANISHED — guard discovering the empty bed. Mystery framing; works with the 'How He Vanished' title."
+  }
+}
