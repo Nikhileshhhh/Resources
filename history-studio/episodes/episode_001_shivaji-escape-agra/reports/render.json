@@ -1,0 +1,10 @@
+{
+  "output": "renders/video_only.mp4",
+  "frameRange": [
+    0,
+    17694
+  ],
+  "seconds": 7267.009,
+  "concurrency": 4,
+  "at": "2026-10-18T11:32:16.058Z"
+}
