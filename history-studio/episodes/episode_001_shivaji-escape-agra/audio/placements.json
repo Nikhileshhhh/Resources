@@ -1,105 +1,105 @@
 {
-  "totalSeconds": 534.7666666666667,
+  "totalSeconds": 589.8333333333334,
   "placements": [
     {
       "id": "s01",
       "start": 0.6,
-      "file": "audio/chunks/s01_b5f1762573a8106c.wav"
+      "file": "audio/paced/s01.wav"
     },
     {
       "id": "s02",
-      "start": 21.200000000000003,
-      "file": "audio/chunks/s02_260e749129f1894f.wav"
+      "start": 24.509000000000004,
+      "file": "audio/paced/s02.wav"
     },
     {
       "id": "s03",
-      "start": 34.50000000000001,
-      "file": "audio/chunks/s03_728e6003d60871a3.wav"
+      "start": 38.642,
+      "file": "audio/paced/s03.wav"
     },
     {
       "id": "s04",
-      "start": 52.15000000000001,
-      "file": "audio/chunks/s04_773c5e2b5e4abe9a.wav"
+      "start": 57.66400000000001,
+      "file": "audio/paced/s04.wav"
     },
     {
       "id": "s05",
-      "start": 80.95,
-      "file": "audio/chunks/s05_87c4c6a4b6b83cae.wav"
+      "start": 90.01,
+      "file": "audio/paced/s05.wav"
     },
     {
       "id": "s06",
-      "start": 103.15,
-      "file": "audio/chunks/s06_4ce365fe1d654c67.wav"
+      "start": 115.953,
+      "file": "audio/paced/s06.wav"
     },
     {
       "id": "s07",
-      "start": 132.3,
-      "file": "audio/chunks/s07_ad8250ec0fc6d931.wav"
+      "start": 147.81199999999998,
+      "file": "audio/paced/s07.wav"
     },
     {
       "id": "s08",
-      "start": 156.3,
-      "file": "audio/chunks/s08_0d0925d42370f067.wav"
+      "start": 174.67299999999997,
+      "file": "audio/paced/s08.wav"
     },
     {
       "id": "s09",
-      "start": 184.95000000000002,
-      "file": "audio/chunks/s09_9241d26e7897f0f5.wav"
+      "start": 207.23299999999998,
+      "file": "audio/paced/s09.wav"
     },
     {
       "id": "s10",
-      "start": 211.05,
-      "file": "audio/chunks/s10_59ccaf6b84c134bb.wav"
+      "start": 235.64899999999997,
+      "file": "audio/paced/s10.wav"
     },
     {
       "id": "s11",
-      "start": 233.55,
-      "file": "audio/chunks/s11_314d5b742701c41f.wav"
+      "start": 260.067,
+      "file": "audio/paced/s11.wav"
     },
     {
       "id": "s12",
-      "start": 266.6,
-      "file": "audio/chunks/s12_5bd65817e9f5a4fc.wav"
+      "start": 296.846,
+      "file": "audio/paced/s12.wav"
     },
     {
       "id": "s13",
-      "start": 287.65000000000003,
-      "file": "audio/chunks/s13_44ebff4043f48b65.wav"
+      "start": 319.73100000000005,
+      "file": "audio/paced/s13.wav"
     },
     {
       "id": "s14",
-      "start": 319.95000000000005,
-      "file": "audio/chunks/s14_0b39e5acdd1ca510.wav"
+      "start": 354.8660000000001,
+      "file": "audio/paced/s14.wav"
     },
     {
       "id": "s15",
-      "start": 339.70000000000005,
-      "file": "audio/chunks/s15_dcbfd323003cfc42.wav"
+      "start": 376.1630000000001,
+      "file": "audio/paced/s15.wav"
     },
     {
       "id": "s16",
-      "start": 370.45000000000005,
-      "file": "audio/chunks/s16_d02a227cc0966191.wav"
+      "start": 409.6680000000001,
+      "file": "audio/paced/s16.wav"
     },
     {
       "id": "s17",
-      "start": 399.00000000000006,
-      "file": "audio/chunks/s17_1a06fa2dbf36846f.wav"
+      "start": 441.17400000000015,
+      "file": "audio/paced/s17.wav"
     },
     {
       "id": "s18",
-      "start": 444.2000000000001,
-      "file": "audio/chunks/s18_528a409e44291794.wav"
+      "start": 492.49800000000016,
+      "file": "audio/paced/s18.wav"
     },
     {
       "id": "s19",
-      "start": 467.40000000000015,
-      "file": "audio/chunks/s19_8b25add45f824d2b.wav"
+      "start": 517.5780000000002,
+      "file": "audio/paced/s19.wav"
     },
     {
       "id": "s20",
-      "start": 495.70000000000016,
-      "file": "audio/chunks/s20_f1ce9caee0ba2717.wav"
+      "start": 548.3440000000003,
+      "file": "audio/paced/s20.wav"
     }
   ]
 }

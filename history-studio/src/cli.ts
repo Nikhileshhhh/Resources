@@ -2,7 +2,7 @@
 /**
  * history-studio CLI.
  *   npm run studio -- <command> --episode <dir> [options]
- * Commands: new | validate | status | pron-test | tts | align | timeline | audio | preview | render | mux | verify | thumbs | package | run | check-secrets
+ * Commands: new | validate | status | pron-test | tts | pace | asr | align | timeline | audio | preview | render | mux | verify | thumbs | package | run | check-secrets
  */
 import path from "node:path";
 import { readdirSync } from "node:fs";
@@ -81,6 +81,11 @@ async function main() {
       const dir = episodeDir();
       return ttsStage(loadEpisode(dir).ep, dir, opt("scenes")?.split(","), flag("force"));
     }
+    case "pace": {
+      const { paceStage } = await import("./stages/pace.js");
+      const dir = episodeDir();
+      return paceStage(loadEpisode(dir).ep, dir);
+    }
     case "asr": {
       const { asrStage } = await import("./stages/asr.js");
       const dir = episodeDir();
@@ -142,6 +147,8 @@ async function main() {
       if (process.exitCode) return;
       const steps: [string, () => Promise<unknown>][] = [
         ["tts", async () => (await import("./stages/tts.js")).ttsStage(ep, dir)],
+        ["align", async () => (await import("./stages/align.js")).alignStage(ep, dir)],
+        ["pace", async () => (await import("./stages/pace.js")).paceStage(ep, dir)],
         ["align", async () => (await import("./stages/align.js")).alignStage(ep, dir)],
         ["timeline", async () => (await import("./stages/timeline.js")).timelineStage(ep, dir)],
         ["audio", async () => (await import("./stages/audio.js")).audioStage(dir)],

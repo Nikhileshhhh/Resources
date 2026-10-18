@@ -12,7 +12,7 @@
   },
   "timing": {
     "leadInSec": 0.6,
-    "sceneGapSec": 0.85,
+    "sceneGapSec": 0.6,
     "tailAfterNarrationSec": 2.0,
     "endScreenSec": 20
   },
@@ -20,7 +20,14 @@
     "engine": "openai-compatible",
     "model": "openai/gpt-4o-mini-tts",
     "voice": "cedar",
-    "format": "flac"
+    "format": "flac",
+    "pacing": {
+      "tempo": 0.92,
+      "sentencePause": 0.7,
+      "commaPause": 0.3,
+      "beatPause": 1.1,
+      "maxRuntimeSec": 590
+    }
   },
   "disclosure": "Narration: AI-generated voice (OpenAI gpt-4o-mini-tts, voice 'cedar')",
   "scenes": [

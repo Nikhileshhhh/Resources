@@ -44,7 +44,8 @@ Recurring locations: Agra Fort (red walls, cusped gate, marble domes, Yamuna in 
 
 ## Voice
 - Narrator: **gpt-4o-mini-tts, voice `cedar`** via AI Credits. An adult male voice with clear, conversational delivery. Chosen by A/B listening on 2026-10-18.
-- AI Credits currently ignores the `instructions` (style prompt) field, so delivery is shaped by punctuation and sentence length.
+- AI Credits currently ignores the `instructions` (style prompt) field, so delivery is shaped by punctuation, sentence length and **local re-pacing** (`pace` stage). Episode 1 settings: tempo 0.92 (8% slower, pitch preserved via rubberband), at least 0.7 s after sentences, 0.3 s after commas, 1.1 s before short beat sentences; pause scale auto-fitted (0.87) to keep the programme under 590 s. Chosen by you after hearing the first preview ("reads like a paragraph").
+- For a genuinely directed storytelling tone (intonation, not just pace), test a model that accepts style prompts once the wallet is topped up (e.g. `openai/gpt-audio-mini` via chat completions with a narrator system prompt; untested so far).
 - Pronunciations: `episodes/*/pronunciations.json`, which gives TTS respellings plus ARPAbet for the aligner. Test new names with `npm run studio -- pron-test --words "Name1,Name2"`.
 - Disclosure: the on-screen line for the first 8 s and the description both say the narration is AI-generated.
 - Fallback: local Kokoro-82M (`SPEECH_ENGINE=kokoro`, voice `bm_george`, Apache-2.0). It is free but flatter; disclose it the same way.

@@ -1458,5 +1458,9 @@
       "estInr": 0.284,
       "priceBasis": "AI Credits docs/audio billing table"
     }
+  ],
+  "notes": [
+    "2026-10-18 ~09:10 UTC: AI Credits began returning HTTP 402 'Insufficient Balance' for every request (including a 9-character TTS test). Estimated spend at that point was about Rs 37, so actual gateway charges for gpt-4o-mini-tts / whisper-1 (no published per-request price for gpt-4o-mini-tts) and/or the starting balance differ from these estimates. Check the AI Credits dashboard for the real figures.",
+    "Narration re-pacing (pace stage) and all later stages ran locally at no API cost; STT checks on the final mix were disabled because of the empty wallet."
   ]
 }

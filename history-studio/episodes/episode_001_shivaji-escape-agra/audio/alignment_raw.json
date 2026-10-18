@@ -1,0 +1,7057 @@
+{
+  "s01": {
+    "words": [
+      {
+        "w": "August",
+        "start": 0,
+        "end": 0.5
+      },
+      {
+        "w": "sixteen",
+        "start": 0.71,
+        "end": 1.27
+      },
+      {
+        "w": "sixty",
+        "start": 1.27,
+        "end": 1.62
+      },
+      {
+        "w": "six",
+        "start": 1.62,
+        "end": 2.07
+      },
+      {
+        "w": "In",
+        "start": 2.61,
+        "end": 2.72
+      },
+      {
+        "w": "the",
+        "start": 2.72,
+        "end": 2.79
+      },
+      {
+        "w": "Mughal",
+        "start": 2.79,
+        "end": 3.13
+      },
+      {
+        "w": "city",
+        "start": 3.13,
+        "end": 3.43
+      },
+      {
+        "w": "of",
+        "start": 3.43,
+        "end": 3.56
+      },
+      {
+        "w": "Agra",
+        "start": 3.56,
+        "end": 4.02
+      },
+      {
+        "w": "a",
+        "start": 4.37,
+        "end": 4.44
+      },
+      {
+        "w": "ring",
+        "start": 4.44,
+        "end": 4.72
+      },
+      {
+        "w": "of",
+        "start": 4.72,
+        "end": 4.83
+      },
+      {
+        "w": "guards",
+        "start": 4.83,
+        "end": 5.2
+      },
+      {
+        "w": "surrounds",
+        "start": 5.2,
+        "end": 5.67
+      },
+      {
+        "w": "the",
+        "start": 5.67,
+        "end": 5.74
+      },
+      {
+        "w": "quarters",
+        "start": 5.74,
+        "end": 6.2
+      },
+      {
+        "w": "of",
+        "start": 6.2,
+        "end": 6.33
+      },
+      {
+        "w": "one",
+        "start": 6.33,
+        "end": 6.54
+      },
+      {
+        "w": "man",
+        "start": 6.54,
+        "end": 6.95
+      },
+      {
+        "w": "One",
+        "start": 7.64,
+        "end": 7.84
+      },
+      {
+        "w": "letter",
+        "start": 7.84,
+        "end": 8.11
+      },
+      {
+        "w": "from",
+        "start": 8.11,
+        "end": 8.31
+      },
+      {
+        "w": "Agra",
+        "start": 8.31,
+        "end": 8.73
+      },
+      {
+        "w": "puts",
+        "start": 8.94,
+        "end": 9.19
+      },
+      {
+        "w": "the",
+        "start": 9.19,
+        "end": 9.27
+      },
+      {
+        "w": "watch",
+        "start": 9.27,
+        "end": 9.64
+      },
+      {
+        "w": "at",
+        "start": 9.64,
+        "end": 9.77
+      },
+      {
+        "w": "a",
+        "start": 9.77,
+        "end": 9.82
+      },
+      {
+        "w": "thousand",
+        "start": 9.82,
+        "end": 10.33
+      },
+      {
+        "w": "men",
+        "start": 10.33,
+        "end": 10.64
+      },
+      {
+        "w": "Inside",
+        "start": 11.37,
+        "end": 11.96
+      },
+      {
+        "w": "are",
+        "start": 11.96,
+        "end": 12.12
+      },
+      {
+        "w": "a",
+        "start": 12.12,
+        "end": 12.15
+      },
+      {
+        "w": "Maratha",
+        "start": 12.15,
+        "end": 12.59
+      },
+      {
+        "w": "ruler",
+        "start": 12.59,
+        "end": 12.93
+      },
+      {
+        "w": "from",
+        "start": 12.93,
+        "end": 13.1
+      },
+      {
+        "w": "the",
+        "start": 13.1,
+        "end": 13.17
+      },
+      {
+        "w": "Deccan",
+        "start": 13.17,
+        "end": 13.58
+      },
+      {
+        "w": "and",
+        "start": 13.86,
+        "end": 14.01
+      },
+      {
+        "w": "his",
+        "start": 14.01,
+        "end": 14.14
+      },
+      {
+        "w": "nine",
+        "start": 14.14,
+        "end": 14.39
+      },
+      {
+        "w": "year",
+        "start": 14.39,
+        "end": 14.55
+      },
+      {
+        "w": "old",
+        "start": 14.55,
+        "end": 14.69
+      },
+      {
+        "w": "son",
+        "start": 14.69,
+        "end": 15.11
+      },
+      {
+        "w": "Then",
+        "start": 15.94,
+        "end": 16.2
+      },
+      {
+        "w": "one",
+        "start": 16.2,
+        "end": 16.4
+      },
+      {
+        "w": "morning",
+        "start": 16.4,
+        "end": 16.83
+      },
+      {
+        "w": "word",
+        "start": 17.1,
+        "end": 17.35
+      },
+      {
+        "w": "spreads",
+        "start": 17.35,
+        "end": 17.78
+      },
+      {
+        "w": "through",
+        "start": 17.78,
+        "end": 17.93
+      },
+      {
+        "w": "the",
+        "start": 17.93,
+        "end": 18
+      },
+      {
+        "w": "city",
+        "start": 18,
+        "end": 18.38
+      },
+      {
+        "w": "They",
+        "start": 18.81,
+        "end": 19.02
+      },
+      {
+        "w": "are",
+        "start": 19.02,
+        "end": 19.12
+      },
+      {
+        "w": "gone",
+        "start": 19.12,
+        "end": 19.54
+      }
+    ],
+    "method": "pocketsphinx-align",
+    "audioSeconds": 19.75,
+    "hash": "c50dca8bf211b34a"
+  },
+  "s02": {
+    "words": [
+      {
+        "w": "How",
+        "start": 0,
+        "end": 0.3
+      },
+      {
+        "w": "do",
+        "start": 0.3,
+        "end": 0.4
+      },
+      {
+        "w": "you",
+        "start": 0.4,
+        "end": 0.56
+      },
+      {
+        "w": "disappear",
+        "start": 0.56,
+        "end": 1.26
+      },
+      {
+        "w": "from",
+        "start": 1.44,
+        "end": 1.68
+      },
+      {
+        "w": "under",
+        "start": 1.68,
+        "end": 1.95
+      },
+      {
+        "w": "the",
+        "start": 1.95,
+        "end": 2.1
+      },
+      {
+        "w": "eyes",
+        "start": 2.1,
+        "end": 2.37
+      },
+      {
+        "w": "of",
+        "start": 2.37,
+        "end": 2.46
+      },
+      {
+        "w": "one",
+        "start": 2.46,
+        "end": 2.58
+      },
+      {
+        "w": "of",
+        "start": 2.58,
+        "end": 2.66
+      },
+      {
+        "w": "the",
+        "start": 2.66,
+        "end": 2.74
+      },
+      {
+        "w": "richest",
+        "start": 2.74,
+        "end": 3.21
+      },
+      {
+        "w": "empires",
+        "start": 3.21,
+        "end": 3.74
+      },
+      {
+        "w": "on",
+        "start": 3.74,
+        "end": 3.88
+      },
+      {
+        "w": "earth",
+        "start": 3.88,
+        "end": 4.15
+      },
+      {
+        "w": "The",
+        "start": 4.81,
+        "end": 4.9
+      },
+      {
+        "w": "famous",
+        "start": 4.9,
+        "end": 5.33
+      },
+      {
+        "w": "answer",
+        "start": 5.33,
+        "end": 5.64
+      },
+      {
+        "w": "involves",
+        "start": 5.64,
+        "end": 6
+      },
+      {
+        "w": "baskets",
+        "start": 6,
+        "end": 6.49
+      },
+      {
+        "w": "of",
+        "start": 6.49,
+        "end": 6.57
+      },
+      {
+        "w": "sweets",
+        "start": 6.57,
+        "end": 7.04
+      },
+      {
+        "w": "But",
+        "start": 7.73,
+        "end": 7.92
+      },
+      {
+        "w": "letters",
+        "start": 7.92,
+        "end": 8.27
+      },
+      {
+        "w": "written",
+        "start": 8.27,
+        "end": 8.54
+      },
+      {
+        "w": "in",
+        "start": 8.54,
+        "end": 8.66
+      },
+      {
+        "w": "Agra",
+        "start": 8.66,
+        "end": 9.12
+      },
+      {
+        "w": "that",
+        "start": 9.12,
+        "end": 9.34
+      },
+      {
+        "w": "very",
+        "start": 9.34,
+        "end": 9.64
+      },
+      {
+        "w": "summer",
+        "start": 9.64,
+        "end": 10.07
+      },
+      {
+        "w": "let",
+        "start": 10.53,
+        "end": 10.66
+      },
+      {
+        "w": "us",
+        "start": 10.66,
+        "end": 10.81
+      },
+      {
+        "w": "check",
+        "start": 10.81,
+        "end": 11.14
+      },
+      {
+        "w": "the",
+        "start": 11.14,
+        "end": 11.22
+      },
+      {
+        "w": "legend",
+        "start": 11.22,
+        "end": 11.6
+      },
+      {
+        "w": "against",
+        "start": 11.6,
+        "end": 11.9
+      },
+      {
+        "w": "the",
+        "start": 11.9,
+        "end": 11.97
+      },
+      {
+        "w": "record",
+        "start": 11.97,
+        "end": 12.35
+      }
+    ],
+    "method": "pocketsphinx-align",
+    "audioSeconds": 12.45,
+    "hash": "4d63c519bb2a053b"
+  },
+  "s03": {
+    "words": [
+      {
+        "w": "The",
+        "start": 0,
+        "end": 0.15
+      },
+      {
+        "w": "ruler",
+        "start": 0.15,
+        "end": 0.73
+      },
+      {
+        "w": "was",
+        "start": 0.77,
+        "end": 0.9
+      },
+      {
+        "w": "Shivaji",
+        "start": 0.9,
+        "end": 1.55
+      },
+      {
+        "w": "the",
+        "start": 1.98,
+        "end": 2.07
+      },
+      {
+        "w": "Maratha",
+        "start": 2.07,
+        "end": 2.49
+      },
+      {
+        "w": "leader",
+        "start": 2.49,
+        "end": 2.83
+      },
+      {
+        "w": "who",
+        "start": 2.83,
+        "end": 2.96
+      },
+      {
+        "w": "had",
+        "start": 2.96,
+        "end": 3.08
+      },
+      {
+        "w": "carved",
+        "start": 3.08,
+        "end": 3.49
+      },
+      {
+        "w": "a",
+        "start": 3.49,
+        "end": 3.54
+      },
+      {
+        "w": "kingdom",
+        "start": 3.54,
+        "end": 4.01
+      },
+      {
+        "w": "out",
+        "start": 4.01,
+        "end": 4.18
+      },
+      {
+        "w": "of",
+        "start": 4.18,
+        "end": 4.29
+      },
+      {
+        "w": "the",
+        "start": 4.29,
+        "end": 4.36
+      },
+      {
+        "w": "hill",
+        "start": 4.36,
+        "end": 4.61
+      },
+      {
+        "w": "forts",
+        "start": 4.61,
+        "end": 4.95
+      },
+      {
+        "w": "of",
+        "start": 4.95,
+        "end": 5.06
+      },
+      {
+        "w": "western",
+        "start": 5.06,
+        "end": 5.42
+      },
+      {
+        "w": "India",
+        "start": 5.42,
+        "end": 5.75
+      },
+      {
+        "w": "and",
+        "start": 6.39,
+        "end": 6.53
+      },
+      {
+        "w": "who",
+        "start": 6.53,
+        "end": 6.6
+      },
+      {
+        "w": "had",
+        "start": 6.6,
+        "end": 6.7
+      },
+      {
+        "w": "spent",
+        "start": 6.7,
+        "end": 6.99
+      },
+      {
+        "w": "years",
+        "start": 6.99,
+        "end": 7.47
+      },
+      {
+        "w": "raiding",
+        "start": 7.6,
+        "end": 7.92
+      },
+      {
+        "w": "Mughal",
+        "start": 7.92,
+        "end": 8.27
+      },
+      {
+        "w": "territory",
+        "start": 8.27,
+        "end": 8.85
+      },
+      {
+        "w": "The",
+        "start": 9.66,
+        "end": 9.81
+      },
+      {
+        "w": "emperor",
+        "start": 9.81,
+        "end": 10.18
+      },
+      {
+        "w": "was",
+        "start": 10.18,
+        "end": 10.37
+      },
+      {
+        "w": "Aurangzeb",
+        "start": 10.37,
+        "end": 10.9
+      },
+      {
+        "w": "And",
+        "start": 11.78,
+        "end": 11.88
+      },
+      {
+        "w": "the",
+        "start": 11.88,
+        "end": 11.94
+      },
+      {
+        "w": "man",
+        "start": 11.94,
+        "end": 12.19
+      },
+      {
+        "w": "who",
+        "start": 12.19,
+        "end": 12.32
+      },
+      {
+        "w": "brought",
+        "start": 12.32,
+        "end": 12.54
+      },
+      {
+        "w": "them",
+        "start": 12.54,
+        "end": 12.65
+      },
+      {
+        "w": "face",
+        "start": 12.65,
+        "end": 12.91
+      },
+      {
+        "w": "to",
+        "start": 12.91,
+        "end": 13
+      },
+      {
+        "w": "face",
+        "start": 13,
+        "end": 13.4
+      },
+      {
+        "w": "was",
+        "start": 13.57,
+        "end": 13.75
+      },
+      {
+        "w": "Aurangzeb's",
+        "start": 13.75,
+        "end": 14.32
+      },
+      {
+        "w": "veteran",
+        "start": 14.32,
+        "end": 14.67
+      },
+      {
+        "w": "general",
+        "start": 14.67,
+        "end": 15.1
+      },
+      {
+        "w": "Mirza",
+        "start": 15.38,
+        "end": 15.73
+      },
+      {
+        "w": "Raja",
+        "start": 15.73,
+        "end": 16.09
+      },
+      {
+        "w": "Jai",
+        "start": 16.09,
+        "end": 16.33
+      },
+      {
+        "w": "Singh",
+        "start": 16.33,
+        "end": 16.66
+      }
+    ],
+    "method": "pocketsphinx-align",
+    "audioSeconds": 16.8,
+    "hash": "cb25a38a0e9a2da2"
+  },
+  "s04": {
+    "words": [
+      {
+        "w": "In",
+        "start": 0.23,
+        "end": 0.39
+      },
+      {
+        "w": "sixteen",
+        "start": 0.39,
+        "end": 0.9
+      },
+      {
+        "w": "sixty",
+        "start": 0.9,
+        "end": 1.26
+      },
+      {
+        "w": "five",
+        "start": 1.26,
+        "end": 1.72
+      },
+      {
+        "w": "Jai",
+        "start": 2.07,
+        "end": 2.33
+      },
+      {
+        "w": "Singh's",
+        "start": 2.33,
+        "end": 2.66
+      },
+      {
+        "w": "army",
+        "start": 2.66,
+        "end": 2.92
+      },
+      {
+        "w": "closed",
+        "start": 2.92,
+        "end": 3.34
+      },
+      {
+        "w": "in",
+        "start": 3.34,
+        "end": 3.49
+      },
+      {
+        "w": "on",
+        "start": 3.49,
+        "end": 3.62
+      },
+      {
+        "w": "Shivaji's",
+        "start": 3.62,
+        "end": 4.22
+      },
+      {
+        "w": "forts",
+        "start": 4.22,
+        "end": 4.68
+      },
+      {
+        "w": "Rather",
+        "start": 5.33,
+        "end": 5.6
+      },
+      {
+        "w": "than",
+        "start": 5.6,
+        "end": 5.74
+      },
+      {
+        "w": "lose",
+        "start": 5.74,
+        "end": 5.96
+      },
+      {
+        "w": "everything",
+        "start": 5.96,
+        "end": 6.48
+      },
+      {
+        "w": "Shivaji",
+        "start": 6.87,
+        "end": 7.38
+      },
+      {
+        "w": "made",
+        "start": 7.38,
+        "end": 7.57
+      },
+      {
+        "w": "a",
+        "start": 7.57,
+        "end": 7.62
+      },
+      {
+        "w": "deal",
+        "start": 7.62,
+        "end": 7.93
+      },
+      {
+        "w": "at",
+        "start": 7.93,
+        "end": 8.02
+      },
+      {
+        "w": "Purandar",
+        "start": 8.02,
+        "end": 8.65
+      },
+      {
+        "w": "Twenty",
+        "start": 9.22,
+        "end": 9.51
+      },
+      {
+        "w": "three",
+        "start": 9.51,
+        "end": 9.72
+      },
+      {
+        "w": "forts",
+        "start": 9.72,
+        "end": 10.06
+      },
+      {
+        "w": "went",
+        "start": 10.06,
+        "end": 10.25
+      },
+      {
+        "w": "to",
+        "start": 10.25,
+        "end": 10.33
+      },
+      {
+        "w": "the",
+        "start": 10.33,
+        "end": 10.45
+      },
+      {
+        "w": "empire",
+        "start": 10.45,
+        "end": 10.94
+      },
+      {
+        "w": "He",
+        "start": 11.36,
+        "end": 11.46
+      },
+      {
+        "w": "kept",
+        "start": 11.46,
+        "end": 11.7
+      },
+      {
+        "w": "twelve",
+        "start": 11.7,
+        "end": 12.16
+      },
+      {
+        "w": "including",
+        "start": 12.44,
+        "end": 12.83
+      },
+      {
+        "w": "his",
+        "start": 12.83,
+        "end": 12.97
+      },
+      {
+        "w": "stronghold",
+        "start": 12.97,
+        "end": 13.5
+      },
+      {
+        "w": "of",
+        "start": 13.5,
+        "end": 13.6
+      },
+      {
+        "w": "Rajgad",
+        "start": 13.6,
+        "end": 14.24
+      },
+      {
+        "w": "Then",
+        "start": 14.91,
+        "end": 15.18
+      },
+      {
+        "w": "Jai",
+        "start": 15.18,
+        "end": 15.41
+      },
+      {
+        "w": "Singh",
+        "start": 15.41,
+        "end": 15.7
+      },
+      {
+        "w": "pressed",
+        "start": 15.7,
+        "end": 16.03
+      },
+      {
+        "w": "for",
+        "start": 16.03,
+        "end": 16.13
+      },
+      {
+        "w": "something",
+        "start": 16.13,
+        "end": 16.47
+      },
+      {
+        "w": "more",
+        "start": 16.47,
+        "end": 16.83
+      },
+      {
+        "w": "Shivaji",
+        "start": 17.48,
+        "end": 17.93
+      },
+      {
+        "w": "should",
+        "start": 17.93,
+        "end": 18.09
+      },
+      {
+        "w": "travel",
+        "start": 18.09,
+        "end": 18.42
+      },
+      {
+        "w": "north",
+        "start": 18.42,
+        "end": 18.75
+      },
+      {
+        "w": "and",
+        "start": 18.75,
+        "end": 18.87
+      },
+      {
+        "w": "appear",
+        "start": 18.87,
+        "end": 19.14
+      },
+      {
+        "w": "before",
+        "start": 19.14,
+        "end": 19.41
+      },
+      {
+        "w": "the",
+        "start": 19.41,
+        "end": 19.53
+      },
+      {
+        "w": "emperor",
+        "start": 19.53,
+        "end": 19.87
+      },
+      {
+        "w": "in",
+        "start": 19.87,
+        "end": 20.05
+      },
+      {
+        "w": "person",
+        "start": 20.05,
+        "end": 20.48
+      },
+      {
+        "w": "Jai",
+        "start": 21.28,
+        "end": 21.51
+      },
+      {
+        "w": "Singh",
+        "start": 21.51,
+        "end": 21.75
+      },
+      {
+        "w": "swore",
+        "start": 21.75,
+        "end": 22.11
+      },
+      {
+        "w": "that",
+        "start": 22.11,
+        "end": 22.23
+      },
+      {
+        "w": "he",
+        "start": 22.23,
+        "end": 22.32
+      },
+      {
+        "w": "would",
+        "start": 22.32,
+        "end": 22.45
+      },
+      {
+        "w": "come",
+        "start": 22.45,
+        "end": 22.65
+      },
+      {
+        "w": "to",
+        "start": 22.65,
+        "end": 22.74
+      },
+      {
+        "w": "no",
+        "start": 22.74,
+        "end": 22.98
+      },
+      {
+        "w": "harm",
+        "start": 22.98,
+        "end": 23.37
+      },
+      {
+        "w": "At",
+        "start": 24.05,
+        "end": 24.21
+      },
+      {
+        "w": "court",
+        "start": 24.21,
+        "end": 24.58
+      },
+      {
+        "w": "his",
+        "start": 24.81,
+        "end": 24.96
+      },
+      {
+        "w": "son",
+        "start": 24.96,
+        "end": 25.31
+      },
+      {
+        "w": "the",
+        "start": 25.31,
+        "end": 25.61
+      },
+      {
+        "w": "prince",
+        "start": 25.61,
+        "end": 25.91
+      },
+      {
+        "w": "Ram",
+        "start": 25.91,
+        "end": 26.16
+      },
+      {
+        "w": "Singh",
+        "start": 26.16,
+        "end": 26.63
+      },
+      {
+        "w": "pledged",
+        "start": 26.68,
+        "end": 27.05
+      },
+      {
+        "w": "his",
+        "start": 27.05,
+        "end": 27.19
+      },
+      {
+        "w": "word",
+        "start": 27.19,
+        "end": 27.43
+      },
+      {
+        "w": "as",
+        "start": 27.43,
+        "end": 27.55
+      },
+      {
+        "w": "well",
+        "start": 27.55,
+        "end": 27.94
+      }
+    ],
+    "method": "pocketsphinx-align",
+    "audioSeconds": 27.95,
+    "hash": "ea7593db56d47c41"
+  },
+  "s05": {
+    "words": [
+      {
+        "w": "In",
+        "start": 0,
+        "end": 0.12
+      },
+      {
+        "w": "March",
+        "start": 0.12,
+        "end": 0.42
+      },
+      {
+        "w": "sixteen",
+        "start": 0.42,
+        "end": 0.96
+      },
+      {
+        "w": "sixty",
+        "start": 0.96,
+        "end": 1.31
+      },
+      {
+        "w": "six",
+        "start": 1.31,
+        "end": 1.74
+      },
+      {
+        "w": "Shivaji",
+        "start": 2.02,
+        "end": 2.57
+      },
+      {
+        "w": "left",
+        "start": 2.57,
+        "end": 2.83
+      },
+      {
+        "w": "Rajgad",
+        "start": 2.83,
+        "end": 3.35
+      },
+      {
+        "w": "with",
+        "start": 3.35,
+        "end": 3.5
+      },
+      {
+        "w": "his",
+        "start": 3.5,
+        "end": 3.63
+      },
+      {
+        "w": "son",
+        "start": 3.63,
+        "end": 3.95
+      },
+      {
+        "w": "Sambhaji",
+        "start": 3.95,
+        "end": 4.65
+      },
+      {
+        "w": "and",
+        "start": 4.85,
+        "end": 5.02
+      },
+      {
+        "w": "a",
+        "start": 5.02,
+        "end": 5.05
+      },
+      {
+        "w": "small",
+        "start": 5.05,
+        "end": 5.5
+      },
+      {
+        "w": "but",
+        "start": 5.5,
+        "end": 5.65
+      },
+      {
+        "w": "splendid",
+        "start": 5.65,
+        "end": 6.19
+      },
+      {
+        "w": "escort",
+        "start": 6.19,
+        "end": 6.7
+      },
+      {
+        "w": "In",
+        "start": 7.18,
+        "end": 7.32
+      },
+      {
+        "w": "May",
+        "start": 7.32,
+        "end": 7.76
+      },
+      {
+        "w": "they",
+        "start": 7.84,
+        "end": 7.97
+      },
+      {
+        "w": "reached",
+        "start": 7.97,
+        "end": 8.31
+      },
+      {
+        "w": "Agra",
+        "start": 8.31,
+        "end": 8.77
+      },
+      {
+        "w": "One",
+        "start": 9.3,
+        "end": 9.42
+      },
+      {
+        "w": "of",
+        "start": 9.42,
+        "end": 9.55
+      },
+      {
+        "w": "Ram",
+        "start": 9.55,
+        "end": 9.75
+      },
+      {
+        "w": "Singh's",
+        "start": 9.75,
+        "end": 10.03
+      },
+      {
+        "w": "officers",
+        "start": 10.03,
+        "end": 10.51
+      },
+      {
+        "w": "described",
+        "start": 10.51,
+        "end": 10.91
+      },
+      {
+        "w": "him",
+        "start": 10.91,
+        "end": 11.1
+      },
+      {
+        "w": "in",
+        "start": 11.1,
+        "end": 11.23
+      },
+      {
+        "w": "a",
+        "start": 11.23,
+        "end": 11.27
+      },
+      {
+        "w": "letter",
+        "start": 11.27,
+        "end": 11.55
+      },
+      {
+        "w": "home",
+        "start": 11.55,
+        "end": 11.91
+      },
+      {
+        "w": "Lean",
+        "start": 12.42,
+        "end": 12.88
+      },
+      {
+        "w": "short",
+        "start": 13.03,
+        "end": 13.53
+      },
+      {
+        "w": "fair",
+        "start": 13.65,
+        "end": 14.19
+      },
+      {
+        "w": "bearded",
+        "start": 14.31,
+        "end": 14.8
+      },
+      {
+        "w": "And",
+        "start": 15.2,
+        "end": 15.47
+      },
+      {
+        "w": "he",
+        "start": 15.47,
+        "end": 15.58
+      },
+      {
+        "w": "wrote",
+        "start": 15.58,
+        "end": 15.9
+      },
+      {
+        "w": "even",
+        "start": 16.29,
+        "end": 16.54
+      },
+      {
+        "w": "without",
+        "start": 16.54,
+        "end": 16.88
+      },
+      {
+        "w": "finding",
+        "start": 16.88,
+        "end": 17.26
+      },
+      {
+        "w": "out",
+        "start": 17.26,
+        "end": 17.41
+      },
+      {
+        "w": "who",
+        "start": 17.41,
+        "end": 17.56
+      },
+      {
+        "w": "he",
+        "start": 17.56,
+        "end": 17.66
+      },
+      {
+        "w": "is",
+        "start": 17.66,
+        "end": 18
+      },
+      {
+        "w": "one",
+        "start": 18.29,
+        "end": 18.51
+      },
+      {
+        "w": "does",
+        "start": 18.51,
+        "end": 18.81
+      },
+      {
+        "w": "feel",
+        "start": 18.81,
+        "end": 19.05
+      },
+      {
+        "w": "instinctively",
+        "start": 19.05,
+        "end": 19.84
+      },
+      {
+        "w": "that",
+        "start": 19.95,
+        "end": 20.07
+      },
+      {
+        "w": "he",
+        "start": 20.07,
+        "end": 20.21
+      },
+      {
+        "w": "is",
+        "start": 20.21,
+        "end": 20.32
+      },
+      {
+        "w": "a",
+        "start": 20.32,
+        "end": 20.36
+      },
+      {
+        "w": "ruler",
+        "start": 20.36,
+        "end": 20.79
+      },
+      {
+        "w": "of",
+        "start": 20.79,
+        "end": 20.89
+      },
+      {
+        "w": "men",
+        "start": 20.89,
+        "end": 21.24
+      }
+    ],
+    "method": "pocketsphinx-align",
+    "audioSeconds": 21.35,
+    "hash": "147e99b850d1a484"
+  },
+  "s06": {
+    "words": [
+      {
+        "w": "On",
+        "start": 0,
+        "end": 0.19
+      },
+      {
+        "w": "the",
+        "start": 0.19,
+        "end": 0.28
+      },
+      {
+        "w": "twelfth",
+        "start": 0.28,
+        "end": 0.76
+      },
+      {
+        "w": "of",
+        "start": 0.76,
+        "end": 0.85
+      },
+      {
+        "w": "May",
+        "start": 0.85,
+        "end": 1.23
+      },
+      {
+        "w": "the",
+        "start": 1.83,
+        "end": 1.98
+      },
+      {
+        "w": "emperor's",
+        "start": 1.98,
+        "end": 2.41
+      },
+      {
+        "w": "fiftieth",
+        "start": 2.41,
+        "end": 2.85
+      },
+      {
+        "w": "birthday",
+        "start": 2.85,
+        "end": 3.28
+      },
+      {
+        "w": "by",
+        "start": 3.28,
+        "end": 3.43
+      },
+      {
+        "w": "the",
+        "start": 3.43,
+        "end": 3.51
+      },
+      {
+        "w": "lunar",
+        "start": 3.51,
+        "end": 3.77
+      },
+      {
+        "w": "calendar",
+        "start": 3.77,
+        "end": 4.29
+      },
+      {
+        "w": "Ram",
+        "start": 4.69,
+        "end": 4.97
+      },
+      {
+        "w": "Singh",
+        "start": 4.97,
+        "end": 5.43
+      },
+      {
+        "w": "led",
+        "start": 5.67,
+        "end": 5.9
+      },
+      {
+        "w": "Shivaji",
+        "start": 5.9,
+        "end": 6.5
+      },
+      {
+        "w": "into",
+        "start": 6.5,
+        "end": 6.68
+      },
+      {
+        "w": "the",
+        "start": 6.68,
+        "end": 6.76
+      },
+      {
+        "w": "fort",
+        "start": 6.76,
+        "end": 7.14
+      },
+      {
+        "w": "Shivaji",
+        "start": 7.8,
+        "end": 8.35
+      },
+      {
+        "w": "presented",
+        "start": 8.35,
+        "end": 8.83
+      },
+      {
+        "w": "his",
+        "start": 8.83,
+        "end": 8.99
+      },
+      {
+        "w": "gifts",
+        "start": 8.99,
+        "end": 9.33
+      },
+      {
+        "w": "of",
+        "start": 9.33,
+        "end": 9.43
+      },
+      {
+        "w": "gold",
+        "start": 9.43,
+        "end": 9.87
+      },
+      {
+        "w": "And",
+        "start": 10.42,
+        "end": 10.59
+      },
+      {
+        "w": "then",
+        "start": 10.59,
+        "end": 10.87
+      },
+      {
+        "w": "nothing",
+        "start": 11.2,
+        "end": 11.67
+      },
+      {
+        "w": "The",
+        "start": 12.23,
+        "end": 12.36
+      },
+      {
+        "w": "emperor",
+        "start": 12.36,
+        "end": 12.67
+      },
+      {
+        "w": "did",
+        "start": 12.67,
+        "end": 12.82
+      },
+      {
+        "w": "not",
+        "start": 12.82,
+        "end": 13.06
+      },
+      {
+        "w": "say",
+        "start": 13.06,
+        "end": 13.34
+      },
+      {
+        "w": "a",
+        "start": 13.34,
+        "end": 13.42
+      },
+      {
+        "w": "word",
+        "start": 13.42,
+        "end": 13.75
+      },
+      {
+        "w": "to",
+        "start": 13.75,
+        "end": 13.86
+      },
+      {
+        "w": "him",
+        "start": 13.86,
+        "end": 14.12
+      },
+      {
+        "w": "Shivaji",
+        "start": 14.78,
+        "end": 15.25
+      },
+      {
+        "w": "was",
+        "start": 15.25,
+        "end": 15.43
+      },
+      {
+        "w": "led",
+        "start": 15.43,
+        "end": 15.71
+      },
+      {
+        "w": "back",
+        "start": 15.71,
+        "end": 16
+      },
+      {
+        "w": "to",
+        "start": 16,
+        "end": 16.11
+      },
+      {
+        "w": "stand",
+        "start": 16.11,
+        "end": 16.47
+      },
+      {
+        "w": "behind",
+        "start": 16.47,
+        "end": 16.76
+      },
+      {
+        "w": "rows",
+        "start": 16.76,
+        "end": 17.11
+      },
+      {
+        "w": "of",
+        "start": 17.11,
+        "end": 17.19
+      },
+      {
+        "w": "other",
+        "start": 17.19,
+        "end": 17.37
+      },
+      {
+        "w": "nobles",
+        "start": 17.37,
+        "end": 17.88
+      },
+      {
+        "w": "Robes",
+        "start": 18.47,
+        "end": 18.81
+      },
+      {
+        "w": "of",
+        "start": 18.81,
+        "end": 18.9
+      },
+      {
+        "w": "honour",
+        "start": 18.9,
+        "end": 19.24
+      },
+      {
+        "w": "were",
+        "start": 19.46,
+        "end": 19.57
+      },
+      {
+        "w": "handed",
+        "start": 19.57,
+        "end": 19.86
+      },
+      {
+        "w": "out",
+        "start": 19.86,
+        "end": 20.03
+      },
+      {
+        "w": "to",
+        "start": 20.03,
+        "end": 20.11
+      },
+      {
+        "w": "princes",
+        "start": 20.11,
+        "end": 20.57
+      },
+      {
+        "w": "and",
+        "start": 20.57,
+        "end": 20.66
+      },
+      {
+        "w": "ministers",
+        "start": 20.66,
+        "end": 21.23
+      },
+      {
+        "w": "and",
+        "start": 21.71,
+        "end": 22.04
+      },
+      {
+        "w": "to",
+        "start": 22.04,
+        "end": 22.2
+      },
+      {
+        "w": "Maharaja",
+        "start": 22.2,
+        "end": 22.82
+      },
+      {
+        "w": "Jaswant",
+        "start": 22.82,
+        "end": 23.28
+      },
+      {
+        "w": "Singh",
+        "start": 23.28,
+        "end": 23.65
+      },
+      {
+        "w": "a",
+        "start": 24.15,
+        "end": 24.21
+      },
+      {
+        "w": "general",
+        "start": 24.21,
+        "end": 24.62
+      },
+      {
+        "w": "who",
+        "start": 24.62,
+        "end": 24.73
+      },
+      {
+        "w": "had",
+        "start": 24.73,
+        "end": 24.86
+      },
+      {
+        "w": "once",
+        "start": 24.86,
+        "end": 25.11
+      },
+      {
+        "w": "besieged",
+        "start": 25.11,
+        "end": 25.64
+      },
+      {
+        "w": "one",
+        "start": 25.64,
+        "end": 25.8
+      },
+      {
+        "w": "of",
+        "start": 25.8,
+        "end": 25.88
+      },
+      {
+        "w": "Shivaji's",
+        "start": 25.88,
+        "end": 26.4
+      },
+      {
+        "w": "forts",
+        "start": 26.4,
+        "end": 26.82
+      },
+      {
+        "w": "and",
+        "start": 27.11,
+        "end": 27.27
+      },
+      {
+        "w": "failed",
+        "start": 27.27,
+        "end": 27.76
+      }
+    ],
+    "method": "pocketsphinx-align",
+    "audioSeconds": 28.3,
+    "hash": "6da997fb344327fc"
+  },
+  "s07": {
+    "words": [
+      {
+        "w": "Shivaji's",
+        "start": 0.2,
+        "end": 1.02
+      },
+      {
+        "w": "patience",
+        "start": 1.02,
+        "end": 1.49
+      },
+      {
+        "w": "broke",
+        "start": 1.49,
+        "end": 1.94
+      },
+      {
+        "w": "According",
+        "start": 2.23,
+        "end": 2.59
+      },
+      {
+        "w": "to",
+        "start": 2.59,
+        "end": 2.73
+      },
+      {
+        "w": "a",
+        "start": 2.73,
+        "end": 2.76
+      },
+      {
+        "w": "letter",
+        "start": 2.76,
+        "end": 3.01
+      },
+      {
+        "w": "from",
+        "start": 3.01,
+        "end": 3.19
+      },
+      {
+        "w": "Ram",
+        "start": 3.19,
+        "end": 3.45
+      },
+      {
+        "w": "Singh's",
+        "start": 3.45,
+        "end": 3.72
+      },
+      {
+        "w": "staff",
+        "start": 3.72,
+        "end": 4.12
+      },
+      {
+        "w": "he",
+        "start": 4.39,
+        "end": 4.48
+      },
+      {
+        "w": "told",
+        "start": 4.48,
+        "end": 4.68
+      },
+      {
+        "w": "the",
+        "start": 4.68,
+        "end": 4.75
+      },
+      {
+        "w": "prince",
+        "start": 4.75,
+        "end": 5.13
+      },
+      {
+        "w": "I",
+        "start": 5.42,
+        "end": 5.56
+      },
+      {
+        "w": "cast",
+        "start": 5.56,
+        "end": 5.98
+      },
+      {
+        "w": "off",
+        "start": 5.98,
+        "end": 6.16
+      },
+      {
+        "w": "your",
+        "start": 6.16,
+        "end": 6.27
+      },
+      {
+        "w": "mansab",
+        "start": 6.27,
+        "end": 6.87
+      },
+      {
+        "w": "his",
+        "start": 7.09,
+        "end": 7.25
+      },
+      {
+        "w": "imperial",
+        "start": 7.25,
+        "end": 7.71
+      },
+      {
+        "w": "rank",
+        "start": 7.71,
+        "end": 8.06
+      },
+      {
+        "w": "Then",
+        "start": 8.67,
+        "end": 8.85
+      },
+      {
+        "w": "he",
+        "start": 8.85,
+        "end": 9
+      },
+      {
+        "w": "turned",
+        "start": 9,
+        "end": 9.26
+      },
+      {
+        "w": "his",
+        "start": 9.26,
+        "end": 9.4
+      },
+      {
+        "w": "back",
+        "start": 9.4,
+        "end": 9.66
+      },
+      {
+        "w": "on",
+        "start": 9.66,
+        "end": 9.75
+      },
+      {
+        "w": "the",
+        "start": 9.75,
+        "end": 9.82
+      },
+      {
+        "w": "throne",
+        "start": 9.82,
+        "end": 10.25
+      },
+      {
+        "w": "and",
+        "start": 10.25,
+        "end": 10.38
+      },
+      {
+        "w": "walked",
+        "start": 10.38,
+        "end": 10.7
+      },
+      {
+        "w": "away",
+        "start": 10.7,
+        "end": 11.04
+      },
+      {
+        "w": "At",
+        "start": 11.73,
+        "end": 11.86
+      },
+      {
+        "w": "a",
+        "start": 11.86,
+        "end": 11.9
+      },
+      {
+        "w": "court",
+        "start": 11.9,
+        "end": 12.29
+      },
+      {
+        "w": "where",
+        "start": 12.5,
+        "end": 12.62
+      },
+      {
+        "w": "nobles",
+        "start": 12.62,
+        "end": 13
+      },
+      {
+        "w": "were",
+        "start": 13,
+        "end": 13.09
+      },
+      {
+        "w": "expected",
+        "start": 13.09,
+        "end": 13.5
+      },
+      {
+        "w": "to",
+        "start": 13.5,
+        "end": 13.59
+      },
+      {
+        "w": "wait",
+        "start": 13.59,
+        "end": 13.94
+      },
+      {
+        "w": "as",
+        "start": 14.2,
+        "end": 14.38
+      },
+      {
+        "w": "an",
+        "start": 14.38,
+        "end": 14.45
+      },
+      {
+        "w": "English",
+        "start": 14.45,
+        "end": 14.69
+      },
+      {
+        "w": "trader",
+        "start": 14.69,
+        "end": 14.98
+      },
+      {
+        "w": "put",
+        "start": 14.98,
+        "end": 15.15
+      },
+      {
+        "w": "it",
+        "start": 15.15,
+        "end": 15.32
+      },
+      {
+        "w": "with",
+        "start": 15.62,
+        "end": 15.79
+      },
+      {
+        "w": "their",
+        "start": 15.79,
+        "end": 15.93
+      },
+      {
+        "w": "hands",
+        "start": 15.93,
+        "end": 16.29
+      },
+      {
+        "w": "before",
+        "start": 16.29,
+        "end": 16.6
+      },
+      {
+        "w": "them",
+        "start": 16.6,
+        "end": 16.84
+      },
+      {
+        "w": "like",
+        "start": 17.05,
+        "end": 17.23
+      },
+      {
+        "w": "mutes",
+        "start": 17.23,
+        "end": 17.71
+      },
+      {
+        "w": "it",
+        "start": 18.21,
+        "end": 18.32
+      },
+      {
+        "w": "was",
+        "start": 18.32,
+        "end": 18.46
+      },
+      {
+        "w": "a",
+        "start": 18.46,
+        "end": 18.5
+      },
+      {
+        "w": "stunning",
+        "start": 18.5,
+        "end": 18.95
+      },
+      {
+        "w": "act",
+        "start": 18.95,
+        "end": 19.13
+      },
+      {
+        "w": "of",
+        "start": 19.13,
+        "end": 19.19
+      },
+      {
+        "w": "defiance",
+        "start": 19.19,
+        "end": 19.78
+      },
+      {
+        "w": "Officials",
+        "start": 20.53,
+        "end": 20.95
+      },
+      {
+        "w": "brought",
+        "start": 20.95,
+        "end": 21.17
+      },
+      {
+        "w": "him",
+        "start": 21.17,
+        "end": 21.29
+      },
+      {
+        "w": "a",
+        "start": 21.29,
+        "end": 21.32
+      },
+      {
+        "w": "robe",
+        "start": 21.32,
+        "end": 21.6
+      },
+      {
+        "w": "of",
+        "start": 21.6,
+        "end": 21.7
+      },
+      {
+        "w": "honour",
+        "start": 21.7,
+        "end": 22.03
+      },
+      {
+        "w": "He",
+        "start": 22.39,
+        "end": 22.51
+      },
+      {
+        "w": "refused",
+        "start": 22.51,
+        "end": 22.91
+      },
+      {
+        "w": "it",
+        "start": 22.91,
+        "end": 23.14
+      }
+    ],
+    "method": "pocketsphinx-align",
+    "audioSeconds": 23.15,
+    "hash": "16ab16c2c26b3aaa"
+  },
+  "s08": {
+    "words": [
+      {
+        "w": "The",
+        "start": 0,
+        "end": 0.16
+      },
+      {
+        "w": "backlash",
+        "start": 0.16,
+        "end": 0.71
+      },
+      {
+        "w": "was",
+        "start": 0.71,
+        "end": 0.88
+      },
+      {
+        "w": "swift",
+        "start": 0.88,
+        "end": 1.39
+      },
+      {
+        "w": "Powerful",
+        "start": 1.88,
+        "end": 2.36
+      },
+      {
+        "w": "voices",
+        "start": 2.36,
+        "end": 2.73
+      },
+      {
+        "w": "at",
+        "start": 2.73,
+        "end": 2.81
+      },
+      {
+        "w": "court",
+        "start": 2.81,
+        "end": 3.18
+      },
+      {
+        "w": "the",
+        "start": 3.42,
+        "end": 3.55
+      },
+      {
+        "w": "emperor's",
+        "start": 3.55,
+        "end": 3.89
+      },
+      {
+        "w": "sister",
+        "start": 3.89,
+        "end": 4.25
+      },
+      {
+        "w": "Jahanara",
+        "start": 4.25,
+        "end": 4.83
+      },
+      {
+        "w": "among",
+        "start": 4.83,
+        "end": 5.12
+      },
+      {
+        "w": "them",
+        "start": 5.12,
+        "end": 5.35
+      },
+      {
+        "w": "demanded",
+        "start": 5.59,
+        "end": 6.07
+      },
+      {
+        "w": "punishment",
+        "start": 6.07,
+        "end": 6.65
+      },
+      {
+        "w": "A",
+        "start": 7.35,
+        "end": 7.42
+      },
+      {
+        "w": "letter",
+        "start": 7.42,
+        "end": 7.67
+      },
+      {
+        "w": "from",
+        "start": 7.67,
+        "end": 7.85
+      },
+      {
+        "w": "Agra",
+        "start": 7.85,
+        "end": 8.21
+      },
+      {
+        "w": "reports",
+        "start": 8.21,
+        "end": 8.67
+      },
+      {
+        "w": "that",
+        "start": 8.67,
+        "end": 8.78
+      },
+      {
+        "w": "the",
+        "start": 8.78,
+        "end": 8.92
+      },
+      {
+        "w": "emperor",
+        "start": 8.92,
+        "end": 9.26
+      },
+      {
+        "w": "weighed",
+        "start": 9.26,
+        "end": 9.54
+      },
+      {
+        "w": "killing",
+        "start": 9.54,
+        "end": 9.94
+      },
+      {
+        "w": "Shivaji",
+        "start": 9.94,
+        "end": 10.48
+      },
+      {
+        "w": "or",
+        "start": 10.78,
+        "end": 10.91
+      },
+      {
+        "w": "locking",
+        "start": 10.91,
+        "end": 11.29
+      },
+      {
+        "w": "him",
+        "start": 11.29,
+        "end": 11.42
+      },
+      {
+        "w": "away",
+        "start": 11.42,
+        "end": 11.73
+      },
+      {
+        "w": "in",
+        "start": 11.73,
+        "end": 11.8
+      },
+      {
+        "w": "a",
+        "start": 11.8,
+        "end": 11.84
+      },
+      {
+        "w": "fortress",
+        "start": 11.84,
+        "end": 12.41
+      },
+      {
+        "w": "Ram",
+        "start": 12.85,
+        "end": 13.13
+      },
+      {
+        "w": "Singh",
+        "start": 13.13,
+        "end": 13.4
+      },
+      {
+        "w": "stepped",
+        "start": 13.4,
+        "end": 13.73
+      },
+      {
+        "w": "in",
+        "start": 13.73,
+        "end": 13.99
+      },
+      {
+        "w": "His",
+        "start": 14.51,
+        "end": 14.69
+      },
+      {
+        "w": "father",
+        "start": 14.69,
+        "end": 15
+      },
+      {
+        "w": "had",
+        "start": 15,
+        "end": 15.17
+      },
+      {
+        "w": "guaranteed",
+        "start": 15.17,
+        "end": 15.71
+      },
+      {
+        "w": "Shivaji's",
+        "start": 15.71,
+        "end": 16.19
+      },
+      {
+        "w": "safety",
+        "start": 16.19,
+        "end": 16.67
+      },
+      {
+        "w": "he",
+        "start": 16.74,
+        "end": 16.88
+      },
+      {
+        "w": "argued",
+        "start": 16.88,
+        "end": 17.28
+      },
+      {
+        "w": "If",
+        "start": 17.79,
+        "end": 17.92
+      },
+      {
+        "w": "the",
+        "start": 17.92,
+        "end": 18.04
+      },
+      {
+        "w": "emperor",
+        "start": 18.04,
+        "end": 18.33
+      },
+      {
+        "w": "wanted",
+        "start": 18.33,
+        "end": 18.62
+      },
+      {
+        "w": "Shivaji",
+        "start": 18.62,
+        "end": 19.07
+      },
+      {
+        "w": "dead",
+        "start": 19.07,
+        "end": 19.45
+      },
+      {
+        "w": "he",
+        "start": 19.66,
+        "end": 19.77
+      },
+      {
+        "w": "should",
+        "start": 19.77,
+        "end": 19.94
+      },
+      {
+        "w": "kill",
+        "start": 19.94,
+        "end": 20.2
+      },
+      {
+        "w": "Ram",
+        "start": 20.2,
+        "end": 20.48
+      },
+      {
+        "w": "Singh",
+        "start": 20.48,
+        "end": 20.75
+      },
+      {
+        "w": "first",
+        "start": 20.75,
+        "end": 21.21
+      },
+      {
+        "w": "The",
+        "start": 21.78,
+        "end": 21.9
+      },
+      {
+        "w": "emperor's",
+        "start": 21.9,
+        "end": 22.24
+      },
+      {
+        "w": "reply",
+        "start": 22.24,
+        "end": 22.58
+      },
+      {
+        "w": "was",
+        "start": 22.58,
+        "end": 22.76
+      },
+      {
+        "w": "simple",
+        "start": 22.76,
+        "end": 23.18
+      },
+      {
+        "w": "Then",
+        "start": 23.75,
+        "end": 23.99
+      },
+      {
+        "w": "sign",
+        "start": 23.99,
+        "end": 24.36
+      },
+      {
+        "w": "a",
+        "start": 24.36,
+        "end": 24.4
+      },
+      {
+        "w": "security",
+        "start": 24.4,
+        "end": 24.84
+      },
+      {
+        "w": "bond",
+        "start": 24.84,
+        "end": 25.18
+      },
+      {
+        "w": "If",
+        "start": 25.55,
+        "end": 25.65
+      },
+      {
+        "w": "Shivaji",
+        "start": 25.65,
+        "end": 26.06
+      },
+      {
+        "w": "escapes",
+        "start": 26.06,
+        "end": 26.62
+      },
+      {
+        "w": "you",
+        "start": 26.71,
+        "end": 26.9
+      },
+      {
+        "w": "will",
+        "start": 26.9,
+        "end": 27.04
+      },
+      {
+        "w": "answer",
+        "start": 27.04,
+        "end": 27.3
+      },
+      {
+        "w": "for",
+        "start": 27.3,
+        "end": 27.53
+      },
+      {
+        "w": "it",
+        "start": 27.53,
+        "end": 27.79
+      }
+    ],
+    "method": "pocketsphinx-align",
+    "audioSeconds": 27.8,
+    "hash": "900903f91d2feb6a"
+  },
+  "s09": {
+    "words": [
+      {
+        "w": "Ram",
+        "start": 0.1,
+        "end": 0.4
+      },
+      {
+        "w": "Singh",
+        "start": 0.4,
+        "end": 0.73
+      },
+      {
+        "w": "signed",
+        "start": 0.73,
+        "end": 1.27
+      },
+      {
+        "w": "Shivaji",
+        "start": 1.87,
+        "end": 2.41
+      },
+      {
+        "w": "was",
+        "start": 2.41,
+        "end": 2.59
+      },
+      {
+        "w": "not",
+        "start": 2.59,
+        "end": 2.78
+      },
+      {
+        "w": "executed",
+        "start": 2.78,
+        "end": 3.38
+      },
+      {
+        "w": "but",
+        "start": 3.75,
+        "end": 3.92
+      },
+      {
+        "w": "he",
+        "start": 3.92,
+        "end": 4.01
+      },
+      {
+        "w": "was",
+        "start": 4.01,
+        "end": 4.19
+      },
+      {
+        "w": "not",
+        "start": 4.19,
+        "end": 4.41
+      },
+      {
+        "w": "free",
+        "start": 4.41,
+        "end": 4.82
+      },
+      {
+        "w": "At",
+        "start": 5.58,
+        "end": 5.69
+      },
+      {
+        "w": "one",
+        "start": 5.69,
+        "end": 5.92
+      },
+      {
+        "w": "point",
+        "start": 5.92,
+        "end": 6.19
+      },
+      {
+        "w": "he",
+        "start": 6.19,
+        "end": 6.29
+      },
+      {
+        "w": "was",
+        "start": 6.29,
+        "end": 6.46
+      },
+      {
+        "w": "ordered",
+        "start": 6.46,
+        "end": 6.77
+      },
+      {
+        "w": "to",
+        "start": 6.77,
+        "end": 6.85
+      },
+      {
+        "w": "march",
+        "start": 6.85,
+        "end": 7.17
+      },
+      {
+        "w": "to",
+        "start": 7.17,
+        "end": 7.27
+      },
+      {
+        "w": "Kabul",
+        "start": 7.27,
+        "end": 7.77
+      },
+      {
+        "w": "on",
+        "start": 8.15,
+        "end": 8.29
+      },
+      {
+        "w": "the",
+        "start": 8.29,
+        "end": 8.35
+      },
+      {
+        "w": "far",
+        "start": 8.35,
+        "end": 8.7
+      },
+      {
+        "w": "north",
+        "start": 8.7,
+        "end": 8.95
+      },
+      {
+        "w": "western",
+        "start": 8.95,
+        "end": 9.28
+      },
+      {
+        "w": "frontier",
+        "start": 9.28,
+        "end": 9.83
+      },
+      {
+        "w": "Days",
+        "start": 10.67,
+        "end": 10.96
+      },
+      {
+        "w": "later",
+        "start": 10.96,
+        "end": 11.34
+      },
+      {
+        "w": "after",
+        "start": 11.67,
+        "end": 11.92
+      },
+      {
+        "w": "petitions",
+        "start": 11.92,
+        "end": 12.45
+      },
+      {
+        "w": "and",
+        "start": 12.45,
+        "end": 12.56
+      },
+      {
+        "w": "payments",
+        "start": 12.56,
+        "end": 12.91
+      },
+      {
+        "w": "to",
+        "start": 12.91,
+        "end": 12.99
+      },
+      {
+        "w": "courtiers",
+        "start": 12.99,
+        "end": 13.49
+      },
+      {
+        "w": "the",
+        "start": 13.74,
+        "end": 13.87
+      },
+      {
+        "w": "order",
+        "start": 13.87,
+        "end": 14.11
+      },
+      {
+        "w": "was",
+        "start": 14.11,
+        "end": 14.27
+      },
+      {
+        "w": "dropped",
+        "start": 14.27,
+        "end": 14.71
+      },
+      {
+        "w": "Troops",
+        "start": 15.38,
+        "end": 15.71
+      },
+      {
+        "w": "of",
+        "start": 15.71,
+        "end": 15.78
+      },
+      {
+        "w": "the",
+        "start": 15.78,
+        "end": 15.86
+      },
+      {
+        "w": "city's",
+        "start": 15.86,
+        "end": 16.17
+      },
+      {
+        "w": "police",
+        "start": 16.17,
+        "end": 16.49
+      },
+      {
+        "w": "chief",
+        "start": 16.49,
+        "end": 16.82
+      },
+      {
+        "w": "Fulad",
+        "start": 17.14,
+        "end": 17.55
+      },
+      {
+        "w": "Khan",
+        "start": 17.55,
+        "end": 17.95
+      },
+      {
+        "w": "ringed",
+        "start": 18.48,
+        "end": 18.75
+      },
+      {
+        "w": "his",
+        "start": 18.75,
+        "end": 18.89
+      },
+      {
+        "w": "quarters",
+        "start": 18.89,
+        "end": 19.38
+      },
+      {
+        "w": "Ram",
+        "start": 19.91,
+        "end": 20.15
+      },
+      {
+        "w": "Singh's",
+        "start": 20.15,
+        "end": 20.47
+      },
+      {
+        "w": "own",
+        "start": 20.47,
+        "end": 20.7
+      },
+      {
+        "w": "Rajputs",
+        "start": 20.7,
+        "end": 21.26
+      },
+      {
+        "w": "watched",
+        "start": 21.44,
+        "end": 21.76
+      },
+      {
+        "w": "his",
+        "start": 21.76,
+        "end": 21.92
+      },
+      {
+        "w": "bed",
+        "start": 21.92,
+        "end": 22.08
+      },
+      {
+        "w": "at",
+        "start": 22.08,
+        "end": 22.16
+      },
+      {
+        "w": "night",
+        "start": 22.16,
+        "end": 22.51
+      },
+      {
+        "w": "The",
+        "start": 23.16,
+        "end": 23.3
+      },
+      {
+        "w": "emperor's",
+        "start": 23.3,
+        "end": 23.67
+      },
+      {
+        "w": "guest",
+        "start": 23.67,
+        "end": 24.05
+      },
+      {
+        "w": "had",
+        "start": 24.23,
+        "end": 24.38
+      },
+      {
+        "w": "become",
+        "start": 24.38,
+        "end": 24.65
+      },
+      {
+        "w": "his",
+        "start": 24.65,
+        "end": 24.78
+      },
+      {
+        "w": "prisoner",
+        "start": 24.78,
+        "end": 25.24
+      }
+    ],
+    "method": "pocketsphinx-align",
+    "audioSeconds": 25.25,
+    "hash": "f0f43db7946245b3"
+  },
+  "s10": {
+    "words": [
+      {
+        "w": "Shivaji",
+        "start": 0,
+        "end": 0.49
+      },
+      {
+        "w": "tried",
+        "start": 0.49,
+        "end": 0.87
+      },
+      {
+        "w": "everything",
+        "start": 0.87,
+        "end": 1.4
+      },
+      {
+        "w": "He",
+        "start": 2.01,
+        "end": 2.16
+      },
+      {
+        "w": "offered",
+        "start": 2.16,
+        "end": 2.5
+      },
+      {
+        "w": "two",
+        "start": 2.5,
+        "end": 2.71
+      },
+      {
+        "w": "crore",
+        "start": 2.71,
+        "end": 2.97
+      },
+      {
+        "w": "rupees",
+        "start": 2.97,
+        "end": 3.49
+      },
+      {
+        "w": "twenty",
+        "start": 3.57,
+        "end": 3.9
+      },
+      {
+        "w": "million",
+        "start": 3.9,
+        "end": 4.32
+      },
+      {
+        "w": "if",
+        "start": 4.5,
+        "end": 4.6
+      },
+      {
+        "w": "his",
+        "start": 4.6,
+        "end": 4.75
+      },
+      {
+        "w": "forts",
+        "start": 4.75,
+        "end": 5.03
+      },
+      {
+        "w": "were",
+        "start": 5.03,
+        "end": 5.16
+      },
+      {
+        "w": "returned",
+        "start": 5.16,
+        "end": 5.66
+      },
+      {
+        "w": "He",
+        "start": 6.54,
+        "end": 6.68
+      },
+      {
+        "w": "offered",
+        "start": 6.68,
+        "end": 6.92
+      },
+      {
+        "w": "to",
+        "start": 6.92,
+        "end": 7
+      },
+      {
+        "w": "go",
+        "start": 7,
+        "end": 7.2
+      },
+      {
+        "w": "and",
+        "start": 7.2,
+        "end": 7.29
+      },
+      {
+        "w": "fight",
+        "start": 7.29,
+        "end": 7.55
+      },
+      {
+        "w": "for",
+        "start": 7.55,
+        "end": 7.66
+      },
+      {
+        "w": "the",
+        "start": 7.66,
+        "end": 7.79
+      },
+      {
+        "w": "emperor",
+        "start": 7.79,
+        "end": 8.22
+      },
+      {
+        "w": "against",
+        "start": 8.35,
+        "end": 8.63
+      },
+      {
+        "w": "Bijapur",
+        "start": 8.63,
+        "end": 9.21
+      },
+      {
+        "w": "He",
+        "start": 9.95,
+        "end": 10.07
+      },
+      {
+        "w": "asked",
+        "start": 10.07,
+        "end": 10.22
+      },
+      {
+        "w": "to",
+        "start": 10.22,
+        "end": 10.29
+      },
+      {
+        "w": "be",
+        "start": 10.29,
+        "end": 10.39
+      },
+      {
+        "w": "moved",
+        "start": 10.39,
+        "end": 10.68
+      },
+      {
+        "w": "to",
+        "start": 10.68,
+        "end": 10.8
+      },
+      {
+        "w": "another",
+        "start": 10.8,
+        "end": 11.05
+      },
+      {
+        "w": "house",
+        "start": 11.05,
+        "end": 11.46
+      },
+      {
+        "w": "He",
+        "start": 12.23,
+        "end": 12.37
+      },
+      {
+        "w": "even",
+        "start": 12.37,
+        "end": 12.6
+      },
+      {
+        "w": "asked",
+        "start": 12.6,
+        "end": 12.83
+      },
+      {
+        "w": "to",
+        "start": 12.83,
+        "end": 12.92
+      },
+      {
+        "w": "go",
+        "start": 12.92,
+        "end": 13.09
+      },
+      {
+        "w": "to",
+        "start": 13.09,
+        "end": 13.21
+      },
+      {
+        "w": "Benares",
+        "start": 13.21,
+        "end": 13.86
+      },
+      {
+        "w": "and",
+        "start": 13.86,
+        "end": 14.11
+      },
+      {
+        "w": "become",
+        "start": 14.11,
+        "end": 14.36
+      },
+      {
+        "w": "a",
+        "start": 14.36,
+        "end": 14.4
+      },
+      {
+        "w": "holy",
+        "start": 14.4,
+        "end": 14.69
+      },
+      {
+        "w": "man",
+        "start": 14.69,
+        "end": 15.1
+      },
+      {
+        "w": "The",
+        "start": 15.85,
+        "end": 15.91
+      },
+      {
+        "w": "reply",
+        "start": 15.91,
+        "end": 16.26
+      },
+      {
+        "w": "came",
+        "start": 16.26,
+        "end": 16.47
+      },
+      {
+        "w": "back",
+        "start": 16.47,
+        "end": 16.85
+      },
+      {
+        "w": "let",
+        "start": 17.39,
+        "end": 17.54
+      },
+      {
+        "w": "him",
+        "start": 17.54,
+        "end": 17.64
+      },
+      {
+        "w": "become",
+        "start": 17.64,
+        "end": 17.89
+      },
+      {
+        "w": "a",
+        "start": 17.89,
+        "end": 17.94
+      },
+      {
+        "w": "fakir",
+        "start": 17.94,
+        "end": 18.5
+      },
+      {
+        "w": "and",
+        "start": 18.82,
+        "end": 18.97
+      },
+      {
+        "w": "live",
+        "start": 18.97,
+        "end": 19.17
+      },
+      {
+        "w": "in",
+        "start": 19.17,
+        "end": 19.25
+      },
+      {
+        "w": "Allahabad",
+        "start": 19.25,
+        "end": 19.83
+      },
+      {
+        "w": "fort",
+        "start": 19.83,
+        "end": 20.23
+      },
+      {
+        "w": "under",
+        "start": 20.66,
+        "end": 20.89
+      },
+      {
+        "w": "guard",
+        "start": 20.89,
+        "end": 21.29
+      }
+    ],
+    "method": "pocketsphinx-align",
+    "audioSeconds": 21.65,
+    "hash": "299f0a87b3d0279a"
+  },
+  "s11": {
+    "words": [
+      {
+        "w": "Then",
+        "start": 0,
+        "end": 0.29
+      },
+      {
+        "w": "came",
+        "start": 0.29,
+        "end": 0.63
+      },
+      {
+        "w": "a",
+        "start": 0.63,
+        "end": 0.71
+      },
+      {
+        "w": "blow",
+        "start": 0.71,
+        "end": 1.19
+      },
+      {
+        "w": "from",
+        "start": 1.19,
+        "end": 1.38
+      },
+      {
+        "w": "the",
+        "start": 1.38,
+        "end": 1.45
+      },
+      {
+        "w": "man",
+        "start": 1.45,
+        "end": 1.75
+      },
+      {
+        "w": "who",
+        "start": 1.75,
+        "end": 1.85
+      },
+      {
+        "w": "had",
+        "start": 1.85,
+        "end": 1.94
+      },
+      {
+        "w": "promised",
+        "start": 1.94,
+        "end": 2.52
+      },
+      {
+        "w": "his",
+        "start": 2.52,
+        "end": 2.65
+      },
+      {
+        "w": "safety",
+        "start": 2.65,
+        "end": 3.18
+      },
+      {
+        "w": "In",
+        "start": 3.75,
+        "end": 3.86
+      },
+      {
+        "w": "July",
+        "start": 3.86,
+        "end": 4.37
+      },
+      {
+        "w": "Jai",
+        "start": 4.62,
+        "end": 4.88
+      },
+      {
+        "w": "Singh",
+        "start": 4.88,
+        "end": 5.18
+      },
+      {
+        "w": "wrote",
+        "start": 5.18,
+        "end": 5.36
+      },
+      {
+        "w": "to",
+        "start": 5.36,
+        "end": 5.45
+      },
+      {
+        "w": "his",
+        "start": 5.45,
+        "end": 5.61
+      },
+      {
+        "w": "son",
+        "start": 5.61,
+        "end": 5.92
+      },
+      {
+        "w": "from",
+        "start": 5.92,
+        "end": 6.08
+      },
+      {
+        "w": "the",
+        "start": 6.08,
+        "end": 6.16
+      },
+      {
+        "w": "Deccan",
+        "start": 6.16,
+        "end": 6.59
+      },
+      {
+        "w": "His",
+        "start": 7.41,
+        "end": 7.56
+      },
+      {
+        "w": "war",
+        "start": 7.56,
+        "end": 7.79
+      },
+      {
+        "w": "there",
+        "start": 7.79,
+        "end": 8.03
+      },
+      {
+        "w": "was",
+        "start": 8.03,
+        "end": 8.16
+      },
+      {
+        "w": "going",
+        "start": 8.16,
+        "end": 8.4
+      },
+      {
+        "w": "badly",
+        "start": 8.4,
+        "end": 8.88
+      },
+      {
+        "w": "and",
+        "start": 9.25,
+        "end": 9.37
+      },
+      {
+        "w": "it",
+        "start": 9.37,
+        "end": 9.43
+      },
+      {
+        "w": "was",
+        "start": 9.43,
+        "end": 9.82
+      },
+      {
+        "w": "he",
+        "start": 9.82,
+        "end": 9.91
+      },
+      {
+        "w": "said",
+        "start": 9.91,
+        "end": 10.25
+      },
+      {
+        "w": "not",
+        "start": 10.66,
+        "end": 10.91
+      },
+      {
+        "w": "at",
+        "start": 10.91,
+        "end": 11.01
+      },
+      {
+        "w": "all",
+        "start": 11.01,
+        "end": 11.16
+      },
+      {
+        "w": "politic",
+        "start": 11.16,
+        "end": 11.74
+      },
+      {
+        "w": "to",
+        "start": 11.89,
+        "end": 12
+      },
+      {
+        "w": "let",
+        "start": 12,
+        "end": 12.16
+      },
+      {
+        "w": "Shivaji",
+        "start": 12.16,
+        "end": 12.66
+      },
+      {
+        "w": "come",
+        "start": 12.66,
+        "end": 12.84
+      },
+      {
+        "w": "home",
+        "start": 12.84,
+        "end": 13.15
+      },
+      {
+        "w": "Keep",
+        "start": 13.9,
+        "end": 14.16
+      },
+      {
+        "w": "him",
+        "start": 14.16,
+        "end": 14.31
+      },
+      {
+        "w": "in",
+        "start": 14.31,
+        "end": 14.41
+      },
+      {
+        "w": "Agra",
+        "start": 14.41,
+        "end": 14.89
+      },
+      {
+        "w": "he",
+        "start": 15.04,
+        "end": 15.16
+      },
+      {
+        "w": "advised",
+        "start": 15.16,
+        "end": 15.67
+      },
+      {
+        "w": "Treat",
+        "start": 16.13,
+        "end": 16.35
+      },
+      {
+        "w": "him",
+        "start": 16.35,
+        "end": 16.46
+      },
+      {
+        "w": "well",
+        "start": 16.46,
+        "end": 16.85
+      },
+      {
+        "w": "but",
+        "start": 17.22,
+        "end": 17.4
+      },
+      {
+        "w": "keep",
+        "start": 17.4,
+        "end": 17.66
+      },
+      {
+        "w": "him",
+        "start": 17.66,
+        "end": 17.92
+      },
+      {
+        "w": "By",
+        "start": 18.93,
+        "end": 19.06
+      },
+      {
+        "w": "now",
+        "start": 19.06,
+        "end": 19.37
+      },
+      {
+        "w": "Shivaji's",
+        "start": 19.37,
+        "end": 19.94
+      },
+      {
+        "w": "money",
+        "start": 19.94,
+        "end": 20.22
+      },
+      {
+        "w": "was",
+        "start": 20.22,
+        "end": 20.39
+      },
+      {
+        "w": "running",
+        "start": 20.39,
+        "end": 20.63
+      },
+      {
+        "w": "low",
+        "start": 20.63,
+        "end": 20.99
+      },
+      {
+        "w": "He",
+        "start": 21.61,
+        "end": 21.74
+      },
+      {
+        "w": "borrowed",
+        "start": 21.74,
+        "end": 22.07
+      },
+      {
+        "w": "sixty",
+        "start": 22.07,
+        "end": 22.46
+      },
+      {
+        "w": "six",
+        "start": 22.46,
+        "end": 22.73
+      },
+      {
+        "w": "thousand",
+        "start": 22.73,
+        "end": 23.09
+      },
+      {
+        "w": "rupees",
+        "start": 23.09,
+        "end": 23.53
+      },
+      {
+        "w": "from",
+        "start": 23.53,
+        "end": 23.66
+      },
+      {
+        "w": "Ram",
+        "start": 23.66,
+        "end": 23.93
+      },
+      {
+        "w": "Singh",
+        "start": 23.93,
+        "end": 24.3
+      },
+      {
+        "w": "And",
+        "start": 25.26,
+        "end": 25.37
+      },
+      {
+        "w": "over",
+        "start": 25.37,
+        "end": 25.53
+      },
+      {
+        "w": "the",
+        "start": 25.53,
+        "end": 25.6
+      },
+      {
+        "w": "summer",
+        "start": 25.6,
+        "end": 26.05
+      },
+      {
+        "w": "he",
+        "start": 26.33,
+        "end": 26.43
+      },
+      {
+        "w": "sent",
+        "start": 26.43,
+        "end": 26.63
+      },
+      {
+        "w": "his",
+        "start": 26.63,
+        "end": 26.78
+      },
+      {
+        "w": "own",
+        "start": 26.78,
+        "end": 26.95
+      },
+      {
+        "w": "escort",
+        "start": 26.95,
+        "end": 27.34
+      },
+      {
+        "w": "home",
+        "start": 27.34,
+        "end": 27.65
+      },
+      {
+        "w": "leaving",
+        "start": 28.21,
+        "end": 28.48
+      },
+      {
+        "w": "himself",
+        "start": 28.48,
+        "end": 28.88
+      },
+      {
+        "w": "almost",
+        "start": 28.88,
+        "end": 29.35
+      },
+      {
+        "w": "alone",
+        "start": 29.35,
+        "end": 29.77
+      },
+      {
+        "w": "To",
+        "start": 30.51,
+        "end": 30.58
+      },
+      {
+        "w": "the",
+        "start": 30.58,
+        "end": 30.67
+      },
+      {
+        "w": "court",
+        "start": 30.67,
+        "end": 31.05
+      },
+      {
+        "w": "it",
+        "start": 31.05,
+        "end": 31.21
+      },
+      {
+        "w": "looked",
+        "start": 31.21,
+        "end": 31.42
+      },
+      {
+        "w": "like",
+        "start": 31.42,
+        "end": 31.57
+      },
+      {
+        "w": "surrender",
+        "start": 31.57,
+        "end": 32.19
+      }
+    ],
+    "method": "pocketsphinx-align",
+    "audioSeconds": 32.2,
+    "hash": "1ee94d1f6c97fa92"
+  },
+  "s12": {
+    "words": [
+      {
+        "w": "It",
+        "start": 0,
+        "end": 0.07
+      },
+      {
+        "w": "was",
+        "start": 0.07,
+        "end": 0.26
+      },
+      {
+        "w": "preparation",
+        "start": 0.26,
+        "end": 0.95
+      },
+      {
+        "w": "Shivaji",
+        "start": 1.4,
+        "end": 1.96
+      },
+      {
+        "w": "fell",
+        "start": 1.96,
+        "end": 2.26
+      },
+      {
+        "w": "ill",
+        "start": 2.26,
+        "end": 2.58
+      },
+      {
+        "w": "or",
+        "start": 2.84,
+        "end": 2.99
+      },
+      {
+        "w": "appeared",
+        "start": 2.99,
+        "end": 3.32
+      },
+      {
+        "w": "to",
+        "start": 3.32,
+        "end": 3.56
+      },
+      {
+        "w": "Large",
+        "start": 4.31,
+        "end": 4.7
+      },
+      {
+        "w": "baskets",
+        "start": 4.7,
+        "end": 5.12
+      },
+      {
+        "w": "of",
+        "start": 5.12,
+        "end": 5.18
+      },
+      {
+        "w": "sweets",
+        "start": 5.18,
+        "end": 5.55
+      },
+      {
+        "w": "began",
+        "start": 5.55,
+        "end": 5.82
+      },
+      {
+        "w": "to",
+        "start": 5.82,
+        "end": 5.91
+      },
+      {
+        "w": "leave",
+        "start": 5.91,
+        "end": 6.16
+      },
+      {
+        "w": "his",
+        "start": 6.16,
+        "end": 6.3
+      },
+      {
+        "w": "quarters",
+        "start": 6.3,
+        "end": 6.78
+      },
+      {
+        "w": "gifts",
+        "start": 7.24,
+        "end": 7.5
+      },
+      {
+        "w": "for",
+        "start": 7.5,
+        "end": 7.62
+      },
+      {
+        "w": "Brahmins",
+        "start": 7.62,
+        "end": 8.14
+      },
+      {
+        "w": "holy",
+        "start": 8.42,
+        "end": 8.69
+      },
+      {
+        "w": "men",
+        "start": 8.69,
+        "end": 9.05
+      },
+      {
+        "w": "and",
+        "start": 9.18,
+        "end": 9.33
+      },
+      {
+        "w": "courtiers",
+        "start": 9.33,
+        "end": 9.89
+      },
+      {
+        "w": "Each",
+        "start": 10.7,
+        "end": 10.91
+      },
+      {
+        "w": "was",
+        "start": 10.91,
+        "end": 11.02
+      },
+      {
+        "w": "slung",
+        "start": 11.02,
+        "end": 11.34
+      },
+      {
+        "w": "from",
+        "start": 11.34,
+        "end": 11.49
+      },
+      {
+        "w": "a",
+        "start": 11.49,
+        "end": 11.54
+      },
+      {
+        "w": "pole",
+        "start": 11.54,
+        "end": 11.96
+      },
+      {
+        "w": "and",
+        "start": 12.2,
+        "end": 12.35
+      },
+      {
+        "w": "carried",
+        "start": 12.35,
+        "end": 12.68
+      },
+      {
+        "w": "by",
+        "start": 12.68,
+        "end": 12.8
+      },
+      {
+        "w": "two",
+        "start": 12.8,
+        "end": 13.01
+      },
+      {
+        "w": "porters",
+        "start": 13.01,
+        "end": 13.5
+      },
+      {
+        "w": "At",
+        "start": 14.38,
+        "end": 14.52
+      },
+      {
+        "w": "first",
+        "start": 14.52,
+        "end": 14.89
+      },
+      {
+        "w": "the",
+        "start": 15.1,
+        "end": 15.19
+      },
+      {
+        "w": "guards",
+        "start": 15.19,
+        "end": 15.5
+      },
+      {
+        "w": "opened",
+        "start": 15.5,
+        "end": 15.71
+      },
+      {
+        "w": "them",
+        "start": 15.71,
+        "end": 15.91
+      },
+      {
+        "w": "and",
+        "start": 16.15,
+        "end": 16.31
+      },
+      {
+        "w": "found",
+        "start": 16.31,
+        "end": 16.54
+      },
+      {
+        "w": "sweets",
+        "start": 16.54,
+        "end": 16.98
+      },
+      {
+        "w": "After",
+        "start": 17.52,
+        "end": 17.78
+      },
+      {
+        "w": "some",
+        "start": 17.78,
+        "end": 18.02
+      },
+      {
+        "w": "days",
+        "start": 18.02,
+        "end": 18.38
+      },
+      {
+        "w": "they",
+        "start": 18.67,
+        "end": 18.8
+      },
+      {
+        "w": "stopped",
+        "start": 18.8,
+        "end": 19.24
+      },
+      {
+        "w": "opening",
+        "start": 19.24,
+        "end": 19.52
+      },
+      {
+        "w": "them",
+        "start": 19.52,
+        "end": 19.74
+      }
+    ],
+    "method": "pocketsphinx-align",
+    "audioSeconds": 20.2,
+    "hash": "29b0f4b759dabafc"
+  },
+  "s13": {
+    "words": [
+      {
+        "w": "Then",
+        "start": 0,
+        "end": 0.49
+      },
+      {
+        "w": "one",
+        "start": 0.75,
+        "end": 0.99
+      },
+      {
+        "w": "evening",
+        "start": 0.99,
+        "end": 1.42
+      },
+      {
+        "w": "in",
+        "start": 1.42,
+        "end": 1.57
+      },
+      {
+        "w": "the",
+        "start": 1.57,
+        "end": 1.64
+      },
+      {
+        "w": "third",
+        "start": 1.64,
+        "end": 1.95
+      },
+      {
+        "w": "week",
+        "start": 1.95,
+        "end": 2.16
+      },
+      {
+        "w": "of",
+        "start": 2.16,
+        "end": 2.26
+      },
+      {
+        "w": "August",
+        "start": 2.26,
+        "end": 2.72
+      },
+      {
+        "w": "the",
+        "start": 3.05,
+        "end": 3.16
+      },
+      {
+        "w": "plan",
+        "start": 3.16,
+        "end": 3.53
+      },
+      {
+        "w": "went",
+        "start": 3.53,
+        "end": 3.8
+      },
+      {
+        "w": "into",
+        "start": 3.8,
+        "end": 3.95
+      },
+      {
+        "w": "motion",
+        "start": 3.95,
+        "end": 4.32
+      },
+      {
+        "w": "According",
+        "start": 5.17,
+        "end": 5.58
+      },
+      {
+        "w": "to",
+        "start": 5.58,
+        "end": 5.67
+      },
+      {
+        "w": "later",
+        "start": 5.67,
+        "end": 5.97
+      },
+      {
+        "w": "accounts",
+        "start": 5.97,
+        "end": 6.45
+      },
+      {
+        "w": "Shivaji's",
+        "start": 6.72,
+        "end": 7.29
+      },
+      {
+        "w": "half",
+        "start": 7.29,
+        "end": 7.53
+      },
+      {
+        "w": "brother",
+        "start": 7.53,
+        "end": 7.94
+      },
+      {
+        "w": "Hiroji",
+        "start": 8.22,
+        "end": 8.65
+      },
+      {
+        "w": "Farzand",
+        "start": 8.65,
+        "end": 9.32
+      },
+      {
+        "w": "lay",
+        "start": 9.64,
+        "end": 9.84
+      },
+      {
+        "w": "down",
+        "start": 9.84,
+        "end": 10.16
+      },
+      {
+        "w": "on",
+        "start": 10.16,
+        "end": 10.28
+      },
+      {
+        "w": "Shivaji's",
+        "start": 10.28,
+        "end": 10.85
+      },
+      {
+        "w": "bed",
+        "start": 10.85,
+        "end": 11.24
+      },
+      {
+        "w": "beneath",
+        "start": 11.46,
+        "end": 11.75
+      },
+      {
+        "w": "a",
+        "start": 11.75,
+        "end": 11.79
+      },
+      {
+        "w": "quilt",
+        "start": 11.79,
+        "end": 12.23
+      },
+      {
+        "w": "with",
+        "start": 12.58,
+        "end": 12.73
+      },
+      {
+        "w": "one",
+        "start": 12.73,
+        "end": 13
+      },
+      {
+        "w": "arm",
+        "start": 13,
+        "end": 13.3
+      },
+      {
+        "w": "showing",
+        "start": 13.3,
+        "end": 13.76
+      },
+      {
+        "w": "and",
+        "start": 14.19,
+        "end": 14.31
+      },
+      {
+        "w": "Shivaji's",
+        "start": 14.31,
+        "end": 14.85
+      },
+      {
+        "w": "gold",
+        "start": 14.85,
+        "end": 15.21
+      },
+      {
+        "w": "bracelet",
+        "start": 15.21,
+        "end": 15.68
+      },
+      {
+        "w": "on",
+        "start": 15.68,
+        "end": 15.78
+      },
+      {
+        "w": "the",
+        "start": 15.78,
+        "end": 15.85
+      },
+      {
+        "w": "wrist",
+        "start": 15.85,
+        "end": 16.25
+      },
+      {
+        "w": "A",
+        "start": 17.33,
+        "end": 17.41
+      },
+      {
+        "w": "boy",
+        "start": 17.41,
+        "end": 17.74
+      },
+      {
+        "w": "sat",
+        "start": 17.74,
+        "end": 18.03
+      },
+      {
+        "w": "by",
+        "start": 18.03,
+        "end": 18.16
+      },
+      {
+        "w": "the",
+        "start": 18.16,
+        "end": 18.25
+      },
+      {
+        "w": "bed",
+        "start": 18.25,
+        "end": 18.59
+      },
+      {
+        "w": "massaging",
+        "start": 18.79,
+        "end": 19.3
+      },
+      {
+        "w": "his",
+        "start": 19.3,
+        "end": 19.45
+      },
+      {
+        "w": "feet",
+        "start": 19.45,
+        "end": 19.75
+      },
+      {
+        "w": "And",
+        "start": 20.58,
+        "end": 20.71
+      },
+      {
+        "w": "inside",
+        "start": 20.71,
+        "end": 21.03
+      },
+      {
+        "w": "the",
+        "start": 21.03,
+        "end": 21.1
+      },
+      {
+        "w": "baskets",
+        "start": 21.1,
+        "end": 21.69
+      },
+      {
+        "w": "among",
+        "start": 22,
+        "end": 22.25
+      },
+      {
+        "w": "others",
+        "start": 22.25,
+        "end": 22.63
+      },
+      {
+        "w": "filled",
+        "start": 22.63,
+        "end": 22.94
+      },
+      {
+        "w": "with",
+        "start": 22.94,
+        "end": 23.07
+      },
+      {
+        "w": "real",
+        "start": 23.07,
+        "end": 23.35
+      },
+      {
+        "w": "sweets",
+        "start": 23.35,
+        "end": 23.85
+      },
+      {
+        "w": "crouched",
+        "start": 24.3,
+        "end": 24.73
+      },
+      {
+        "w": "Shivaji",
+        "start": 24.73,
+        "end": 25.44
+      },
+      {
+        "w": "and",
+        "start": 25.44,
+        "end": 25.69
+      },
+      {
+        "w": "his",
+        "start": 25.69,
+        "end": 25.8
+      },
+      {
+        "w": "son",
+        "start": 25.8,
+        "end": 26.16
+      },
+      {
+        "w": "The",
+        "start": 27.82,
+        "end": 27.9
+      },
+      {
+        "w": "porters",
+        "start": 27.9,
+        "end": 28.32
+      },
+      {
+        "w": "carried",
+        "start": 28.32,
+        "end": 28.6
+      },
+      {
+        "w": "them",
+        "start": 28.6,
+        "end": 28.78
+      },
+      {
+        "w": "past",
+        "start": 28.78,
+        "end": 29.08
+      },
+      {
+        "w": "the",
+        "start": 29.08,
+        "end": 29.15
+      },
+      {
+        "w": "guards",
+        "start": 29.15,
+        "end": 29.64
+      },
+      {
+        "w": "and",
+        "start": 29.9,
+        "end": 30.08
+      },
+      {
+        "w": "out",
+        "start": 30.08,
+        "end": 30.39
+      },
+      {
+        "w": "into",
+        "start": 30.55,
+        "end": 30.76
+      },
+      {
+        "w": "the",
+        "start": 30.76,
+        "end": 30.85
+      },
+      {
+        "w": "dark",
+        "start": 30.85,
+        "end": 31.23
+      }
+    ],
+    "method": "pocketsphinx-align",
+    "audioSeconds": 31.45,
+    "hash": "f25c327a459e643a"
+  },
+  "s14": {
+    "words": [
+      {
+        "w": "How",
+        "start": 0,
+        "end": 0.2
+      },
+      {
+        "w": "long",
+        "start": 0.2,
+        "end": 0.6
+      },
+      {
+        "w": "did",
+        "start": 0.6,
+        "end": 0.73
+      },
+      {
+        "w": "the",
+        "start": 0.73,
+        "end": 0.81
+      },
+      {
+        "w": "trick",
+        "start": 0.81,
+        "end": 1.12
+      },
+      {
+        "w": "hold",
+        "start": 1.12,
+        "end": 1.57
+      },
+      {
+        "w": "The",
+        "start": 2.2,
+        "end": 2.28
+      },
+      {
+        "w": "chronicles",
+        "start": 2.28,
+        "end": 2.78
+      },
+      {
+        "w": "say",
+        "start": 2.78,
+        "end": 3.04
+      },
+      {
+        "w": "the",
+        "start": 3.04,
+        "end": 3.13
+      },
+      {
+        "w": "guards",
+        "start": 3.13,
+        "end": 3.45
+      },
+      {
+        "w": "were",
+        "start": 3.45,
+        "end": 3.55
+      },
+      {
+        "w": "fooled",
+        "start": 3.55,
+        "end": 3.91
+      },
+      {
+        "w": "for",
+        "start": 3.91,
+        "end": 4.03
+      },
+      {
+        "w": "most",
+        "start": 4.03,
+        "end": 4.32
+      },
+      {
+        "w": "of",
+        "start": 4.32,
+        "end": 4.4
+      },
+      {
+        "w": "the",
+        "start": 4.4,
+        "end": 4.46
+      },
+      {
+        "w": "next",
+        "start": 4.46,
+        "end": 4.72
+      },
+      {
+        "w": "day",
+        "start": 4.72,
+        "end": 5.11
+      },
+      {
+        "w": "until",
+        "start": 5.51,
+        "end": 5.72
+      },
+      {
+        "w": "the",
+        "start": 5.72,
+        "end": 5.79
+      },
+      {
+        "w": "house",
+        "start": 5.79,
+        "end": 6.11
+      },
+      {
+        "w": "fell",
+        "start": 6.11,
+        "end": 6.28
+      },
+      {
+        "w": "strangely",
+        "start": 6.28,
+        "end": 6.75
+      },
+      {
+        "w": "quiet",
+        "start": 6.75,
+        "end": 7.25
+      },
+      {
+        "w": "and",
+        "start": 7.53,
+        "end": 7.66
+      },
+      {
+        "w": "they",
+        "start": 7.66,
+        "end": 7.74
+      },
+      {
+        "w": "found",
+        "start": 7.74,
+        "end": 8.03
+      },
+      {
+        "w": "the",
+        "start": 8.03,
+        "end": 8.1
+      },
+      {
+        "w": "bed",
+        "start": 8.1,
+        "end": 8.49
+      },
+      {
+        "w": "empty",
+        "start": 8.49,
+        "end": 8.9
+      },
+      {
+        "w": "The",
+        "start": 9.94,
+        "end": 10.03
+      },
+      {
+        "w": "contemporary",
+        "start": 10.03,
+        "end": 10.61
+      },
+      {
+        "w": "letters",
+        "start": 10.61,
+        "end": 10.94
+      },
+      {
+        "w": "suggest",
+        "start": 10.94,
+        "end": 11.34
+      },
+      {
+        "w": "it",
+        "start": 11.34,
+        "end": 11.4
+      },
+      {
+        "w": "was",
+        "start": 11.4,
+        "end": 11.54
+      },
+      {
+        "w": "quicker",
+        "start": 11.54,
+        "end": 11.96
+      },
+      {
+        "w": "One",
+        "start": 12.48,
+        "end": 12.87
+      },
+      {
+        "w": "written",
+        "start": 13.08,
+        "end": 13.28
+      },
+      {
+        "w": "in",
+        "start": 13.28,
+        "end": 13.39
+      },
+      {
+        "w": "Agra",
+        "start": 13.39,
+        "end": 13.79
+      },
+      {
+        "w": "and",
+        "start": 13.92,
+        "end": 14.08
+      },
+      {
+        "w": "dated",
+        "start": 14.08,
+        "end": 14.32
+      },
+      {
+        "w": "the",
+        "start": 14.32,
+        "end": 14.45
+      },
+      {
+        "w": "eighteenth",
+        "start": 14.45,
+        "end": 14.8
+      },
+      {
+        "w": "of",
+        "start": 14.8,
+        "end": 14.89
+      },
+      {
+        "w": "August",
+        "start": 14.89,
+        "end": 15.34
+      },
+      {
+        "w": "says",
+        "start": 15.62,
+        "end": 15.87
+      },
+      {
+        "w": "simply",
+        "start": 15.87,
+        "end": 16.32
+      },
+      {
+        "w": "This",
+        "start": 16.7,
+        "end": 16.93
+      },
+      {
+        "w": "morning",
+        "start": 16.93,
+        "end": 17.26
+      },
+      {
+        "w": "Shivaji",
+        "start": 17.26,
+        "end": 17.78
+      },
+      {
+        "w": "was",
+        "start": 17.78,
+        "end": 17.96
+      },
+      {
+        "w": "found",
+        "start": 17.96,
+        "end": 18.23
+      },
+      {
+        "w": "to",
+        "start": 18.23,
+        "end": 18.3
+      },
+      {
+        "w": "have",
+        "start": 18.3,
+        "end": 18.39
+      },
+      {
+        "w": "fled",
+        "start": 18.39,
+        "end": 18.77
+      }
+    ],
+    "method": "pocketsphinx-align",
+    "audioSeconds": 18.9,
+    "hash": "89408663f1a50412"
+  },
+  "s15": {
+    "words": [
+      {
+        "w": "The",
+        "start": 0,
+        "end": 0.13
+      },
+      {
+        "w": "city",
+        "start": 0.13,
+        "end": 0.63
+      },
+      {
+        "w": "erupted",
+        "start": 0.63,
+        "end": 1.16
+      },
+      {
+        "w": "Ram",
+        "start": 1.78,
+        "end": 2.03
+      },
+      {
+        "w": "Singh's",
+        "start": 2.03,
+        "end": 2.39
+      },
+      {
+        "w": "own",
+        "start": 2.39,
+        "end": 2.66
+      },
+      {
+        "w": "staff",
+        "start": 2.66,
+        "end": 3.07
+      },
+      {
+        "w": "wrote",
+        "start": 3.07,
+        "end": 3.28
+      },
+      {
+        "w": "home",
+        "start": 3.28,
+        "end": 3.64
+      },
+      {
+        "w": "urging",
+        "start": 3.93,
+        "end": 4.25
+      },
+      {
+        "w": "that",
+        "start": 4.25,
+        "end": 4.44
+      },
+      {
+        "w": "every",
+        "start": 4.44,
+        "end": 4.72
+      },
+      {
+        "w": "pass",
+        "start": 4.72,
+        "end": 5.19
+      },
+      {
+        "w": "and",
+        "start": 5.19,
+        "end": 5.3
+      },
+      {
+        "w": "river",
+        "start": 5.3,
+        "end": 5.56
+      },
+      {
+        "w": "crossing",
+        "start": 5.56,
+        "end": 5.96
+      },
+      {
+        "w": "be",
+        "start": 5.96,
+        "end": 6.07
+      },
+      {
+        "w": "watched",
+        "start": 6.07,
+        "end": 6.57
+      },
+      {
+        "w": "and",
+        "start": 7.08,
+        "end": 7.2
+      },
+      {
+        "w": "that",
+        "start": 7.2,
+        "end": 7.32
+      },
+      {
+        "w": "anyone",
+        "start": 7.32,
+        "end": 7.67
+      },
+      {
+        "w": "dressed",
+        "start": 7.67,
+        "end": 8
+      },
+      {
+        "w": "as",
+        "start": 8,
+        "end": 8.1
+      },
+      {
+        "w": "a",
+        "start": 8.1,
+        "end": 8.15
+      },
+      {
+        "w": "yogi",
+        "start": 8.15,
+        "end": 8.69
+      },
+      {
+        "w": "or",
+        "start": 8.8,
+        "end": 8.94
+      },
+      {
+        "w": "a",
+        "start": 8.94,
+        "end": 8.97
+      },
+      {
+        "w": "sannyasi",
+        "start": 8.97,
+        "end": 9.64
+      },
+      {
+        "w": "be",
+        "start": 9.8,
+        "end": 9.92
+      },
+      {
+        "w": "questioned",
+        "start": 9.92,
+        "end": 10.43
+      },
+      {
+        "w": "and",
+        "start": 10.43,
+        "end": 10.6
+      },
+      {
+        "w": "searched",
+        "start": 10.6,
+        "end": 11.05
+      },
+      {
+        "w": "Fulad",
+        "start": 11.73,
+        "end": 12.13
+      },
+      {
+        "w": "Khan",
+        "start": 12.13,
+        "end": 12.55
+      },
+      {
+        "w": "whose",
+        "start": 12.78,
+        "end": 12.96
+      },
+      {
+        "w": "men",
+        "start": 12.96,
+        "end": 13.13
+      },
+      {
+        "w": "had",
+        "start": 13.13,
+        "end": 13.26
+      },
+      {
+        "w": "ringed",
+        "start": 13.26,
+        "end": 13.53
+      },
+      {
+        "w": "the",
+        "start": 13.53,
+        "end": 13.59
+      },
+      {
+        "w": "house",
+        "start": 13.59,
+        "end": 14.01
+      },
+      {
+        "w": "told",
+        "start": 14.28,
+        "end": 14.49
+      },
+      {
+        "w": "the",
+        "start": 14.49,
+        "end": 14.6
+      },
+      {
+        "w": "emperor",
+        "start": 14.6,
+        "end": 14.94
+      },
+      {
+        "w": "the",
+        "start": 14.94,
+        "end": 15.04
+      },
+      {
+        "w": "escape",
+        "start": 15.04,
+        "end": 15.39
+      },
+      {
+        "w": "had",
+        "start": 15.39,
+        "end": 15.49
+      },
+      {
+        "w": "happened",
+        "start": 15.49,
+        "end": 15.83
+      },
+      {
+        "w": "on",
+        "start": 15.83,
+        "end": 15.93
+      },
+      {
+        "w": "Ram",
+        "start": 15.93,
+        "end": 16.21
+      },
+      {
+        "w": "Singh's",
+        "start": 16.21,
+        "end": 16.49
+      },
+      {
+        "w": "side",
+        "start": 16.49,
+        "end": 16.76
+      },
+      {
+        "w": "of",
+        "start": 16.76,
+        "end": 16.83
+      },
+      {
+        "w": "the",
+        "start": 16.83,
+        "end": 16.9
+      },
+      {
+        "w": "watch",
+        "start": 16.9,
+        "end": 17.3
+      },
+      {
+        "w": "Ram",
+        "start": 18.06,
+        "end": 18.23
+      },
+      {
+        "w": "Singh's",
+        "start": 18.23,
+        "end": 18.52
+      },
+      {
+        "w": "men",
+        "start": 18.52,
+        "end": 18.73
+      },
+      {
+        "w": "were",
+        "start": 18.73,
+        "end": 18.83
+      },
+      {
+        "w": "seized",
+        "start": 18.83,
+        "end": 19.33
+      },
+      {
+        "w": "and",
+        "start": 19.33,
+        "end": 19.61
+      },
+      {
+        "w": "threatened",
+        "start": 19.61,
+        "end": 20.1
+      },
+      {
+        "w": "until",
+        "start": 20.44,
+        "end": 20.65
+      },
+      {
+        "w": "they",
+        "start": 20.65,
+        "end": 20.75
+      },
+      {
+        "w": "said",
+        "start": 20.75,
+        "end": 20.99
+      },
+      {
+        "w": "their",
+        "start": 20.99,
+        "end": 21.09
+      },
+      {
+        "w": "master",
+        "start": 21.09,
+        "end": 21.44
+      },
+      {
+        "w": "had",
+        "start": 21.44,
+        "end": 21.55
+      },
+      {
+        "w": "helped",
+        "start": 21.55,
+        "end": 21.94
+      },
+      {
+        "w": "Some",
+        "start": 22.47,
+        "end": 22.71
+      },
+      {
+        "w": "later",
+        "start": 22.71,
+        "end": 22.97
+      },
+      {
+        "w": "took",
+        "start": 22.97,
+        "end": 23.14
+      },
+      {
+        "w": "it",
+        "start": 23.14,
+        "end": 23.23
+      },
+      {
+        "w": "back",
+        "start": 23.23,
+        "end": 23.61
+      },
+      {
+        "w": "saying",
+        "start": 23.86,
+        "end": 24.11
+      },
+      {
+        "w": "they",
+        "start": 24.11,
+        "end": 24.19
+      },
+      {
+        "w": "had",
+        "start": 24.19,
+        "end": 24.3
+      },
+      {
+        "w": "spoken",
+        "start": 24.3,
+        "end": 24.68
+      },
+      {
+        "w": "out",
+        "start": 24.68,
+        "end": 24.78
+      },
+      {
+        "w": "of",
+        "start": 24.78,
+        "end": 24.84
+      },
+      {
+        "w": "fear",
+        "start": 24.84,
+        "end": 25.15
+      },
+      {
+        "w": "The",
+        "start": 25.98,
+        "end": 26.12
+      },
+      {
+        "w": "emperor",
+        "start": 26.12,
+        "end": 26.54
+      },
+      {
+        "w": "angry",
+        "start": 26.54,
+        "end": 27
+      },
+      {
+        "w": "cut",
+        "start": 27.29,
+        "end": 27.5
+      },
+      {
+        "w": "Ram",
+        "start": 27.5,
+        "end": 27.77
+      },
+      {
+        "w": "Singh's",
+        "start": 27.77,
+        "end": 28.05
+      },
+      {
+        "w": "rank",
+        "start": 28.05,
+        "end": 28.44
+      },
+      {
+        "w": "and",
+        "start": 28.68,
+        "end": 28.84
+      },
+      {
+        "w": "took",
+        "start": 28.84,
+        "end": 29
+      },
+      {
+        "w": "away",
+        "start": 29,
+        "end": 29.24
+      },
+      {
+        "w": "his",
+        "start": 29.24,
+        "end": 29.38
+      },
+      {
+        "w": "lands",
+        "start": 29.38,
+        "end": 29.89
+      }
+    ],
+    "method": "pocketsphinx-align",
+    "audioSeconds": 29.9,
+    "hash": "06865fb9cdf540fc"
+  },
+  "s16": {
+    "words": [
+      {
+        "w": "So",
+        "start": 0,
+        "end": 0.33
+      },
+      {
+        "w": "was",
+        "start": 0.33,
+        "end": 0.53
+      },
+      {
+        "w": "it",
+        "start": 0.53,
+        "end": 0.63
+      },
+      {
+        "w": "really",
+        "start": 0.63,
+        "end": 0.91
+      },
+      {
+        "w": "the",
+        "start": 0.91,
+        "end": 1.01
+      },
+      {
+        "w": "baskets",
+        "start": 1.01,
+        "end": 1.59
+      },
+      {
+        "w": "About",
+        "start": 2.13,
+        "end": 2.4
+      },
+      {
+        "w": "two",
+        "start": 2.4,
+        "end": 2.61
+      },
+      {
+        "w": "weeks",
+        "start": 2.61,
+        "end": 2.86
+      },
+      {
+        "w": "after",
+        "start": 2.86,
+        "end": 3.07
+      },
+      {
+        "w": "the",
+        "start": 3.07,
+        "end": 3.19
+      },
+      {
+        "w": "escape",
+        "start": 3.19,
+        "end": 3.63
+      },
+      {
+        "w": "one",
+        "start": 4.03,
+        "end": 4.18
+      },
+      {
+        "w": "of",
+        "start": 4.18,
+        "end": 4.3
+      },
+      {
+        "w": "Ram",
+        "start": 4.3,
+        "end": 4.53
+      },
+      {
+        "w": "Singh's",
+        "start": 4.53,
+        "end": 4.82
+      },
+      {
+        "w": "officers",
+        "start": 4.82,
+        "end": 5.29
+      },
+      {
+        "w": "wrote",
+        "start": 5.29,
+        "end": 5.52
+      },
+      {
+        "w": "that",
+        "start": 5.52,
+        "end": 5.63
+      },
+      {
+        "w": "the",
+        "start": 5.63,
+        "end": 5.71
+      },
+      {
+        "w": "trick",
+        "start": 5.71,
+        "end": 6
+      },
+      {
+        "w": "had",
+        "start": 6,
+        "end": 6.13
+      },
+      {
+        "w": "become",
+        "start": 6.13,
+        "end": 6.47
+      },
+      {
+        "w": "known",
+        "start": 6.47,
+        "end": 6.8
+      },
+      {
+        "w": "Shivaji",
+        "start": 7.42,
+        "end": 7.94
+      },
+      {
+        "w": "had",
+        "start": 7.94,
+        "end": 8.06
+      },
+      {
+        "w": "slipped",
+        "start": 8.06,
+        "end": 8.41
+      },
+      {
+        "w": "out",
+        "start": 8.41,
+        "end": 8.64
+      },
+      {
+        "w": "by",
+        "start": 8.86,
+        "end": 8.99
+      },
+      {
+        "w": "crouching",
+        "start": 8.99,
+        "end": 9.47
+      },
+      {
+        "w": "down",
+        "start": 9.47,
+        "end": 9.72
+      },
+      {
+        "w": "in",
+        "start": 9.72,
+        "end": 9.79
+      },
+      {
+        "w": "the",
+        "start": 9.79,
+        "end": 9.85
+      },
+      {
+        "w": "baskets",
+        "start": 9.85,
+        "end": 10.43
+      },
+      {
+        "w": "Later",
+        "start": 11.05,
+        "end": 11.32
+      },
+      {
+        "w": "Mughal",
+        "start": 11.32,
+        "end": 11.69
+      },
+      {
+        "w": "and",
+        "start": 11.69,
+        "end": 11.79
+      },
+      {
+        "w": "Maratha",
+        "start": 11.79,
+        "end": 12.13
+      },
+      {
+        "w": "histories",
+        "start": 12.13,
+        "end": 12.56
+      },
+      {
+        "w": "tell",
+        "start": 12.56,
+        "end": 12.74
+      },
+      {
+        "w": "the",
+        "start": 12.74,
+        "end": 12.8
+      },
+      {
+        "w": "same",
+        "start": 12.8,
+        "end": 13.07
+      },
+      {
+        "w": "story",
+        "start": 13.07,
+        "end": 13.53
+      },
+      {
+        "w": "But",
+        "start": 14.06,
+        "end": 14.22
+      },
+      {
+        "w": "the",
+        "start": 14.22,
+        "end": 14.28
+      },
+      {
+        "w": "Mughal",
+        "start": 14.28,
+        "end": 14.65
+      },
+      {
+        "w": "court",
+        "start": 14.65,
+        "end": 14.95
+      },
+      {
+        "w": "suspected",
+        "start": 14.95,
+        "end": 15.46
+      },
+      {
+        "w": "inside",
+        "start": 15.46,
+        "end": 15.88
+      },
+      {
+        "w": "help",
+        "start": 15.88,
+        "end": 16.14
+      },
+      {
+        "w": "as",
+        "start": 16.14,
+        "end": 16.26
+      },
+      {
+        "w": "well",
+        "start": 16.26,
+        "end": 16.61
+      },
+      {
+        "w": "And",
+        "start": 17.22,
+        "end": 17.35
+      },
+      {
+        "w": "a",
+        "start": 17.35,
+        "end": 17.38
+      },
+      {
+        "w": "European",
+        "start": 17.38,
+        "end": 17.9
+      },
+      {
+        "w": "writer",
+        "start": 17.9,
+        "end": 18.23
+      },
+      {
+        "w": "of",
+        "start": 18.23,
+        "end": 18.31
+      },
+      {
+        "w": "the",
+        "start": 18.31,
+        "end": 18.38
+      },
+      {
+        "w": "period",
+        "start": 18.38,
+        "end": 18.8
+      },
+      {
+        "w": "Niccolao",
+        "start": 19,
+        "end": 19.39
+      },
+      {
+        "w": "Manucci",
+        "start": 19.39,
+        "end": 19.87
+      },
+      {
+        "w": "claimed",
+        "start": 19.87,
+        "end": 20.22
+      },
+      {
+        "w": "that",
+        "start": 20.22,
+        "end": 20.34
+      },
+      {
+        "w": "Ram",
+        "start": 20.34,
+        "end": 20.58
+      },
+      {
+        "w": "Singh",
+        "start": 20.58,
+        "end": 20.79
+      },
+      {
+        "w": "himself",
+        "start": 20.79,
+        "end": 21.27
+      },
+      {
+        "w": "had",
+        "start": 21.27,
+        "end": 21.41
+      },
+      {
+        "w": "quietly",
+        "start": 21.41,
+        "end": 21.9
+      },
+      {
+        "w": "arranged",
+        "start": 21.9,
+        "end": 22.26
+      },
+      {
+        "w": "it",
+        "start": 22.26,
+        "end": 22.4
+      },
+      {
+        "w": "With",
+        "start": 23.19,
+        "end": 23.33
+      },
+      {
+        "w": "frightened",
+        "start": 23.33,
+        "end": 23.75
+      },
+      {
+        "w": "guards",
+        "start": 23.75,
+        "end": 24.16
+      },
+      {
+        "w": "and",
+        "start": 24.16,
+        "end": 24.26
+      },
+      {
+        "w": "partisan",
+        "start": 24.26,
+        "end": 24.64
+      },
+      {
+        "w": "witnesses",
+        "start": 24.64,
+        "end": 25.16
+      },
+      {
+        "w": "we",
+        "start": 25.45,
+        "end": 25.59
+      },
+      {
+        "w": "may",
+        "start": 25.59,
+        "end": 25.74
+      },
+      {
+        "w": "never",
+        "start": 25.74,
+        "end": 26.03
+      },
+      {
+        "w": "know",
+        "start": 26.03,
+        "end": 26.25
+      },
+      {
+        "w": "exactly",
+        "start": 26.25,
+        "end": 26.71
+      },
+      {
+        "w": "who",
+        "start": 26.71,
+        "end": 26.83
+      },
+      {
+        "w": "looked",
+        "start": 26.83,
+        "end": 27.04
+      },
+      {
+        "w": "the",
+        "start": 27.04,
+        "end": 27.16
+      },
+      {
+        "w": "other",
+        "start": 27.16,
+        "end": 27.31
+      },
+      {
+        "w": "way",
+        "start": 27.31,
+        "end": 27.69
+      }
+    ],
+    "method": "pocketsphinx-align",
+    "audioSeconds": 27.7,
+    "hash": "c0a193a4c78ea4a7"
+  },
+  "s17": {
+    "words": [
+      {
+        "w": "What",
+        "start": 0,
+        "end": 0.16
+      },
+      {
+        "w": "happened",
+        "start": 0.16,
+        "end": 0.52
+      },
+      {
+        "w": "next",
+        "start": 0.52,
+        "end": 0.89
+      },
+      {
+        "w": "grew",
+        "start": 0.89,
+        "end": 1.34
+      },
+      {
+        "w": "into",
+        "start": 1.34,
+        "end": 1.54
+      },
+      {
+        "w": "legend",
+        "start": 1.54,
+        "end": 2.01
+      },
+      {
+        "w": "For",
+        "start": 2.53,
+        "end": 2.69
+      },
+      {
+        "w": "generations",
+        "start": 2.69,
+        "end": 3.44
+      },
+      {
+        "w": "Shivaji's",
+        "start": 3.61,
+        "end": 4.2
+      },
+      {
+        "w": "flight",
+        "start": 4.2,
+        "end": 4.51
+      },
+      {
+        "w": "was",
+        "start": 4.51,
+        "end": 4.67
+      },
+      {
+        "w": "told",
+        "start": 4.67,
+        "end": 5.03
+      },
+      {
+        "w": "as",
+        "start": 5.03,
+        "end": 5.13
+      },
+      {
+        "w": "a",
+        "start": 5.13,
+        "end": 5.16
+      },
+      {
+        "w": "long",
+        "start": 5.16,
+        "end": 5.51
+      },
+      {
+        "w": "pilgrimage",
+        "start": 5.51,
+        "end": 6.13
+      },
+      {
+        "w": "through",
+        "start": 6.42,
+        "end": 6.65
+      },
+      {
+        "w": "Benares",
+        "start": 6.65,
+        "end": 7.31
+      },
+      {
+        "w": "Gaya",
+        "start": 7.51,
+        "end": 7.93
+      },
+      {
+        "w": "even",
+        "start": 8.24,
+        "end": 8.51
+      },
+      {
+        "w": "Puri",
+        "start": 8.51,
+        "end": 8.94
+      },
+      {
+        "w": "full",
+        "start": 9.27,
+        "end": 9.51
+      },
+      {
+        "w": "of",
+        "start": 9.51,
+        "end": 9.6
+      },
+      {
+        "w": "narrow",
+        "start": 9.6,
+        "end": 9.96
+      },
+      {
+        "w": "escapes",
+        "start": 9.96,
+        "end": 10.41
+      },
+      {
+        "w": "in",
+        "start": 10.41,
+        "end": 10.5
+      },
+      {
+        "w": "disguise",
+        "start": 10.5,
+        "end": 11.09
+      },
+      {
+        "w": "The",
+        "start": 11.62,
+        "end": 11.71
+      },
+      {
+        "w": "chronicles",
+        "start": 11.71,
+        "end": 12.21
+      },
+      {
+        "w": "say",
+        "start": 12.21,
+        "end": 12.46
+      },
+      {
+        "w": "he",
+        "start": 12.46,
+        "end": 12.61
+      },
+      {
+        "w": "smeared",
+        "start": 12.61,
+        "end": 12.98
+      },
+      {
+        "w": "himself",
+        "start": 12.98,
+        "end": 13.37
+      },
+      {
+        "w": "with",
+        "start": 13.37,
+        "end": 13.48
+      },
+      {
+        "w": "ash",
+        "start": 13.48,
+        "end": 13.89
+      },
+      {
+        "w": "and",
+        "start": 14.14,
+        "end": 14.29
+      },
+      {
+        "w": "travelled",
+        "start": 14.29,
+        "end": 14.73
+      },
+      {
+        "w": "as",
+        "start": 14.73,
+        "end": 14.85
+      },
+      {
+        "w": "a",
+        "start": 14.85,
+        "end": 14.89
+      },
+      {
+        "w": "wandering",
+        "start": 14.89,
+        "end": 15.4
+      },
+      {
+        "w": "ascetic",
+        "start": 15.4,
+        "end": 15.89
+      },
+      {
+        "w": "Then",
+        "start": 16.62,
+        "end": 16.92
+      },
+      {
+        "w": "in",
+        "start": 16.92,
+        "end": 17.08
+      },
+      {
+        "w": "nineteen",
+        "start": 17.08,
+        "end": 17.51
+      },
+      {
+        "w": "thirty",
+        "start": 17.51,
+        "end": 17.75
+      },
+      {
+        "w": "nine",
+        "start": 17.75,
+        "end": 18.14
+      },
+      {
+        "w": "letters",
+        "start": 18.48,
+        "end": 18.79
+      },
+      {
+        "w": "were",
+        "start": 18.79,
+        "end": 18.87
+      },
+      {
+        "w": "found",
+        "start": 18.87,
+        "end": 19.22
+      },
+      {
+        "w": "in",
+        "start": 19.22,
+        "end": 19.29
+      },
+      {
+        "w": "the",
+        "start": 19.29,
+        "end": 19.36
+      },
+      {
+        "w": "Jaipur",
+        "start": 19.36,
+        "end": 19.81
+      },
+      {
+        "w": "archives",
+        "start": 19.81,
+        "end": 20.39
+      },
+      {
+        "w": "Spy",
+        "start": 20.83,
+        "end": 21.16
+      },
+      {
+        "w": "reports",
+        "start": 21.16,
+        "end": 21.73
+      },
+      {
+        "w": "quoted",
+        "start": 21.9,
+        "end": 22.25
+      },
+      {
+        "w": "in",
+        "start": 22.25,
+        "end": 22.37
+      },
+      {
+        "w": "them",
+        "start": 22.37,
+        "end": 22.59
+      },
+      {
+        "w": "said",
+        "start": 22.81,
+        "end": 23.04
+      },
+      {
+        "w": "Shivaji",
+        "start": 23.04,
+        "end": 23.54
+      },
+      {
+        "w": "reached",
+        "start": 23.54,
+        "end": 23.85
+      },
+      {
+        "w": "his",
+        "start": 23.85,
+        "end": 24
+      },
+      {
+        "w": "fort",
+        "start": 24,
+        "end": 24.27
+      },
+      {
+        "w": "just",
+        "start": 24.27,
+        "end": 24.53
+      },
+      {
+        "w": "twenty",
+        "start": 24.53,
+        "end": 24.81
+      },
+      {
+        "w": "five",
+        "start": 24.81,
+        "end": 25.08
+      },
+      {
+        "w": "days",
+        "start": 25.08,
+        "end": 25.4
+      },
+      {
+        "w": "after",
+        "start": 25.4,
+        "end": 25.66
+      },
+      {
+        "w": "slipping",
+        "start": 25.66,
+        "end": 26.05
+      },
+      {
+        "w": "out",
+        "start": 26.05,
+        "end": 26.17
+      },
+      {
+        "w": "of",
+        "start": 26.17,
+        "end": 26.27
+      },
+      {
+        "w": "Agra",
+        "start": 26.27,
+        "end": 26.68
+      },
+      {
+        "w": "The",
+        "start": 27.48,
+        "end": 27.55
+      },
+      {
+        "w": "historian",
+        "start": 27.55,
+        "end": 28.14
+      },
+      {
+        "w": "Jadunath",
+        "start": 28.38,
+        "end": 28.92
+      },
+      {
+        "w": "Sarkar",
+        "start": 28.92,
+        "end": 29.47
+      },
+      {
+        "w": "who",
+        "start": 29.73,
+        "end": 29.84
+      },
+      {
+        "w": "had",
+        "start": 29.84,
+        "end": 29.95
+      },
+      {
+        "w": "once",
+        "start": 29.95,
+        "end": 30.23
+      },
+      {
+        "w": "told",
+        "start": 30.23,
+        "end": 30.47
+      },
+      {
+        "w": "the",
+        "start": 30.47,
+        "end": 30.53
+      },
+      {
+        "w": "long",
+        "start": 30.53,
+        "end": 30.84
+      },
+      {
+        "w": "version",
+        "start": 30.84,
+        "end": 31.15
+      },
+      {
+        "w": "himself",
+        "start": 31.15,
+        "end": 31.69
+      },
+      {
+        "w": "now",
+        "start": 32.04,
+        "end": 32.27
+      },
+      {
+        "w": "called",
+        "start": 32.27,
+        "end": 32.57
+      },
+      {
+        "w": "those",
+        "start": 32.57,
+        "end": 32.76
+      },
+      {
+        "w": "pilgrimage",
+        "start": 32.76,
+        "end": 33.24
+      },
+      {
+        "w": "stories",
+        "start": 33.24,
+        "end": 33.7
+      },
+      {
+        "w": "fiction",
+        "start": 33.7,
+        "end": 34.26
+      },
+      {
+        "w": "Twenty",
+        "start": 34.97,
+        "end": 35.21
+      },
+      {
+        "w": "five",
+        "start": 35.21,
+        "end": 35.46
+      },
+      {
+        "w": "days",
+        "start": 35.46,
+        "end": 35.86
+      },
+      {
+        "w": "over",
+        "start": 36.11,
+        "end": 36.32
+      },
+      {
+        "w": "more",
+        "start": 36.32,
+        "end": 36.57
+      },
+      {
+        "w": "than",
+        "start": 36.57,
+        "end": 36.71
+      },
+      {
+        "w": "a",
+        "start": 36.71,
+        "end": 36.75
+      },
+      {
+        "w": "thousand",
+        "start": 36.75,
+        "end": 37.18
+      },
+      {
+        "w": "kilometres",
+        "start": 37.18,
+        "end": 37.8
+      },
+      {
+        "w": "meant",
+        "start": 38.08,
+        "end": 38.33
+      },
+      {
+        "w": "hard",
+        "start": 38.33,
+        "end": 38.77
+      },
+      {
+        "w": "fast",
+        "start": 38.98,
+        "end": 39.33
+      },
+      {
+        "w": "travel",
+        "start": 39.33,
+        "end": 39.7
+      },
+      {
+        "w": "on",
+        "start": 39.7,
+        "end": 39.85
+      },
+      {
+        "w": "hidden",
+        "start": 39.85,
+        "end": 40.13
+      },
+      {
+        "w": "paths",
+        "start": 40.13,
+        "end": 40.59
+      },
+      {
+        "w": "It",
+        "start": 41.07,
+        "end": 41.19
+      },
+      {
+        "w": "cost",
+        "start": 41.19,
+        "end": 41.55
+      },
+      {
+        "w": "him",
+        "start": 41.55,
+        "end": 41.77
+      },
+      {
+        "w": "He",
+        "start": 42.13,
+        "end": 42.27
+      },
+      {
+        "w": "lay",
+        "start": 42.27,
+        "end": 42.52
+      },
+      {
+        "w": "ill",
+        "start": 42.52,
+        "end": 42.72
+      },
+      {
+        "w": "for",
+        "start": 42.72,
+        "end": 42.86
+      },
+      {
+        "w": "weeks",
+        "start": 42.86,
+        "end": 43.22
+      },
+      {
+        "w": "after",
+        "start": 43.22,
+        "end": 43.48
+      },
+      {
+        "w": "he",
+        "start": 43.48,
+        "end": 43.58
+      },
+      {
+        "w": "got",
+        "start": 43.58,
+        "end": 43.77
+      },
+      {
+        "w": "home",
+        "start": 43.77,
+        "end": 44.05
+      }
+    ],
+    "method": "pocketsphinx-align",
+    "audioSeconds": 44.35,
+    "hash": "5946a4cc8f5fdf26"
+  },
+  "s18": {
+    "words": [
+      {
+        "w": "And",
+        "start": 0,
+        "end": 0.41
+      },
+      {
+        "w": "Sambhaji",
+        "start": 0.54,
+        "end": 1.27
+      },
+      {
+        "w": "Maratha",
+        "start": 2.04,
+        "end": 2.46
+      },
+      {
+        "w": "accounts",
+        "start": 2.46,
+        "end": 2.91
+      },
+      {
+        "w": "say",
+        "start": 2.91,
+        "end": 3.16
+      },
+      {
+        "w": "the",
+        "start": 3.16,
+        "end": 3.24
+      },
+      {
+        "w": "boy",
+        "start": 3.24,
+        "end": 3.54
+      },
+      {
+        "w": "was",
+        "start": 3.54,
+        "end": 3.75
+      },
+      {
+        "w": "left",
+        "start": 3.75,
+        "end": 4.05
+      },
+      {
+        "w": "behind",
+        "start": 4.05,
+        "end": 4.55
+      },
+      {
+        "w": "in",
+        "start": 4.55,
+        "end": 4.69
+      },
+      {
+        "w": "Mathura",
+        "start": 4.69,
+        "end": 5.32
+      },
+      {
+        "w": "with",
+        "start": 5.72,
+        "end": 5.85
+      },
+      {
+        "w": "a",
+        "start": 5.85,
+        "end": 5.9
+      },
+      {
+        "w": "trusted",
+        "start": 5.9,
+        "end": 6.43
+      },
+      {
+        "w": "Brahmin",
+        "start": 6.43,
+        "end": 6.81
+      },
+      {
+        "w": "family",
+        "start": 6.81,
+        "end": 7.35
+      },
+      {
+        "w": "The",
+        "start": 8.22,
+        "end": 8.31
+      },
+      {
+        "w": "spy",
+        "start": 8.31,
+        "end": 8.64
+      },
+      {
+        "w": "reports",
+        "start": 8.64,
+        "end": 9.07
+      },
+      {
+        "w": "that",
+        "start": 9.07,
+        "end": 9.21
+      },
+      {
+        "w": "reached",
+        "start": 9.21,
+        "end": 9.48
+      },
+      {
+        "w": "the",
+        "start": 9.48,
+        "end": 9.58
+      },
+      {
+        "w": "emperor",
+        "start": 9.58,
+        "end": 10.01
+      },
+      {
+        "w": "even",
+        "start": 10.36,
+        "end": 10.6
+      },
+      {
+        "w": "said",
+        "start": 10.6,
+        "end": 10.85
+      },
+      {
+        "w": "that",
+        "start": 10.85,
+        "end": 10.99
+      },
+      {
+        "w": "Shivaji's",
+        "start": 10.99,
+        "end": 11.58
+      },
+      {
+        "w": "son",
+        "start": 11.58,
+        "end": 11.82
+      },
+      {
+        "w": "had",
+        "start": 11.82,
+        "end": 12.08
+      },
+      {
+        "w": "died",
+        "start": 12.08,
+        "end": 12.41
+      },
+      {
+        "w": "on",
+        "start": 12.41,
+        "end": 12.53
+      },
+      {
+        "w": "the",
+        "start": 12.53,
+        "end": 12.59
+      },
+      {
+        "w": "road",
+        "start": 12.59,
+        "end": 13
+      },
+      {
+        "w": "That",
+        "start": 13.78,
+        "end": 13.98
+      },
+      {
+        "w": "rumour",
+        "start": 13.98,
+        "end": 14.33
+      },
+      {
+        "w": "may",
+        "start": 14.33,
+        "end": 14.53
+      },
+      {
+        "w": "have",
+        "start": 14.53,
+        "end": 14.67
+      },
+      {
+        "w": "protected",
+        "start": 14.67,
+        "end": 15.11
+      },
+      {
+        "w": "him",
+        "start": 15.11,
+        "end": 15.29
+      },
+      {
+        "w": "Months",
+        "start": 16.19,
+        "end": 16.49
+      },
+      {
+        "w": "later",
+        "start": 16.49,
+        "end": 16.96
+      },
+      {
+        "w": "Sambhaji",
+        "start": 17.05,
+        "end": 17.53
+      },
+      {
+        "w": "travelled",
+        "start": 17.53,
+        "end": 17.91
+      },
+      {
+        "w": "home",
+        "start": 17.91,
+        "end": 18.22
+      },
+      {
+        "w": "in",
+        "start": 18.22,
+        "end": 18.41
+      },
+      {
+        "w": "disguise",
+        "start": 18.41,
+        "end": 19.1
+      },
+      {
+        "w": "passed",
+        "start": 19.56,
+        "end": 19.92
+      },
+      {
+        "w": "off",
+        "start": 19.92,
+        "end": 20.13
+      },
+      {
+        "w": "as",
+        "start": 20.13,
+        "end": 20.25
+      },
+      {
+        "w": "a",
+        "start": 20.25,
+        "end": 20.3
+      },
+      {
+        "w": "young",
+        "start": 20.3,
+        "end": 20.57
+      },
+      {
+        "w": "relative",
+        "start": 20.57,
+        "end": 21.01
+      },
+      {
+        "w": "of",
+        "start": 21.01,
+        "end": 21.11
+      },
+      {
+        "w": "the",
+        "start": 21.11,
+        "end": 21.19
+      },
+      {
+        "w": "family",
+        "start": 21.19,
+        "end": 21.57
+      },
+      {
+        "w": "sheltering",
+        "start": 21.57,
+        "end": 22.01
+      },
+      {
+        "w": "him",
+        "start": 22.01,
+        "end": 22.22
+      }
+    ],
+    "method": "pocketsphinx-align",
+    "audioSeconds": 22.35,
+    "hash": "a66072a473b951d5"
+  },
+  "s19": {
+    "words": [
+      {
+        "w": "The",
+        "start": 0,
+        "end": 0.23
+      },
+      {
+        "w": "escape",
+        "start": 0.23,
+        "end": 0.78
+      },
+      {
+        "w": "changed",
+        "start": 1.18,
+        "end": 1.68
+      },
+      {
+        "w": "the",
+        "start": 1.68,
+        "end": 1.78
+      },
+      {
+        "w": "course",
+        "start": 1.78,
+        "end": 2.21
+      },
+      {
+        "w": "of",
+        "start": 2.21,
+        "end": 2.31
+      },
+      {
+        "w": "the",
+        "start": 2.31,
+        "end": 2.4
+      },
+      {
+        "w": "Deccan",
+        "start": 2.4,
+        "end": 2.8
+      },
+      {
+        "w": "wars",
+        "start": 2.8,
+        "end": 3.38
+      },
+      {
+        "w": "Within",
+        "start": 4.2,
+        "end": 4.48
+      },
+      {
+        "w": "four",
+        "start": 4.48,
+        "end": 4.76
+      },
+      {
+        "w": "years",
+        "start": 4.76,
+        "end": 5.28
+      },
+      {
+        "w": "Shivaji",
+        "start": 5.5,
+        "end": 6.06
+      },
+      {
+        "w": "was",
+        "start": 6.06,
+        "end": 6.25
+      },
+      {
+        "w": "retaking",
+        "start": 6.25,
+        "end": 6.82
+      },
+      {
+        "w": "the",
+        "start": 6.82,
+        "end": 6.88
+      },
+      {
+        "w": "forts",
+        "start": 6.88,
+        "end": 7.26
+      },
+      {
+        "w": "he",
+        "start": 7.26,
+        "end": 7.35
+      },
+      {
+        "w": "had",
+        "start": 7.35,
+        "end": 7.49
+      },
+      {
+        "w": "surrendered",
+        "start": 7.49,
+        "end": 7.99
+      },
+      {
+        "w": "at",
+        "start": 7.99,
+        "end": 8.16
+      },
+      {
+        "w": "Purandar",
+        "start": 8.16,
+        "end": 8.82
+      },
+      {
+        "w": "In",
+        "start": 9.77,
+        "end": 9.9
+      },
+      {
+        "w": "sixteen",
+        "start": 9.9,
+        "end": 10.37
+      },
+      {
+        "w": "seventy",
+        "start": 10.37,
+        "end": 10.73
+      },
+      {
+        "w": "four",
+        "start": 10.73,
+        "end": 11.13
+      },
+      {
+        "w": "he",
+        "start": 11.57,
+        "end": 11.68
+      },
+      {
+        "w": "was",
+        "start": 11.68,
+        "end": 11.86
+      },
+      {
+        "w": "crowned",
+        "start": 11.86,
+        "end": 12.31
+      },
+      {
+        "w": "Chhatrapati",
+        "start": 12.55,
+        "end": 13.38
+      },
+      {
+        "w": "at",
+        "start": 13.61,
+        "end": 13.74
+      },
+      {
+        "w": "Raigad",
+        "start": 13.74,
+        "end": 14.42
+      },
+      {
+        "w": "And",
+        "start": 15.26,
+        "end": 15.4
+      },
+      {
+        "w": "in",
+        "start": 15.4,
+        "end": 15.51
+      },
+      {
+        "w": "a",
+        "start": 15.51,
+        "end": 15.55
+      },
+      {
+        "w": "collection",
+        "start": 15.55,
+        "end": 16.03
+      },
+      {
+        "w": "of",
+        "start": 16.03,
+        "end": 16.1
+      },
+      {
+        "w": "sayings",
+        "start": 16.1,
+        "end": 16.58
+      },
+      {
+        "w": "attributed",
+        "start": 16.58,
+        "end": 17.05
+      },
+      {
+        "w": "to",
+        "start": 17.05,
+        "end": 17.16
+      },
+      {
+        "w": "Aurangzeb",
+        "start": 17.16,
+        "end": 17.89
+      },
+      {
+        "w": "the",
+        "start": 18.68,
+        "end": 18.87
+      },
+      {
+        "w": "emperor",
+        "start": 18.87,
+        "end": 19.23
+      },
+      {
+        "w": "laments",
+        "start": 19.23,
+        "end": 19.71
+      },
+      {
+        "w": "that",
+        "start": 19.71,
+        "end": 19.85
+      },
+      {
+        "w": "one",
+        "start": 19.85,
+        "end": 20.16
+      },
+      {
+        "w": "moment",
+        "start": 20.16,
+        "end": 20.52
+      },
+      {
+        "w": "of",
+        "start": 20.52,
+        "end": 20.62
+      },
+      {
+        "w": "carelessness",
+        "start": 20.62,
+        "end": 21.36
+      },
+      {
+        "w": "the",
+        "start": 21.84,
+        "end": 21.94
+      },
+      {
+        "w": "flight",
+        "start": 21.94,
+        "end": 22.35
+      },
+      {
+        "w": "of",
+        "start": 22.35,
+        "end": 22.41
+      },
+      {
+        "w": "Shivaji",
+        "start": 22.41,
+        "end": 23.05
+      },
+      {
+        "w": "dragged",
+        "start": 23.66,
+        "end": 24.06
+      },
+      {
+        "w": "him",
+        "start": 24.06,
+        "end": 24.26
+      },
+      {
+        "w": "into",
+        "start": 24.26,
+        "end": 24.46
+      },
+      {
+        "w": "campaigns",
+        "start": 24.46,
+        "end": 25.17
+      },
+      {
+        "w": "that",
+        "start": 25.35,
+        "end": 25.53
+      },
+      {
+        "w": "lasted",
+        "start": 25.53,
+        "end": 26
+      },
+      {
+        "w": "to",
+        "start": 26,
+        "end": 26.1
+      },
+      {
+        "w": "the",
+        "start": 26.1,
+        "end": 26.26
+      },
+      {
+        "w": "end",
+        "start": 26.26,
+        "end": 26.5
+      },
+      {
+        "w": "of",
+        "start": 26.5,
+        "end": 26.59
+      },
+      {
+        "w": "his",
+        "start": 26.59,
+        "end": 26.76
+      },
+      {
+        "w": "days",
+        "start": 26.76,
+        "end": 27.22
+      }
+    ],
+    "method": "pocketsphinx-align",
+    "audioSeconds": 27.45,
+    "hash": "29bc5ac4d9498edd"
+  },
+  "s20": {
+    "words": [
+      {
+        "w": "And",
+        "start": 0,
+        "end": 0.17
+      },
+      {
+        "w": "Ram",
+        "start": 0.17,
+        "end": 0.43
+      },
+      {
+        "w": "Singh",
+        "start": 0.43,
+        "end": 0.89
+      },
+      {
+        "w": "The",
+        "start": 1.24,
+        "end": 1.33
+      },
+      {
+        "w": "prince",
+        "start": 1.33,
+        "end": 1.68
+      },
+      {
+        "w": "who",
+        "start": 1.68,
+        "end": 1.8
+      },
+      {
+        "w": "paid",
+        "start": 1.8,
+        "end": 2.09
+      },
+      {
+        "w": "for",
+        "start": 2.09,
+        "end": 2.22
+      },
+      {
+        "w": "the",
+        "start": 2.22,
+        "end": 2.32
+      },
+      {
+        "w": "escape",
+        "start": 2.32,
+        "end": 2.71
+      },
+      {
+        "w": "with",
+        "start": 2.71,
+        "end": 2.82
+      },
+      {
+        "w": "his",
+        "start": 2.82,
+        "end": 2.97
+      },
+      {
+        "w": "rank",
+        "start": 2.97,
+        "end": 3.39
+      },
+      {
+        "w": "was",
+        "start": 3.63,
+        "end": 3.8
+      },
+      {
+        "w": "later",
+        "start": 3.8,
+        "end": 4.06
+      },
+      {
+        "w": "sent",
+        "start": 4.06,
+        "end": 4.38
+      },
+      {
+        "w": "east",
+        "start": 4.38,
+        "end": 4.77
+      },
+      {
+        "w": "to",
+        "start": 5.04,
+        "end": 5.16
+      },
+      {
+        "w": "lead",
+        "start": 5.16,
+        "end": 5.34
+      },
+      {
+        "w": "a",
+        "start": 5.34,
+        "end": 5.39
+      },
+      {
+        "w": "Mughal",
+        "start": 5.39,
+        "end": 5.77
+      },
+      {
+        "w": "army",
+        "start": 5.77,
+        "end": 6.16
+      },
+      {
+        "w": "into",
+        "start": 6.16,
+        "end": 6.4
+      },
+      {
+        "w": "Assam",
+        "start": 6.4,
+        "end": 6.82
+      },
+      {
+        "w": "There",
+        "start": 7.55,
+        "end": 7.89
+      },
+      {
+        "w": "in",
+        "start": 7.89,
+        "end": 7.99
+      },
+      {
+        "w": "sixteen",
+        "start": 7.99,
+        "end": 8.45
+      },
+      {
+        "w": "seventy",
+        "start": 8.45,
+        "end": 8.8
+      },
+      {
+        "w": "one",
+        "start": 8.8,
+        "end": 9.13
+      },
+      {
+        "w": "on",
+        "start": 9.44,
+        "end": 9.54
+      },
+      {
+        "w": "the",
+        "start": 9.54,
+        "end": 9.61
+      },
+      {
+        "w": "Brahmaputra",
+        "start": 9.61,
+        "end": 10.33
+      },
+      {
+        "w": "at",
+        "start": 10.33,
+        "end": 10.55
+      },
+      {
+        "w": "Saraighat",
+        "start": 10.55,
+        "end": 11.22
+      },
+      {
+        "w": "he",
+        "start": 11.56,
+        "end": 11.69
+      },
+      {
+        "w": "faced",
+        "start": 11.69,
+        "end": 11.99
+      },
+      {
+        "w": "an",
+        "start": 11.99,
+        "end": 12.07
+      },
+      {
+        "w": "Ahom",
+        "start": 12.07,
+        "end": 12.47
+      },
+      {
+        "w": "general",
+        "start": 12.47,
+        "end": 12.89
+      },
+      {
+        "w": "named",
+        "start": 13.2,
+        "end": 13.39
+      },
+      {
+        "w": "Lachit",
+        "start": 13.39,
+        "end": 13.87
+      },
+      {
+        "w": "Borphukan",
+        "start": 13.87,
+        "end": 14.6
+      },
+      {
+        "w": "That",
+        "start": 15.11,
+        "end": 15.36
+      },
+      {
+        "w": "is",
+        "start": 15.36,
+        "end": 15.46
+      },
+      {
+        "w": "a",
+        "start": 15.46,
+        "end": 15.49
+      },
+      {
+        "w": "story",
+        "start": 15.49,
+        "end": 15.87
+      },
+      {
+        "w": "for",
+        "start": 15.87,
+        "end": 16.06
+      },
+      {
+        "w": "another",
+        "start": 16.06,
+        "end": 16.38
+      },
+      {
+        "w": "episode",
+        "start": 16.38,
+        "end": 16.86
+      }
+    ],
+    "method": "pocketsphinx-align",
+    "audioSeconds": 17.05,
+    "hash": "26f242b315cbe814"
+  }
+}

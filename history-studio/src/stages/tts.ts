@@ -13,7 +13,7 @@ export interface AudioManifest {
   engine: string;
   model: string;
   voice: string;
-  scenes: Record<string, { file: string; seconds: number; hash: string; take: string; ttsText: string; chunks: number }>;
+  scenes: Record<string, { file: string; seconds: number; hash: string; take: string; ttsText: string; chunks: number; rawFile?: string; rawTake?: string; rawSeconds?: number; pacedKey?: string }>;
 }
 
 /** Apply TTS respellings to whole words only. Captions keep the display spelling. */

@@ -197,7 +197,8 @@ ${Object.entries(copy.thumbnailNotes).map(([k, v]) => `- **${k}${k === copy.reco
 
 - [ ] Watch the whole MP4 once with headphones: voice naturalness, name pronunciation (Raigad, Saraighat, Mathura, mansab), music level under speech.
 - [ ] Read the captions once against the audio in Studio's subtitle editor.
-- [ ] Confirm the AI Credits dashboard charge for gpt-4o-mini-tts (the per-request price isn't published).
+- [ ] Confirm the AI Credits dashboard charges (the per-request gpt-4o-mini-tts price isn't published) — the wallet hit zero during production (HTTP 402).
+- [ ] The final-mix transcription check was skipped (wallet empty); narration completeness rests on the earlier whisper check of the same takes plus forced alignment of every word.
 `;
   writeText(path.join(epDir, "upload", "upload_guide.md"), guide);
   log("package", `metadata + upload guide written; description ${description.length} chars, tags ${tagChars} chars`);

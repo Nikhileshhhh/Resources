@@ -4,164 +4,244 @@
   "voice": "cedar",
   "scenes": {
     "s01": {
-      "file": "audio/chunks/s01_b5f1762573a8106c.wav",
-      "seconds": 19.75,
+      "file": "audio/paced/s01.wav",
+      "seconds": 23.309,
       "hash": "b5f1762573a8106c",
       "ttsText": "August, sixteen sixty-six. In the Mughal city of Agra, a ring of guards surrounds the quarters of one man. One letter from Agra puts the watch at a thousand men. Inside are a Maratha ruler from the Deccan and his nine-year-old son. Then, one morning, word spreads through the city. They are gone.",
       "chunks": 1,
-      "take": "9ff8c51cd38d77e1"
+      "take": "8420712e05da0395",
+      "rawFile": "audio/chunks/s01_b5f1762573a8106c.wav",
+      "rawTake": "9ff8c51cd38d77e1",
+      "rawSeconds": 19.75,
+      "pacedKey": "cd85409a8531e989"
     },
     "s02": {
-      "file": "audio/chunks/s02_260e749129f1894f.wav",
-      "seconds": 12.45,
+      "file": "audio/paced/s02.wav",
+      "seconds": 13.533,
       "hash": "260e749129f1894f",
       "ttsText": "How do you disappear from under the eyes of one of the richest empires on earth? The famous answer involves baskets of sweets. But letters written in Agra that very summer let us check the legend against the record.",
       "chunks": 1,
-      "take": "5a34a3b337fa4091"
+      "take": "9611e69883367b42",
+      "rawFile": "audio/chunks/s02_260e749129f1894f.wav",
+      "rawTake": "5a34a3b337fa4091",
+      "rawSeconds": 12.45,
+      "pacedKey": "cd85409a8531e989"
     },
     "s03": {
-      "file": "audio/chunks/s03_728e6003d60871a3.wav",
-      "seconds": 16.8,
+      "file": "audio/paced/s03.wav",
+      "seconds": 18.422,
       "hash": "728e6003d60871a3",
       "ttsText": "The ruler was Shivaji, the Maratha leader who had carved a kingdom out of the hill forts of western India, and who had spent years raiding Mughal territory. The emperor was Aurangzeb. And the man who brought them face to face was Aurangzeb's veteran general, Mirza Raja Jai Singh.",
       "chunks": 1,
-      "take": "c1e25618bb35b25a"
+      "take": "882c47351e1b7e26",
+      "rawFile": "audio/chunks/s03_728e6003d60871a3.wav",
+      "rawTake": "c1e25618bb35b25a",
+      "rawSeconds": 16.8,
+      "pacedKey": "cd85409a8531e989"
     },
     "s04": {
-      "file": "audio/chunks/s04_773c5e2b5e4abe9a.wav",
-      "seconds": 27.95,
+      "file": "audio/paced/s04.wav",
+      "seconds": 31.746,
       "hash": "773c5e2b5e4abe9a",
       "ttsText": "In sixteen sixty-five, Jai Singh's army closed in on Shivaji's forts. Rather than lose everything, Shivaji made a deal at Purandar. Twenty-three forts went to the empire. He kept twelve, including his stronghold of Rajgad. Then Jai Singh pressed for something more. Shivaji should travel north and appear before the emperor in person. Jai Singh swore that he would come to no harm. At court, his son, the prince Ram Singh, pledged his word as well.",
       "chunks": 1,
-      "take": "b783541cf57fc4ff"
+      "take": "262822c3361af89c",
+      "rawFile": "audio/chunks/s04_773c5e2b5e4abe9a.wav",
+      "rawTake": "b783541cf57fc4ff",
+      "rawSeconds": 27.95,
+      "pacedKey": "cd85409a8531e989"
     },
     "s05": {
-      "file": "audio/chunks/s05_87c4c6a4b6b83cae.wav",
-      "seconds": 21.35,
+      "file": "audio/paced/s05.wav",
+      "seconds": 25.343,
       "hash": "87c4c6a4b6b83cae",
       "ttsText": "In March sixteen sixty-six, Shivaji left Rajgad with his son Sambhaji and a small but splendid escort. In May, they reached Agra. One of Ram Singh's officers described him in a letter home. Lean, short, fair, bearded. And, he wrote, \"even without finding out who he is, one does feel instinctively that he is a ruler of men.\"",
       "chunks": 1,
-      "take": "3f05445642b2155e"
+      "take": "56386615173a8fe5",
+      "rawFile": "audio/chunks/s05_87c4c6a4b6b83cae.wav",
+      "rawTake": "3f05445642b2155e",
+      "rawSeconds": 21.35,
+      "pacedKey": "cd85409a8531e989"
     },
     "s06": {
-      "file": "audio/chunks/s06_4ce365fe1d654c67.wav",
-      "seconds": 28.3,
+      "file": "audio/paced/s06.wav",
+      "seconds": 31.259,
       "hash": "4ce365fe1d654c67",
       "ttsText": "On the twelfth of May, the emperor's fiftieth birthday by the lunar calendar, Ram Singh led Shivaji into the fort. Shivaji presented his gifts of gold. And then, nothing. The emperor did not say a word to him. Shivaji was led back to stand behind rows of other nobles. Robes of honour were handed out to princes and ministers, and to Maharaja Jaswant Singh, a general who had once besieged one of Shivaji's forts and failed.",
       "chunks": 1,
-      "take": "a5f1d8f3cff0c67a"
+      "take": "315b6c105e845915",
+      "rawFile": "audio/chunks/s06_4ce365fe1d654c67.wav",
+      "rawTake": "a5f1d8f3cff0c67a",
+      "rawSeconds": 28.3,
+      "pacedKey": "cd85409a8531e989"
     },
     "s07": {
-      "file": "audio/chunks/s07_ad8250ec0fc6d931.wav",
-      "seconds": 23.15,
+      "file": "audio/paced/s07.wav",
+      "seconds": 26.261,
       "hash": "ad8250ec0fc6d931",
       "ttsText": "Shivaji's patience broke. According to a letter from Ram Singh's staff, he told the prince, \"I cast off your mun-sub,\" his imperial rank. Then he turned his back on the throne and walked away. At a court where nobles were expected to wait, as an English trader put it, \"with their hands before them, like mutes,\" it was a stunning act of defiance. Officials brought him a robe of honour. He refused it.",
       "chunks": 1,
-      "take": "367cf5288fa39852"
+      "take": "fc7cb73108d42c60",
+      "rawFile": "audio/chunks/s07_ad8250ec0fc6d931.wav",
+      "rawTake": "367cf5288fa39852",
+      "rawSeconds": 23.15,
+      "pacedKey": "cd85409a8531e989"
     },
     "s08": {
-      "file": "audio/chunks/s08_0d0925d42370f067.wav",
-      "seconds": 27.8,
+      "file": "audio/paced/s08.wav",
+      "seconds": 31.96,
       "hash": "0d0925d42370f067",
       "ttsText": "The backlash was swift. Powerful voices at court, the emperor's sister Jahanara among them, demanded punishment. A letter from Agra reports that the emperor weighed killing Shivaji, or locking him away in a fortress. Ram Singh stepped in. His father had guaranteed Shivaji's safety, he argued. If the emperor wanted Shivaji dead, he should kill Ram Singh first. The emperor's reply was simple. Then sign a security bond. If Shivaji escapes, you will answer for it.",
       "chunks": 1,
-      "take": "f612fa28184adcd3"
+      "take": "07100114abfb4003",
+      "rawFile": "audio/chunks/s08_0d0925d42370f067.wav",
+      "rawTake": "f612fa28184adcd3",
+      "rawSeconds": 27.8,
+      "pacedKey": "cd85409a8531e989"
     },
     "s09": {
-      "file": "audio/chunks/s09_9241d26e7897f0f5.wav",
-      "seconds": 25.25,
+      "file": "audio/paced/s09.wav",
+      "seconds": 27.816,
       "hash": "9241d26e7897f0f5",
       "ttsText": "Ram Singh signed. Shivaji was not executed, but he was not free. At one point he was ordered to march to Kabul, on the far north-western frontier. Days later, after petitions and payments to courtiers, the order was dropped. Troops of the city's police chief, Fulad Khan, ringed his quarters. Ram Singh's own Rajputs watched his bed at night. The emperor's guest had become his prisoner.",
       "chunks": 1,
-      "take": "6b6553939920e0ce"
+      "take": "c9345a0332d452f8",
+      "rawFile": "audio/chunks/s09_9241d26e7897f0f5.wav",
+      "rawTake": "6b6553939920e0ce",
+      "rawSeconds": 25.25,
+      "pacedKey": "cd85409a8531e989"
     },
     "s10": {
-      "file": "audio/chunks/s10_59ccaf6b84c134bb.wav",
-      "seconds": 21.65,
+      "file": "audio/paced/s10.wav",
+      "seconds": 23.818,
       "hash": "59ccaf6b84c134bb",
       "ttsText": "Shivaji tried everything. He offered two crore rupees, twenty million, if his forts were returned. He offered to go and fight for the emperor against Bijapur. He asked to be moved to another house. He even asked to go to Benares and become a holy man. The reply came back: let him become a fakir, and live in Allahabad fort, under guard.",
       "chunks": 1,
-      "take": "6d365cdfa04a8891"
+      "take": "fc9a01a06f3a72b3",
+      "rawFile": "audio/chunks/s10_59ccaf6b84c134bb.wav",
+      "rawTake": "6d365cdfa04a8891",
+      "rawSeconds": 21.65,
+      "pacedKey": "cd85409a8531e989"
     },
     "s11": {
-      "file": "audio/chunks/s11_314d5b742701c41f.wav",
-      "seconds": 32.2,
+      "file": "audio/paced/s11.wav",
+      "seconds": 36.179,
       "hash": "314d5b742701c41f",
       "ttsText": "Then came a blow from the man who had promised his safety. In July, Jai Singh wrote to his son from the Deccan. His war there was going badly, and it was, he said, \"not at all politic\" to let Shivaji come home. Keep him in Agra, he advised. Treat him well, but keep him. By now Shivaji's money was running low. He borrowed sixty-six thousand rupees from Ram Singh. And over the summer he sent his own escort home, leaving himself almost alone. To the court, it looked like surrender.",
       "chunks": 1,
-      "take": "69087be9629671fa"
+      "take": "78b8d48e2c03bbca",
+      "rawFile": "audio/chunks/s11_314d5b742701c41f.wav",
+      "rawTake": "69087be9629671fa",
+      "rawSeconds": 32.2,
+      "pacedKey": "cd85409a8531e989"
     },
     "s12": {
-      "file": "audio/chunks/s12_5bd65817e9f5a4fc.wav",
-      "seconds": 20.2,
+      "file": "audio/paced/s12.wav",
+      "seconds": 22.285,
       "hash": "5bd65817e9f5a4fc",
       "ttsText": "It was preparation. Shivaji fell ill, or appeared to. Large baskets of sweets began to leave his quarters, gifts for Brahmins, holy men and courtiers. Each was slung from a pole and carried by two porters. At first, the guards opened them, and found sweets. After some days, they stopped opening them.",
       "chunks": 1,
-      "take": "f8bdc932c12a727d"
+      "take": "b9c7b2719d919204",
+      "rawFile": "audio/chunks/s12_5bd65817e9f5a4fc.wav",
+      "rawTake": "f8bdc932c12a727d",
+      "rawSeconds": 20.2,
+      "pacedKey": "cd85409a8531e989"
     },
     "s13": {
-      "file": "audio/chunks/s13_44ebff4043f48b65.wav",
-      "seconds": 31.45,
+      "file": "audio/paced/s13.wav",
+      "seconds": 34.535,
       "hash": "44ebff4043f48b65",
       "ttsText": "Then, one evening in the third week of August, the plan went into motion. According to later accounts, Shivaji's half-brother, Hiroji Farzand, lay down on Shivaji's bed beneath a quilt, with one arm showing, and Shivaji's gold bracelet on the wrist. A boy sat by the bed, massaging his feet. And inside the baskets, among others filled with real sweets, crouched Shivaji and his son. The porters carried them past the guards, and out into the dark.",
       "chunks": 1,
-      "take": "e2f853acf7ade656"
+      "take": "7d56a80c11661d4e",
+      "rawFile": "audio/chunks/s13_44ebff4043f48b65.wav",
+      "rawTake": "e2f853acf7ade656",
+      "rawSeconds": 31.45,
+      "pacedKey": "cd85409a8531e989"
     },
     "s14": {
-      "file": "audio/chunks/s14_0b39e5acdd1ca510.wav",
-      "seconds": 18.9,
+      "file": "audio/paced/s14.wav",
+      "seconds": 20.697,
       "hash": "0b39e5acdd1ca510",
       "ttsText": "How long did the trick hold? The chronicles say the guards were fooled for most of the next day, until the house fell strangely quiet and they found the bed empty. The contemporary letters suggest it was quicker. One, written in Agra and dated the eighteenth of August, says simply, \"This morning Shivaji was found to have fled.\"",
       "chunks": 1,
-      "take": "e7d96060dcc1b6e8"
+      "take": "66f9651f8a3c15c6",
+      "rawFile": "audio/chunks/s14_0b39e5acdd1ca510.wav",
+      "rawTake": "e7d96060dcc1b6e8",
+      "rawSeconds": 18.9,
+      "pacedKey": "cd85409a8531e989"
     },
     "s15": {
-      "file": "audio/chunks/s15_dcbfd323003cfc42.wav",
-      "seconds": 29.9,
+      "file": "audio/paced/s15.wav",
+      "seconds": 32.905,
       "hash": "dcbfd323003cfc42",
       "ttsText": "The city erupted. Ram Singh's own staff wrote home urging that every pass and river crossing be watched, and that anyone dressed as a yogi or a sun-yaasi be questioned and searched. Fulad Khan, whose men had ringed the house, told the emperor the escape had happened on Ram Singh's side of the watch. Ram Singh's men were seized and threatened until they said their master had helped. Some later took it back, saying they had spoken out of fear. The emperor, angry, cut Ram Singh's rank and took away his lands.",
       "chunks": 1,
-      "take": "a54e642a3f75e4ee"
+      "take": "a1c170868aa830b3",
+      "rawFile": "audio/chunks/s15_dcbfd323003cfc42.wav",
+      "rawTake": "a54e642a3f75e4ee",
+      "rawSeconds": 29.9,
+      "pacedKey": "cd85409a8531e989"
     },
     "s16": {
-      "file": "audio/chunks/s16_d02a227cc0966191.wav",
-      "seconds": 27.7,
+      "file": "audio/paced/s16.wav",
+      "seconds": 30.906,
       "hash": "d02a227cc0966191",
       "ttsText": "So, was it really the baskets? About two weeks after the escape, one of Ram Singh's officers wrote that the trick had become known. Shivaji had slipped out \"by crouching down in the baskets.\" Later Mughal and Maratha histories tell the same story. But the Mughal court suspected inside help as well. And a European writer of the period, Niccolao Manoochi, claimed that Ram Singh himself had quietly arranged it. With frightened guards and partisan witnesses, we may never know exactly who looked the other way.",
       "chunks": 1,
-      "take": "a450281d7915d4ba"
+      "take": "cbfcc45729e3ea88",
+      "rawFile": "audio/chunks/s16_d02a227cc0966191.wav",
+      "rawTake": "a450281d7915d4ba",
+      "rawSeconds": 27.7,
+      "pacedKey": "cd85409a8531e989"
     },
     "s17": {
-      "file": "audio/chunks/s17_1a06fa2dbf36846f.wav",
-      "seconds": 44.35,
+      "file": "audio/paced/s17.wav",
+      "seconds": 50.724,
       "hash": "1a06fa2dbf36846f",
       "ttsText": "What happened next grew into legend. For generations, Shivaji's flight was told as a long pilgrimage, through Benares, Gaya, even Puri, full of narrow escapes in disguise. The chronicles say he smeared himself with ash and travelled as a wandering ascetic. Then, in nineteen thirty-nine, letters were found in the Jaipur archives. Spy reports quoted in them said Shivaji reached his fort just twenty-five days after slipping out of Agra. The historian Jaadunaath Sarkar, who had once told the long version himself, now called those pilgrimage stories fiction. Twenty-five days, over more than a thousand kilometres, meant hard, fast travel on hidden paths. It cost him. He lay ill for weeks after he got home.",
       "chunks": 1,
-      "take": "2245916d6362e790"
+      "take": "e7df95cd003eb80e",
+      "rawFile": "audio/chunks/s17_1a06fa2dbf36846f.wav",
+      "rawTake": "2245916d6362e790",
+      "rawSeconds": 44.35,
+      "pacedKey": "cd85409a8531e989"
     },
     "s18": {
-      "file": "audio/chunks/s18_528a409e44291794.wav",
-      "seconds": 22.35,
+      "file": "audio/paced/s18.wav",
+      "seconds": 24.48,
       "hash": "528a409e44291794",
       "ttsText": "And Sambhaji? Maratha accounts say the boy was left behind in Muthura, with a trusted Brahmin family. The spy reports that reached the emperor even said that Shivaji's son had died on the road. That rumour may have protected him. Months later, Sambhaji travelled home in disguise, passed off as a young relative of the family sheltering him.",
       "chunks": 1,
-      "take": "8888400fd379e943"
+      "take": "c82055b93c33053b",
+      "rawFile": "audio/chunks/s18_528a409e44291794.wav",
+      "rawTake": "8888400fd379e943",
+      "rawSeconds": 22.35,
+      "pacedKey": "cd85409a8531e989"
     },
     "s19": {
-      "file": "audio/chunks/s19_8b25add45f824d2b.wav",
-      "seconds": 27.45,
+      "file": "audio/paced/s19.wav",
+      "seconds": 30.166,
       "hash": "8b25add45f824d2b",
       "ttsText": "The escape changed the course of the Deccan wars. Within four years, Shivaji was retaking the forts he had surrendered at Purandar. In sixteen seventy-four, he was crowned Chhatrapati at Rai-gad. And in a collection of sayings attributed to Aurangzeb, the emperor laments that one moment of carelessness, the flight of Shivaji, dragged him into campaigns that lasted to the end of his days.",
       "chunks": 1,
-      "take": "d2d3ce47ba6a9372"
+      "take": "46ec9017a9fa2157",
+      "rawFile": "audio/chunks/s19_8b25add45f824d2b.wav",
+      "rawTake": "d2d3ce47ba6a9372",
+      "rawSeconds": 27.45,
+      "pacedKey": "cd85409a8531e989"
     },
     "s20": {
-      "file": "audio/chunks/s20_f1ce9caee0ba2717.wav",
-      "seconds": 17.05,
+      "file": "audio/paced/s20.wav",
+      "seconds": 19.491,
       "hash": "f1ce9caee0ba2717",
       "ttsText": "And Ram Singh? The prince who paid for the escape with his rank was later sent east, to lead a Mughal army into Assam. There, in sixteen seventy-one, on the Brahmaputra at Sarai Ghaat, he faced an Ahom general named Lachit Borphukan. That is a story for another episode.",
       "chunks": 1,
-      "take": "6ebcf0b962bdcdcc"
+      "take": "5bea6c5b7f0cb8ac",
+      "rawFile": "audio/chunks/s20_f1ce9caee0ba2717.wav",
+      "rawTake": "6ebcf0b962bdcdcc",
+      "rawSeconds": 17.05,
+      "pacedKey": "cd85409a8531e989"
     }
   }
 }
