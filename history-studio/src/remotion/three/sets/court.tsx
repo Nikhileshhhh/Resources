@@ -9,7 +9,7 @@ import { carpet } from "./textures";
 import type { Shot3DProps } from "./night";
 
 /** Diwan (hall of audience): three-aisled arcade of cusped arches, raised throne jharokha, nobles in ranks. */
-const Hall: React.FC<{ frame: number }> = ({ frame }) => {
+export const Hall: React.FC<{ frame: number }> = ({ frame }) => {
   const arch = stoneMat(SANDSTONE, [4, 2]);
   const white = marbleMat(MARBLE, [3, 2], 0.5);
   const rug = useMemo(() => {
@@ -105,7 +105,7 @@ const SunShafts: React.FC<{ frame: number }> = ({ frame }) => {
   );
 };
 
-const NOBLES = ["courtier", "official", "jaswant", "courtier", "fuladkhan", "official", "courtier", "official", "courtier", "jaswant", "official", "courtier"];
+export const NOBLES = ["courtier", "official", "jaswant", "courtier", "fuladkhan", "official", "courtier", "official", "courtier", "jaswant", "official", "courtier"];
 
 /** Ranks of nobles behind the railings, turned toward the aisle, with idle life and the occasional glance. */
 const Nobles: React.FC<{ frame: number; glanceAt?: number }> = ({ frame, glanceAt = 9999 }) => (
@@ -122,10 +122,10 @@ const Nobles: React.FC<{ frame: number; glanceAt?: number }> = ({ frame, glanceA
   </>
 );
 
-const COURT_GRADE = { vignette: 0.5, grain: 0.05, tint: "rgba(255,190,110,0.12)", contrast: 1.06, saturate: 1.08 };
+export const COURT_GRADE = { vignette: 0.5, grain: 0.05, tint: "rgba(255,190,110,0.12)", contrast: 1.06, saturate: 1.08 };
 
 /** The emperor, seated, silent: beads moving, eyes never resting on Shivaji. */
-function emperorPose(f: number, avert: number): Pose3 {
+export function emperorPose(f: number, avert: number): Pose3 {
   return add(SIT_CROSS, idle(f, 7, 0.25), { x: 0, z: -10.4, y: 1.4, heading: 0, headTurn: -28 * avert + Math.sin(f / 70) * 3, head: 4, lookX: -0.9 * avert, wristL: Math.sin(f / 9) * 6 });
 }
 

@@ -1,6 +1,7 @@
 import type React from "react";
 import { BasketCutaway3D, Compound3D, FortNight3D, GateNight3D, type Shot3DProps } from "./sets/night";
 import { CourtHall3D } from "./sets/court";
+import { CourtBeats3D, CourtIntrigue3D, RobeRefusal3D, TwoShot3D } from "./sets/court2";
 import { tabletop } from "./sets/tabletop";
 import { Bedroom3D, EmptyBed3D, WindowSilhouette3D } from "./sets/bedroom";
 import { AsceticWalk3D, DeccanForts3D, Siege3D, TitleCard3D } from "./sets/deccan";
@@ -13,7 +14,10 @@ import * as G from "../sets/graphics";
 export const REGISTRY3D: Record<string, { comp: React.FC<Shot3DProps>; supports: (p: Record<string, unknown>) => boolean }> = {
   FortExterior: { comp: FortNight3D, supports: (p) => p.time === "night" },
   Compound: { comp: Compound3D, supports: (p) => p.time === "night" },
-  CourtHall: { comp: CourtHall3D, supports: (p) => p.beat === "presentation" || p.beat === "silence" },
+  CourtHall: { comp: (p) => (p.beat === "presentation" || p.beat === "silence" ? <CourtHall3D {...p} /> : <CourtBeats3D {...p} />), supports: () => true },
+  TwoShot: { comp: TwoShot3D, supports: () => true },
+  RobeRefusal: { comp: RobeRefusal3D, supports: () => true },
+  CourtIntrigue: { comp: CourtIntrigue3D, supports: () => true },
   BasketCutaway: { comp: BasketCutaway3D, supports: () => true },
   GateNight: { comp: GateNight3D, supports: () => true },
   Bedroom: { comp: Bedroom3D, supports: () => true },
