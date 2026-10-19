@@ -434,7 +434,7 @@ export const Cannon: React.FC<{ position: V3; rotationY?: number; recoil?: numbe
 
 // ---------------------------------------------------------------- river boats
 /** Wooden river boat with a lantern at the prow; rocks on the water deterministically. */
-export const Boat: React.FC<{ frame: number; position: V3; rotationY?: number; scale?: number; seed?: number; lantern?: boolean }> = ({ frame, position, rotationY = 0, scale = 1, seed = 0, lantern = true }) => {
+export const Boat: React.FC<{ frame: number; position: V3; rotationY?: number; scale?: number; seed?: number; lantern?: boolean; children?: React.ReactNode }> = ({ frame, position, rotationY = 0, scale = 1, seed = 0, lantern = true, children }) => {
   const t = frame / 30;
   const roll = Math.sin(t * 1.1 + seed) * 0.04;
   const pitch = Math.sin(t * 0.8 + seed * 2) * 0.03;
@@ -464,6 +464,8 @@ export const Boat: React.FC<{ frame: number; position: V3; rotationY?: number; s
           <pointLight color="#ffa050" intensity={6} distance={10} decay={1.6} />
         </group>
       )}
+      {/* crew in deck space (deck top at y = 0.45) */}
+      {children}
     </group>
   );
 };

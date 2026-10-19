@@ -7,6 +7,9 @@ import { Bedroom3D, EmptyBed3D, WindowSilhouette3D } from "./sets/bedroom";
 import { Portrait3D } from "./sets/portraits";
 import { Interrogation3D, TentTalk3D } from "./sets/camp";
 import { FortDay3D, Procession3D } from "./sets/fortday";
+import { CompoundDusk3D, GateCheck3D } from "./sets/dusk";
+import { ArchiveRoom3D, Checkpoint3D, MathuraGhat3D } from "./sets/streets";
+import { Brahmaputra3D, Coronation3D, EndScreen3D } from "./sets/finale";
 import { AsceticWalk3D, DeccanForts3D, Siege3D, TitleCard3D } from "./sets/deccan";
 import * as G from "../sets/graphics";
 
@@ -17,7 +20,14 @@ import * as G from "../sets/graphics";
 export const REGISTRY3D: Record<string, { comp: React.FC<Shot3DProps>; supports: (p: Record<string, unknown>) => boolean }> = {
   FortExterior: { comp: (p) => (p.time === "night" ? <FortNight3D {...p} /> : <FortDay3D {...p} />), supports: () => true },
   Procession: { comp: Procession3D, supports: () => true },
-  Compound: { comp: Compound3D, supports: (p) => p.time === "night" },
+  Compound: { comp: (p) => (p.time === "night" ? <Compound3D {...p} /> : <CompoundDusk3D {...p} />), supports: () => true },
+  GateCheck: { comp: GateCheck3D, supports: () => true },
+  Checkpoint: { comp: Checkpoint3D, supports: () => true },
+  MathuraGhat: { comp: MathuraGhat3D, supports: () => true },
+  ArchiveRoom: { comp: ArchiveRoom3D, supports: () => true },
+  Coronation: { comp: Coronation3D, supports: () => true },
+  Brahmaputra: { comp: Brahmaputra3D, supports: () => true },
+  EndScreen: { comp: EndScreen3D, supports: () => true },
   CourtHall: { comp: (p) => (p.beat === "presentation" || p.beat === "silence" ? <CourtHall3D {...p} /> : <CourtBeats3D {...p} />), supports: () => true },
   TwoShot: { comp: TwoShot3D, supports: () => true },
   RobeRefusal: { comp: RobeRefusal3D, supports: () => true },
