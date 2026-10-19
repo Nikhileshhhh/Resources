@@ -1,7 +1,16 @@
 # Visual and voice bible
 
 ## Style
-Flat, illustrated 2D/2.5D vector art drawn in code (`src/remotion/components`). It uses layered parallax planes, purposeful camera moves, readable silhouettes, controlled gradients and a vignette, with no photoreal elements. Every character comes from one parametric rig (`Figure.tsx`) with joints (shoulders, elbows, hips, knees), torso lean, head nod, brows, blinks and breathing. Reuse presets; never redraw a recurring character differently.
+**Stylised 3D, built in code** (`src/remotion/three`, three.js through `@remotion/three`). Every frame is deterministic: animation is driven by the frame number, never by wall-clock time, so any chunk re-renders identically.
+
+- **Cast:** one hierarchical rig (`three/character/Character3D.tsx`) shared by every character. It has a spine, neck, head, shoulders, elbows, wrists, hips, knees and ankles, plus brows, blinks, jaw, gaze, breathing and robe follow-through. Costumes come from the same presets as the 2D rig (`COSTUMES` in `components/Figure.tsx`), so identities stay consistent. Horses, a bullock and an elephant (`three/character/animals.tsx`) walk with a four-beat gait locked to the distance they travel.
+- **Motion:** walks are phase-locked to distance with two-bone leg IK (no foot slip). Poses blend from a small library (`three/motion/poses.ts`). Actions land on Lily's words through narration cues (`cue("crouch")`).
+- **Physics:** hanging baskets are damped pendulums (period checked against 2π√(L/g)); flags wave; carried baskets swing with the porters' step.
+- **Sets:** a code-built kit of Mughal and Maratha architecture, terrain, water, tents and interiors (`three/sets/*`), lit with ACES tone mapping and soft shadows, then graded with a vignette, grain and tint.
+- **Maps and documents:** the fact-checked 2D artwork is placed as a sheet on a desk or a wall in a 3D room (`three/sets/tabletop.tsx`), so its accuracy is unchanged.
+- **Transitions:** dissolves within a scene, whip or light-wipe between scenes, and fade-through-black at chapter starts.
+
+There are no photoreal faces and no likenesses. Reuse presets and never rebuild a recurring character differently. Shivaji Maharaj always wears his jewelled crown on the pagadi; at the 1674 coronation (s19b) it is the tall ceremonial crown (`crown: "coronation"`).
 
 ## Palette (tokens in `src/remotion/theme.ts`)
 | Token | Hex | Use |
@@ -25,7 +34,7 @@ Convention: **saffron = Maratha, green = Mughal**. Legend routes are **dotted se
 ## Recurring characters (episode 1)
 | Character | Preset | Identity |
 |---|---|---|
-| Shivaji | `shivaji` | Saffron pagadi with white plume, white angarkha, saffron sash, short beard, gold bracelet. Lean, short (per the 1666 eyewitness letter). |
+| Shivaji | `shivaji` | Saffron pagadi with a jewelled gold crown (rubies, emeralds, pearl strands, sarpech) and white plume, white angarkha, saffron sash, short beard, gold bracelet. Lean, short (per the 1666 eyewitness letter). |
 | Sambhaji (9) | `sambhaji` | Child scale, pale-yellow jama, small saffron pagadi |
 | Aurangzeb | `aurangzeb` / `aurangzeb_old` | White jama and turban, grey (later white) beard, prayer beads |
 | Kumar Ram Singh | `ramsingh` | Crimson jama, gold Rajput turban, moustache |
