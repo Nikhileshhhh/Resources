@@ -1,7 +1,6 @@
 import path from "node:path";
 import { mkdirSync, readdirSync, readFileSync, statSync } from "node:fs";
 import { bundle } from "@remotion/bundler";
-import { renderStill, selectComposition } from "@remotion/renderer";
 import { config, knownSecrets, ROOT } from "../lib/env.js";
 import { exists, fmtTime, log, readJson, run, writeJson, writeText } from "../lib/util.js";
 
@@ -27,23 +26,41 @@ export function checkSecrets(dir: string): string[] {
   return bad;
 }
 
+/** Hero frames for the thumbnails: shot id and position within the shot. */
+const THUMB_HERO: Record<"A" | "B" | "C", { shot: string; at: number }> = {
+  A: { shot: "s13c", at: 0.56 }, // Shivaji crouched in the basket
+  B: { shot: "s07b", at: 0.65 }, // he turns his back on the court
+  C: { shot: "s01d", at: 0.45 }, // the guard finds the bed empty
+};
+
 export async function thumbsStage(epDir: string): Promise<void> {
   const ep = readJson<{ fileStem: string }>(path.join(epDir, "episode.json"));
+  const timeline = readJson<{ scenes: { shots: { id: string; startFrame: number; endFrame: number }[] }[] }>(path.join(epDir, "timeline.json"));
   const serveUrl = await bundle({ entryPoint: path.join(ROOT, "src", "remotion", "index.ts"), outDir: path.join(ROOT, ".cache", "bundle_thumbs") });
   const dir = path.join(epDir, "thumbnails");
   mkdirSync(dir, { recursive: true });
+  const props = path.join(ROOT, ".cache", "thumb_props.json");
+  writeJson(props, { timeline });
+  const browser = config.browserExecutable ? [`--browser-executable=${config.browserExecutable}`] : [];
   for (const variant of ["A", "B", "C"] as const) {
-    const inputProps = { variant };
-    const comp = await selectComposition({ serveUrl, id: "Thumbnail", inputProps, browserExecutable: config.browserExecutable });
+    const hero = THUMB_HERO[variant];
+    const shot = timeline.scenes.flatMap((s) => s.shots).find((s) => s.id === hero.shot);
+    if (!shot) throw new Error(`thumbnail ${variant}: shot ${hero.shot} not in timeline`);
+    const frame = Math.round(shot.startFrame + (shot.endFrame - shot.startFrame - 1) * hero.at);
+    const bg = path.join(ROOT, ".cache", `thumb_bg_${variant}.png`);
+    const title = path.join(ROOT, ".cache", `thumb_title_${variant}.png`);
+    // through the Remotion CLI: the in-process still renderer drops some WebGL scenes
+    await run("npx", ["remotion", "still", serveUrl, "Episode", bg, `--frame=${frame}`, `--props=${props}`, "--gl=swangle", "--image-format=png", "--scale=2", "--log=error", ...browser], { quiet: true, cwd: ROOT });
+    await run("npx", ["remotion", "still", serveUrl, "Thumbnail", title, `--props=${JSON.stringify({ variant })}`, "--image-format=png", "--scale=2", "--log=error", ...browser], { quiet: true, cwd: ROOT });
     const master = path.join(dir, `${ep.fileStem}_thumb_${variant}_3840x2160.png`);
-    await renderStill({ serveUrl, composition: comp, inputProps, output: master, imageFormat: "png", scale: 2, browserExecutable: config.browserExecutable, chromiumOptions: { gl: "swangle" } });
+    await run("ffmpeg", ["-v", "error", "-y", "-i", bg, "-i", title, "-filter_complex", "[0][1]overlay=0:0", master], { quiet: true });
     const jpg = path.join(dir, `${ep.fileStem}_thumb_${variant}.jpg`);
     // 1920x1080 JPG, stepping quality down until it is safely under the 2 MB mobile upload limit.
     for (const q of [2, 3, 4, 6, 8]) {
       await run("ffmpeg", ["-v", "error", "-y", "-i", master, "-vf", "scale=1920:1080:flags=lanczos", "-q:v", String(q), jpg], { quiet: true });
       if (statSync(jpg).size < 1.9e6) break;
     }
-    log("thumbs", `${variant}: ${path.basename(jpg)} ${(statSync(jpg).size / 1e6).toFixed(2)} MB; master ${(statSync(master).size / 1e6).toFixed(1)} MB`);
+    log("thumbs", `${variant}: ${hero.shot} frame ${frame} → ${path.basename(jpg)} ${(statSync(jpg).size / 1e6).toFixed(2)} MB; master ${(statSync(master).size / 1e6).toFixed(1)} MB`);
   }
 }
 
