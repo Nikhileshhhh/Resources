@@ -134,7 +134,7 @@ async function main() {
     }
     case "stills": {
       const { stillsStage } = await import("./stages/render.js");
-      return stillsStage(episodeDir(), opt("shots")?.split(","));
+      return stillsStage(episodeDir(), opt("shots")?.split(","), opt("at")?.split(",").map(Number));
     }
     case "verify": {
       const { verifyStage } = await import("./stages/verify.js");

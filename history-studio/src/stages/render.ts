@@ -79,7 +79,7 @@ export async function renderStage(epDir: string, opts: { preview: boolean; from?
 }
 
 /** Render one representative still per shot (middle frame) and a contact sheet per scene for review. */
-export async function stillsStage(epDir: string, only?: string[]): Promise<void> {
+export async function stillsStage(epDir: string, only?: string[], at: number[] = [0.5]): Promise<void> {
   const timeline = readJson<Timeline>(path.join(epDir, "timeline.json"));
   const serveUrl = await getBundle();
   const inputProps = { timeline };
@@ -91,8 +91,11 @@ export async function stillsStage(epDir: string, only?: string[]): Promise<void>
     for (const sc of timeline.scenes)
       for (const sh of sc.shots) {
         if (only && !only.includes(sh.id) && !only.includes(sc.id)) continue;
-        const frame = Math.round((sh.startFrame + sh.endFrame) / 2);
-        await renderStill({ serveUrl, composition: comp, inputProps, frame, output: path.join(dir, `${sh.id}.jpg`), imageFormat: "jpeg", jpegQuality: 85, puppeteerInstance: b, scale: 0.5 });
+        for (const a of at) {
+          const frame = Math.round(sh.startFrame + (sh.endFrame - sh.startFrame - 1) * a);
+          const name = at.length === 1 ? sh.id : `${sh.id}_${Math.round(a * 100)}`;
+          await renderStill({ serveUrl, composition: comp, inputProps, frame, output: path.join(dir, `${name}.jpg`), imageFormat: "jpeg", jpegQuality: 85, puppeteerInstance: b, scale: 0.5 });
+        }
       }
   } finally {
     await b.close({ silent: true });

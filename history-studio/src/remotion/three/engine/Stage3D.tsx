@@ -64,7 +64,7 @@ const RendererSetup: React.FC<{ exposure: number }> = ({ exposure }) => {
     gl.toneMappingExposure = exposure;
     gl.outputColorSpace = THREE.SRGBColorSpace;
     gl.shadowMap.enabled = true;
-    gl.shadowMap.type = THREE.PCFSoftShadowMap;
+    gl.shadowMap.type = THREE.PCFShadowMap;
   }, [gl, exposure]);
   return null;
 };

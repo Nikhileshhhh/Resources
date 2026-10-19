@@ -2,6 +2,7 @@ import React, { useMemo } from "react";
 import * as THREE from "three";
 import { COSTUMES, type Costume } from "../../components/Figure";
 import { Flame } from "../engine/fx";
+import { Upright } from "../engine/env";
 
 /**
  * Code-built 3D character (original): a joint hierarchy with sculpted costume pieces.
@@ -42,7 +43,7 @@ export function mat(color: string, kind: "cloth" | "silk" | "skin" | "metal" | "
       m = new THREE.MeshPhysicalMaterial({ color, roughness: 0.55, sheen: 1, sheenRoughness: 0.45, sheenColor: new THREE.Color(color).lerp(new THREE.Color("#ffffff"), 0.35) });
       break;
     case "skin":
-      m = new THREE.MeshStandardMaterial({ color, roughness: 0.62, metalness: 0 });
+      m = new THREE.MeshStandardMaterial({ color: new THREE.Color(color).lerp(new THREE.Color("#e0a27a"), 0.18), roughness: 0.55, metalness: 0 });
       break;
     case "metal":
       m = new THREE.MeshStandardMaterial({ color, roughness: 0.32, metalness: 0.85 });
@@ -232,7 +233,8 @@ const Head: React.FC<{ c: Costume; skin: THREE.Material; hair: THREE.Material; b
       <mesh geometry={sphere(0.104, 28, 20)} material={skin} scale={[0.9, 1.08, 1]} castShadow={sh} />
       <mesh geometry={sphere(0.075, 20, 14)} material={skin} position={[0, -0.055, 0.03]} scale={[1, 0.8, 1]} castShadow={sh} />
       {/* nose and ears */}
-      <mesh geometry={cone(0.018, 0.05, 10)} material={skin} position={[0, -0.005, 0.104]} rotation={[Math.PI / 2 + 0.25, 0, 0]} />
+      <mesh geometry={capsule(0.016, 0.035)} material={skin} position={[0, -0.012, 0.1]} rotation={[0.35, 0, 0]} />
+      <mesh geometry={sphere(0.019, 10, 8)} material={skin} position={[0, -0.034, 0.108]} scale={[1.2, 0.8, 0.9]} />
       {hi && <mesh geometry={sphere(0.025, 10, 8)} material={skin} position={[0.093, 0, 0]} scale={[0.4, 1, 0.75]} />}
       {hi && <mesh geometry={sphere(0.025, 10, 8)} material={skin} position={[-0.093, 0, 0]} scale={[0.4, 1, 0.75]} />}
       {/* eyes with lids (blink) and gaze */}
@@ -248,7 +250,7 @@ const Head: React.FC<{ c: Costume; skin: THREE.Material; hair: THREE.Material; b
         </group>
       ))}
       {/* mouth */}
-      <mesh geometry={box(0.03, 0.005 + jaw * 0.014, 0.01)} material={mat("#4a2420")} position={[0, -0.058, 0.088]} />
+      <mesh geometry={box(0.034, 0.006 + jaw * 0.014, 0.012)} material={mat("#5a2a24")} position={[0, -0.06, 0.094]} />
       {c.moustache && (
         <>
           <mesh geometry={capsule(0.007, 0.026)} material={bm} position={[0.017, -0.043, 0.094]} rotation={[0, 0, 1.25]} />
@@ -256,7 +258,13 @@ const Head: React.FC<{ c: Costume; skin: THREE.Material; hair: THREE.Material; b
         </>
       )}
       {c.beard && c.beard !== "none" && (
-        <mesh geometry={geo(`beard`, () => new THREE.SphereGeometry(0.083, 20, 12, Math.PI * 0.12, Math.PI * 0.76, Math.PI * 0.52, Math.PI * 0.42))} material={bm} position={[0, -0.03, 0.022]} scale={c.beard === "full" || c.beard === "white" || c.beard === "grey" ? [1.08, 1.35, 1.1] : [1.02, 1.05, 1.03]} rotation={[0.05, Math.PI * 0.5 - Math.PI * 0.5, 0]} castShadow={sh} />
+        <group>
+          {/* chin beard below the mouth, plus jaw-line strips up to the ears */}
+          <mesh geometry={sphere(0.05, 16, 12)} material={bm} position={[0, c.beard === "short" ? -0.088 : -0.1, 0.058]} scale={c.beard === "short" ? [1.25, 0.75, 0.85] : [1.35, 1.25, 0.95]} castShadow={sh} />
+          {[1, -1].map((sd) => (
+            <mesh key={sd} geometry={capsule(0.016, 0.07)} material={bm} position={[sd * 0.072, -0.05, 0.045]} rotation={[0.25, 0, sd * 0.55]} />
+          ))}
+        </group>
       )}
       <Headwear c={c} hair={hair} sh={sh} hi={hi} />
     </group>
@@ -344,20 +352,24 @@ export const Prop: React.FC<{ name: PropName; frame: number; seed: number }> = (
   switch (name) {
     case "torch":
       return (
-        <group position={[0, -0.06, 0.02]} rotation={[Math.PI, 0, 0]}>
-          <mesh geometry={cyl(0.018, 0.022, 0.6, 8)} material={mat("#4a3020", "wood")} position={[0, 0.18, 0]} castShadow />
-          <mesh geometry={cyl(0.032, 0.026, 0.09, 10)} material={mat("#2a2018")} position={[0, 0.5, 0]} />
-          <group position={[0, 0.58, 0]}>
-            <Flame frame={frame} seed={seed} size={0.22} />
-          </group>
+        <group position={[0, -0.06, 0.02]}>
+          <Upright tilt={[0.12, 0]}>
+            <mesh geometry={cyl(0.018, 0.022, 0.6, 8)} material={mat("#4a3020", "wood")} position={[0, 0.18, 0]} castShadow />
+            <mesh geometry={cyl(0.032, 0.026, 0.09, 10)} material={mat("#2a2018")} position={[0, 0.5, 0]} />
+            <group position={[0, 0.58, 0]}>
+              <Flame frame={frame} seed={seed} size={0.22} />
+            </group>
+          </Upright>
         </group>
       );
     case "spear":
       return (
-        <group position={[0, -0.06, 0.01]} rotation={[Math.PI, 0, 0]}>
+        <group position={[0, -0.06, 0.01]}>
+          <Upright tilt={[0.05, 0]}>
           <mesh geometry={cyl(0.014, 0.016, 2.3, 8)} material={mat("#5a4030", "wood")} position={[0, 0.55, 0]} castShadow />
           <mesh geometry={cone(0.03, 0.2, 8)} material={mat("#b8bcc0", "metal")} position={[0, 1.79, 0]} castShadow />
           <mesh geometry={cone(0.03, 0.05, 8)} material={mat("#7a2020")} position={[0, 1.66, 0]} rotation={[Math.PI, 0, 0]} />
+          </Upright>
         </group>
       );
     case "sword":
@@ -383,7 +395,13 @@ export const Prop: React.FC<{ name: PropName; frame: number; seed: number }> = (
     case "letter":
       return <mesh geometry={box(0.16, 0.002, 0.22)} material={mat("#ead9b6")} position={[0, -0.08, 0.08]} rotation={[0.2, 0, 0]} castShadow />;
     case "staff":
-      return <mesh geometry={cyl(0.016, 0.02, 1.7, 8)} material={mat("#6a5030", "wood")} position={[0, -0.06 + 0.35, 0]} castShadow />;
+      return (
+        <group position={[0, -0.06, 0]}>
+          <Upright>
+            <mesh geometry={cyl(0.016, 0.02, 1.7, 8)} material={mat("#6a5030", "wood")} position={[0, 0.25, 0]} castShadow />
+          </Upright>
+        </group>
+      );
     default:
       return null;
   }

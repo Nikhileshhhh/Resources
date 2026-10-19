@@ -7,6 +7,7 @@ import { Vignette } from "./components/kit";
 import * as Ext from "./sets/exteriors";
 import * as Int from "./sets/interiors";
 import * as Gfx from "./sets/graphics";
+import { REGISTRY3D } from "./three/registry";
 
 export interface ShotT {
   id: string;
@@ -24,6 +25,7 @@ export interface TimelineT {
   disclosure: string;
   endScreenStartFrame: number;
   scenes: { id: string; shots: ShotT[] }[];
+  words?: { w: string; start: number; end: number }[];
 }
 
 const REGISTRY: Record<string, React.FC<any>> = { ...Ext, ...Int, ...Gfx };
@@ -66,11 +68,29 @@ const ShotText: React.FC<{ t: NonNullable<ShotT["text"]>; duration: number }> = 
   );
 };
 
-const ShotView: React.FC<{ shot: ShotT; duration: number; fadeIn: boolean }> = ({ shot, duration, fadeIn }) => {
+const ShotView: React.FC<{ shot: ShotT; duration: number; fadeIn: boolean; words: NonNullable<TimelineT["words"]> }> = ({ shot, duration, fadeIn, words }) => {
   const f = useCurrentFrame();
   const Comp = REGISTRY[shot.comp];
   const opacity = fadeIn ? interpolate(f, [0, XF], [0, 1], clamp) : 1;
   const coreDuration = duration - XF;
+  const three = REGISTRY3D[shot.comp];
+  if (three && three.supports(shot.props)) {
+    const C3 = three.comp;
+    // narration cue: local frame at which a word is spoken inside this shot (nth occurrence)
+    const cue = (word: string, fallback: number, nth = 0) => {
+      const w = word.toLowerCase();
+      const hits = words.filter((x) => x.w.toLowerCase().replace(/[^a-z']/g, "") === w && x.start * 30 >= shot.startFrame - 2 && x.start * 30 <= shot.endFrame + 2);
+      return hits[nth] ? Math.round(hits[nth].start * 30 - shot.startFrame) : fallback;
+    };
+    return (
+      <ShotCtx.Provider value={{ frame: f, duration: coreDuration, p: Math.min(1, Math.max(0, f / Math.max(1, duration))) }}>
+        <AbsoluteFill style={{ opacity }}>
+          <C3 {...shot.props} frame={f} duration={coreDuration} cue={cue} shotId={shot.id} />
+          {shot.text && <ShotText t={shot.text} duration={coreDuration} />}
+        </AbsoluteFill>
+      </ShotCtx.Provider>
+    );
+  }
   return (
     <ShotCtx.Provider value={{ frame: f, duration: coreDuration, p: Math.min(1, Math.max(0, f / Math.max(1, duration))) }}>
       <AbsoluteFill style={{ opacity }}>
@@ -103,7 +123,7 @@ export const Episode: React.FC<{ timeline: TimelineT; range?: [number, number] }
         const dur = sh.endFrame - sh.startFrame + (last ? 0 : XF);
         return (
           <Sequence key={sh.id} from={sh.startFrame} durationInFrames={dur} name={sh.id}>
-            <ShotView shot={sh} duration={dur} fadeIn={i > 0} />
+            <ShotView shot={sh} duration={dur} fadeIn={i > 0} words={timeline.words ?? []} />
           </Sequence>
         );
       })}
