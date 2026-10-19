@@ -62,61 +62,54 @@ async function synthOpenAI(text: string, out: string, budget: Budget, stage: str
 export const stripTags = (t: string) => t.replace(/\[[^\]]+\]\s*/g, "").replace(/\s+/g, " ").trim();
 
 /**
- * ElevenLabs credits guard. The per-episode cap counts every call (retries, auditions, pronunciation tests).
- * Before a call it checks the cap and the account's remaining credits; after it records the measured
- * change in the subscription's character_count. It never buys credits or changes the plan.
+ * ElevenLabs credits guard. The per-episode cap counts every call (retries, auditions, tests).
+ * Each call is charged as characters × the model's published rate (GET /v1/models: character_cost_multiplier ×
+ * cost_discount_multiplier; 1.0 for eleven_v3). The account's own counter updates with a delay, so it is used only
+ * as a second check on what is left, never to price a single call. Credits are never bought; plans never changed.
  */
 export class ElevenCredits {
-  private ratio = 1; // credits per character; learnt from the first measured call
-  constructor(private budget: Budget) {
-    const measured = budget.entries.filter((e) => e.unit === "el_credits" && e.priceBasis.startsWith("measured") && e.note?.startsWith("chars="));
-    const chars = measured.reduce((a, e) => a + Number(e.note!.slice(6).split(" ")[0]), 0);
-    if (chars > 0) this.ratio = measured.reduce((a, e) => a + e.units, 0) / chars;
+  private ratio: number | null = null;
+  constructor(private budget: Budget) {}
+  private async rate(): Promise<number> {
+    if (this.ratio === null) {
+      const m = (await eleven.getModels()).find((x) => x.model_id === config.elevenlabs.model) as any;
+      if (!m) throw new Error(`Model ${config.elevenlabs.model} not on this account`);
+      this.ratio = (m.model_rates?.character_cost_multiplier ?? 1) * (m.model_rates?.cost_discount_multiplier ?? 1);
+    }
+    return this.ratio!;
   }
   used(): number {
     return this.budget.entries.filter((e) => e.unit === "el_credits").reduce((a, e) => a + e.units, 0);
   }
-  async before(chars: number): Promise<number> {
-    const need = Math.ceil(chars * this.ratio);
+  private async check(est: number, what: string): Promise<void> {
     const cap = config.elevenlabs.creditCap;
-    if (this.used() + need > cap) throw new Error(`ElevenLabs credit cap ${cap} would be exceeded (used ${this.used()} + this call ~${need}). Raise ELEVENLABS_CREDIT_CAP only if you mean to.`);
+    if (this.used() + est > cap) throw new Error(`Not starting ${what}: needs ~${est} credits but the episode cap ${cap} leaves ${cap - this.used()}. Raise ELEVENLABS_CREDIT_CAP only if you mean to.`);
     const sub = await eleven.getSubscription();
     const left = sub.character_limit - sub.character_count;
-    if (need > left) throw new Error(`Only ${left} ElevenLabs credits left on the "${sub.tier}" plan; this call needs ~${need}. Credits are never bought automatically.`);
-    return sub.character_count;
+    if (est > left) throw new Error(`Not starting ${what}: needs ~${est} credits but the "${sub.tier}" account has ${left} left. Credits are never bought automatically.`);
+  }
+  async before(chars: number): Promise<void> {
+    await this.check(Math.ceil(chars * (await this.rate())), "this call");
   }
   /** Refuse a whole run up front if it cannot finish within the cap or the account's credits (no half-voiced episodes). */
-  async plan(need: number, what: string): Promise<void> {
-    const est = Math.ceil(need * this.ratio);
-    const cap = config.elevenlabs.creditCap;
+  async plan(chars: number, what: string): Promise<void> {
+    const est = Math.ceil(chars * (await this.rate()));
     const sub = await eleven.getSubscription();
-    const left = sub.character_limit - sub.character_count;
-    log("credits", `${what}: needs ~${est} credits · episode used ${this.used()} of cap ${cap} · account has ${left} left`);
-    if (this.used() + est > cap) throw new Error(`Not starting: ${what} needs ~${est} credits but the episode cap leaves ${cap - this.used()}.`);
-    if (est > left) throw new Error(`Not starting: ${what} needs ~${est} credits but the account has ${left} left. Credits are never bought automatically.`);
+    log("credits", `${what}: needs ~${est} credits · episode used ${this.used()} of cap ${config.elevenlabs.creditCap} · account shows ${sub.character_limit - sub.character_count} left (updates with a delay)`);
+    await this.check(est, what);
   }
-  async after(stage: string, before: number, chars: number, requestId?: string): Promise<void> {
-    let used = Math.ceil(chars * this.ratio);
-    let basis = `estimated: ${this.ratio.toFixed(2)} credits per character`;
-    try {
-      const delta = (await eleven.getSubscription()).character_count - before;
-      if (delta > 0) {
-        used = delta;
-        basis = "measured: subscription character_count delta";
-      }
-    } catch {
-      /* keep the estimate */
-    }
-    this.budget.record({ stage, provider: "api.elevenlabs.io", model: config.elevenlabs.model, units: used, unit: "el_credits", estInr: 0, priceBasis: basis, note: `chars=${chars}${requestId ? ` request=${requestId}` : ""}` });
+  async after(stage: string, chars: number, requestId?: string): Promise<void> {
+    const r = await this.rate();
+    this.budget.record({ stage, provider: "api.elevenlabs.io", model: config.elevenlabs.model, units: Math.ceil(chars * r), unit: "el_credits", estInr: 0, priceBasis: `characters × model rate ${r} (GET /v1/models)`, note: `chars=${chars}${requestId ? ` request=${requestId}` : ""}` });
   }
 }
 
 export async function synthEleven(text: string, out: string, credits: ElevenCredits, stage: string, voiceId = config.elevenlabs.voiceId, stability = config.elevenlabs.stability): Promise<void> {
   if (!voiceId) throw new Error("ELEVENLABS_VOICE_ID is not set; pick one with `studio voices` and `studio audition` first");
   mkdirSync(path.dirname(out), { recursive: true });
-  const before = await credits.before(text.length);
+  await credits.before(text.length);
   const res = await eleven.textToSpeech(voiceId, text, { model: config.elevenlabs.model, stability, outputFormat: config.elevenlabs.outputFormat });
-  await credits.after(stage, before, text.length, res.requestId);
+  await credits.after(stage, text.length, res.requestId);
   const raw = out.replace(/\.wav$/, ".raw.mp3");
   writeFileSync(raw, res.audio);
   await run("ffmpeg", ["-v", "error", "-y", "-i", raw, "-ar", "48000", "-ac", "1", "-c:a", "pcm_s16le", out], { quiet: true });

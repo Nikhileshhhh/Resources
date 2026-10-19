@@ -1457,10 +1457,61 @@
       "unit": "audio_min",
       "estInr": 0.284,
       "priceBasis": "AI Credits docs/audio billing table"
+    },
+    {
+      "at": "2026-10-19T07:48:14.015Z",
+      "stage": "audition 1_Lily (eleven_v3, stability 0.5)",
+      "provider": "api.elevenlabs.io",
+      "model": "eleven_v3",
+      "units": 134,
+      "unit": "el_credits",
+      "estInr": 0,
+      "priceBasis": "characters \u00d7 model rate 1 (GET /v1/models)",
+      "note": "chars=134 request=fV6TbPAQ27PfessStDu8"
+    },
+    {
+      "at": "2026-10-19T07:48:18.874Z",
+      "stage": "audition 2_Alice (eleven_v3, stability 0.5)",
+      "provider": "api.elevenlabs.io",
+      "model": "eleven_v3",
+      "units": 134,
+      "unit": "el_credits",
+      "estInr": 0,
+      "priceBasis": "characters \u00d7 model rate 1 (GET /v1/models)",
+      "note": "chars=134 request=lqIEa48nt7VZ0CV2z1SA"
+    },
+    {
+      "at": "2026-10-19T07:48:23.385Z",
+      "stage": "audition 3_Matilda (eleven_v3, stability 0.5)",
+      "provider": "api.elevenlabs.io",
+      "model": "eleven_v3",
+      "units": 134,
+      "unit": "el_credits",
+      "estInr": 0,
+      "priceBasis": "characters \u00d7 model rate 1 (GET /v1/models)",
+      "note": "chars=134 request=2Tm381Qf6HOC3EaPRtXi"
+    },
+    {
+      "at": "2026-10-19T07:48:27.979Z",
+      "stage": "audition 4_Bella (eleven_v3, stability 0.5)",
+      "provider": "api.elevenlabs.io",
+      "model": "eleven_v3",
+      "units": 134,
+      "unit": "el_credits",
+      "estInr": 0,
+      "priceBasis": "characters \u00d7 model rate 1 (GET /v1/models)",
+      "note": "chars=134 request=kRX0uSGhacNOz4aOSun2"
+    },
+    {
+      "at": "2026-10-19T07:48:32.922Z",
+      "stage": "audition 5_Sarah (eleven_v3, stability 0.5)",
+      "provider": "api.elevenlabs.io",
+      "model": "eleven_v3",
+      "units": 134,
+      "unit": "el_credits",
+      "estInr": 0,
+      "priceBasis": "characters \u00d7 model rate 1 (GET /v1/models)",
+      "note": "chars=134 request=8B0YwvqQkZmQSGzKmSMl"
     }
-  ],
-  "notes": [
-    "2026-10-18 ~09:10 UTC: AI Credits began returning HTTP 402 'Insufficient Balance' for every request (including a 9-character TTS test). Estimated spend at that point was about Rs 37, so actual gateway charges for gpt-4o-mini-tts / whisper-1 (no published per-request price for gpt-4o-mini-tts) and/or the starting balance differ from these estimates. Check the AI Credits dashboard for the real figures.",
-    "Narration re-pacing (pace stage) and all later stages ran locally at no API cost; STT checks on the final mix were disabled because of the empty wallet."
   ]
 }

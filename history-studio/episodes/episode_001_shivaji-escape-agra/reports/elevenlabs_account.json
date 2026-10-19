@@ -1,0 +1,13 @@
+{
+  "checkedAt": "2026-10-19T07:46:08.534Z",
+  "model": "eleven_v3",
+  "modelAvailable": true,
+  "tier": "free",
+  "status": "free",
+  "creditsUsed": 0,
+  "creditLimit": 10000,
+  "creditsLeft": 10000,
+  "resetDate": "2026-11-18",
+  "voice": null,
+  "episodeCreditCap": 10000
+}

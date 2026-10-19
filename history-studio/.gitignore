@@ -26,3 +26,4 @@ __pycache__/
 voice_samples/list.txt
 voice_samples/beep.wav
 episodes/*/audio/paced/
+episodes/*/audio/auditions/
