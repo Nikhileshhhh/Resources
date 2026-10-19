@@ -79,9 +79,19 @@ export async function audition(ep: Episode, epDir: string, voiceIds: string[], s
     if (!name) {
       const c = candidates.find((v) => v.voice_id === id);
       if (!c?.public_owner_id) throw new Error(`Voice ${id} is neither in My Voices nor in candidates.json; run \`studio voices\` first`);
-      voiceId = await eleven.addSharedVoice(c.public_owner_id, c.voice_id, c.name);
+      // Already added by hand on the website? Library voices can get a new id when added, so match by name too.
+      const added = mine.find((v) => v.name === c.name);
+      if (added) voiceId = added.voice_id;
+      else {
+        try {
+          voiceId = await eleven.addSharedVoice(c.public_owner_id, c.voice_id, c.name);
+        } catch (e) {
+          if (e instanceof ProviderError && (e.status === 401 || e.status === 403)) throw new Error(`This API key may not add Voice Library voices. Add "${c.name}" on elevenlabs.io (Voice Library > Add to my voices), or give the key Voices: Write, then re-run.`);
+          throw e;
+        }
+        log("audition", `added ${c.name} to My Voices as ${voiceId}`);
+      }
       name = c.name;
-      log("audition", `added ${name} to My Voices as ${voiceId}`);
     }
     for (const stability of stabilities) {
       const parts: string[] = [];
