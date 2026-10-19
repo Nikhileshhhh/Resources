@@ -1,10 +1,10 @@
 {
   "output": "renders/preview_video_only.mp4",
   "frameRange": [
-    11049,
-    11798
+    11768,
+    12241
   ],
-  "seconds": 312.729,
+  "seconds": 704.075,
   "concurrency": 4,
-  "at": "2026-10-19T08:18:14.302Z"
+  "at": "2026-10-19T12:48:29.923Z"
 }
