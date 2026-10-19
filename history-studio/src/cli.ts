@@ -128,6 +128,14 @@ async function main() {
       const dir = episodeDir();
       return renderStage(dir, { preview: cmd === "preview", from: opt("from"), seconds: opt("seconds") ? Number(opt("seconds")) : undefined, frames: opt("frames") });
     }
+    case "chunks": {
+      const { renderChunks } = await import("./stages/render.js");
+      return renderChunks(episodeDir(), opt("scenes")?.split(","), flag("force"));
+    }
+    case "concat": {
+      const { concatChunks } = await import("./stages/render.js");
+      return concatChunks(episodeDir());
+    }
     case "mux": {
       const { muxStage } = await import("./stages/render.js");
       return muxStage(episodeDir(), flag("preview"));

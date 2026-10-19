@@ -243,8 +243,8 @@ const Head: React.FC<{ c: Costume; skin: THREE.Material; hair: THREE.Material; b
       {hi && [1, -1].map((sd) => <mesh key={sd} geometry={sphere(0.024, 12, 10)} material={skin} position={[sd * 0.05, -0.014, 0.066]} scale={[1, 0.75, 0.7]} />)}
       <mesh geometry={sphere(0.03, 12, 10)} material={skin} position={[0, -0.098, 0.068]} scale={[1.05, 0.85, 0.9]} />
       {/* nose: bridge and tip */}
-      <mesh geometry={capsule(0.013, 0.035)} material={skin} position={[0, -0.006, 0.101]} rotation={[0.32, 0, 0]} />
-      <mesh geometry={sphere(0.016, 12, 10)} material={skin} position={[0, -0.03, 0.109]} scale={[1.25, 0.85, 0.95]} />
+      <mesh geometry={capsule(0.012, 0.022)} material={skin} position={[0, -0.008, 0.097]} rotation={[0.3, 0, 0]} />
+      <mesh geometry={sphere(0.0145, 12, 10)} material={skin} position={[0, -0.027, 0.103]} scale={[1.25, 0.85, 0.9]} />
       {hi && <mesh geometry={sphere(0.025, 10, 8)} material={skin} position={[0.094, 0, 0]} scale={[0.4, 1, 0.75]} />}
       {hi && <mesh geometry={sphere(0.025, 10, 8)} material={skin} position={[-0.094, 0, 0]} scale={[0.4, 1, 0.75]} />}
       {/* almond eyes: sclera, iris, pupil, catchlight, skin lid that blinks, dark upper lash line */}

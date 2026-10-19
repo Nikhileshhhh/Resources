@@ -175,3 +175,23 @@ export function carpet(base: string, accent: string, repeat: [number, number] = 
       }
   }, repeat);
 }
+
+/** Dark polished wood with long grain streaks and a couple of plank seams (desk, table). */
+export function wood(color: string, repeat: [number, number] = [1, 1]): THREE.Texture {
+  return make(`wood${color}`, 512, (g, r) => {
+    g.fillStyle = color;
+    g.fillRect(0, 0, 512, 512);
+    for (let i = 0; i < 140; i++) {
+      const y = r() * 512;
+      g.strokeStyle = `rgba(${r() > 0.5 ? "255,220,170" : "20,10,4"},${0.04 + r() * 0.08})`;
+      g.lineWidth = 1 + r() * 3;
+      g.beginPath();
+      g.moveTo(0, y);
+      for (let x = 0; x <= 512; x += 32) g.lineTo(x, y + Math.sin(x * 0.02 + i) * (2 + r() * 4));
+      g.stroke();
+    }
+    g.fillStyle = "rgba(0,0,0,0.35)";
+    g.fillRect(0, 170, 512, 3);
+    g.fillRect(0, 340, 512, 3);
+  }, repeat);
+}

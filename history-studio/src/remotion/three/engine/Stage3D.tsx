@@ -38,7 +38,7 @@ export function camAt(frame: number, keys: CamKey[], ease: "smooth" | "smoother"
 }
 
 /** Sets the default camera every frame from keyframes; optional handheld drift (seeded, deterministic). */
-const CameraRig: React.FC<{ keys: CamKey[]; handheld?: number; ease?: "smooth" | "smoother" | "linear" }> = ({ keys, handheld = 0, ease }) => {
+const CameraRig: React.FC<{ keys: CamKey[]; handheld?: number; ease?: "smooth" | "smoother" | "linear"; clip: [number, number] }> = ({ keys, handheld = 0, ease, clip }) => {
   const frame = useCurrentFrame();
   const { camera, size } = useThree();
   useLayoutEffect(() => {
@@ -49,8 +49,8 @@ const CameraRig: React.FC<{ keys: CamKey[]; handheld?: number; ease?: "smooth" |
     const pc = camera as THREE.PerspectiveCamera;
     pc.fov = c.fov;
     pc.aspect = size.width / size.height;
-    pc.near = 0.05;
-    pc.far = 900;
+    pc.near = clip[0];
+    pc.far = clip[1];
     pc.updateProjectionMatrix();
   });
   return null;
@@ -78,11 +78,15 @@ export interface StageProps {
   exposure?: number;
   /** Grade overlay: vignette strength 0..1, grain 0..1, tint (CSS colour with alpha) */
   grade?: { vignette?: number; grain?: number; tint?: string; contrast?: number; saturate?: number };
+  /** HTML/SVG layer composited over the 3D image and under the grade (e.g. a document on a desk). */
+  dom?: React.ReactNode;
+  /** Camera near/far planes (default metres: 0.05–900). */
+  clip?: [number, number];
   children: React.ReactNode;
 }
 
 /** A 3D shot: ThreeCanvas + camera rig + filmic tone mapping, with a CSS grade on top (vignette, grain, tint). */
-export const Stage3D: React.FC<StageProps> = ({ cam, camEase, handheld, background, fog, exposure = 1, grade = {}, children }) => {
+export const Stage3D: React.FC<StageProps> = ({ cam, camEase, handheld, background, fog, exposure = 1, grade = {}, dom, clip = [0.05, 900], children }) => {
   const { width, height } = useVideoConfig();
   const frame = useCurrentFrame();
   const { vignette = 0.55, grain = 0.06, tint, contrast = 1.06, saturate = 1.04 } = grade;
@@ -91,12 +95,13 @@ export const Stage3D: React.FC<StageProps> = ({ cam, camEase, handheld, backgrou
       <div style={{ position: "absolute", inset: 0, filter: `contrast(${contrast}) saturate(${saturate})` }}>
         <ThreeCanvas width={width} height={height} shadows gl={{ antialias: true, preserveDrawingBuffer: true, powerPreference: "high-performance" }} camera={{ fov: 35, position: [0, 2, 10] }}>
           <RendererSetup exposure={exposure} />
-          <CameraRig keys={cam} handheld={handheld} ease={camEase} />
+          <CameraRig keys={cam} handheld={handheld} ease={camEase} clip={clip} />
           <color attach="background" args={[background]} />
           {fog && <fog attach="fog" args={[fog.color, fog.near, fog.far]} />}
           {children}
         </ThreeCanvas>
       </div>
+      {dom}
       {tint && <AbsoluteFill style={{ background: tint, mixBlendMode: "soft-light" }} />}
       <AbsoluteFill style={{ background: `radial-gradient(ellipse at 50% 48%, rgba(0,0,0,0) 45%, rgba(0,0,0,${vignette}) 100%)` }} />
       {grain > 0 && <Grain amount={grain} seed={frame} />}

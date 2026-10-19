@@ -68,10 +68,37 @@ const ShotText: React.FC<{ t: NonNullable<ShotT["text"]>; duration: number }> = 
   );
 };
 
-const ShotView: React.FC<{ shot: ShotT; duration: number; fadeIn: boolean; words: NonNullable<TimelineT["words"]> }> = ({ shot, duration, fadeIn, words }) => {
+export type Transition = "none" | "dissolve" | "cut" | "whip" | "lightwipe" | "fadeblack";
+
+/**
+ * How the incoming shot enters during the 10-frame overlap (timing is unchanged by the choice).
+ * whip: fast lateral slide with motion blur; lightwipe: warm flash that blooms and clears;
+ * fadeblack: the outgoing shot dips to black, then the incoming one rises from it.
+ */
+function transitionStyle(t: Transition, f: number): { style: React.CSSProperties; overlay?: React.ReactNode } {
+  if (t === "none" || t === "cut") return { style: {} };
+  if (t === "whip") {
+    const p = interpolate(f, [0, 8], [0, 1], { ...clamp, easing: easeOut });
+    return { style: { transform: `translateX(${(1 - p) * 60}%)`, filter: `blur(${(1 - p) * 36}px)`, opacity: interpolate(f, [0, 3], [0, 1], clamp) } };
+  }
+  if (t === "lightwipe") {
+    const o = interpolate(f, [0, 6], [0, 1], clamp);
+    const flash = interpolate(f, [0, 4, XF], [0, 0.85, 0], clamp);
+    return { style: { opacity: o }, overlay: <AbsoluteFill style={{ background: "radial-gradient(ellipse at 50% 45%, #fff3d6 0%, #ffcf8a 45%, rgba(255,170,80,0) 80%)", opacity: flash, mixBlendMode: "screen" }} /> };
+  }
+  if (t === "fadeblack") {
+    const cover = interpolate(f, [0, 5], [0, 1], clamp);
+    const reveal = interpolate(f, [5, XF], [0, 1], clamp);
+    return { style: { opacity: cover }, overlay: <AbsoluteFill style={{ background: "#000", opacity: 1 - reveal }} /> };
+  }
+  return { style: { opacity: interpolate(f, [0, XF], [0, 1], clamp) } };
+}
+
+const ShotView: React.FC<{ shot: ShotT; duration: number; transition: Transition; words: NonNullable<TimelineT["words"]> }> = ({ shot, duration, transition, words }) => {
   const f = useCurrentFrame();
   const Comp = REGISTRY[shot.comp];
-  const opacity = fadeIn ? interpolate(f, [0, XF], [0, 1], clamp) : 1;
+  const tr = transitionStyle(transition, f);
+  const opacity = (tr.style.opacity as number | undefined) ?? 1;
   const coreDuration = duration - XF;
   const three = REGISTRY3D[shot.comp];
   if (three && three.supports(shot.props)) {
@@ -84,9 +111,10 @@ const ShotView: React.FC<{ shot: ShotT; duration: number; fadeIn: boolean; words
     };
     return (
       <ShotCtx.Provider value={{ frame: f, duration: coreDuration, p: Math.min(1, Math.max(0, f / Math.max(1, duration))) }}>
-        <AbsoluteFill style={{ opacity }}>
+        <AbsoluteFill style={{ ...tr.style, background: transition === "fadeblack" ? "#000" : undefined }}>
           <C3 {...shot.props} frame={f} duration={coreDuration} cue={cue} shotId={shot.id} />
           {shot.text && <ShotText t={shot.text} duration={coreDuration} />}
+          {tr.overlay}
         </AbsoluteFill>
       </ShotCtx.Provider>
     );
@@ -116,6 +144,17 @@ export const Episode: React.FC<{ timeline: TimelineT; range?: [number, number] }
     document.fonts.ready.then(() => continueRender(handle));
   }, [handle]);
   const shots = timeline.scenes.flatMap((s) => s.shots);
+  // Film grammar: soft dissolves inside a scene, a whip-pan or warm light wipe between scenes, fade through
+  // black where a new chapter begins.
+  const transitions: Transition[] = [];
+  timeline.scenes.forEach((sc, si) =>
+    sc.shots.forEach((_, k) => {
+      if (si === 0 && k === 0) transitions.push("none");
+      else if (k > 0) transitions.push("dissolve");
+      else if ((sc as { chapter?: string | null }).chapter) transitions.push("fadeblack");
+      else transitions.push(si % 2 ? "whip" : "lightwipe");
+    }),
+  );
   return (
     <AbsoluteFill style={{ background: "#000" }}>
       {shots.map((sh, i) => {
@@ -123,7 +162,7 @@ export const Episode: React.FC<{ timeline: TimelineT; range?: [number, number] }
         const dur = sh.endFrame - sh.startFrame + (last ? 0 : XF);
         return (
           <Sequence key={sh.id} from={sh.startFrame} durationInFrames={dur} name={sh.id}>
-            <ShotView shot={sh} duration={dur} fadeIn={i > 0} words={timeline.words ?? []} />
+            <ShotView shot={sh} duration={dur} transition={transitions[i]} words={timeline.words ?? []} />
           </Sequence>
         );
       })}
