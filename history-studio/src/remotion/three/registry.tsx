@@ -4,6 +4,8 @@ import { CourtHall3D } from "./sets/court";
 import { CourtBeats3D, CourtIntrigue3D, RobeRefusal3D, TwoShot3D } from "./sets/court2";
 import { tabletop } from "./sets/tabletop";
 import { Bedroom3D, EmptyBed3D, WindowSilhouette3D } from "./sets/bedroom";
+import { Portrait3D } from "./sets/portraits";
+import { Interrogation3D, TentTalk3D } from "./sets/camp";
 import { AsceticWalk3D, DeccanForts3D, Siege3D, TitleCard3D } from "./sets/deccan";
 import * as G from "../sets/graphics";
 
@@ -27,6 +29,9 @@ export const REGISTRY3D: Record<string, { comp: React.FC<Shot3DProps>; supports:
   Siege: { comp: Siege3D, supports: () => true },
   AsceticWalk: { comp: AsceticWalk3D, supports: () => true },
   TitleCard: { comp: TitleCard3D, supports: () => true },
+  Portrait: { comp: Portrait3D, supports: () => true },
+  TentTalk: { comp: TentTalk3D, supports: () => true },
+  Interrogation: { comp: Interrogation3D, supports: () => true },
   // documents, maps and diagrams: the fact-checked 2D artwork as a sheet in a 3D scene
   MapScene: { comp: tabletop(G.MapScene, "desk"), supports: () => true },
   FortsGrid: { comp: tabletop(G.FortsGrid, "desk"), supports: () => true },

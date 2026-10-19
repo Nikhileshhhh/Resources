@@ -32,7 +32,7 @@ export const TORCH_HOLD_R: Pose3 = { shR: 38, shRAbd: 10, elR: 70, wristR: 0 };
 export const SPEAR_REST_L: Pose3 = { shL: 22, shLAbd: 14, elL: 62 };
 
 /** Arms folded across the chest (impatience / authority). */
-export const ARMS_FOLDED: Pose3 = { shL: 48, shR: 48, elL: 112, elR: 112, shLAbd: -24, shRAbd: -24, shLTwist: 20, shRTwist: 20 };
+export const ARMS_FOLDED: Pose3 = { shL: 22, shR: 22, elL: 100, elR: 100, shLAbd: -8, shRAbd: -8, shLTwist: -75, shRTwist: -75 };
 
 /** Hands clasped low in front (courtier waiting). */
 export const HANDS_CLASPED: Pose3 = { shL: 20, shR: 20, elL: 42, elR: 42, shLAbd: -16, shRAbd: -16 };

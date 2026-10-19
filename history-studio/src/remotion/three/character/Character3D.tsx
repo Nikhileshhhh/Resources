@@ -116,6 +116,7 @@ export interface CharacterProps {
   seed?: number;
 }
 
+/** Limbs hang down (−Y): a forward angle is a negative X rotation. Upward segments (spine, neck, head) use +angle. */
 const toRadX = (fwdDeg = 0) => -fwdDeg * D;
 
 /** The character itself. Stateless: everything comes from props, so any frame renders identically. */
@@ -198,7 +199,7 @@ export const Character3D: React.FC<CharacterProps> = ({ costume, pose: p, scale 
           {hi && skirtKind !== "dhoti" && <mesh geometry={torus(SKIRTS[skirtKind][SKIRTS[skirtKind].length - 2][0], 0.012)} material={trim} position={[0, SKIRTS[skirtKind][SKIRTS[skirtKind].length - 2][1], 0]} rotation={[Math.PI / 2, 0, 0]} />}
         </group>
         {/* spine */}
-        <group position={[0, 0.02, 0]} rotation={[toRadX(p.spine), (p.spineTwist ?? 0) * D, (p.spineSide ?? 0) * D]}>
+        <group position={[0, 0.02, 0]} rotation={[(p.spine ?? 0) * D, (p.spineTwist ?? 0) * D, (p.spineSide ?? 0) * D]}>
           <mesh geometry={lathe("torso", TORSO)} material={c.bareChest ? skin : robeMat} scale={[1, 1, 0.74 * breathe]} castShadow={sh} receiveShadow />
           {c.sash && <mesh geometry={torus(0.17, 0.034)} material={mat(c.sash)} position={[0, 0.045, 0]} rotation={[Math.PI / 2, 0, 0]} scale={[1, 0.8, 1]} castShadow={sh} />}
           {c.sash && hi && <mesh geometry={box(0.075, 0.32, 0.02)} material={mat(c.sash)} position={[0.06, -0.12, 0.16]} rotation={[-0.12 - (p.sway ?? 0) * 0.12, 0, 0.05]} castShadow={sh} />}
@@ -208,13 +209,13 @@ export const Character3D: React.FC<CharacterProps> = ({ costume, pose: p, scale 
           {c.necklace && <mesh geometry={torus(0.075, 0.011)} material={mat("#d8b25a", "gold")} position={[0, 0.455, 0.035]} rotation={[Math.PI / 2 + 0.55, 0, 0]} />}
           {c.weapon === "sword" && right !== "sword" && left !== "sword" && <Scabbard />}
           {/* chest / shoulders */}
-          <group position={[0, BODY.spine - 0.27, 0]} rotation={[toRadX(p.chest), 0, 0]}>
+          <group position={[0, BODY.spine - 0.27, 0]} rotation={[(p.chest ?? 0) * D, 0, 0]}>
             {arm(1)}
             {arm(-1)}
             {/* neck + head */}
-            <group position={[0, 0.5, 0]} rotation={[toRadX(p.neck), 0, 0]}>
+            <group position={[0, 0.5, 0]} rotation={[(p.neck ?? 0) * D, 0, 0]}>
               <mesh geometry={cyl(0.056, 0.064, 0.09)} material={skin} position={[0, 0.02, 0]} castShadow={sh} />
-              <group position={[0, BODY.neck + 0.01, 0.008]} rotation={[toRadX(p.head), (p.headTurn ?? 0) * D, (p.headTilt ?? 0) * D]} rotation-order="YXZ" scale={1.22}>
+              <group position={[0, BODY.neck + 0.01, 0.008]} rotation={[(p.head ?? 0) * D, (p.headTurn ?? 0) * D, (p.headTilt ?? 0) * D]} rotation-order="YXZ" scale={1.22}>
                 <Head c={c} skin={skin} hair={hair} beardCol={beardCol} blink={blink} brow={p.brow ?? 0} jaw={p.jaw ?? 0} lookX={p.lookX ?? 0} lookY={p.lookY ?? 0} hi={hi} sh={sh} />
               </group>
             </group>
