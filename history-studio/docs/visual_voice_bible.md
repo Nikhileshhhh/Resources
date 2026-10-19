@@ -43,6 +43,8 @@ Recurring locations: Agra Fort (red walls, cusped gate, marble domes, Yamuna in 
 - Violence is never depicted: sieges show smoke, threats are shown as silhouettes and documents.
 
 ## Voice
+**From episode 001 v2 onward the narrator is a female storyteller voiced with ElevenLabs Eleven v3,** chosen by audition. Casting, speed, pauses and delivery tags are in `docs/storytelling_voice_direction.md`. The notes below describe the v1 narrator (cedar) and are kept for reference.
+
 - Narrator: **gpt-4o-mini-tts, voice `cedar`** via AI Credits. An adult male voice with clear, conversational delivery. Chosen by A/B listening on 2026-10-18.
 - AI Credits currently ignores the `instructions` (style prompt) field, so delivery is shaped by punctuation, sentence length and **local re-pacing** (`pace` stage). Episode 1 settings: tempo 0.92 (8% slower, pitch preserved via rubberband), at least 0.7 s after sentences, 0.3 s after commas, 1.1 s before short beat sentences; pause scale auto-fitted (0.87) to keep the programme under 590 s. Chosen by you after hearing the first preview ("reads like a paragraph").
 - For a genuinely directed storytelling tone (intonation, not just pace), test a model that accepts style prompts once the wallet is topped up (e.g. `openai/gpt-audio-mini` via chat completions with a narrator system prompt; untested so far).

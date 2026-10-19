@@ -90,8 +90,9 @@ def pace(job, cfg, dry=False):
     y = np.concatenate(pieces)
     tmp = job["out"] + ".tmp.wav"
     sf.write(tmp, y, SR, subtype="PCM_16")
-    af = f"rubberband=tempo={cfg['tempo']}:pitchq=quality:formant=preserved:window=standard"
-    subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", tmp, "-af", af, "-ar", str(SR), "-ac", "1", "-c:a", "pcm_s16le", job["out"]], check=True)
+    # Tempo 1.0 means pauses only: skip the time-stretch so the voice stays untouched.
+    af = ["-af", f"rubberband=tempo={cfg['tempo']}:pitchq=quality:formant=preserved:window=standard"] if abs(cfg["tempo"] - 1) > 1e-6 else []
+    subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", tmp, *af, "-ar", str(SR), "-ac", "1", "-c:a", "pcm_s16le", job["out"]], check=True)
     subprocess.run(["rm", "-f", tmp], check=True)
     dur = sf.info(job["out"]).duration
     return {"scene": job["id"], "before": round(len(x) / SR, 3), "pausesAdded": round(added, 3), "after": round(dur, 3)}

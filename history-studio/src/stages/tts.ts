@@ -5,6 +5,7 @@ import { config, ROOT } from "../lib/env.js";
 import { Budget } from "../lib/budget.js";
 import { exists, log, probeDuration, readJson, run, sha, writeJson } from "../lib/util.js";
 import { postJson } from "../providers/openaiCompat.js";
+import * as eleven from "../providers/elevenlabs.js";
 import type { Episode, Scene } from "../schema/episode.js";
 
 const MAX_CHARS = 3800; // provider limit is 4096 characters per request
@@ -57,6 +58,61 @@ async function synthOpenAI(text: string, out: string, budget: Budget, stage: str
   unlinkSync(raw);
 }
 
+/** Strip ElevenLabs delivery tags ("[softly] ") so other engines and checks see plain words. */
+export const stripTags = (t: string) => t.replace(/\[[^\]]+\]\s*/g, "").replace(/\s+/g, " ").trim();
+
+/**
+ * ElevenLabs credits guard. The per-episode cap counts every call (retries, auditions, pronunciation tests).
+ * Before a call it checks the cap and the account's remaining credits; after it records the measured
+ * change in the subscription's character_count. It never buys credits or changes the plan.
+ */
+export class ElevenCredits {
+  private ratio = 1; // credits per character; learnt from the first measured call
+  constructor(private budget: Budget) {
+    const measured = budget.entries.filter((e) => e.unit === "el_credits" && e.priceBasis.startsWith("measured") && e.note?.startsWith("chars="));
+    const chars = measured.reduce((a, e) => a + Number(e.note!.slice(6).split(" ")[0]), 0);
+    if (chars > 0) this.ratio = measured.reduce((a, e) => a + e.units, 0) / chars;
+  }
+  used(): number {
+    return this.budget.entries.filter((e) => e.unit === "el_credits").reduce((a, e) => a + e.units, 0);
+  }
+  async before(chars: number): Promise<number> {
+    const need = Math.ceil(chars * this.ratio);
+    const cap = config.elevenlabs.creditCap;
+    if (this.used() + need > cap) throw new Error(`ElevenLabs credit cap ${cap} would be exceeded (used ${this.used()} + this call ~${need}). Raise ELEVENLABS_CREDIT_CAP only if you mean to.`);
+    const sub = await eleven.getSubscription();
+    const left = sub.character_limit - sub.character_count;
+    if (need > left) throw new Error(`Only ${left} ElevenLabs credits left on the "${sub.tier}" plan; this call needs ~${need}. Credits are never bought automatically.`);
+    return sub.character_count;
+  }
+  async after(stage: string, before: number, chars: number, requestId?: string): Promise<void> {
+    let used = Math.ceil(chars * this.ratio);
+    let basis = `estimated: ${this.ratio.toFixed(2)} credits per character`;
+    try {
+      const delta = (await eleven.getSubscription()).character_count - before;
+      if (delta > 0) {
+        used = delta;
+        basis = "measured: subscription character_count delta";
+      }
+    } catch {
+      /* keep the estimate */
+    }
+    this.budget.record({ stage, provider: "api.elevenlabs.io", model: config.elevenlabs.model, units: used, unit: "el_credits", estInr: 0, priceBasis: basis, note: `chars=${chars}${requestId ? ` request=${requestId}` : ""}` });
+  }
+}
+
+export async function synthEleven(text: string, out: string, credits: ElevenCredits, stage: string, voiceId = config.elevenlabs.voiceId, stability = config.elevenlabs.stability): Promise<void> {
+  if (!voiceId) throw new Error("ELEVENLABS_VOICE_ID is not set; pick one with `studio voices` and `studio audition` first");
+  mkdirSync(path.dirname(out), { recursive: true });
+  const before = await credits.before(text.length);
+  const res = await eleven.textToSpeech(voiceId, text, { model: config.elevenlabs.model, stability, outputFormat: config.elevenlabs.outputFormat });
+  await credits.after(stage, before, text.length, res.requestId);
+  const raw = out.replace(/\.wav$/, ".raw.mp3");
+  writeFileSync(raw, res.audio);
+  await run("ffmpeg", ["-v", "error", "-y", "-i", raw, "-ar", "48000", "-ac", "1", "-c:a", "pcm_s16le", out], { quiet: true });
+  if (out.endsWith(".wav") && !/auditions|pron_test/.test(out)) unlinkSync(raw);
+}
+
 async function synthKokoro(jobs: { text: string; out: string }[], budget: Budget, stage: string): Promise<void> {
   if (!jobs.length) return;
   const spec = path.join(ROOT, ".cache", `kokoro_${sha(jobs)}.json`);
@@ -83,8 +139,10 @@ export async function ttsStage(ep: Episode, epDir: string, only?: string[], forc
   const budget = new Budget(epDir, ROOT);
   const pron = exists(path.join(epDir, "pronunciations.json")) ? readJson<{ tts: Record<string, string> }>(path.join(epDir, "pronunciations.json")) : { tts: {} };
   const engine = config.speech.engine;
-  const model = engine === "kokoro" ? "kokoro-82m-local" : config.speech.model;
-  const voice = engine === "kokoro" ? config.speech.kokoroVoice : config.speech.voice;
+  const model = engine === "kokoro" ? "kokoro-82m-local" : engine === "elevenlabs" ? config.elevenlabs.model : config.speech.model;
+  const voice = engine === "kokoro" ? config.speech.kokoroVoice : engine === "elevenlabs" ? config.elevenlabs.voiceId : config.speech.voice;
+  const settings = engine === "elevenlabs" ? { stability: config.elevenlabs.stability, format: config.elevenlabs.outputFormat } : {};
+  const credits = new ElevenCredits(budget);
   const manifestFile = path.join(epDir, "audio", "manifest.json");
   const manifest: AudioManifest = exists(manifestFile) ? readJson(manifestFile) : { engine, model, voice, scenes: {} };
   manifest.engine = engine;
@@ -96,8 +154,9 @@ export async function ttsStage(ep: Episode, epDir: string, only?: string[], forc
 
   for (const scene of ep.scenes) {
     if (only && !only.includes(scene.id)) continue;
-    const text = ttsText(scene.narration, pron.tts);
-    const hash = sha(text, engine, model, voice);
+    // Only ElevenLabs v3 understands delivery tags; every other engine gets the plain narration.
+    const text = ttsText(engine === "elevenlabs" ? (scene.performance ?? scene.narration) : scene.narration, pron.tts);
+    const hash = engine === "elevenlabs" ? sha(text, engine, model, voice, settings) : sha(text, engine, model, voice);
     const file = path.join(chunkDir, `${scene.id}_${hash}.wav`);
     if (manifest.scenes[scene.id]?.hash === hash && exists(file) && !force) {
       log("tts", `${scene.id} cached (${manifest.scenes[scene.id].seconds.toFixed(2)}s)`);
@@ -107,7 +166,10 @@ export async function ttsStage(ep: Episode, epDir: string, only?: string[], forc
     for (const p of parts) {
       if (exists(p.out) && !force) continue;
       if (engine === "kokoro") kokoroJobs.push({ text: p.t, out: p.out });
-      else {
+      else if (engine === "elevenlabs") {
+        log("tts", `${scene.id}: synthesizing ${p.t.length} chars with ${model}/${config.elevenlabs.voiceName || voice}`);
+        await synthEleven(p.t, p.out, credits, `tts ${scene.id}`);
+      } else {
         // gpt-4o-mini-tts occasionally drops or garbles the final words of a request.
         // When transcription is enabled, check the ending and re-synthesize (bounded) if it is missing.
         for (let attempt = 1; attempt <= 3; attempt++) {
@@ -150,11 +212,18 @@ export async function pronTest(epDir: string, words: string[]): Promise<void> {
   const pron = exists(path.join(epDir, "pronunciations.json")) ? readJson<{ tts: Record<string, string> }>(path.join(epDir, "pronunciations.json")) : { tts: {} };
   const dir = path.join(epDir, "audio", "pron_test");
   const results: unknown[] = [];
+  const el = config.speech.engine === "elevenlabs";
+  const credits = new ElevenCredits(budget);
   for (const w of words) {
     for (const variant of [w, pron.tts[w]].filter(Boolean) as string[]) {
       const text = `The next name is ${variant}. Once more: ${variant}.`;
-      const out = path.join(dir, `${sha(variant, config.speech.model, config.speech.voice)}.wav`);
-      if (!exists(out)) await synthOpenAI(text, out, budget, "pron-test");
+      const out = path.join(dir, `${sha(variant, el ? config.elevenlabs.model : config.speech.model, el ? config.elevenlabs.voiceId : config.speech.voice)}.wav`);
+      if (!exists(out)) await (el ? synthEleven(text, out, credits, "pron-test") : synthOpenAI(text, out, budget, "pron-test"));
+      if (!config.stt.enabled) {
+        results.push({ word: w, variant, file: path.relative(epDir, out.replace(/\.wav$/, el ? ".raw.mp3" : ".wav")) });
+        log("pron", `${w} as "${variant}" -> ${path.relative(epDir, out)} (listen; transcription is off)`);
+        continue;
+      }
       const heard = await transcribe(out, budget, "pron-test");
       results.push({ word: w, variant, heard });
       log("pron", `${w} as "${variant}" -> heard: ${heard}`);

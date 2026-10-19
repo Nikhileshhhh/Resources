@@ -19,7 +19,7 @@ export function checkSecrets(dir: string): string[] {
       if (st.isDirectory()) walk(p);
       else if (TEXT_EXT.test(f) && st.size < 5e6) {
         const t = readFileSync(p, "utf8");
-        if (keys.some((k) => t.includes(k)) || /sk-live-[a-f0-9]{20,}/.test(t)) bad.push(p);
+        if (keys.some((k) => t.includes(k)) || /sk-live-[a-f0-9]{20,}|sk_[a-f0-9]{40,}/.test(t)) bad.push(p);
       }
     }
   };
@@ -64,7 +64,7 @@ interface Copy {
 }
 
 export async function packageStage(epDir: string): Promise<void> {
-  const ep = readJson<{ fileStem: string; workingTitle: string; scenes: { chapter: string | null }[] }>(path.join(epDir, "episode.json"));
+  const ep = readJson<{ fileStem: string; workingTitle: string; scenes: { chapter: string | null }[]; voice: { engine: string } }>(path.join(epDir, "episode.json"));
   const copy = readJson<Copy>(path.join(epDir, "upload", "copy.json"));
   const validation = exists(path.join(epDir, "reports", "validation.json")) ? readJson<any>(path.join(epDir, "reports", "validation.json")) : null;
   const chapters = readFileSync(path.join(epDir, "upload", "chapters.txt"), "utf8").trim();
@@ -151,7 +151,7 @@ ${[
   row("Age restriction", "No", "No graphic violence, sexual content or other 18+ material; suffering is described without graphic detail."),
   row("Paid promotion", "Leave unticked", "No sponsor, brand deal or paid product placement. Tick only if that changes."),
   row("Altered content / AI use (Attributes)", "No", "YouTube requires disclosure for realistic AI content (real people appearing to say or do things, altered real footage, realistic scenes, or AI-generated music). This video is clearly stylised animation, the music is procedurally coded (not generative AI), and the synthetic narrator imitates no real person. Choosing Yes is optional and, per YouTube, does not limit reach or monetization."),
-  row("AI voice disclosure (separate)", "Already in the description and on screen for the first 8 s", "Required by the speech provider's usage terms (OpenAI): listeners must be told the voice is AI-generated. This is separate from YouTube's AI-use setting."),
+  row("AI voice disclosure (separate)", "Already in the description and on screen for the first 8 s", ep.voice.engine === "elevenlabs" ? "Kept as standard practice for this channel: the on-screen line and description say the narration is an AI voice (ElevenLabs). This is separate from YouTube's AI-use setting." : "Required by the speech provider's usage terms (OpenAI): listeners must be told the voice is AI-generated. This is separate from YouTube's AI-use setting."),
   row("Tags", copy.tags.join(", "), `${tagChars}/500 characters. A minor aid: name variants and common misspellings.`),
   row("Hashtags", copy.hashtags.join(" "), "Already at the end of the description; YouTube shows up to three above the title."),
   row("Video language", "English", "Narration language."),
@@ -197,8 +197,9 @@ ${Object.entries(copy.thumbnailNotes).map(([k, v]) => `- **${k}${k === copy.reco
 
 - [ ] Watch the whole MP4 once with headphones: voice naturalness, name pronunciation (Raigad, Saraighat, Mathura, mansab), music level under speech.
 - [ ] Read the captions once against the audio in Studio's subtitle editor.
-- [ ] Confirm the AI Credits dashboard charges (the per-request gpt-4o-mini-tts price isn't published) — the wallet hit zero during production (HTTP 402).
-- [ ] The final-mix transcription check was skipped (wallet empty); narration completeness rests on the earlier whisper check of the same takes plus forced alignment of every word.
+${ep.voice.engine === "elevenlabs" ? `- [ ] Listen for delivery tags read aloud (\`[softly]\`, \`[whispers]\` …) and for clipped scene endings; re-voice a scene with \`studio tts --scenes sNN --force\`.
+- [ ] Confirm your ElevenLabs plan covers commercial/YouTube use, and check the credits used in \`reports/usage.json\` against the ElevenLabs usage page.` : `- [ ] Confirm the AI Credits dashboard charges (the per-request gpt-4o-mini-tts price isn't published) — the wallet hit zero during production (HTTP 402).
+- [ ] The final-mix transcription check was skipped (wallet empty); narration completeness rests on the earlier whisper check of the same takes plus forced alignment of every word.`}
 `;
   writeText(path.join(epDir, "upload", "upload_guide.md"), guide);
   log("package", `metadata + upload guide written; description ${description.length} chars, tags ${tagChars} chars`);

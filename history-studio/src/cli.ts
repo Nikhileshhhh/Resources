@@ -2,7 +2,7 @@
 /**
  * history-studio CLI.
  *   npm run studio -- <command> --episode <dir> [options]
- * Commands: new | validate | status | pron-test | tts | pace | asr | align | timeline | audio | preview | render | mux | verify | thumbs | package | run | check-secrets
+ * Commands: new | validate | status | el-check | voices | audition | pron-test | tts | pace | asr | align | timeline | audio | preview | render | mux | verify | thumbs | package | run | check-secrets
  */
 import path from "node:path";
 import { readdirSync } from "node:fs";
@@ -54,6 +54,8 @@ function validate(dir: string): void {
       shotIds.add(sh.id);
       if (sh.at && sh.at !== "@end" && !s.narration.toLowerCase().includes(sh.at.toLowerCase())) problems.push(`${sh.id}: anchor "${sh.at}" not found in narration`);
     }
+    // The performance text must say exactly the narration's words; only delivery tags may differ.
+    if (s.performance && s.performance.replace(/\[[^\]]+\]\s*/g, "").replace(/\s+/g, " ").trim() !== s.narration) problems.push(`${s.id}: performance text (tags removed) differs from narration`);
   }
   for (const c of ledger?.claims ?? []) if (c.status !== "framing" && c.sources.length === 0) problems.push(`${c.id}: no sources`);
   const words = ep.scenes.reduce((a, s) => a + s.narration.split(/\s+/).length, 0);
@@ -72,6 +74,21 @@ async function main() {
     }
     case "validate":
       return validate(episodeDir());
+    case "el-check": {
+      const { elevenCheck } = await import("./stages/voice.js");
+      return elevenCheck(episodeDir());
+    }
+    case "voices": {
+      const { voicesSearch } = await import("./stages/voice.js");
+      return voicesSearch(episodeDir(), { accent: opt("accent"), search: opt("search"), limit: opt("limit") ? Number(opt("limit")) : undefined });
+    }
+    case "audition": {
+      const { audition } = await import("./stages/voice.js");
+      const dir = episodeDir();
+      const ids = (opt("voices") ?? "").split(",").filter(Boolean);
+      if (!ids.length) throw new Error("--voices id1,id2 is required (ids from `studio voices`)");
+      return audition(loadEpisode(dir).ep, dir, ids, opt("scenes")?.split(","), opt("stability")?.split(",").map(Number));
+    }
     case "pron-test": {
       const { pronTest } = await import("./stages/tts.js");
       return pronTest(episodeDir(), (opt("words") ?? "").split(",").map((s) => s.trim()).filter(Boolean));
@@ -171,7 +188,7 @@ async function main() {
       return;
     }
     default:
-      console.log(`Usage: npm run studio -- <command> --episode <dir>\nCommands: new, validate, status, pron-test, tts, align, timeline, audio, preview, render, mux, stills, verify, thumbs, package, run, check-secrets\nEpisodes: ${exists(config.outputDir) ? readdirSync(config.outputDir).join(", ") : "(none)"}`);
+      console.log(`Usage: npm run studio -- <command> --episode <dir>\nCommands: new, validate, status, el-check, voices, audition, pron-test, tts, pace, align, timeline, audio, preview, render, mux, stills, verify, thumbs, package, run, check-secrets\nEpisodes: ${exists(config.outputDir) ? readdirSync(config.outputDir).join(", ") : "(none)"}`);
   }
 }
 

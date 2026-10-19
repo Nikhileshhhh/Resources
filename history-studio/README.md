@@ -26,6 +26,10 @@ npm run studio -- status   --episode episodes/episode_001_shivaji-escape-agra
 |---|---|
 | `new --slug <topic> [--title "…"]` | Scaffold a new episode folder (research files, ledger, episode.json skeleton) |
 | `validate` | Schema check of episode.json; every scene must link to ledger claims; shot anchors must exist in the narration |
+| `el-check` | ElevenLabs: confirm the model on your account, plan, credits left and the chosen voice (no credits used) |
+| `voices [--accent indian] [--search warm]` | Shortlist female storytelling voices from the ElevenLabs Voice Library and download their free previews |
+| `audition --voices id1,id2 [--stability 0.5,0] [--scenes s01,s13]` | Voice the same passages of this episode with each candidate (paid; counted against `ELEVENLABS_CREDIT_CAP`) |
+| `pace` | Story pauses inside word gaps (and an optional pitch-preserving tempo change), auto-fitted to `voice.pacing.maxRuntimeSec` |
 | `pron-test --words "A,B"` | Synthesize each name raw and respelled, transcribe it, and show what was heard |
 | `tts [--scenes s07,s10] [--force]` | Narration per scene, cached by text/voice/model hash; checks each ending via transcription and retries (max 3) |
 | `asr` | Transcribe every scene and diff it against the script (catches truncation or skipped words) |
@@ -38,7 +42,7 @@ npm run studio -- status   --episode episodes/episode_001_shivaji-escape-agra
 | `thumbs` | Three thumbnail concepts: 3840×2160 PNG masters plus 1920×1080 JPGs under 2 MB |
 | `package` | Description, metadata.json, upload_guide.md; fails if any secret is found |
 | `check-secrets [--path .]` | Scan for API keys before committing or zipping |
-| `run` | validate → tts → align → timeline → audio → render → mux → verify → package |
+| `run` | validate → tts → align → pace → align → timeline → audio → render → mux → verify → package |
 
 Changing one scene's narration re-voices only that scene. Changed animation code re-bundles automatically; renders reuse nothing stale.
 

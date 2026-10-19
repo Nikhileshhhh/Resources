@@ -27,12 +27,23 @@ export interface Endpoint {
 
 export const config = {
   speech: {
-    engine: get("SPEECH_ENGINE", "openai-compatible") as "openai-compatible" | "kokoro",
+    engine: get("SPEECH_ENGINE", "openai-compatible") as "openai-compatible" | "kokoro" | "elevenlabs",
     baseUrl: get("SPEECH_BASE_URL", "https://api.aicredits.in/v1"),
     apiKey: get("SPEECH_API_KEY"),
     model: get("SPEECH_MODEL", "openai/gpt-4o-mini-tts"),
     voice: get("SPEECH_VOICE", "cedar"),
     kokoroVoice: get("KOKORO_VOICE", "bm_george"),
+  },
+  elevenlabs: {
+    baseUrl: get("ELEVENLABS_BASE_URL", "https://api.elevenlabs.io"),
+    apiKey: get("ELEVENLABS_API_KEY"),
+    model: get("ELEVENLABS_MODEL", "eleven_v3"),
+    voiceId: get("ELEVENLABS_VOICE_ID"),
+    voiceName: get("ELEVENLABS_VOICE_NAME"),
+    stability: Number(get("ELEVENLABS_STABILITY", "0.5")),
+    outputFormat: get("ELEVENLABS_OUTPUT_FORMAT", "mp3_44100_128"),
+    /** Hard cap on ElevenLabs credits one episode may consume, including retries and auditions. */
+    creditCap: Number(get("ELEVENLABS_CREDIT_CAP", "20000")),
   },
   text: { enabled: bool("TEXT_ENABLED"), baseUrl: get("TEXT_BASE_URL"), apiKey: get("TEXT_API_KEY"), model: get("TEXT_MODEL", "openai/gpt-4o-mini") },
   stt: { enabled: bool("STT_ENABLED"), baseUrl: get("STT_BASE_URL"), apiKey: get("STT_API_KEY"), model: get("STT_MODEL", "openai/whisper-1") },
@@ -48,11 +59,11 @@ export const config = {
 
 /** Every secret currently loaded, so logs and packages can be scrubbed. */
 export function knownSecrets(): string[] {
-  return [config.speech.apiKey, config.text.apiKey, config.stt.apiKey, config.image.apiKey, config.youtubeApiKey].filter((s) => s && s.length >= 8);
+  return [config.speech.apiKey, config.elevenlabs.apiKey, config.text.apiKey, config.stt.apiKey, config.image.apiKey, config.youtubeApiKey].filter((s) => s && s.length >= 8);
 }
 
 export function redact(s: string): string {
   let out = s;
   for (const k of knownSecrets()) out = out.split(k).join("sk-***");
-  return out.replace(/sk-[A-Za-z0-9_-]{16,}/g, "sk-***");
+  return out.replace(/sk[-_][A-Za-z0-9_-]{16,}/g, "sk-***");
 }

@@ -17,25 +17,25 @@
     "endScreenSec": 20
   },
   "voice": {
-    "engine": "openai-compatible",
-    "model": "openai/gpt-4o-mini-tts",
-    "voice": "cedar",
-    "format": "flac",
+    "engine": "elevenlabs",
+    "model": "eleven_v3",
+    "voice": "(chosen by audition; ELEVENLABS_VOICE_ID)",
+    "format": "wav",
     "pacing": {
-      "tempo": 0.92,
-      "sentencePause": 0.7,
-      "commaPause": 0.3,
-      "beatPause": 1.1,
-      "maxRuntimeSec": 590
+      "tempo": 1.0,
+      "sentencePause": 0.25,
+      "commaPause": 0.0,
+      "beatPause": 0.5,
+      "maxRuntimeSec": 595
     }
   },
-  "disclosure": "Narration: AI-generated voice (OpenAI gpt-4o-mini-tts, voice 'cedar')",
+  "disclosure": "Narration: AI-generated voice (ElevenLabs Eleven v3)",
   "scenes": [
     {
       "id": "s01",
       "title": "Hook",
       "chapter": "A ring of guards",
-      "narration": "August, sixteen sixty-six. In the Mughal city of Agra, a ring of guards surrounds the quarters of one man. One letter from Agra puts the watch at a thousand men. Inside are a Maratha ruler from the Deccan and his nine-year-old son. Then, one morning, word spreads through the city. They are gone.",
+      "narration": "Agra. August, sixteen sixty-six. Around one house in the Mughal city, a ring of guards stands watch. One letter from Agra puts that watch at a thousand men. Inside are a Maratha ruler from the Deccan... and his nine-year-old son. Then, one morning, word races through the city. They are gone.",
       "claims": [
         "C01",
         "C02",
@@ -150,13 +150,14 @@
           "note": "Dawn light through the window; a guard pulls back a quilt: the bed is empty; he steps back, arms raised.",
           "continuity": "Bed along back wall; window right."
         }
-      ]
+      ],
+      "performance": "[softly] Agra. August, sixteen sixty-six. Around one house in the Mughal city, a ring of guards stands watch. One letter from Agra puts that watch at a thousand men. Inside are a Maratha ruler from the Deccan... and his nine-year-old son. [tense] Then, one morning, word races through the city. [whispers] They are gone."
     },
     {
       "id": "s02",
       "title": "The question",
       "chapter": null,
-      "narration": "How do you disappear from under the eyes of one of the richest empires on earth? The famous answer involves baskets of sweets. But letters written in Agra that very summer let us check the legend against the record.",
+      "narration": "How do you vanish from under the eyes of one of the richest empires on earth? You may know the famous answer. Baskets of sweets. But letters written in Agra that very summer still survive. So let's check the legend... against the record.",
       "claims": [
         "C05",
         "C46"
@@ -213,13 +214,14 @@
           "note": "Folded letters slide out of a bundle and fan across a desk; a lamp brightens.",
           "continuity": "Letters are abstract script lines, not real text."
         }
-      ]
+      ],
+      "performance": "[curious] How do you vanish from under the eyes of one of the richest empires on earth? You may know the famous answer. Baskets of sweets. But letters written in Agra that very summer still survive. So let's check the legend... against the record."
     },
     {
       "id": "s03",
       "title": "Who",
       "chapter": "Shivaji, Aurangzeb and Jai Singh",
-      "narration": "The ruler was Shivaji, the Maratha leader who had carved a kingdom out of the hill forts of western India, and who had spent years raiding Mughal territory. The emperor was Aurangzeb. And the man who brought them face to face was Aurangzeb's veteran general, Mirza Raja Jai Singh.",
+      "narration": "First, the players. Shivaji: the Maratha leader who carved a kingdom out of the hill forts of western India, and spent years raiding Mughal territory. Facing him, the emperor, Aurangzeb. And the man who would bring them face to face... Aurangzeb's veteran general, Mirza Raja Jai Singh.",
       "claims": [
         "C06",
         "C07"
@@ -279,7 +281,7 @@
         },
         {
           "id": "s03c",
-          "at": "The emperor was Aurangzeb",
+          "at": "Facing him, the emperor",
           "comp": "Portrait",
           "props": {
             "character": "aurangzeb",
@@ -307,7 +309,7 @@
         },
         {
           "id": "s03d",
-          "at": "And the man who brought",
+          "at": "And the man who would bring",
           "comp": "Portrait",
           "props": {
             "character": "jaisingh",
@@ -333,13 +335,14 @@
           "note": "Jai Singh in armour before army tents; banners stir; he folds his arms.",
           "continuity": "Jai Singh: grey moustache, teal jama, steel helmet-turban."
         }
-      ]
+      ],
+      "performance": "First, the players. Shivaji: the Maratha leader who carved a kingdom out of the hill forts of western India, and spent years raiding Mughal territory. Facing him, the emperor, Aurangzeb. And the man who would bring them face to face... Aurangzeb's veteran general, Mirza Raja Jai Singh."
     },
     {
       "id": "s04",
       "title": "Purandar",
       "chapter": "The deal at Purandar",
-      "narration": "In sixteen sixty-five, Jai Singh's army closed in on Shivaji's forts. Rather than lose everything, Shivaji made a deal at Purandar. Twenty-three forts went to the empire. He kept twelve, including his stronghold of Rajgad. Then Jai Singh pressed for something more. Shivaji should travel north and appear before the emperor in person. Jai Singh swore that he would come to no harm. At court, his son, the prince Ram Singh, pledged his word as well.",
+      "narration": "In sixteen sixty-five, Jai Singh's army closed in on Shivaji's forts. Rather than lose everything, Shivaji made a deal at Purandar. Twenty-three forts went to the empire. He kept twelve, including his stronghold, Rajgad. But Jai Singh wanted more. Shivaji should travel north, and stand before the emperor in person. Jai Singh swore that no harm would come to him. And at court, his son, the prince Ram Singh, gave his word as well. Remember that promise.",
       "claims": [
         "C08",
         "C09"
@@ -399,7 +402,7 @@
         },
         {
           "id": "s04c",
-          "at": "Then Jai Singh pressed",
+          "at": "But Jai Singh wanted more",
           "comp": "TentTalk",
           "props": {
             "left": "jaisingh",
@@ -451,7 +454,7 @@
         },
         {
           "id": "s04e",
-          "at": "At court, his son",
+          "at": "And at court, his son",
           "comp": "Portrait",
           "props": {
             "character": "ramsingh",
@@ -478,13 +481,14 @@
           "note": "Ram Singh in crimson with a gold turban raises his right hand in pledge in a courtyard.",
           "continuity": "Ram Singh: crimson jama, gold turban, moustache."
         }
-      ]
+      ],
+      "performance": "In sixteen sixty-five, Jai Singh's army closed in on Shivaji's forts. Rather than lose everything, Shivaji made a deal at Purandar. Twenty-three forts went to the empire. He kept twelve, including his stronghold, Rajgad. But Jai Singh wanted more. Shivaji should travel north, and stand before the emperor in person. Jai Singh swore that no harm would come to him. And at court, his son, the prince Ram Singh, gave his word as well. [serious] Remember that promise."
     },
     {
       "id": "s05",
       "title": "Journey",
       "chapter": "The road to Agra",
-      "narration": "In March sixteen sixty-six, Shivaji left Rajgad with his son Sambhaji and a small but splendid escort. In May, they reached Agra. One of Ram Singh's officers described him in a letter home. Lean, short, fair, bearded. And, he wrote, \"even without finding out who he is, one does feel instinctively that he is a ruler of men.\"",
+      "narration": "In March sixteen sixty-six, Shivaji set out from Rajgad with his son, Sambhaji, and a small but splendid escort. In May, they reached Agra. One of Ram Singh's officers described him in a letter home. Lean. Short. Fair. Bearded. And, he wrote, \"even without finding out who he is, one does feel instinctively that he is a ruler of men.\"",
       "claims": [
         "C10",
         "C11",
@@ -570,13 +574,14 @@
           "note": "Medium shot of Shivaji, composed, eyes steady; a quill writes in the corner then fades.",
           "continuity": "Shivaji faces right."
         }
-      ]
+      ],
+      "performance": "In March sixteen sixty-six, Shivaji set out from Rajgad with his son, Sambhaji, and a small but splendid escort. In May, they reached Agra. One of Ram Singh's officers described him in a letter home. Lean. Short. Fair. Bearded. [warmly] And, he wrote, \"even without finding out who he is, one does feel instinctively that he is a ruler of men.\""
     },
     {
       "id": "s06",
       "title": "Audience",
       "chapter": "The audience, 12 May 1666",
-      "narration": "On the twelfth of May, the emperor's fiftieth birthday by the lunar calendar, Ram Singh led Shivaji into the fort. Shivaji presented his gifts of gold. And then, nothing. The emperor did not say a word to him. Shivaji was led back to stand behind rows of other nobles. Robes of honour were handed out to princes and ministers, and to Maharaja Jaswant Singh, a general who had once besieged one of Shivaji's forts and failed.",
+      "narration": "The twelfth of May. The emperor's fiftieth birthday, by the lunar calendar. Ram Singh led Shivaji into the fort. Shivaji presented his gifts of gold... and waited. Nothing. The emperor did not say a single word to him. Shivaji was led back, to stand behind rows of other nobles. Then robes of honour went to princes, to ministers... and to Maharaja Jaswant Singh, a general who had once besieged one of Shivaji's forts... and failed.",
       "claims": [
         "C13",
         "C14",
@@ -639,7 +644,7 @@
         },
         {
           "id": "s06c",
-          "at": "And then, nothing",
+          "at": "and waited",
           "comp": "CourtHall",
           "props": {
             "beat": "silence"
@@ -661,7 +666,7 @@
         },
         {
           "id": "s06d",
-          "at": "led back to stand",
+          "at": "was led back",
           "comp": "CourtHall",
           "props": {
             "beat": "ranks"
@@ -683,7 +688,7 @@
         },
         {
           "id": "s06e",
-          "at": "Robes of honour",
+          "at": "Then robes of honour",
           "comp": "CourtHall",
           "props": {
             "beat": "robes"
@@ -708,13 +713,14 @@
           "note": "Attendants carry folded robes on trays to princes and to Jaswant Singh, who bows to accept.",
           "continuity": "Jaswant: maroon jama, white turban, moustache."
         }
-      ]
+      ],
+      "performance": "The twelfth of May. The emperor's fiftieth birthday, by the lunar calendar. Ram Singh led Shivaji into the fort. Shivaji presented his gifts of gold... and waited. [softly] Nothing. The emperor did not say a single word to him. Shivaji was led back, to stand behind rows of other nobles. Then robes of honour went to princes, to ministers... and to Maharaja Jaswant Singh, a general who had once besieged one of Shivaji's forts... and failed."
     },
     {
       "id": "s07",
       "title": "Outburst",
       "chapter": null,
-      "narration": "Shivaji's patience broke. According to a letter from Ram Singh's staff, he told the prince, \"I cast off your mansab,\" his imperial rank. Then he turned his back on the throne and walked away. At a court where nobles were expected to wait, as an English trader put it, \"with their hands before them, like mutes,\" it was a stunning act of defiance. Officials brought him a robe of honour. He refused it.",
+      "narration": "For Shivaji, it was too much. According to a letter from Ram Singh's staff, he told the prince, \"I cast off your mansab.\" His imperial rank. Then he turned his back on the throne... and walked away. At a court where nobles were expected to wait, as one English trader put it, \"with their hands before them, like mutes,\" it was a stunning act of defiance. Officials brought him a robe of honour. He refused it.",
       "claims": [
         "C19",
         "C20",
@@ -821,13 +827,14 @@
           "note": "Three officials offer a gold-trimmed robe; Shivaji, seated in a recess, raises his palm and turns his head away.",
           "continuity": "Recess archway frames Shivaji right."
         }
-      ]
+      ],
+      "performance": "[tense] For Shivaji, it was too much. According to a letter from Ram Singh's staff, he told the prince, \"I cast off your mansab.\" His imperial rank. Then he turned his back on the throne... and walked away. At a court where nobles were expected to wait, as one English trader put it, \"with their hands before them, like mutes,\" it was a stunning act of defiance. Officials brought him a robe of honour. He refused it."
     },
     {
       "id": "s08",
       "title": "Danger",
       "chapter": "From guest to prisoner",
-      "narration": "The backlash was swift. Powerful voices at court, the emperor's sister Jahanara among them, demanded punishment. A letter from Agra reports that the emperor weighed killing Shivaji, or locking him away in a fortress. Ram Singh stepped in. His father had guaranteed Shivaji's safety, he argued. If the emperor wanted Shivaji dead, he should kill Ram Singh first. The emperor's reply was simple. Then sign a security bond. If Shivaji escapes, you will answer for it.",
+      "narration": "Now the court turned on him. Powerful voices, the emperor's own sister, Jahanara, among them, demanded punishment. A letter from Agra reports that the emperor weighed his options. Kill Shivaji... or lock him away in a fortress. Then Ram Singh stepped in. His father had guaranteed Shivaji's safety, he argued. If the emperor wanted Shivaji dead, he would have to kill Ram Singh first. The emperor's answer was simple. Then sign a security bond. If Shivaji escapes... you will answer for it.",
       "claims": [
         "C22",
         "C23",
@@ -888,7 +895,7 @@
         },
         {
           "id": "s08c",
-          "at": "Ram Singh stepped in",
+          "at": "Then Ram Singh stepped in",
           "comp": "Portrait",
           "props": {
             "character": "ramsingh",
@@ -939,13 +946,14 @@
           "note": "A document unrolls; a quill signs; a seal stamps down in red.",
           "continuity": "Seal colour: red."
         }
-      ]
+      ],
+      "performance": "[serious] Now the court turned on him. Powerful voices, the emperor's own sister, Jahanara, among them, demanded punishment. A letter from Agra reports that the emperor weighed his options. Kill Shivaji... or lock him away in a fortress. Then Ram Singh stepped in. His father had guaranteed Shivaji's safety, he argued. If the emperor wanted Shivaji dead, he would have to kill Ram Singh first. The emperor's answer was simple. Then sign a security bond. If Shivaji escapes... you will answer for it."
     },
     {
       "id": "s09",
       "title": "Prisoner",
       "chapter": null,
-      "narration": "Ram Singh signed. Shivaji was not executed, but he was not free. At one point he was ordered to march to Kabul, on the far north-western frontier. Days later, after petitions and payments to courtiers, the order was dropped. Troops of the city's police chief, Fulad Khan, ringed his quarters. Ram Singh's own Rajputs watched his bed at night. The emperor's guest had become his prisoner.",
+      "narration": "Ram Singh signed. Shivaji was not executed... but he was not free. At one point, he was ordered to march to Kabul, on the far north-western frontier. Days later, after petitions, and payments to courtiers, the order was dropped. Troops of the city's police chief, Fulad Khan, ringed his quarters. Ram Singh's own Rajputs watched his bed at night. The emperor's guest... had become his prisoner.",
       "claims": [
         "C25",
         "C26"
@@ -1082,13 +1090,14 @@
           "note": "Pull back through the lattice window; the pattern now reads like bars.",
           "continuity": "Same window as s01c."
         }
-      ]
+      ],
+      "performance": "Ram Singh signed. Shivaji was not executed... but he was not free. At one point, he was ordered to march to Kabul, on the far north-western frontier. Days later, after petitions, and payments to courtiers, the order was dropped. Troops of the city's police chief, Fulad Khan, ringed his quarters. Ram Singh's own Rajputs watched his bed at night. [softly] The emperor's guest... had become his prisoner."
     },
     {
       "id": "s10",
       "title": "Bargaining",
       "chapter": null,
-      "narration": "Shivaji tried everything. He offered two crore rupees, twenty million, if his forts were returned. He offered to go and fight for the emperor against Bijapur. He asked to be moved to another house. He even asked to go to Benares and become a holy man. The reply came back: let him become a fakir, and live in Allahabad fort, under guard.",
+      "narration": "So Shivaji tried everything. Two crore rupees, twenty million, if his forts were returned. An offer to fight for the emperor against Bijapur. He even asked to go to Benares, and become a holy man. The reply came back. Let him become a fakir, then... and live in Allahabad fort, under guard.",
       "claims": [
         "C27"
       ],
@@ -1149,13 +1158,14 @@
           "note": "Map zooms to Allahabad fort icon; a guard figure appears beside it.",
           "continuity": "Allahabad east of Agra."
         }
-      ]
+      ],
+      "performance": "So Shivaji tried everything. Two crore rupees, twenty million, if his forts were returned. An offer to fight for the emperor against Bijapur. He even asked to go to Benares, and become a holy man. The reply came back. Let him become a fakir, then... and live in Allahabad fort, under guard."
     },
     {
       "id": "s11",
       "title": "Reversal",
       "chapter": "The summer of waiting",
-      "narration": "Then came a blow from the man who had promised his safety. In July, Jai Singh wrote to his son from the Deccan. His war there was going badly, and it was, he said, \"not at all politic\" to let Shivaji come home. Keep him in Agra, he advised. Treat him well, but keep him. By now Shivaji's money was running low. He borrowed sixty-six thousand rupees from Ram Singh. And over the summer he sent his own escort home, leaving himself almost alone. To the court, it looked like surrender.",
+      "narration": "And then came a blow from the very man who had promised his safety. In July, Jai Singh wrote to his son from the Deccan. It was, he said, \"not at all politic\" to let Shivaji come home. Keep him in Agra. Treat him well... but keep him. Shivaji's money was running out. He borrowed sixty-six thousand rupees from Ram Singh. And over the summer, he sent his own escort home, leaving himself almost alone. To the court, it looked like surrender.",
       "claims": [
         "C28",
         "C29",
@@ -1219,7 +1229,7 @@
         },
         {
           "id": "s11c",
-          "at": "money was running low",
+          "at": "money was running out",
           "comp": "Coins",
           "props": {
             "amount": "₹66,000",
@@ -1284,13 +1294,14 @@
           "note": "Courtiers nod to one another; one shrugs dismissively.",
           "continuity": "Same palace set as s08a."
         }
-      ]
+      ],
+      "performance": "[serious] And then came a blow from the very man who had promised his safety. In July, Jai Singh wrote to his son from the Deccan. It was, he said, \"not at all politic\" to let Shivaji come home. Keep him in Agra. Treat him well... but keep him. Shivaji's money was running out. He borrowed sixty-six thousand rupees from Ram Singh. And over the summer, he sent his own escort home, leaving himself almost alone. To the court, it looked like surrender."
     },
     {
       "id": "s12",
       "title": "Baskets",
       "chapter": "The baskets",
-      "narration": "It was preparation. Shivaji fell ill, or appeared to. Large baskets of sweets began to leave his quarters, gifts for Brahmins, holy men and courtiers. Each was slung from a pole and carried by two porters. At first, the guards opened them, and found sweets. After some days, they stopped opening them.",
+      "narration": "It wasn't surrender. It was preparation. Shivaji fell ill... or seemed to. Soon, large baskets of sweets began to leave his quarters. Gifts for Brahmins, holy men, and courtiers. Each one hung from a pole, carried by two porters. At first, the guards opened them, and found sweets. After a few days... they stopped opening them.",
       "claims": [
         "C31"
       ],
@@ -1321,7 +1332,7 @@
         },
         {
           "id": "s12b",
-          "at": "Each was slung from a pole",
+          "at": "Each one hung from a pole",
           "comp": "Compound",
           "props": {
             "time": "dusk",
@@ -1365,13 +1376,14 @@
           "note": "A guard lifts a lid and sees sweets; a day counter ticks; by the last day he waves baskets through without looking.",
           "continuity": "Guard: khaki jama, red turban, spear."
         }
-      ]
+      ],
+      "performance": "[curious] It wasn't surrender. It was preparation. Shivaji fell ill... or seemed to. Soon, large baskets of sweets began to leave his quarters. Gifts for Brahmins, holy men, and courtiers. Each one hung from a pole, carried by two porters. At first, the guards opened them, and found sweets. After a few days... they stopped opening them."
     },
     {
       "id": "s13",
       "title": "The night",
       "chapter": "The night of the escape",
-      "narration": "Then, one evening in the third week of August, the plan went into motion. According to later accounts, Shivaji's half-brother, Hiroji Farzand, lay down on Shivaji's bed beneath a quilt, with one arm showing, and Shivaji's gold bracelet on the wrist. A boy sat by the bed, massaging his feet. And inside the baskets, among others filled with real sweets, crouched Shivaji and his son. The porters carried them past the guards, and out into the dark.",
+      "narration": "Then, one evening in the third week of August, the plan goes into motion. According to later accounts, Shivaji's half-brother, Hiroji Farzand, lies down on Shivaji's bed, under a quilt. One arm is left showing, with Shivaji's gold bracelet on the wrist. A boy sits by the bed, massaging his feet. And inside the baskets, among others filled with real sweets, crouch Shivaji... and his son. The porters lift the poles. They walk past the guards. And out... into the dark.",
       "claims": [
         "C32",
         "C33"
@@ -1456,7 +1468,7 @@
         },
         {
           "id": "s13d",
-          "at": "The porters carried them",
+          "at": "The porters lift the poles",
           "comp": "GateNight",
           "props": {},
           "camera": {
@@ -1474,13 +1486,14 @@
           "note": "Torchlit gate: baskets pass between guards; one guard glances, then looks away; the procession disappears into the rain and darkness.",
           "continuity": "Movement left-to-right, out of the city."
         }
-      ]
+      ],
+      "performance": "[whispers] Then, one evening in the third week of August, the plan goes into motion. [softly] According to later accounts, Shivaji's half-brother, Hiroji Farzand, lies down on Shivaji's bed, under a quilt. One arm is left showing, with Shivaji's gold bracelet on the wrist. A boy sits by the bed, massaging his feet. And inside the baskets, among others filled with real sweets, crouch Shivaji... and his son. The porters lift the poles. They walk past the guards. [whispers] And out... into the dark."
     },
     {
       "id": "s14",
       "title": "Discovery",
       "chapter": null,
-      "narration": "How long did the trick hold? The chronicles say the guards were fooled for most of the next day, until the house fell strangely quiet and they found the bed empty. The contemporary letters suggest it was quicker. One, written in Agra and dated the eighteenth of August, says simply, \"This morning Shivaji was found to have fled.\"",
+      "narration": "How long did the trick hold? The chronicles say the guards were fooled for most of the next day, until the house fell strangely quiet, and they found the bed empty. The letters written at the time suggest it was quicker. One, written in Agra and dated the eighteenth of August, says simply: \"This morning Shivaji was found to have fled.\"",
       "claims": [
         "C34",
         "C04"
@@ -1539,13 +1552,14 @@
           "note": "The quilt lies flat on an empty bed; dust drifts in the light.",
           "continuity": "Same bed as s01d."
         }
-      ]
+      ],
+      "performance": "[curious] How long did the trick hold? The chronicles say the guards were fooled for most of the next day, until the house fell strangely quiet, and they found the bed empty. The letters written at the time suggest it was quicker. One, written in Agra and dated the eighteenth of August, says simply: \"This morning Shivaji was found to have fled.\""
     },
     {
       "id": "s15",
       "title": "Pursuit",
       "chapter": "The hunt",
-      "narration": "The city erupted. Ram Singh's own staff wrote home urging that every pass and river crossing be watched, and that anyone dressed as a yogi or a sannyasi be questioned and searched. Fulad Khan, whose men had ringed the house, told the emperor the escape had happened on Ram Singh's side of the watch. Ram Singh's men were seized and threatened until they said their master had helped. Some later took it back, saying they had spoken out of fear. The emperor, angry, cut Ram Singh's rank and took away his lands.",
+      "narration": "Agra erupted. Ram Singh's own staff wrote home, urging that every pass and river crossing be watched, and that anyone dressed as a yogi or a sannyasi be questioned and searched. Fulad Khan, whose men had ringed the house, told the emperor the escape had happened on Ram Singh's side of the watch. Ram Singh's men were seized and threatened until they said their master had helped. Some later took it back. The emperor, furious, cut Ram Singh's rank and took away his lands.",
       "claims": [
         "C35",
         "C36"
@@ -1644,7 +1658,7 @@
         },
         {
           "id": "s15e",
-          "at": "The emperor, angry",
+          "at": "The emperor, furious",
           "comp": "RankLoss",
           "props": {},
           "camera": {
@@ -1666,13 +1680,14 @@
           "note": "Ram Singh's rank insignia cracks and falls; parcels of land on a small map fade out.",
           "continuity": "Crimson / gold insignia."
         }
-      ]
+      ],
+      "performance": "[tense] Agra erupted. Ram Singh's own staff wrote home, urging that every pass and river crossing be watched, and that anyone dressed as a yogi or a sannyasi be questioned and searched. Fulad Khan, whose men had ringed the house, told the emperor the escape had happened on Ram Singh's side of the watch. Ram Singh's men were seized and threatened until they said their master had helped. Some later took it back. The emperor, furious, cut Ram Singh's rank and took away his lands."
     },
     {
       "id": "s16",
       "title": "Evidence",
       "chapter": "Was it really the baskets?",
-      "narration": "So, was it really the baskets? About two weeks after the escape, one of Ram Singh's officers wrote that the trick had become known. Shivaji had slipped out \"by crouching down in the baskets.\" Later Mughal and Maratha histories tell the same story. But the Mughal court suspected inside help as well. And a European writer of the period, Niccolao Manucci, claimed that Ram Singh himself had quietly arranged it. With frightened guards and partisan witnesses, we may never know exactly who looked the other way.",
+      "narration": "So... was it really the baskets? About two weeks after the escape, one of Ram Singh's officers wrote that the trick had become known. Shivaji had slipped out \"by crouching down in the baskets.\" Later Mughal and Maratha histories tell the same story. But the Mughal court suspected inside help, too. And a European writer of the time, Niccolao Manucci, claimed that Ram Singh himself had quietly arranged it. With frightened guards and partisan witnesses, we may never know exactly who looked the other way.",
       "claims": [
         "C37",
         "C38"
@@ -1800,13 +1815,14 @@
           "note": "Pull back; the lamp dims; the question mark remains.",
           "continuity": "Same board."
         }
-      ]
+      ],
+      "performance": "[curious] So... was it really the baskets? About two weeks after the escape, one of Ram Singh's officers wrote that the trick had become known. Shivaji had slipped out \"by crouching down in the baskets.\" Later Mughal and Maratha histories tell the same story. But the Mughal court suspected inside help, too. And a European writer of the time, Niccolao Manucci, claimed that Ram Singh himself had quietly arranged it. [softly] With frightened guards and partisan witnesses, we may never know exactly who looked the other way."
     },
     {
       "id": "s17",
       "title": "The road home",
       "chapter": "Legend vs. letters: the road home",
-      "narration": "What happened next grew into legend. For generations, Shivaji's flight was told as a long pilgrimage, through Benares, Gaya, even Puri, full of narrow escapes in disguise. The chronicles say he smeared himself with ash and travelled as a wandering ascetic. Then, in nineteen thirty-nine, letters were found in the Jaipur archives. Spy reports quoted in them said Shivaji reached his fort just twenty-five days after slipping out of Agra. The historian Jadunath Sarkar, who had once told the long version himself, now called those pilgrimage stories fiction. Twenty-five days, over more than a thousand kilometres, meant hard, fast travel on hidden paths. It cost him. He lay ill for weeks after he got home.",
+      "narration": "What happened next... grew into legend. For generations, Shivaji's flight was told as a long pilgrimage, through Benares, Gaya, even Puri. The chronicles say he smeared himself with ash, disguised as a wandering ascetic. But in nineteen thirty-nine, letters were found in the Jaipur archives. Spy reports quoted in them said Shivaji reached his fort just twenty-five days after slipping out of Agra. The historian Jadunath Sarkar, who had once told the long version himself, now called those pilgrimage stories fiction. Twenty-five days, over more than a thousand kilometres, meant hard, fast travel on hidden paths. And it cost him. He lay ill for weeks after he got home.",
       "claims": [
         "C39",
         "C40"
@@ -1862,7 +1878,7 @@
         },
         {
           "id": "s17c",
-          "at": "Then, in nineteen thirty-nine",
+          "at": "But in nineteen thirty-nine",
           "comp": "ArchiveRoom",
           "props": {},
           "camera": {
@@ -1940,7 +1956,7 @@
         },
         {
           "id": "s17f",
-          "at": "It cost him",
+          "at": "And it cost him",
           "comp": "DeccanForts",
           "props": {
             "time": "dawn",
@@ -1961,13 +1977,14 @@
           "note": "Rajgad at dawn: a weary rider reaches the gate and is helped down; inside, a lamp by a sickbed.",
           "continuity": "Same fort art as s03a."
         }
-      ]
+      ],
+      "performance": "What happened next... grew into legend. For generations, Shivaji's flight was told as a long pilgrimage, through Benares, Gaya, even Puri. The chronicles say he smeared himself with ash, disguised as a wandering ascetic. [serious] But in nineteen thirty-nine, letters were found in the Jaipur archives. Spy reports quoted in them said Shivaji reached his fort just twenty-five days after slipping out of Agra. The historian Jadunath Sarkar, who had once told the long version himself, now called those pilgrimage stories fiction. Twenty-five days, over more than a thousand kilometres, meant hard, fast travel on hidden paths. [softly] And it cost him. He lay ill for weeks after he got home."
     },
     {
       "id": "s18",
       "title": "Sambhaji",
       "chapter": null,
-      "narration": "And Sambhaji? Maratha accounts say the boy was left behind in Mathura, with a trusted Brahmin family. The spy reports that reached the emperor even said that Shivaji's son had died on the road. That rumour may have protected him. Months later, Sambhaji travelled home in disguise, passed off as a young relative of the family sheltering him.",
+      "narration": "And the boy? What became of Sambhaji? Maratha accounts say he was left behind in Mathura, with a trusted Brahmin family. The spy reports that reached the emperor even said that Shivaji's son had died on the road. That rumour... may have protected him. Months later, Sambhaji travelled home in disguise, passed off as a young relative of the family sheltering him.",
       "claims": [
         "C41"
       ],
@@ -2047,13 +2064,14 @@
           "note": "A Brahmin family on the road south (right-to-left) with a bullock cart; Sambhaji in plain dhoti and sacred thread walks among them past a calm checkpoint.",
           "continuity": "Southbound = right-to-left."
         }
-      ]
+      ],
+      "performance": "[softly] And the boy? What became of Sambhaji? Maratha accounts say he was left behind in Mathura, with a trusted Brahmin family. The spy reports that reached the emperor even said that Shivaji's son had died on the road. That rumour... may have protected him. Months later, Sambhaji travelled home in disguise, passed off as a young relative of the family sheltering him."
     },
     {
       "id": "s19",
       "title": "Aftermath",
       "chapter": "What the escape changed",
-      "narration": "The escape changed the course of the Deccan wars. Within four years, Shivaji was retaking the forts he had surrendered at Purandar. In sixteen seventy-four, he was crowned Chhatrapati at Raigad. And in a collection of sayings attributed to Aurangzeb, the emperor laments that one moment of carelessness, the flight of Shivaji, dragged him into campaigns that lasted to the end of his days.",
+      "narration": "The escape changed the course of the Deccan wars. Within four years, Shivaji was taking back the forts he had surrendered at Purandar. In sixteen seventy-four, he was crowned Chhatrapati at Raigad. And in a collection of sayings attributed to Aurangzeb, the emperor laments that one moment of carelessness, the flight of Shivaji, dragged him into campaigns that lasted to the end of his days. One night. A few baskets of sweets.",
       "claims": [
         "C42",
         "C43",
@@ -2142,13 +2160,14 @@
           "note": "An aged Aurangzeb with a white beard in a campaign tent, writing.",
           "continuity": "Aurangzeb aged, white beard."
         }
-      ]
+      ],
+      "performance": "The escape changed the course of the Deccan wars. Within four years, Shivaji was taking back the forts he had surrendered at Purandar. In sixteen seventy-four, he was crowned Chhatrapati at Raigad. And in a collection of sayings attributed to Aurangzeb, the emperor laments that one moment of carelessness, the flight of Shivaji, dragged him into campaigns that lasted to the end of his days. [softly] One night. A few baskets of sweets."
     },
     {
       "id": "s20",
       "title": "Bridge",
       "chapter": "Ram Singh's next war",
-      "narration": "And Ram Singh? The prince who paid for the escape with his rank was later sent east, to lead a Mughal army into Assam. There, in sixteen seventy-one, on the Brahmaputra at Saraighat, he faced an Ahom general named Lachit Borphukan. That is a story for another episode.",
+      "narration": "And Ram Singh? The prince who paid for the escape with his rank was later sent east, to lead a Mughal army into Assam. There, in sixteen seventy-one, on the Brahmaputra at Saraighat, he would face an Ahom general named Lachit Borphukan. But that... is a story for another episode.",
       "claims": [
         "C45"
       ],
@@ -2222,7 +2241,8 @@
           "note": "Calm dusk over the Agra skyline; safe zones left/right for YouTube end-screen elements; small text: 'Sources & notes in the description'.",
           "continuity": "Keep the central band clear."
         }
-      ]
+      ],
+      "performance": "[warmly] And Ram Singh? The prince who paid for the escape with his rank was later sent east, to lead a Mughal army into Assam. There, in sixteen seventy-one, on the Brahmaputra at Saraighat, he would face an Ahom general named Lachit Borphukan. [softly] But that... is a story for another episode."
     }
   ]
 }

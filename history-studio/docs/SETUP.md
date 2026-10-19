@@ -41,6 +41,8 @@ Fill in `SPEECH_API_KEY` (and `STT_API_KEY` for the transcription checks). For A
 
 Set `EPISODE_BUDGET_INR` to your per-episode cap. Paid calls are refused before they would exceed it, and spend is logged to `episodes/<id>/reports/usage.json`.
 
+**ElevenLabs narration** (female storyteller, Eleven v3 with delivery tags): set `SPEECH_ENGINE=elevenlabs` and provide `ELEVENLABS_API_KEY`, ideally as an environment variable in your cloud environment's settings, not in a file. The machine must be able to reach `api.elevenlabs.io`. Then run `el-check`, `voices`, `audition`, set `ELEVENLABS_VOICE_ID`, and run as normal. Auth is the `xi-api-key` header. Every call is counted against `ELEVENLABS_CREDIT_CAP`, and the tool checks your remaining credits first; it never buys credits. See `docs/storytelling_voice_direction.md`.
+
 To use **no paid API at all**, set `SPEECH_ENGINE=kokoro` and `STT_ENABLED=false`. Narration then comes from the local Kokoro voice, and the ending check falls back to forced alignment only.
 
 If you're behind an HTTPS proxy, the CLI automatically enables Node's proxy support (`NODE_USE_ENV_PROXY=1`).

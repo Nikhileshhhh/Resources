@@ -27,6 +27,8 @@ export const Scene = z.object({
   title: z.string(),
   chapter: z.string().nullable(),
   narration: z.string().min(1),
+  /** Narration as performed: the same words plus ElevenLabs v3 delivery tags like [softly]. Sent to TTS when present. */
+  performance: z.string().optional(),
   claims: z.array(z.string().regex(/^C\d{2}$/)),
   music: z.string().nullable().optional(),
   ambience: z.string().nullable().optional(),
