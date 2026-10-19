@@ -1,6 +1,6 @@
 # Validation report — episode_001_shivaji_escape_from_agra_preview.mp4
 
-Measured 2026-10-18T09:31:01.745Z on the delivered file. Overall: **PASS**
+Measured 2026-10-19T08:18:25.893Z on the delivered file. Overall: **PASS**
 
 | Check | Result | Measured | Expected |
 |---|---|---|---|
@@ -14,17 +14,17 @@ Measured 2026-10-18T09:31:01.745Z on the delivered file. Overall: **PASS**
 | Audio codec | ✅ | aac LC | AAC-LC |
 | Audio sample rate | ✅ | 48000 | 48000 Hz |
 | Audio channels | ✅ | 2 | 2 (stereo) |
-| Video bitrate | ✅ | 3.96 Mb/s | info (CRF 18) |
+| Video bitrate | ✅ | 2.89 Mb/s | info (CRF 18) |
 | Preview duration | ✅ | 25.00 s | 20–30 s |
-| Duration matches timeline | ✅ | 25.00 vs 589.83 | ±0.2 s |
-| File size | ✅ | 13.3 MB | meaningful size |
+| Duration matches timeline | ✅ | 25.00 vs 672.47 | ±0.2 s |
+| File size | ✅ | 10.1 MB | meaningful size |
 | Fast start (moov before mdat) | ✅ | yes | yes |
 | Full decode errors | ✅ | none | none |
 | Black segments ≥0.5 s | ✅ | none | none |
 | Frozen video ≥4 s (outside end screen) | ✅ | none | none |
 | Audio silence ≥2.5 s below −50 dB | ✅ | none | none |
-| Sample peak (no clipping) | ✅ | -1.441337 dBFS | < −0.5 dBFS |
-| Integrated loudness | ✅ | -14.6 LUFS | −16 to −14 LUFS (production target) |
-| True peak | ✅ | -1.4 dBTP | ≤ −1 dBTP |
+| Sample peak (no clipping) | ✅ | -1.497838 dBFS | < −0.5 dBFS |
+| Integrated loudness | ✅ | -15.1 LUFS | −16 to −14 LUFS (production target) |
+| True peak | ✅ | -1.5 dBTP | ≤ −1 dBTP |
 
 

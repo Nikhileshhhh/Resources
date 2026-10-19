@@ -1,6 +1,6 @@
 {
   "file": "renders/episode_001_shivaji_escape_from_agra_preview.mp4",
-  "measuredAt": "2026-10-18T09:31:01.745Z",
+  "measuredAt": "2026-10-19T08:18:25.893Z",
   "ok": true,
   "checks": [
     {
@@ -66,7 +66,7 @@
     {
       "name": "Video bitrate",
       "ok": true,
-      "value": "3.96 Mb/s",
+      "value": "2.89 Mb/s",
       "expect": "info (CRF 18)"
     },
     {
@@ -78,13 +78,13 @@
     {
       "name": "Duration matches timeline",
       "ok": true,
-      "value": "25.00 vs 589.83",
+      "value": "25.00 vs 672.47",
       "expect": "±0.2 s"
     },
     {
       "name": "File size",
       "ok": true,
-      "value": "13.3 MB",
+      "value": "10.1 MB",
       "expect": "meaningful size"
     },
     {
@@ -120,19 +120,19 @@
     {
       "name": "Sample peak (no clipping)",
       "ok": true,
-      "value": "-1.441337 dBFS",
+      "value": "-1.497838 dBFS",
       "expect": "< −0.5 dBFS"
     },
     {
       "name": "Integrated loudness",
       "ok": true,
-      "value": "-14.6 LUFS",
+      "value": "-15.1 LUFS",
       "expect": "−16 to −14 LUFS (production target)"
     },
     {
       "name": "True peak",
       "ok": true,
-      "value": "-1.4 dBTP",
+      "value": "-1.5 dBTP",
       "expect": "≤ −1 dBTP"
     }
   ],

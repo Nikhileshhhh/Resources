@@ -1,5 +1,5 @@
 {
-  "totalSeconds": 589.8333333333334,
+  "totalSeconds": 672.4666666666667,
   "placements": [
     {
       "id": "s01",
@@ -8,97 +8,97 @@
     },
     {
       "id": "s02",
-      "start": 24.509000000000004,
+      "start": 26.990000000000002,
       "file": "audio/paced/s02.wav"
     },
     {
       "id": "s03",
-      "start": 38.642,
+      "start": 46.760000000000005,
       "file": "audio/paced/s03.wav"
     },
     {
       "id": "s04",
-      "start": 57.66400000000001,
+      "start": 68.9,
       "file": "audio/paced/s04.wav"
     },
     {
       "id": "s05",
-      "start": 90.01,
+      "start": 106.65,
       "file": "audio/paced/s05.wav"
     },
     {
       "id": "s06",
-      "start": 115.953,
+      "start": 137.69,
       "file": "audio/paced/s06.wav"
     },
     {
       "id": "s07",
-      "start": 147.81199999999998,
+      "start": 174.48,
       "file": "audio/paced/s07.wav"
     },
     {
       "id": "s08",
-      "start": 174.67299999999997,
+      "start": 205.22,
       "file": "audio/paced/s08.wav"
     },
     {
       "id": "s09",
-      "start": 207.23299999999998,
+      "start": 243.72,
       "file": "audio/paced/s09.wav"
     },
     {
       "id": "s10",
-      "start": 235.64899999999997,
+      "start": 277.88,
       "file": "audio/paced/s10.wav"
     },
     {
       "id": "s11",
-      "start": 260.067,
+      "start": 302.68,
       "file": "audio/paced/s11.wav"
     },
     {
       "id": "s12",
-      "start": 296.846,
+      "start": 338.85,
       "file": "audio/paced/s12.wav"
     },
     {
       "id": "s13",
-      "start": 319.73100000000005,
+      "start": 368.61000000000007,
       "file": "audio/paced/s13.wav"
     },
     {
       "id": "s14",
-      "start": 354.8660000000001,
+      "start": 408.3800000000001,
       "file": "audio/paced/s14.wav"
     },
     {
       "id": "s15",
-      "start": 376.1630000000001,
+      "start": 432.3200000000001,
       "file": "audio/paced/s15.wav"
     },
     {
       "id": "s16",
-      "start": 409.6680000000001,
+      "start": 467.8900000000001,
       "file": "audio/paced/s16.wav"
     },
     {
       "id": "s17",
-      "start": 441.17400000000015,
+      "start": 507.03000000000014,
       "file": "audio/paced/s17.wav"
     },
     {
       "id": "s18",
-      "start": 492.49800000000016,
+      "start": 564.6700000000002,
       "file": "audio/paced/s18.wav"
     },
     {
       "id": "s19",
-      "start": 517.5780000000002,
+      "start": 592.2200000000003,
       "file": "audio/paced/s19.wav"
     },
     {
       "id": "s20",
-      "start": 548.3440000000003,
+      "start": 625.8100000000003,
       "file": "audio/paced/s20.wav"
     }
   ]

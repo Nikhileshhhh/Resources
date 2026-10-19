@@ -15,7 +15,9 @@ interface Check { name: string; ok: boolean; value: string; expect: string; note
  * comparison of the final mix against the script. Writes reports/validation.{json,md}.
  */
 export async function verifyStage(epDir: string, preview: boolean): Promise<boolean> {
-  const ep = readJson<{ fileStem: string; scenes: { id: string; narration: string }[] }>(path.join(epDir, "episode.json"));
+  const ep = readJson<{ fileStem: string; scenes: { id: string; narration: string }[]; voice: { pacing?: { maxRuntimeSec: number } } }>(path.join(epDir, "episode.json"));
+  // 480–600 s by default; an episode may carry an owner-approved longer limit in voice.pacing.maxRuntimeSec.
+  const maxDur = Math.max(600, ep.voice.pacing?.maxRuntimeSec ?? 600);
   const tl = readJson<Timeline>(path.join(epDir, "timeline.json"));
   const file = preview ? path.join(epDir, "renders", `${ep.fileStem}_preview.mp4`) : path.join(epDir, `${ep.fileStem}.mp4`);
   if (!exists(file)) throw new Error(`Missing ${file}; run render + mux first`);
@@ -38,7 +40,7 @@ export async function verifyStage(epDir: string, preview: boolean): Promise<bool
   add("Audio sample rate", a?.sample_rate === "48000", a?.sample_rate, "48000 Hz");
   add("Audio channels", a?.channels === 2, String(a?.channels), "2 (stereo)");
   add("Video bitrate", true, `${(Number(v?.bit_rate ?? probe.format.bit_rate) / 1e6).toFixed(2)} Mb/s`, "info (CRF 18)");
-  if (!preview) add("Duration", dur >= 480 && dur <= 600, `${dur.toFixed(2)} s (${fmtTime(dur)})`, "480–600 s");
+  if (!preview) add("Duration", dur >= 480 && dur <= maxDur, `${dur.toFixed(2)} s (${fmtTime(dur)})`, `480–${maxDur} s`);
   else add("Preview duration", dur >= 20 && dur <= 31, `${dur.toFixed(2)} s`, "20–30 s");
   add("Duration matches timeline", preview || Math.abs(dur - tl.durationFrames / tl.fps) < 0.2, `${dur.toFixed(2)} vs ${(tl.durationFrames / tl.fps).toFixed(2)}`, "±0.2 s");
   add("File size", size > 5e6 || (preview && size > 5e5), `${(size / 1e6).toFixed(1)} MB`, "meaningful size");

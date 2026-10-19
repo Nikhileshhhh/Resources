@@ -7,7 +7,17 @@ import type { Episode } from "../schema/episode.js";
 import type { AudioManifest } from "./tts.js";
 import type { Alignment } from "./align.js";
 
-export interface Pacing { tempo: number; sentencePause: number; commaPause: number; beatPause: number; maxRuntimeSec: number }
+export interface Pacing {
+  tempo: number;
+  sentencePause: number;
+  commaPause: number;
+  beatPause: number;
+  maxRuntimeSec: number;
+  /** Longest pause kept per gap type; slack beyond it is cut from the middle of the silence. */
+  caps?: { sentence: number; ellipsis: number; beat: number; comma: number; other: number };
+  /** With caps, tempo (pitch-preserving) is raised just enough to fit maxRuntimeSec, but never above this. */
+  maxTempo?: number;
+}
 
 /**
  * Re-pace the voiced narration for storytelling (longer pauses inside existing word gaps, then a
@@ -15,7 +25,7 @@ export interface Pacing { tempo: number; sentencePause: number; commaPause: numb
  * would exceed pacing.maxRuntimeSec. Raw takes are kept; manifest.file points at the paced take.
  */
 export async function paceStage(ep: Episode, epDir: string): Promise<void> {
-  const pacing = (ep.voice as { pacing?: Pacing }).pacing;
+  let pacing = (ep.voice as { pacing?: Pacing }).pacing;
   if (!pacing) {
     log("pace", "no voice.pacing in episode.json; skipping");
     return;
@@ -53,7 +63,15 @@ export async function paceStage(ep: Episode, epDir: string): Promise<void> {
   };
   let scale = 1;
   let total = await project(scale);
-  if (total > pacing.maxRuntimeSec) {
+  if (pacing.caps && total > pacing.maxRuntimeSec) {
+    // Pauses are already trimmed to their caps; close the rest with the smallest pitch-preserving speed-up.
+    const audio = (total - fixed) * pacing.tempo;
+    const need = Math.ceil((audio / (pacing.maxRuntimeSec - fixed)) * 1000) / 1000;
+    const limit = pacing.maxTempo ?? 1.08;
+    if (need > limit) throw new Error(`Narration needs tempo ${need} to fit ${pacing.maxRuntimeSec}s; above the limit ${limit}. Decide with the owner (longer cut, or different caps) rather than rushing the voice.`);
+    pacing = { ...pacing, tempo: Math.max(pacing.tempo, need) };
+    total = await project(scale);
+  } else if (total > pacing.maxRuntimeSec) {
     let lo = 0;
     let hi = 1;
     for (let i = 0; i < 8; i++) {
@@ -65,7 +83,7 @@ export async function paceStage(ep: Episode, epDir: string): Promise<void> {
     total = await project(scale);
     if (total > pacing.maxRuntimeSec) throw new Error(`Even without added pauses the programme is ${total.toFixed(1)} s; trim the script or raise maxRuntimeSec`);
   }
-  log("pace", `tempo ${pacing.tempo}, pause scale ${scale.toFixed(2)} → projected programme ${total.toFixed(1)} s`);
+  log("pace", `tempo ${pacing.tempo}${pacing.caps ? " (pauses capped)" : ""}, pause scale ${scale.toFixed(2)} → projected programme ${total.toFixed(1)} s`);
 
   const key = sha(pacing, scale);
   const todo = jobs.filter((j) => manifest.scenes[j.id].pacedKey !== key || !exists(j.out));

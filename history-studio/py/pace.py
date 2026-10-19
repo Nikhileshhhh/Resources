@@ -8,7 +8,10 @@ Pauses are lengthened only inside existing gaps between aligned words (never ins
   • after sentence-ending punctuation -> at least sentencePause
   • after commas, semicolons, colons and dashes -> at least commaPause
   • before a short sentence (<= 4 words) -> at least beatPause (a dramatic beat)
-Then the whole scene is slowed with ffmpeg's rubberband filter (pitch and formants preserved).
+Optional "caps" ({"sentence", "ellipsis", "beat", "comma", "other"} seconds) shorten slack in over-long gaps by
+cutting silence from the middle of the gap (short crossfades), so a slow, pause-heavy read keeps its shape:
+full beats where the punctuation asks for them, no dead air elsewhere.
+Then the whole scene is time-stretched with ffmpeg's rubberband filter (pitch and formants preserved).
 """
 import json
 import re
@@ -59,34 +62,49 @@ def pace(job, cfg, dry=False):
     pieces = []
     cursor = 0
     added = 0.0
+    removed = 0.0
     fade = int(0.012 * SR)
+    caps = cfg.get("caps")
     for i in range(len(words) - 1):
         t = toks[i]
         gap_start, gap_end = words[i]["end"], words[i + 1]["start"]
         gap = max(0.0, gap_end - gap_start)
-        target = 0.0
+        target, kind = 0.0, "other"
         if re.search(r"[.!?][\"”’)]*$", t):
-            target = cfg["sentencePause"]
+            target, kind = cfg["sentencePause"], "sentence"
+            if t.rstrip("\"”’)").endswith("..."):
+                kind = "ellipsis"
             if 0 < nxt_len.get(i, 99) <= 4:
-                target = cfg["beatPause"]
+                target, kind = cfg["beatPause"], "beat"
         elif re.search(r"[,;:–—-][\"”’)]*$", t):
-            target = cfg["commaPause"]
+            target, kind = cfg["commaPause"], "comma"
         extra = target * cfg.get("pauseScale", 1.0) - gap
-        if extra <= 0.02:
-            continue
-        cut = int(((gap_start + gap_end) / 2) * SR)
-        seg = x[cursor:cut].copy()
-        if len(seg) > 2 * fade:
-            seg[-fade:] *= np.linspace(1, 0, fade)
-        pieces.append(seg)
-        pieces.append(np.zeros(int(extra * SR)))
-        nxt = x[cut:cut + fade].copy()
-        x[cut:cut + fade] = nxt * np.linspace(0, 1, len(nxt))
-        cursor = cut
-        added += extra
+        if extra > 0.02:
+            cut = int(((gap_start + gap_end) / 2) * SR)
+            seg = x[cursor:cut].copy()
+            if len(seg) > 2 * fade:
+                seg[-fade:] *= np.linspace(1, 0, fade)
+            pieces.append(seg)
+            pieces.append(np.zeros(int(extra * SR)))
+            nxt = x[cut:cut + fade].copy()
+            x[cut:cut + fade] = nxt * np.linspace(0, 1, len(nxt))
+            cursor = cut
+            added += extra
+        elif caps and gap - caps[kind] > 0.03:
+            # Keep caps[kind] seconds of the gap (half each side) and drop the silent middle.
+            keep = caps[kind] / 2
+            a, b = int((gap_start + keep) * SR), int((gap_end - keep) * SR)
+            seg = x[cursor:a].copy()
+            if len(seg) > 2 * fade:
+                seg[-fade:] *= np.linspace(1, 0, fade)
+            pieces.append(seg)
+            nxt = x[b:b + fade].copy()
+            x[b:b + fade] = nxt * np.linspace(0, 1, len(nxt))
+            cursor = b
+            removed += (b - a) / SR
     pieces.append(x[cursor:])
     if dry:
-        return {"scene": job["id"], "before": round(len(x) / SR, 3), "pausesAdded": round(added, 3), "projected": round((len(x) / SR + added) / cfg["tempo"], 3)}
+        return {"scene": job["id"], "before": round(len(x) / SR, 3), "pausesAdded": round(added - removed, 3), "projected": round((len(x) / SR + added - removed) / cfg["tempo"], 3)}
     y = np.concatenate(pieces)
     tmp = job["out"] + ".tmp.wav"
     sf.write(tmp, y, SR, subtype="PCM_16")
@@ -95,7 +113,7 @@ def pace(job, cfg, dry=False):
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", tmp, *af, "-ar", str(SR), "-ac", "1", "-c:a", "pcm_s16le", job["out"]], check=True)
     subprocess.run(["rm", "-f", tmp], check=True)
     dur = sf.info(job["out"]).duration
-    return {"scene": job["id"], "before": round(len(x) / SR, 3), "pausesAdded": round(added, 3), "after": round(dur, 3)}
+    return {"scene": job["id"], "before": round(len(x) / SR, 3), "pausesAdded": round(added - removed, 3), "after": round(dur, 3)}
 
 
 def main():

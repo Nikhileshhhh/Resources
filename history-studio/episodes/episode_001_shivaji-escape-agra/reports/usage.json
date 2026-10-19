@@ -1466,7 +1466,7 @@
       "units": 134,
       "unit": "el_credits",
       "estInr": 0,
-      "priceBasis": "characters \u00d7 model rate 1 (GET /v1/models)",
+      "priceBasis": "characters × model rate 1 (GET /v1/models)",
       "note": "chars=134 request=fV6TbPAQ27PfessStDu8"
     },
     {
@@ -1477,7 +1477,7 @@
       "units": 134,
       "unit": "el_credits",
       "estInr": 0,
-      "priceBasis": "characters \u00d7 model rate 1 (GET /v1/models)",
+      "priceBasis": "characters × model rate 1 (GET /v1/models)",
       "note": "chars=134 request=lqIEa48nt7VZ0CV2z1SA"
     },
     {
@@ -1488,7 +1488,7 @@
       "units": 134,
       "unit": "el_credits",
       "estInr": 0,
-      "priceBasis": "characters \u00d7 model rate 1 (GET /v1/models)",
+      "priceBasis": "characters × model rate 1 (GET /v1/models)",
       "note": "chars=134 request=2Tm381Qf6HOC3EaPRtXi"
     },
     {
@@ -1499,7 +1499,7 @@
       "units": 134,
       "unit": "el_credits",
       "estInr": 0,
-      "priceBasis": "characters \u00d7 model rate 1 (GET /v1/models)",
+      "priceBasis": "characters × model rate 1 (GET /v1/models)",
       "note": "chars=134 request=kRX0uSGhacNOz4aOSun2"
     },
     {
@@ -1510,8 +1510,228 @@
       "units": 134,
       "unit": "el_credits",
       "estInr": 0,
-      "priceBasis": "characters \u00d7 model rate 1 (GET /v1/models)",
+      "priceBasis": "characters × model rate 1 (GET /v1/models)",
       "note": "chars=134 request=8B0YwvqQkZmQSGzKmSMl"
+    },
+    {
+      "at": "2026-10-19T07:51:46.591Z",
+      "stage": "tts s01",
+      "provider": "api.elevenlabs.io",
+      "model": "eleven_v3",
+      "units": 320,
+      "unit": "el_credits",
+      "estInr": 0,
+      "priceBasis": "characters × model rate 1 (GET /v1/models)",
+      "note": "chars=320 request=sC7pHHsYlC9LrBHDnnX0"
+    },
+    {
+      "at": "2026-10-19T07:51:54.129Z",
+      "stage": "tts s02",
+      "provider": "api.elevenlabs.io",
+      "model": "eleven_v3",
+      "units": 247,
+      "unit": "el_credits",
+      "estInr": 0,
+      "priceBasis": "characters × model rate 1 (GET /v1/models)",
+      "note": "chars=247 request=HyChns671Y2UGda3GR0O"
+    },
+    {
+      "at": "2026-10-19T07:52:03.273Z",
+      "stage": "tts s03",
+      "provider": "api.elevenlabs.io",
+      "model": "eleven_v3",
+      "units": 286,
+      "unit": "el_credits",
+      "estInr": 0,
+      "priceBasis": "characters × model rate 1 (GET /v1/models)",
+      "note": "chars=286 request=75qvCYetQs2Q5UJBr1GY"
+    },
+    {
+      "at": "2026-10-19T07:52:16.996Z",
+      "stage": "tts s04",
+      "provider": "api.elevenlabs.io",
+      "model": "eleven_v3",
+      "units": 465,
+      "unit": "el_credits",
+      "estInr": 0,
+      "priceBasis": "characters × model rate 1 (GET /v1/models)",
+      "note": "chars=465 request=cgmevB0qKi0cR8f1097S"
+    },
+    {
+      "at": "2026-10-19T07:52:31.700Z",
+      "stage": "tts s05",
+      "provider": "api.elevenlabs.io",
+      "model": "eleven_v3",
+      "units": 344,
+      "unit": "el_credits",
+      "estInr": 0,
+      "priceBasis": "characters × model rate 1 (GET /v1/models)",
+      "note": "chars=344 request=P3wZcqFZYjAMMOBJ0Tig"
+    },
+    {
+      "at": "2026-10-19T07:52:44.983Z",
+      "stage": "tts s06",
+      "provider": "api.elevenlabs.io",
+      "model": "eleven_v3",
+      "units": 442,
+      "unit": "el_credits",
+      "estInr": 0,
+      "priceBasis": "characters × model rate 1 (GET /v1/models)",
+      "note": "chars=442 request=yMAQ8YJaYJ0cl3kUyoCV"
+    },
+    {
+      "at": "2026-10-19T07:52:55.601Z",
+      "stage": "tts s07",
+      "provider": "api.elevenlabs.io",
+      "model": "eleven_v3",
+      "units": 418,
+      "unit": "el_credits",
+      "estInr": 0,
+      "priceBasis": "characters × model rate 1 (GET /v1/models)",
+      "note": "chars=418 request=jTMe3InA12AlJKQsjBAA"
+    },
+    {
+      "at": "2026-10-19T07:53:09.825Z",
+      "stage": "tts s08",
+      "provider": "api.elevenlabs.io",
+      "model": "eleven_v3",
+      "units": 500,
+      "unit": "el_credits",
+      "estInr": 0,
+      "priceBasis": "characters × model rate 1 (GET /v1/models)",
+      "note": "chars=500 request=ITCCV4e61vvqdU5L8dxx"
+    },
+    {
+      "at": "2026-10-19T07:53:20.706Z",
+      "stage": "tts s09",
+      "provider": "api.elevenlabs.io",
+      "model": "eleven_v3",
+      "units": 403,
+      "unit": "el_credits",
+      "estInr": 0,
+      "priceBasis": "characters × model rate 1 (GET /v1/models)",
+      "note": "chars=403 request=cz6pUjzQY5iJE34Qp4Md"
+    },
+    {
+      "at": "2026-10-19T07:53:31.512Z",
+      "stage": "tts s10",
+      "provider": "api.elevenlabs.io",
+      "model": "eleven_v3",
+      "units": 290,
+      "unit": "el_credits",
+      "estInr": 0,
+      "priceBasis": "characters × model rate 1 (GET /v1/models)",
+      "note": "chars=290 request=ibQtczs15mtdRPF03dfv"
+    },
+    {
+      "at": "2026-10-19T07:53:44.357Z",
+      "stage": "tts s11",
+      "provider": "api.elevenlabs.io",
+      "model": "eleven_v3",
+      "units": 451,
+      "unit": "el_credits",
+      "estInr": 0,
+      "priceBasis": "characters × model rate 1 (GET /v1/models)",
+      "note": "chars=451 request=I5LmxeSO6v7WLGKAH0WS"
+    },
+    {
+      "at": "2026-10-19T07:53:54.644Z",
+      "stage": "tts s12",
+      "provider": "api.elevenlabs.io",
+      "model": "eleven_v3",
+      "units": 338,
+      "unit": "el_credits",
+      "estInr": 0,
+      "priceBasis": "characters × model rate 1 (GET /v1/models)",
+      "note": "chars=338 request=iYvfqJBT3d2w6EaMdqkY"
+    },
+    {
+      "at": "2026-10-19T07:54:06.479Z",
+      "stage": "tts s13",
+      "provider": "api.elevenlabs.io",
+      "model": "eleven_v3",
+      "units": 501,
+      "unit": "el_credits",
+      "estInr": 0,
+      "priceBasis": "characters × model rate 1 (GET /v1/models)",
+      "note": "chars=501 request=G171mtM9I4ISXPsQEw2C"
+    },
+    {
+      "at": "2026-10-19T07:54:15.665Z",
+      "stage": "tts s14",
+      "provider": "api.elevenlabs.io",
+      "model": "eleven_v3",
+      "units": 347,
+      "unit": "el_credits",
+      "estInr": 0,
+      "priceBasis": "characters × model rate 1 (GET /v1/models)",
+      "note": "chars=347 request=MqjaJmf7xoPULkGNox4d"
+    },
+    {
+      "at": "2026-10-19T07:54:28.283Z",
+      "stage": "tts s15",
+      "provider": "api.elevenlabs.io",
+      "model": "eleven_v3",
+      "units": 482,
+      "unit": "el_credits",
+      "estInr": 0,
+      "priceBasis": "characters × model rate 1 (GET /v1/models)",
+      "note": "chars=482 request=JLLeqzhcmdAJFsgwojDo"
+    },
+    {
+      "at": "2026-10-19T07:54:41.794Z",
+      "stage": "tts s16",
+      "provider": "api.elevenlabs.io",
+      "model": "eleven_v3",
+      "units": 526,
+      "unit": "el_credits",
+      "estInr": 0,
+      "priceBasis": "characters × model rate 1 (GET /v1/models)",
+      "note": "chars=526 request=Hklv6MccX1hwTpWxKw71"
+    },
+    {
+      "at": "2026-10-19T07:54:59.980Z",
+      "stage": "tts s17",
+      "provider": "api.elevenlabs.io",
+      "model": "eleven_v3",
+      "units": 694,
+      "unit": "el_credits",
+      "estInr": 0,
+      "priceBasis": "characters × model rate 1 (GET /v1/models)",
+      "note": "chars=694 request=u5jHJRwVk8BX6t5ngc1X"
+    },
+    {
+      "at": "2026-10-19T07:55:10.602Z",
+      "stage": "tts s18",
+      "provider": "api.elevenlabs.io",
+      "model": "eleven_v3",
+      "units": 372,
+      "unit": "el_credits",
+      "estInr": 0,
+      "priceBasis": "characters × model rate 1 (GET /v1/models)",
+      "note": "chars=372 request=jUOFJKxGgkDhsI9Jt4gH"
+    },
+    {
+      "at": "2026-10-19T07:55:22.651Z",
+      "stage": "tts s19",
+      "provider": "api.elevenlabs.io",
+      "model": "eleven_v3",
+      "units": 438,
+      "unit": "el_credits",
+      "estInr": 0,
+      "priceBasis": "characters × model rate 1 (GET /v1/models)",
+      "note": "chars=438 request=lb0ou0LNBy3wK18yZ07J"
+    },
+    {
+      "at": "2026-10-19T07:55:30.191Z",
+      "stage": "tts s20",
+      "provider": "api.elevenlabs.io",
+      "model": "eleven_v3",
+      "units": 300,
+      "unit": "el_credits",
+      "estInr": 0,
+      "priceBasis": "characters × model rate 1 (GET /v1/models)",
+      "note": "chars=300 request=niybLmPk5bBAtqPT5bbl"
     }
   ]
 }

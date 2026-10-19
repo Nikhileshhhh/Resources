@@ -44,7 +44,7 @@ export const Episode = z.object({
   series: z.object({ name: z.string(), part: z.number(), of: z.number() }).nullable(),
   render: z.object({ fps: z.literal(30), width: z.literal(1920), height: z.literal(1080) }),
   timing: z.object({ leadInSec: z.number(), sceneGapSec: z.number(), tailAfterNarrationSec: z.number(), endScreenSec: z.number().min(5).max(20) }),
-  voice: z.object({ engine: z.string(), model: z.string(), voice: z.string(), format: z.string(), pacing: z.object({ tempo: z.number().min(0.75).max(1.1), sentencePause: z.number(), commaPause: z.number(), beatPause: z.number(), maxRuntimeSec: z.number().max(600) }).optional() }),
+  voice: z.object({ engine: z.string(), model: z.string(), voice: z.string(), format: z.string(), pacing: z.object({ tempo: z.number().min(0.75).max(1.1), sentencePause: z.number(), commaPause: z.number(), beatPause: z.number(), maxRuntimeSec: z.number().max(900), caps: z.object({ sentence: z.number(), ellipsis: z.number(), beat: z.number(), comma: z.number(), other: z.number() }).optional(), maxTempo: z.number().max(1.15).optional() }).optional() }),
   disclosure: z.string(),
   scenes: z.array(Scene).min(1),
 });

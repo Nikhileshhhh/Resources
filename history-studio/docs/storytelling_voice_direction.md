@@ -92,3 +92,15 @@ Check ElevenLabs' terms for what your plan allows (commercial or YouTube use, at
 - [ ] Every scene ends cleanly, with no clipped last word.
 - [ ] s13 sounds like the climax: slowest and quietest, and still intelligible over the music.
 - [ ] Sourced lines ("a letter from Agra reports…") sound neutral, not dramatised.
+
+## 9. Episode 001: what actually happened (2026-10-19)
+- **Plan limits found:** the free plan cannot use Voice Library voices through the API. ElevenLabs answered `402 paid_plan_required`, and that refusal cost nothing. The API key's "Voices: Read" permission also can't add library voices. So casting used ElevenLabs' built-in female voices: Lily, Alice, Matilda, Bella and Sarah.
+- **Audition:** the same 134-character excerpt from s13 for each voice, 670 credits in total. **The owner chose Lily** (British, middle-aged, "velvety actress"), voice id `pFZP5JQG7iQjIQuC4Bku`, stability 0.5.
+- **Full take:** 20 scenes, 8,164 credits, in one pass with no retakes so far.
+  - The local speech-recognition check heard no tag words.
+  - All 20 scenes force-aligned.
+  - The ledger matches the account counter (8,834 / 10,000).
+- **Pace:** Lily speaks at about 165 words per minute but pauses like a storyteller (147 s of pauses), so the programme is 11:12.
+  - Trimming slack inside pauses (caps: 0.7 s at sentence ends, 0.85 s after "...", 0.95 s before beats, 0.35 s at commas, 0.22 s elsewhere) saved only about 7 s.
+  - The owner heard 1.0×, 1.08× and 1.14× samples and **chose natural pace** over fitting 10 minutes. The episode's limit is therefore 690 s.
+- **For future episodes on this budget:** plan about 1,200 words of script to land at 9:30–10:00 at Lily's natural pace. A full take of that length is about 7,100 credits, which leaves room for auditions and retakes.

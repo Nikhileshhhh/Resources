@@ -1,5 +1,10 @@
 # Next steps: re-voice episode 001 with an ElevenLabs female storyteller
 
+**Status 2026-10-19:**
+- Steps 1–5 are done: Lily is voiced (8,834 of 10,000 credits used) and the pace was approved as natural (11:12).
+- The full render, verification and packaging are in progress or done; see `reports/validation.md`.
+- 1,166 credits remain for re-recording scenes.
+
 State at commit time: the performance script v2 is in `episodes/episode_001_shivaji-escape-agra/episode.json`, and the ElevenLabs engine is built. No ElevenLabs audio exists yet. The timeline and captions still belong to the old cedar voice.
 
 Hard rules from the owner:

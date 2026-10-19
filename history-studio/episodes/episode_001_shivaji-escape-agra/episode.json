@@ -19,17 +19,26 @@
   "voice": {
     "engine": "elevenlabs",
     "model": "eleven_v3",
-    "voice": "(chosen by audition; ELEVENLABS_VOICE_ID)",
+    "voice": "Lily (ElevenLabs premade, pFZP5JQG7iQjIQuC4Bku)",
     "format": "wav",
     "pacing": {
       "tempo": 1.0,
-      "sentencePause": 0.25,
-      "commaPause": 0.0,
-      "beatPause": 0.5,
-      "maxRuntimeSec": 595
+      "sentencePause": 0.45,
+      "commaPause": 0.2,
+      "beatPause": 0.75,
+      "maxRuntimeSec": 690,
+      "caps": {
+        "sentence": 0.7,
+        "ellipsis": 0.85,
+        "beat": 0.95,
+        "comma": 0.35,
+        "other": 0.22
+      },
+      "maxTempo": 1.08,
+      "note": "Owner chose Lily's natural pace (2026-10-19) over a speed-up; programme about 11:13, so the limit is 690 s."
     }
   },
-  "disclosure": "Narration: AI-generated voice (ElevenLabs Eleven v3)",
+  "disclosure": "Narration: AI-generated voice (ElevenLabs Eleven v3, voice 'Lily')",
   "scenes": [
     {
       "id": "s01",

@@ -1,5 +1,5 @@
 {
-  "duration": 589.8333333333334,
+  "duration": 672.4666666666667,
   "placements": [
     {
       "file": "/home/user/Resources/history-studio/episodes/episode_001_shivaji-escape-agra/audio/paced/s01.wav",
@@ -7,79 +7,79 @@
     },
     {
       "file": "/home/user/Resources/history-studio/episodes/episode_001_shivaji-escape-agra/audio/paced/s02.wav",
-      "start": 24.509000000000004
+      "start": 26.990000000000002
     },
     {
       "file": "/home/user/Resources/history-studio/episodes/episode_001_shivaji-escape-agra/audio/paced/s03.wav",
-      "start": 38.642
+      "start": 46.760000000000005
     },
     {
       "file": "/home/user/Resources/history-studio/episodes/episode_001_shivaji-escape-agra/audio/paced/s04.wav",
-      "start": 57.66400000000001
+      "start": 68.9
     },
     {
       "file": "/home/user/Resources/history-studio/episodes/episode_001_shivaji-escape-agra/audio/paced/s05.wav",
-      "start": 90.01
+      "start": 106.65
     },
     {
       "file": "/home/user/Resources/history-studio/episodes/episode_001_shivaji-escape-agra/audio/paced/s06.wav",
-      "start": 115.953
+      "start": 137.69
     },
     {
       "file": "/home/user/Resources/history-studio/episodes/episode_001_shivaji-escape-agra/audio/paced/s07.wav",
-      "start": 147.81199999999998
+      "start": 174.48
     },
     {
       "file": "/home/user/Resources/history-studio/episodes/episode_001_shivaji-escape-agra/audio/paced/s08.wav",
-      "start": 174.67299999999997
+      "start": 205.22
     },
     {
       "file": "/home/user/Resources/history-studio/episodes/episode_001_shivaji-escape-agra/audio/paced/s09.wav",
-      "start": 207.23299999999998
+      "start": 243.72
     },
     {
       "file": "/home/user/Resources/history-studio/episodes/episode_001_shivaji-escape-agra/audio/paced/s10.wav",
-      "start": 235.64899999999997
+      "start": 277.88
     },
     {
       "file": "/home/user/Resources/history-studio/episodes/episode_001_shivaji-escape-agra/audio/paced/s11.wav",
-      "start": 260.067
+      "start": 302.68
     },
     {
       "file": "/home/user/Resources/history-studio/episodes/episode_001_shivaji-escape-agra/audio/paced/s12.wav",
-      "start": 296.846
+      "start": 338.85
     },
     {
       "file": "/home/user/Resources/history-studio/episodes/episode_001_shivaji-escape-agra/audio/paced/s13.wav",
-      "start": 319.73100000000005
+      "start": 368.61000000000007
     },
     {
       "file": "/home/user/Resources/history-studio/episodes/episode_001_shivaji-escape-agra/audio/paced/s14.wav",
-      "start": 354.8660000000001
+      "start": 408.3800000000001
     },
     {
       "file": "/home/user/Resources/history-studio/episodes/episode_001_shivaji-escape-agra/audio/paced/s15.wav",
-      "start": 376.1630000000001
+      "start": 432.3200000000001
     },
     {
       "file": "/home/user/Resources/history-studio/episodes/episode_001_shivaji-escape-agra/audio/paced/s16.wav",
-      "start": 409.6680000000001
+      "start": 467.8900000000001
     },
     {
       "file": "/home/user/Resources/history-studio/episodes/episode_001_shivaji-escape-agra/audio/paced/s17.wav",
-      "start": 441.17400000000015
+      "start": 507.03000000000014
     },
     {
       "file": "/home/user/Resources/history-studio/episodes/episode_001_shivaji-escape-agra/audio/paced/s18.wav",
-      "start": 492.49800000000016
+      "start": 564.6700000000002
     },
     {
       "file": "/home/user/Resources/history-studio/episodes/episode_001_shivaji-escape-agra/audio/paced/s19.wav",
-      "start": 517.5780000000002
+      "start": 592.2200000000003
     },
     {
       "file": "/home/user/Resources/history-studio/episodes/episode_001_shivaji-escape-agra/audio/paced/s20.wav",
-      "start": 548.3440000000003
+      "start": 625.8100000000003
     }
   ],
   "stems_dir": "/home/user/Resources/history-studio/episodes/episode_001_shivaji-escape-agra/audio/mix",
