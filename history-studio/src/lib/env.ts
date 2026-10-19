@@ -43,7 +43,7 @@ export const config = {
     stability: Number(get("ELEVENLABS_STABILITY", "0.5")),
     outputFormat: get("ELEVENLABS_OUTPUT_FORMAT", "mp3_44100_128"),
     /** Hard cap on ElevenLabs credits one episode may consume, including retries and auditions. */
-    creditCap: Number(get("ELEVENLABS_CREDIT_CAP", "20000")),
+    creditCap: Number(get("ELEVENLABS_CREDIT_CAP", "10000")),
   },
   text: { enabled: bool("TEXT_ENABLED"), baseUrl: get("TEXT_BASE_URL"), apiKey: get("TEXT_API_KEY"), model: get("TEXT_MODEL", "openai/gpt-4o-mini") },
   stt: { enabled: bool("STT_ENABLED"), baseUrl: get("STT_BASE_URL"), apiKey: get("STT_API_KEY"), model: get("STT_MODEL", "openai/whisper-1") },

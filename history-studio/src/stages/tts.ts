@@ -85,6 +85,16 @@ export class ElevenCredits {
     if (need > left) throw new Error(`Only ${left} ElevenLabs credits left on the "${sub.tier}" plan; this call needs ~${need}. Credits are never bought automatically.`);
     return sub.character_count;
   }
+  /** Refuse a whole run up front if it cannot finish within the cap or the account's credits (no half-voiced episodes). */
+  async plan(need: number, what: string): Promise<void> {
+    const est = Math.ceil(need * this.ratio);
+    const cap = config.elevenlabs.creditCap;
+    const sub = await eleven.getSubscription();
+    const left = sub.character_limit - sub.character_count;
+    log("credits", `${what}: needs ~${est} credits · episode used ${this.used()} of cap ${cap} · account has ${left} left`);
+    if (this.used() + est > cap) throw new Error(`Not starting: ${what} needs ~${est} credits but the episode cap leaves ${cap - this.used()}.`);
+    if (est > left) throw new Error(`Not starting: ${what} needs ~${est} credits but the account has ${left} left. Credits are never bought automatically.`);
+  }
   async after(stage: string, before: number, chars: number, requestId?: string): Promise<void> {
     let used = Math.ceil(chars * this.ratio);
     let basis = `estimated: ${this.ratio.toFixed(2)} credits per character`;
@@ -152,6 +162,24 @@ export async function ttsStage(ep: Episode, epDir: string, only?: string[], forc
   const kokoroJobs: { text: string; out: string }[] = [];
   const pending: { scene: Scene; parts: string[]; hash: string; text: string }[] = [];
 
+  if (engine === "elevenlabs") {
+    // Price the whole run before the first call: only scenes whose exact text/voice/settings are not on disk cost credits.
+    let need = 0;
+    const todo: string[] = [];
+    for (const scene of ep.scenes) {
+      if (only && !only.includes(scene.id)) continue;
+      const text = ttsText(scene.performance ?? scene.narration, pron.tts);
+      const hash = sha(text, engine, model, voice, settings);
+      if (!force && manifest.scenes[scene.id]?.hash === hash && exists(path.join(chunkDir, `${scene.id}_${hash}.wav`))) continue;
+      splitChunks(text).forEach((t, i) => {
+        if (force || !exists(path.join(chunkDir, `${scene.id}_${hash}_p${i}.wav`))) {
+          need += t.length;
+          if (!todo.includes(scene.id)) todo.push(scene.id);
+        }
+      });
+    }
+    if (need) await credits.plan(need, `voicing ${todo.length} scene(s) [${todo.join(",")}]`);
+  }
   for (const scene of ep.scenes) {
     if (only && !only.includes(scene.id)) continue;
     // Only ElevenLabs v3 understands delivery tags; every other engine gets the plain narration.

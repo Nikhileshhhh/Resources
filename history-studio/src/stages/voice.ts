@@ -1,8 +1,8 @@
 import path from "node:path";
-import { mkdirSync, writeFileSync } from "node:fs";
+import { copyFileSync, mkdirSync, writeFileSync } from "node:fs";
 import { config, ROOT } from "../lib/env.js";
 import { Budget } from "../lib/budget.js";
-import { exists, log, readJson, run, writeJson } from "../lib/util.js";
+import { exists, log, readJson, run, sha, writeJson } from "../lib/util.js";
 import * as eleven from "../providers/elevenlabs.js";
 import { ProviderError } from "../providers/openaiCompat.js";
 import type { Episode } from "../schema/episode.js";
@@ -64,12 +64,14 @@ export async function voicesSearch(epDir: string, opts: { accent?: string; searc
  * Paid audition: the same passage from this episode, voiced by each candidate, so voices are compared
  * on real material. Voice Library voices are added to My Voices first (free). Respects the credit cap.
  */
-export async function audition(ep: Episode, epDir: string, voiceIds: string[], scenes = ["s01", "s13"], stabilities = [config.elevenlabs.stability]): Promise<void> {
+export async function audition(ep: Episode, epDir: string, voiceIds: string[], scenes = ["s01"], stabilities = [config.elevenlabs.stability]): Promise<void> {
   const budget = new Budget(epDir, ROOT);
   const credits = new ElevenCredits(budget);
   const pron = readJson<{ tts: Record<string, string> }>(path.join(epDir, "pronunciations.json"));
   const candidatesFile = path.join(epDir, "audio", "auditions", "candidates.json");
   const candidates: { name: string; voice_id: string; public_owner_id?: string }[] = exists(candidatesFile) ? readJson(candidatesFile) : [];
+  const pending = voiceIds.length * stabilities.length * scenes.reduce((a, sid) => a + ttsText(ep.scenes.find((x) => x.id === sid)?.performance ?? "", pron.tts).length, 0);
+  await credits.plan(pending, `audition of ${voiceIds.length} voice(s) × ${stabilities.length} setting(s) on ${scenes.join(",")}`);
   const mine = await eleven.myVoices();
   const dir = path.join(epDir, "audio", "auditions");
   const results = [];
@@ -109,6 +111,14 @@ export async function audition(ep: Episode, epDir: string, voiceIds: string[], s
           }
         }
         parts.push(out);
+        // Keep the take where the tts stage will find it: if this voice and setting win, the scene is not paid for twice.
+        const text = ttsText(s.performance ?? s.narration, pron.tts);
+        const hash = sha(text, "elevenlabs", config.elevenlabs.model, voiceId, { stability, format: config.elevenlabs.outputFormat });
+        const chunk = path.join(epDir, "audio", "chunks", `${sid}_${hash}_p0.wav`);
+        if (!exists(chunk)) {
+          mkdirSync(path.dirname(chunk), { recursive: true });
+          copyFileSync(out, chunk);
+        }
       }
       const mp3 = path.join(dir, `audition_${slug(name)}_stability-${stability}.mp3`);
       const filter = parts.map((_, i) => `[${i}:a]apad=pad_dur=1.0[a${i}]`).join(";") + ";" + parts.map((_, i) => `[a${i}]`).join("") + `concat=n=${parts.length}:v=0:a=1[out]`;

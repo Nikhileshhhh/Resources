@@ -63,17 +63,28 @@ What the tags can do depends on the voice. A tag pushes delivery only as far as 
 | Output | `mp3_44100_128` by default; `mp3_44100_192` needs the Creator plan or above | Converted to 48 kHz PCM for the mix. |
 | Language | `en` | Keeps number and date normalisation in English. |
 
-## 7. Production steps and credit budget
-| Step | Command | ElevenLabs credits (≈1 per character) |
+## 7. Production steps and credit budget (10,000 credits per episode)
+Each ElevenLabs account has 10,000 credits, so one episode has to fit inside 10,000, including every test and retake. The script is never shortened to save credits: a full take of episode 001 is 8,156 characters, about 8,156 credits. All the savings come from not paying for anything twice.
+
+| Step | Command | Credits |
 |---|---|---|
 | Confirm account, model, plan and credits left | `studio el-check` | 0 |
-| Shortlist voices from free previews | `studio voices [--accent indian]` | 0 |
-| Audition 3 voices on s01 + s13 | `studio audition --voices id1,id2,id3` | about 2,500 |
-| Pronunciation check of names | `studio pron-test --words "Shivaji,Aurangzeb,…"` | about 600 |
-| Full narration | `studio run` (tts → … → package) | about 8,200 |
-| Re-voice individual scenes after listening | `studio tts --scenes s07,s13 --force` | 300–750 each |
+| Shortlist voices by ear from free previews | `studio voices [--accent indian]` | 0 |
+| Audition the **real opening scene (s01)** with the best 2 voices | `studio audition --voices id1,id2` | about 650 |
+| Full narration. The winner's s01 audition take is reused, so only s02–s20 are paid for | `studio run` | about 7,830 |
+| Reserve for re-voicing 2–3 scenes after listening (names, a misread tag) | `studio tts --scenes s07 --force` | about 1,500 |
+| **Total** | | **about 8,500 planned, 10,000 cap** |
 
-`ELEVENLABS_CREDIT_CAP` defaults to 20,000 per episode and counts every call. The tool checks your remaining credits before each call and never buys credits or upgrades the plan. Check ElevenLabs' pricing page for which plan allows commercial use and the Voice Library through the API before publishing.
+Credit safeguards in the pipeline:
+- **Priced before it starts:** `tts` and `audition` add up the cost of everything they are about to voice. They refuse to start if it would pass `ELEVENLABS_CREDIT_CAP` (10,000) or your account's remaining credits, so a run can't stop with half an episode voiced.
+- **Cached by exact text, voice and settings:** editing one scene re-voices only that scene, and re-running never re-buys audio that is already on disk.
+- **No paid retries on timeouts:** a timed-out request may already have been charged. Only "busy" and "rate limit" replies (which generate nothing) are retried.
+- **Measured, not guessed:** each call records the change in the account's credit counter in `reports/usage.json`.
+- **No paid pronunciation test:** names are checked by ear in the full take, and only a scene with a problem is re-voiced (paid from the reserve).
+- No speech-to-text or other paid checks; the QA is local (forced alignment, silence and clipping detection, listening).
+- Credits are never bought and plans are never changed by the tool.
+
+Check ElevenLabs' terms for what your plan allows (commercial or YouTube use, attribution, Voice Library voices over the API) before publishing.
 
 ## 8. Listening checklist before render
 - [ ] No tag was read aloud (listen for the words "softly", "whispers" and so on).

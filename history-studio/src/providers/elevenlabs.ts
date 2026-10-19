@@ -11,7 +11,7 @@ import { ProviderError } from "./openaiCompat.js";
  */
 const RETRYABLE = new Set([408, 409, 429, 500, 502, 503, 504]);
 
-async function call(method: "GET" | "POST", pathName: string, body?: unknown, expect: "json" | "bytes" = "json", label = pathName): Promise<{ data: any; headers: Record<string, string> }> {
+async function call(method: "GET" | "POST", pathName: string, body?: unknown, expect: "json" | "bytes" = "json", label = pathName, paid = false): Promise<{ data: any; headers: Record<string, string> }> {
   const { apiKey, baseUrl } = config.elevenlabs;
   if (!apiKey) throw new ProviderError(0, false, "ELEVENLABS_API_KEY is not set (environment variable or the gitignored .env)");
   let lastErr: unknown;
@@ -39,7 +39,9 @@ async function call(method: "GET" | "POST", pathName: string, body?: unknown, ex
       return { data: await res.json(), headers };
     } catch (e: any) {
       lastErr = e;
-      const retryable = e instanceof ProviderError ? e.retryable : e?.name === "AbortError" || e?.name === "TypeError";
+      // A paid call is retried only when the server clearly did not generate audio (rate limit / busy);
+      // a timeout may already have spent credits, so it is reported instead of silently re-billed.
+      const retryable = paid ? e instanceof ProviderError && (e.status === 429 || e.status === 503) : e instanceof ProviderError ? e.retryable : e?.name === "AbortError" || e?.name === "TypeError";
       if (!retryable || attempt === 4) break;
       const wait = 2 ** attempt * 1000 + Math.random() * 1000;
       log("elevenlabs", `${label} attempt ${attempt} failed (${redact(String(e?.message ?? e)).slice(0, 160)}); retrying in ${(wait / 1000).toFixed(1)}s`);
@@ -89,6 +91,6 @@ export interface TtsResult { audio: Buffer; requestId?: string }
 export async function textToSpeech(voiceId: string, text: string, opts: { model: string; stability: number; outputFormat: string; seed?: number }): Promise<TtsResult> {
   const body: Record<string, unknown> = { text, model_id: opts.model, voice_settings: { stability: opts.stability }, language_code: "en" };
   if (opts.seed !== undefined) body.seed = opts.seed;
-  const { data, headers } = await call("POST", `/v1/text-to-speech/${encodeURIComponent(voiceId)}?output_format=${encodeURIComponent(opts.outputFormat)}`, body, "bytes", `tts ${text.length} chars`);
+  const { data, headers } = await call("POST", `/v1/text-to-speech/${encodeURIComponent(voiceId)}?output_format=${encodeURIComponent(opts.outputFormat)}`, body, "bytes", `tts ${text.length} chars`, true);
   return { audio: data, requestId: headers["request-id"] ?? headers["x-request-id"] };
 }
