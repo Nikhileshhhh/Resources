@@ -3,7 +3,7 @@ import type { Pose3 } from "../character/Character3D";
 import { BODY } from "../character/body";
 
 type Num = keyof { [K in keyof Pose3 as Pose3[K] extends number | undefined ? K : never]: 1 };
-const KEYS: Num[] = ["x", "y", "z", "heading", "drop", "pelvisTilt", "pelvisRoll", "pelvisTwist", "pelvisShift", "spine", "spineSide", "spineTwist", "chest", "breathe", "neck", "head", "headTurn", "headTilt", "hipL", "hipLAbd", "kneeL", "ankleL", "hipR", "hipRAbd", "kneeR", "ankleR", "shL", "shLAbd", "shLTwist", "elL", "wristL", "shR", "shRAbd", "shRTwist", "elR", "wristR", "blink", "brow", "jaw", "lookX", "lookY", "skirtFwd", "skirtSplay", "sway"];
+const KEYS: Num[] = ["x", "y", "z", "heading", "drop", "pelvisTilt", "pelvisRoll", "pelvisTwist", "pelvisShift", "spine", "spineSide", "spineTwist", "chest", "breathe", "neck", "head", "headTurn", "headTilt", "hipL", "hipLAbd", "kneeL", "ankleL", "hipR", "hipRAbd", "kneeR", "ankleR", "shL", "shLAbd", "shLTwist", "elL", "wristL", "shR", "shRAbd", "shRTwist", "elR", "wristR", "blink", "brow", "jaw", "lookX", "lookY", "skirtFwd", "skirtSplay", "sway", "robeTight"];
 
 /** Field-wise sum (layering: base + overlay). */
 export function add(...poses: Pose3[]): Pose3 {

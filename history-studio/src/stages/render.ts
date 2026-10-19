@@ -149,7 +149,8 @@ export async function stillsStage(epDir: string, only?: string[], at: number[] =
       if (only && !only.includes(sh.id) && !only.includes(sc.id)) continue;
       for (const a of at) {
         const frame = Math.round(sh.startFrame + (sh.endFrame - sh.startFrame - 1) * a);
-        const name = at.length === 1 ? sh.id : `${sh.id}_${Math.round(a * 100)}`;
+        const name = `${sh.id}_${Math.round(a * 100)}`;
+        log("stills", `${name} (frame ${frame})`);
         await run("npx", ["remotion", "still", serveUrl, "Episode", path.join(dir, `${name}.jpg`), `--frame=${frame}`, `--props=${props}`, "--gl=swangle", "--image-format=jpeg", "--jpeg-quality=85", "--scale=0.5", "--log=error", ...(config.browserExecutable ? [`--browser-executable=${config.browserExecutable}`] : [])], { quiet: true, cwd: ROOT });
       }
     }

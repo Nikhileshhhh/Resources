@@ -23,6 +23,7 @@ export interface Pose3 {
   shR?: number; shRAbd?: number; shRTwist?: number; elR?: number; wristR?: number;
   blink?: number; brow?: number; jaw?: number; lookX?: number; lookY?: number;
   skirtFwd?: number; skirtSplay?: number; sway?: number; // cloth secondary motion
+  robeTight?: number; // 0..1 robe hugs the legs (lying down, crouching)
 }
 
 export type PropName = "torch" | "spear" | "sword" | "tray" | "beads" | "quill" | "letter" | "staff" | "pole" | "none";
@@ -183,6 +184,7 @@ export const Character3D: React.FC<CharacterProps> = ({ costume, pose: p, scale 
   const fwd = Math.max(p.hipL ?? 0, p.hipR ?? 0, 0);
   const skirtScaleZ = 1 + Math.min(0.55, (fwd / 60) * 0.5) + (p.skirtFwd ?? 0);
   const splay = p.skirtSplay ?? 0;
+  const tight = 1 - 0.5 * (p.robeTight ?? 0);
 
   return (
     <group position={[p.x ?? 0, p.y ?? 0, p.z ?? 0]} rotation={[0, (p.heading ?? 0) * D, 0]} scale={s}>
@@ -191,7 +193,7 @@ export const Character3D: React.FC<CharacterProps> = ({ costume, pose: p, scale 
         {leg(1)}
         {leg(-1)}
         {/* lower robe (jama skirt / dhoti) with secondary sway */}
-        <group position={[0, 0.06, 0]} rotation={[(p.sway ?? 0) * 0.06 * D * 10, 0, (p.sway ?? 0) * 0.03]} scale={[1 + splay * 0.6, 1 - splay * 0.45, skirtScaleZ + splay * 0.6]}>
+        <group position={[0, 0.06, 0]} rotation={[(p.sway ?? 0) * 0.06 * D * 10, 0, (p.sway ?? 0) * 0.03]} scale={[(1 + splay * 0.6) * tight, 1 - splay * 0.45, (skirtScaleZ + splay * 0.6) * tight]}>
           <mesh geometry={lathe(`skirt-${skirtKind}`, SKIRTS[skirtKind])} material={skirtKind === "dhoti" ? pants : robeMat} castShadow={sh} receiveShadow />
           {hi && skirtKind !== "dhoti" && <mesh geometry={torus(SKIRTS[skirtKind][SKIRTS[skirtKind].length - 2][0], 0.012)} material={trim} position={[0, SKIRTS[skirtKind][SKIRTS[skirtKind].length - 2][1], 0]} rotation={[Math.PI / 2, 0, 0]} />}
         </group>

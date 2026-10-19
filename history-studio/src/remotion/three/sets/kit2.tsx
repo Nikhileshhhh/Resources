@@ -142,7 +142,7 @@ export const Bed: React.FC<{ position?: V3; rotationY?: number; pulled?: number;
       const z = p.getZ(i);
       // drape down at the sides, a soft body-shaped mound when occupied
       const side = Math.max(0, Math.abs(x) - 0.48) * 1.8;
-      const body = occupied ? 0.16 * Math.exp(-(x * x) / 0.07) * (z > -0.75 ? 1 : 0.3) : 0.015;
+      const body = occupied ? 0.3 * Math.exp(-(x * x) / 0.06) * (z > -0.75 ? 1 : 0.3) : 0.015;
       p.setY(i, body - side * side * 0.9 + noise2D("q", x * 3, z * 3) * 0.012);
     }
     g.computeVertexNormals();
@@ -166,7 +166,7 @@ export const Bed: React.FC<{ position?: V3; rotationY?: number; pulled?: number;
         <capsuleGeometry args={[0.1, 0.8, 6, 14]} />
       </mesh>
       {/* quilt: hinged near the foot so pulling it back folds it over */}
-      <group position={[0, 0.44, 0.9]} rotation={[pulled * Math.PI * 0.92, 0, 0]}>
+      <group position={[0, 0.44 + (occupied ? 0.16 : 0), 0.9]} rotation={[pulled * Math.PI * 0.92, 0, 0]}>
         <mesh geometry={qGeo} material={qm} position={[0, 0, -0.85 + pulled * 0.04]} castShadow receiveShadow />
       </group>
     </group>
