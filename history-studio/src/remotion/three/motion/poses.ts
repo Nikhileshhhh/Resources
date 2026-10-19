@@ -17,7 +17,7 @@ export const OFFER: Pose3 = { shL: 62, shR: 62, elL: 36, elR: 36, shLAbd: -14, s
 export const BOW: Pose3 = { spine: 28, chest: 6, head: 18, shR: 128, shRAbd: -18, elR: 118, wristR: 10, shL: 10, elL: 14 };
 
 /** Crouched small (inside a basket): knees to chest, arms wrapped round the shins, head low but eyes up. */
-export const CROUCH: Pose3 = { drop: 0.6, hipL: 125, kneeL: 150, ankleL: 25, hipR: 125, kneeR: 150, ankleR: 25, hipLAbd: 8, hipRAbd: 8, spine: 32, chest: 10, head: -6, shL: 38, shR: 38, elL: 72, elR: 72, shLAbd: -22, shRAbd: -22, wristL: -30, wristR: -30, lookY: 0.8 };
+export const CROUCH: Pose3 = { drop: 0.6, hipL: 125, kneeL: 150, ankleL: 25, hipR: 125, kneeR: 150, ankleR: 25, hipLAbd: 8, hipRAbd: 8, spine: 32, chest: 10, head: -6, shL: 24, shR: 24, elL: 70, elR: 70, shLAbd: -36, shRAbd: -36, shLTwist: -20, shRTwist: -20, wristL: 10, wristR: 10, lookY: 0.8 };
 
 /** Crouched at a pole, ready to lift (porter). */
 export const SQUAT_LIFT: Pose3 = { drop: 0.42, hipL: 95, kneeL: 115, ankleL: 22, hipR: 95, kneeR: 115, ankleR: 22, spine: 28, head: -12, shR: 150, shRAbd: 6, elR: 120, shL: 30, elL: 30 };

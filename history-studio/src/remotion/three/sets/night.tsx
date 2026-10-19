@@ -238,16 +238,18 @@ export const GateNight3D: React.FC<Shot3DProps> = ({ frame: f, duration, cue, sh
   const liftAt = cue("lift", 30);
   const walkAt = cue("walk", 90);
   const darkAt = cue("dark", duration - 20);
-  const path: P2[] = [[6, 3.2], [-2, 3.2], [-34, 3.0]];
+  const path: P2[] = [[4.2, 3.2], [-2, 3.2], [-40, 3.0]];
+  const SPEED = 1.3;
   const pairs = [0, 1].map((k) => {
-    const start = walkAt - 12 + k * 22;
-    const back = k * 3.6; // second pair follows
+    // they set off as soon as the poles are up, so they pass the guards on "walk … past the guards"
+    const start = Math.min(walkAt - 20, liftAt + 30) + k * 16;
+    const back = k * 3.4; // second pair follows
     return { k, start, back };
   });
-  // pair centre distance along the path (accelerate, cruise, never stop)
+  // pair centre distance along the path (accelerate, then keep walking into the dark)
   const centre = (k: number, fr: number) => {
     const { start, back } = pairs[k];
-    const w = walkPath(fr, path, { speed: 1.05, start, accel: 22, loop: false });
+    const w = walkPath(fr, path, { speed: SPEED, start, accel: 22, loop: false });
     return w.dist - back;
   };
   // pole height: squat (0.98) until lift, then rise with effort to the shoulder over 26 frames
@@ -259,17 +261,17 @@ export const GateNight3D: React.FC<Shot3DProps> = ({ frame: f, duration, cue, sh
     const d = Math.max(-1, centre(k, fr)) + end * 1.2;
     const pt = pathPoint(path, Math.max(0, d) + (d < 0 ? 0 : 0));
     const moving = Math.min(1, Math.max(0, (fr - pairs[k].start) / 22));
-    const u = Math.max(0, d) / cycleLength(1.05) + (end === 1 ? 0.5 : 0);
+    const u = Math.max(0, d) / cycleLength(SPEED) + (end === 1 ? 0.5 : 0);
     const lift = ease((fr - liftAt - k * 4) / 26);
     const base = mix(SQUAT_LIFT, add(STAND, CARRY_R), lift);
-    const gait = walk(u, { speed: 1.05, carry: true });
+    const gait = walk(u, { speed: SPEED, carry: true });
     const p = mix(base, add(gait, CARRY_R, { spine: 6 }), moving);
     return { ...p, x: pt.x - (d < 0 ? d : 0), z: pt.z + (k === 1 ? -0.1 : 0), heading: pt.heading, breathe: Math.sin(fr / 9) * (0.5 + lift) };
   };
   const pivotAt = (k: number, fr: number): [number, number, number] => {
     const a = porter(k, 1, fr);
     const b = porter(k, -1, fr);
-    const g = walk(Math.max(0, centre(k, fr)) / cycleLength(1.05), { speed: 1.05, carry: true });
+    const g = walk(Math.max(0, centre(k, fr)) / cycleLength(SPEED), { speed: SPEED, carry: true });
     const bob = (g.drop ?? 0) * Math.min(1, Math.max(0, (fr - pairs[k].start) / 22));
     return [((a.x ?? 0) + (b.x ?? 0)) / 2, poleY(fr) - bob, ((a.z ?? 0) + (b.z ?? 0)) / 2];
   };
@@ -284,10 +286,13 @@ export const GateNight3D: React.FC<Shot3DProps> = ({ frame: f, duration, cue, sh
     const centre: V3 = grounded(f) ? [piv[0], H / 2, piv[2]] : c;
     return { piv, a, centre };
   };
+  const lead = (fr: number) => pathPoint(path, Math.max(0, centre(0, fr))).x;
+  const follow = Math.round(Math.min(duration - 30, darkAt - 50));
   const cam: CamKey[] = [
-    { f: 0, pos: [8.5, 1.5, 9.5], target: [3.5, 1.2, 2.5], fov: 36 },
-    { f: walkAt + 20, pos: [5.5, 1.6, 10.5], target: [0, 1.3, 2.8], fov: 34 },
-    { f: duration, pos: [1.5, 2.0, 11.5], target: [-14, 1.0, 2.5], fov: 34 },
+    { f: 0, pos: [8.0, 1.45, 9.2], target: [3.2, 1.15, 2.8], fov: 36 },
+    { f: pairs[0].start + 30, pos: [lead(pairs[0].start + 30) + 4.5, 1.55, 9.6], target: [lead(pairs[0].start + 30) - 0.5, 1.3, 3], fov: 34 },
+    { f: follow, pos: [lead(follow) + 4.0, 1.7, 10.2], target: [lead(follow) - 1.5, 1.25, 3], fov: 34 },
+    { f: duration, pos: [lead(follow) + 3.4, 1.8, 10.4], target: [lead(duration) - 1, 1.1, 3], fov: 32 },
   ];
   const guardWave = ease((f - walkAt - 25) / 20) * (1 - ease((f - walkAt - 70) / 25));
   const darkness = ease((f - darkAt + 40) / 50);
