@@ -299,7 +299,7 @@ const Headwear: React.FC<{ c: Costume; hair: THREE.Material; sh: boolean; hi: bo
           <mesh geometry={sphere(0.05, 14, 10)} material={fold} position={[0, 0.06, 0.055]} scale={[1, 0.8, 1.3]} castShadow={sh} />
           {c.plume && <mesh geometry={capsule(0.012, 0.12)} material={mat("#f8f4ea")} position={[0.03, 0.11, 0.02]} rotation={[-0.5, 0, -0.35]} />}
           {c.plume && !c.crown && <mesh geometry={box(0.026, 0.026, 0.008)} material={mat("#d8b25a", "gold")} position={[0.02, 0.04, 0.115]} />}
-          {c.crown && <RoyalCrown sh={sh} hi={hi} />}
+          {c.crown && <RoyalCrown sh={sh} hi={hi} grand={c.crown === "coronation"} />}
         </group>
       );
     case "mughal": // rounded Mughal turban with folds and an aigrette
@@ -354,7 +354,7 @@ const Headwear: React.FC<{ c: Costume; hair: THREE.Material; sh: boolean; hi: bo
  * emeralds, a tall gold sarpech with a central ruby at the front, a jigha (jewelled plume holder) carrying the
  * white kalgi, and two strands of pearls draped across the turban.
  */
-const RoyalCrown: React.FC<{ sh: boolean; hi: boolean }> = ({ sh, hi }) => {
+const RoyalCrown: React.FC<{ sh: boolean; hi: boolean; grand?: boolean }> = ({ sh, hi, grand = false }) => {
   const gold = mat("#e0b44c", "gold");
   const ruby = mat("#b0102a", "eye");
   const emerald = mat("#118a4e", "eye");
@@ -378,6 +378,25 @@ const RoyalCrown: React.FC<{ sh: boolean; hi: boolean }> = ({ sh, hi }) => {
         {/* pearl drop beneath the ruby */}
         <mesh geometry={sphere(0.007, 8, 6)} material={pearl} position={[0, -0.028, 0.006]} />
       </group>
+      {grand && (
+        // ceremonial crown (1674): a tall jewelled gold cap rising from the band, gem rows, and a crest of white plumes
+        <group position={[0, 0.0, 0.004]} scale={[1.03, 1, 1.09]}>
+          <mesh geometry={geo("crowncap", () => new THREE.CylinderGeometry(0.085, 0.124, 0.13, 32, 1, true))} material={gold} position={[0, 0.07, 0]} castShadow={sh} />
+          <mesh geometry={geo("crowntop", () => new THREE.SphereGeometry(0.086, 24, 10, 0, Math.PI * 2, 0, Math.PI / 2))} material={gold} position={[0, 0.135, 0]} scale={[1, 0.55, 1]} castShadow={sh} />
+          {[0, 1, 2].map((r) =>
+            Array.from({ length: hi ? 14 : 7 }, (_, i) => {
+              const a = ((i + r * 0.5) / (hi ? 14 : 7)) * Math.PI * 2;
+              const rad = 0.122 - r * 0.014;
+              return <mesh key={`g${r}-${i}`} geometry={sphere(0.0075, 8, 6)} material={(i + r) % 3 === 0 ? emerald : (i + r) % 3 === 1 ? ruby : pearl} position={[Math.sin(a) * rad, 0.03 + r * 0.04, Math.cos(a) * rad]} />;
+            }),
+          )}
+          <mesh geometry={sphere(0.022, 12, 10)} material={gold} position={[0, 0.18, 0]} />
+          <mesh geometry={sphere(0.014, 10, 8)} material={ruby} position={[0, 0.2, 0.012]} />
+          {[-1, 0, 1].map((k) => (
+            <mesh key={`p${k}`} geometry={geo("plume", () => new THREE.ConeGeometry(0.014, 0.16, 8))} material={pearl} position={[k * 0.018, 0.27, -0.01]} rotation={[-0.2, 0, k * -0.25]} castShadow={sh} />
+          ))}
+        </group>
+      )}
       {/* jigha holding the white kalgi plume */}
       <mesh geometry={capsule(0.008, 0.05)} material={gold} position={[0.022, 0.085, 0.07]} rotation={[-0.45, 0, -0.3]} />
       {/* two strands of pearls draped across the pagadi */}

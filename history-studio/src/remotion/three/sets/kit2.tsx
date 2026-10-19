@@ -388,10 +388,13 @@ export const Tree: React.FC<{ position: V3; scale?: number; kind?: "broad" | "pa
         <mesh position={[0, 3, 0]} rotation={[0, 0, 0.08]} material={flatMat("#6a5038", 0.9)} castShadow>
           <cylinderGeometry args={[0.12, 0.2, 6, 8]} />
         </mesh>
-        {Array.from({ length: 8 }, (_, i) => (
-          <mesh key={i} position={[0, 6, 0]} rotation={[0.9, (i / 8) * Math.PI * 2, 0]} material={flatMat("#3f6a3a", 0.9)} castShadow>
-            <boxGeometry args={[0.35, 0.03, 2.6]} />
-          </mesh>
+        {/* fronds radiate around the crown and droop outward (yaw outside, droop inside) */}
+        {Array.from({ length: 9 }, (_, i) => (
+          <group key={i} position={[0.24, 5.95, 0]} rotation={[0, (i / 9) * Math.PI * 2 + seed, 0]}>
+            <mesh position={[0, -0.3 - (i % 3) * 0.08, 1.15]} rotation={[0.3 + (i % 3) * 0.15, 0, 0]} material={flatMat(i % 2 ? "#3f6a3a" : "#4a7a40", 0.9)} castShadow>
+              <boxGeometry args={[0.42, 0.03, 2.4]} />
+            </mesh>
+          </group>
         ))}
       </group>
     );

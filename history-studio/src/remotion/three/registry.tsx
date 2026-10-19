@@ -6,6 +6,7 @@ import { tabletop } from "./sets/tabletop";
 import { Bedroom3D, EmptyBed3D, WindowSilhouette3D } from "./sets/bedroom";
 import { Portrait3D } from "./sets/portraits";
 import { Interrogation3D, TentTalk3D } from "./sets/camp";
+import { FortDay3D, Procession3D } from "./sets/fortday";
 import { AsceticWalk3D, DeccanForts3D, Siege3D, TitleCard3D } from "./sets/deccan";
 import * as G from "../sets/graphics";
 
@@ -14,7 +15,8 @@ import * as G from "../sets/graphics";
  * anything not yet covered falls back to the 2D composition, so the episode always renders.
  */
 export const REGISTRY3D: Record<string, { comp: React.FC<Shot3DProps>; supports: (p: Record<string, unknown>) => boolean }> = {
-  FortExterior: { comp: FortNight3D, supports: (p) => p.time === "night" },
+  FortExterior: { comp: (p) => (p.time === "night" ? <FortNight3D {...p} /> : <FortDay3D {...p} />), supports: () => true },
+  Procession: { comp: Procession3D, supports: () => true },
   Compound: { comp: Compound3D, supports: (p) => p.time === "night" },
   CourtHall: { comp: (p) => (p.beat === "presentation" || p.beat === "silence" ? <CourtHall3D {...p} /> : <CourtBeats3D {...p} />), supports: () => true },
   TwoShot: { comp: TwoShot3D, supports: () => true },

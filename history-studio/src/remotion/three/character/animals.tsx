@@ -49,7 +49,7 @@ const Leg: React.FC<{ pos: [number, number, number]; phase: number; len: number;
 };
 
 /** Horse with saddle cloth and trappings; optional rider (rendered by the caller at `riderSeat`). */
-export const Horse: React.FC<{ state: QuadState; coat?: string; cloth?: string; trim?: string; frame: number; children?: React.ReactNode }> = ({ state, coat = "#6a4128", cloth = "#c8442a", trim = "#d8d8d8", frame, children }) => {
+export const Horse: React.FC<{ state: QuadState; coat?: string; cloth?: string; trim?: string; frame: number; ox?: boolean; children?: React.ReactNode }> = ({ state, coat = "#6a4128", cloth = "#c8442a", trim = "#d8d8d8", frame, ox = false, children }) => {
   const m = mat(coat, "cloth");
   const dark = mat("#2a1a10", "hair");
   const hoof = mat("#2a2420", "wood");
@@ -73,14 +73,33 @@ export const Horse: React.FC<{ state: QuadState; coat?: string; cloth?: string; 
           <sphereGeometry args={[0.4, 14, 12]} />
         </mesh>
         {/* neck and head with a nod in time with the steps */}
-        <group position={[0, 1.6, 0.85]} rotation={[(42 - nod) * D, 0, 0]}>
+        {ox && (
+          // zebu bullock: shoulder hump and dewlap
+          <>
+            <mesh position={[0, 1.78, 0.55]} material={m} castShadow scale={[0.8, 1, 1.1]}>
+              <sphereGeometry args={[0.24, 12, 10]} />
+            </mesh>
+            <mesh position={[0, 1.25, 1.05]} material={m} scale={[0.3, 1, 0.8]}>
+              <sphereGeometry args={[0.2, 10, 8]} />
+            </mesh>
+          </>
+        )}
+        <group position={[0, ox ? 1.45 : 1.6, 0.85]} rotation={[((ox ? 75 : 42) - nod) * D, 0, 0]}>
           <mesh position={[0, 0.38, 0]} material={m} castShadow>
             <capsuleGeometry args={[0.17, 0.62, 6, 12]} />
           </mesh>
-          <mesh position={[0, 0.42, -0.13]} rotation={[-0.05, 0, 0]} material={dark}>
-            <boxGeometry args={[0.05, 0.7, 0.12]} />
-          </mesh>
-          <group position={[0, 0.8, 0.0]} rotation={[(88 + nod * 0.5) * D, 0, 0]}>
+          {!ox && (
+            <mesh position={[0, 0.42, -0.13]} rotation={[-0.05, 0, 0]} material={dark}>
+              <boxGeometry args={[0.05, 0.7, 0.12]} />
+            </mesh>
+          )}
+          <group position={[0, ox ? 0.5 : 0.8, 0.0]} rotation={[((ox ? 70 : 88) + nod * 0.5) * D, 0, 0]}>
+            {ox &&
+              [-1, 1].map((s) => (
+                <mesh key={"h" + s} position={[s * 0.12, -0.04, -0.12]} rotation={[-0.5, 0, s * -0.5]} material={mat("#3a3028", "wood")}>
+                  <coneGeometry args={[0.035, 0.32, 8]} />
+                </mesh>
+              ))}
             <mesh position={[0, 0.22, 0]} material={m} castShadow>
               <capsuleGeometry args={[0.12, 0.42, 6, 12]} />
             </mesh>
@@ -107,6 +126,7 @@ export const Horse: React.FC<{ state: QuadState; coat?: string; cloth?: string; 
           </mesh>
         </group>
         {/* saddle cloth and saddle */}
+        {!ox && (<>
         <mesh position={[0, 1.7, 0.05]} material={mat(cloth, "silk")} castShadow>
           <boxGeometry args={[0.86, 0.06, 1.0]} />
         </mesh>
@@ -118,6 +138,7 @@ export const Horse: React.FC<{ state: QuadState; coat?: string; cloth?: string; 
         <mesh position={[0, 1.79, 0.0]} material={mat("#4a2e1a", "wood")} castShadow>
           <boxGeometry args={[0.42, 0.12, 0.55]} />
         </mesh>
+        </>)}
         {/* legs: four-beat walk */}
         <Leg pos={[-0.22, 1.15, 0.62]} phase={u + 0.25} len={1.2} r={0.11} m={m} hoof={hoof} swing={swing} />
         <Leg pos={[0.22, 1.15, 0.62]} phase={u + 0.75} len={1.2} r={0.11} m={m} hoof={hoof} swing={swing} />

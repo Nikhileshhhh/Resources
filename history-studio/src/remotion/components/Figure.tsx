@@ -27,7 +27,7 @@ export interface Costume {
   turban: "pagadi" | "mughal" | "rajput" | "helmet" | "cloth" | "cap" | "hat" | "none" | "veil";
   turbanColor: string;
   plume?: boolean;
-  crown?: boolean; // royal jewelled headpiece on the turban (Shivaji Maharaj)
+  crown?: boolean | "coronation"; // royal jewelled headpiece on the turban (Shivaji Maharaj); "coronation" adds the tall ceremonial crown of 1674
   beard?: "full" | "short" | "white" | "grey" | "none";
   moustache?: boolean;
   hair?: string;
