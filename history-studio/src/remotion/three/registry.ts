@@ -3,6 +3,7 @@ import { BasketCutaway3D, Compound3D, FortNight3D, GateNight3D, type Shot3DProps
 import { CourtHall3D } from "./sets/court";
 import { tabletop } from "./sets/tabletop";
 import { Bedroom3D, EmptyBed3D, WindowSilhouette3D } from "./sets/bedroom";
+import { AsceticWalk3D, DeccanForts3D, Siege3D, TitleCard3D } from "./sets/deccan";
 import * as G from "../sets/graphics";
 
 /**
@@ -18,6 +19,10 @@ export const REGISTRY3D: Record<string, { comp: React.FC<Shot3DProps>; supports:
   Bedroom: { comp: Bedroom3D, supports: () => true },
   EmptyBed: { comp: EmptyBed3D, supports: () => true },
   WindowSilhouette: { comp: WindowSilhouette3D, supports: () => true },
+  DeccanForts: { comp: DeccanForts3D, supports: () => true },
+  Siege: { comp: Siege3D, supports: () => true },
+  AsceticWalk: { comp: AsceticWalk3D, supports: () => true },
+  TitleCard: { comp: TitleCard3D, supports: () => true },
   // documents, maps and diagrams: the fact-checked 2D artwork as a sheet in a 3D scene
   MapScene: { comp: tabletop(G.MapScene, "desk"), supports: () => true },
   FortsGrid: { comp: tabletop(G.FortsGrid, "desk"), supports: () => true },

@@ -73,14 +73,14 @@ export const Horse: React.FC<{ state: QuadState; coat?: string; cloth?: string; 
           <sphereGeometry args={[0.4, 14, 12]} />
         </mesh>
         {/* neck and head with a nod in time with the steps */}
-        <group position={[0, 1.6, 0.85]} rotation={[(-40 + nod) * D, 0, 0]}>
+        <group position={[0, 1.6, 0.85]} rotation={[(42 - nod) * D, 0, 0]}>
           <mesh position={[0, 0.38, 0]} material={m} castShadow>
             <capsuleGeometry args={[0.17, 0.62, 6, 12]} />
           </mesh>
-          <mesh position={[0, 0.42, -0.12]} rotation={[0.1, 0, 0]} material={dark}>
+          <mesh position={[0, 0.42, -0.13]} rotation={[-0.05, 0, 0]} material={dark}>
             <boxGeometry args={[0.05, 0.7, 0.12]} />
           </mesh>
-          <group position={[0, 0.8, 0.05]} rotation={[(95 - nod * 0.5) * D, 0, 0]}>
+          <group position={[0, 0.8, 0.0]} rotation={[(88 + nod * 0.5) * D, 0, 0]}>
             <mesh position={[0, 0.22, 0]} material={m} castShadow>
               <capsuleGeometry args={[0.12, 0.42, 6, 12]} />
             </mesh>
@@ -110,17 +110,19 @@ export const Horse: React.FC<{ state: QuadState; coat?: string; cloth?: string; 
         <mesh position={[0, 1.7, 0.05]} material={mat(cloth, "silk")} castShadow>
           <boxGeometry args={[0.86, 0.06, 1.0]} />
         </mesh>
-        <mesh position={[0, 1.42, 0.05]} material={mat(cloth, "silk")}>
-          <boxGeometry args={[0.8, 0.6, 0.95]} />
-        </mesh>
+        {[-1, 1].map((s) => (
+          <mesh key={s} position={[s * 0.4, 1.42, 0.05]} rotation={[0, 0, s * 0.12]} material={mat(cloth, "silk")} castShadow>
+            <boxGeometry args={[0.03, 0.55, 0.9]} />
+          </mesh>
+        ))}
         <mesh position={[0, 1.79, 0.0]} material={mat("#4a2e1a", "wood")} castShadow>
           <boxGeometry args={[0.42, 0.12, 0.55]} />
         </mesh>
         {/* legs: four-beat walk */}
-        <Leg pos={[-0.22, 1.15, 0.62]} phase={u + 0.25} len={1.2} r={0.085} m={m} hoof={hoof} swing={swing} />
-        <Leg pos={[0.22, 1.15, 0.62]} phase={u + 0.75} len={1.2} r={0.085} m={m} hoof={hoof} swing={swing} />
-        <Leg pos={[-0.22, 1.2, -0.62]} phase={u} len={1.25} r={0.1} m={m} hoof={hoof} swing={swing} hind />
-        <Leg pos={[0.22, 1.2, -0.62]} phase={u + 0.5} len={1.25} r={0.1} m={m} hoof={hoof} swing={swing} hind />
+        <Leg pos={[-0.22, 1.15, 0.62]} phase={u + 0.25} len={1.2} r={0.11} m={m} hoof={hoof} swing={swing} />
+        <Leg pos={[0.22, 1.15, 0.62]} phase={u + 0.75} len={1.2} r={0.11} m={m} hoof={hoof} swing={swing} />
+        <Leg pos={[-0.22, 1.2, -0.62]} phase={u} len={1.25} r={0.13} m={m} hoof={hoof} swing={swing} hind />
+        <Leg pos={[0.22, 1.2, -0.62]} phase={u + 0.5} len={1.25} r={0.13} m={m} hoof={hoof} swing={swing} hind />
         {/* rider seat (children positioned in horse space) */}
         <group position={[0, 1.86, 0]}>{children}</group>
       </group>
@@ -195,4 +197,4 @@ export const Elephant: React.FC<{ state: QuadState; frame: number; cloth?: strin
 };
 
 /** Seated riding pose for a Character3D placed at a horse's rider seat. */
-export const RIDE = { drop: 0.42, hipL: 62, hipLAbd: 26, kneeL: 72, ankleL: -10, hipR: 62, hipRAbd: 26, kneeR: 72, ankleR: -10, spine: 6, shL: 25, shR: 25, elL: 60, elR: 60, shLAbd: -10, shRAbd: -10, skirtSplay: 0.6 };
+export const RIDE = { drop: 0.42, hipL: 62, hipLAbd: 26, kneeL: 72, ankleL: -10, hipR: 62, hipRAbd: 26, kneeR: 72, ankleR: -10, spine: 12, shL: 25, shR: 25, elL: 60, elR: 60, shLAbd: -10, shRAbd: -10, skirtSplay: 0.6 };

@@ -291,8 +291,32 @@ export const Flag: React.FC<{ frame: number; color: string; size?: [number, numb
 };
 
 // ---------------------------------------------------------------- terrain and hill forts
-/** Ridged hill terrain (Deccan basalt plateaus) with vertex colours from height and slope. */
-export const Terrain: React.FC<{ size?: number; seg?: number; height?: number; seed?: string; flatAt?: [number, number, number]; palette?: [string, string, string] }> = ({ size = 400, seg = 160, height = 38, seed = "deccan", flatAt, palette = ["#5f6b3a", "#7b6a45", "#4a4036"] }) => {
+export type Flat = [number, number, number, number?];
+
+/** Terrain height at (x, z): ridged multi-octave noise, mesa plateaus, and levelled summits/plains (`flats`). */
+export function terrainHeight(x: number, z: number, height: number, seed: string, flats: Flat[]): number {
+  let h = 0;
+  let a = 1;
+  let fq = 1 / 90;
+  for (let o = 0; o < 4; o++) {
+    h += (1 - Math.abs(noise2D(seed + o, x * fq, z * fq))) * a; // ridged
+    a *= 0.5;
+    fq *= 2.1;
+  }
+  h = Math.pow(h / 1.9, 2.2) * height;
+  // mesa tops: flatten above a plateau line (characteristic Deccan traps)
+  h = h > height * 0.55 ? height * 0.55 + (h - height * 0.55) * 0.15 : h;
+  for (const [fx, fz, fh, fr = 14] of flats) {
+    const d = Math.hypot(x - fx, z - fz);
+    const k = d < fr ? 1 : Math.max(0, 1 - (d - fr) / (fr * 1.6));
+    const kk = k * k * (3 - 2 * k);
+    h = h * (1 - kk) + fh * kk;
+  }
+  return h;
+}
+
+/** Ridged hill terrain (Deccan basalt plateaus) with vertex colours from height. */
+export const Terrain: React.FC<{ size?: number; seg?: number; height?: number; seed?: string; flats?: Flat[]; palette?: [string, string, string] }> = ({ size = 400, seg = 160, height = 38, seed = "deccan", flats = [], palette = ["#5f6b3a", "#7b6a45", "#4a4036"] }) => {
   const geo = useMemo(() => {
     const g = new THREE.PlaneGeometry(size, size, seg, seg);
     g.rotateX(-Math.PI / 2);
@@ -302,36 +326,20 @@ export const Terrain: React.FC<{ size?: number; seg?: number; height?: number; s
     for (let i = 0; i < p.count; i++) {
       const x = p.getX(i);
       const z = p.getZ(i);
-      let h = 0;
-      let a = 1;
-      let fq = 1 / 90;
-      for (let o = 0; o < 4; o++) {
-        h += (1 - Math.abs(noise2D(seed + o, x * fq, z * fq))) * a; // ridged
-        a *= 0.5;
-        fq *= 2.1;
-      }
-      h = Math.pow(h / 1.9, 2.2) * height;
-      // mesa tops: flatten above a plateau line (characteristic Deccan traps)
-      h = h > height * 0.55 ? height * 0.55 + (h - height * 0.55) * 0.15 : h;
-      if (flatAt) {
-        const d = Math.hypot(x - flatAt[0], z - flatAt[1]);
-        const k = Math.max(0, 1 - d / 14);
-        h = h * (1 - k) + flatAt[2] * k;
-      }
-      // fade to plain near the camera area
+      const h = terrainHeight(x, z, height, seed, flats);
       p.setY(i, h);
       const t = Math.min(1, h / (height * 0.6));
       const c = low.clone().lerp(mid, t).lerp(high, Math.max(0, t - 0.7) * 2);
-      c.multiplyScalar(0.9 + noise2D(seed + "c", x * 0.05, z * 0.05) * 0.12);
+      c.multiplyScalar(0.85 + noise2D(seed + "c", x * 0.05, z * 0.05) * 0.15);
       cols.push(c.r, c.g, c.b);
     }
     g.setAttribute("color", new THREE.Float32BufferAttribute(cols, 3));
     g.computeVertexNormals();
     return g;
-  }, [size, seg, height, seed, flatAt, palette]);
+  }, [size, seg, height, seed, flats, palette]);
   return (
     <mesh geometry={geo} receiveShadow castShadow>
-      <meshStandardMaterial vertexColors roughness={1} />
+      <meshStandardMaterial vertexColors roughness={1} flatShading={false} />
     </mesh>
   );
 };
