@@ -223,50 +223,62 @@ export const Character3D: React.FC<CharacterProps> = ({ costume, pose: p, scale 
   );
 };
 
+/** Curved hair strand (moustache half, brow) as a tube through three points. */
+const strand = (key: string, pts: [number, number, number][], r: number) =>
+  geo(key, () => new THREE.TubeGeometry(new THREE.CatmullRomCurve3(pts.map((p) => new THREE.Vector3(...p))), 12, r, 6, false));
+
 const Head: React.FC<{ c: Costume; skin: THREE.Material; hair: THREE.Material; beardCol: string; blink: number; brow: number; jaw: number; lookX: number; lookY: number; hi: boolean; sh: boolean }> = ({ c, skin, hair, beardCol, blink, brow, jaw, lookX, lookY, hi, sh }) => {
-  const eyeWhite = mat("#f2ece0", "eye");
-  const iris = mat("#1d1410", "eye");
+  const eyeWhite = mat("#f3eee4", "eye");
+  const iris = mat("#3a2414", "eye");
+  const pupil = mat("#0c0806", "eye");
+  const lash = mat("#1a120c", "hair");
+  const lip = mat(new THREE.Color(c.ash ? "#8a7f76" : c.skin).multiplyScalar(0.78).getStyle(), "skin");
   const bm = mat(beardCol, "hair");
+  const full = c.beard === "full" || c.beard === "white" || c.beard === "grey";
   return (
     <group position={[0, 0.1, 0]}>
-      {/* skull + jaw */}
+      {/* skull, jaw, cheekbones and chin */}
       <mesh geometry={sphere(0.104, 28, 20)} material={skin} scale={[0.9, 1.08, 1]} castShadow={sh} />
-      <mesh geometry={sphere(0.075, 20, 14)} material={skin} position={[0, -0.055, 0.03]} scale={[1, 0.8, 1]} castShadow={sh} />
-      {/* nose and ears */}
-      <mesh geometry={capsule(0.016, 0.035)} material={skin} position={[0, -0.012, 0.1]} rotation={[0.35, 0, 0]} />
-      <mesh geometry={sphere(0.019, 10, 8)} material={skin} position={[0, -0.034, 0.108]} scale={[1.2, 0.8, 0.9]} />
-      {hi && <mesh geometry={sphere(0.025, 10, 8)} material={skin} position={[0.093, 0, 0]} scale={[0.4, 1, 0.75]} />}
-      {hi && <mesh geometry={sphere(0.025, 10, 8)} material={skin} position={[-0.093, 0, 0]} scale={[0.4, 1, 0.75]} />}
-      {/* eyes with lids (blink) and gaze */}
+      <mesh geometry={sphere(0.072, 20, 14)} material={skin} position={[0, -0.052, 0.03]} scale={[1.02, 0.85, 1]} castShadow={sh} />
+      {hi && [1, -1].map((sd) => <mesh key={sd} geometry={sphere(0.024, 12, 10)} material={skin} position={[sd * 0.05, -0.014, 0.066]} scale={[1, 0.75, 0.7]} />)}
+      <mesh geometry={sphere(0.03, 12, 10)} material={skin} position={[0, -0.098, 0.068]} scale={[1.05, 0.85, 0.9]} />
+      {/* nose: bridge and tip */}
+      <mesh geometry={capsule(0.013, 0.035)} material={skin} position={[0, -0.006, 0.101]} rotation={[0.32, 0, 0]} />
+      <mesh geometry={sphere(0.016, 12, 10)} material={skin} position={[0, -0.03, 0.109]} scale={[1.25, 0.85, 0.95]} />
+      {hi && <mesh geometry={sphere(0.025, 10, 8)} material={skin} position={[0.094, 0, 0]} scale={[0.4, 1, 0.75]} />}
+      {hi && <mesh geometry={sphere(0.025, 10, 8)} material={skin} position={[-0.094, 0, 0]} scale={[0.4, 1, 0.75]} />}
+      {/* almond eyes: sclera, iris, pupil, catchlight, skin lid that blinks, dark upper lash line */}
       {[1, -1].map((sd) => (
-        <group key={sd} position={[sd * 0.038, 0.016, 0.08]}>
-          <mesh geometry={sphere(0.021, 14, 10)} material={eyeWhite} scale={[1.1, 0.82, 0.62]} />
-          <mesh geometry={sphere(0.0115, 12, 10)} material={iris} position={[lookX * 0.007, lookY * 0.004, 0.0105]} scale={[1, 1, 0.5]} />
-          {hi && <mesh geometry={sphere(0.0032, 6, 6)} material={mat("#ffffff", "basic")} position={[lookX * 0.007 + 0.004, lookY * 0.004 + 0.004, 0.0165]} />}
-          {/* upper lid closes downward with blink */}
-          <mesh geometry={sphere(0.023, 12, 8)} material={skin} position={[0, 0.0135 - blink * 0.0135, 0.002]} scale={[1.08, 0.28 + blink * 0.62, 0.72]} />
-          {/* brow */}
-          <mesh geometry={box(0.04, 0.009, 0.012)} material={hair} position={[0, 0.03 + brow * 0.006, 0.008]} rotation={[0, 0, sd * (0.12 - brow * 0.18)]} />
+        <group key={sd} position={[sd * 0.037, 0.014, 0.083]} rotation={[0, sd * 0.18, sd * -0.06]}>
+          <mesh geometry={sphere(0.02, 16, 12)} material={eyeWhite} scale={[1.25, 0.7, 0.62]} />
+          <mesh geometry={sphere(0.0105, 14, 10)} material={iris} position={[lookX * 0.008, lookY * 0.004, 0.0098]} scale={[1, 1, 0.45]} />
+          <mesh geometry={sphere(0.0055, 10, 8)} material={pupil} position={[lookX * 0.008, lookY * 0.004, 0.0122]} scale={[1, 1, 0.4]} />
+          {hi && <mesh geometry={sphere(0.0026, 6, 6)} material={mat("#ffffff", "basic")} position={[lookX * 0.008 + 0.004, lookY * 0.004 + 0.0035, 0.0145]} />}
+          <mesh geometry={sphere(0.0215, 14, 8)} material={skin} position={[0, 0.0122 - blink * 0.0135, 0.001]} scale={[1.3, 0.26 + blink * 0.56, 0.7]} />
+          <mesh geometry={strand("lashline", [[-0.024, -0.002, 0.004], [0, 0.009, 0.013], [0.024, 0.0, 0.004]], 0.0022)} material={lash} position={[0, 0.002 - blink * 0.01, 0]} />
+          {/* brow: curved, thick, lifts and knits */}
+          <mesh geometry={strand("brow", [[-0.026, -0.004, 0], [0, 0.006, 0.006], [0.028, -0.002, -0.004]], 0.0045)} material={hair} position={[0, 0.03 + brow * 0.006, 0.006]} rotation={[0, 0, sd * (0.08 - brow * 0.2)]} scale={[sd, 1, 1]} />
         </group>
       ))}
-      {/* mouth */}
-      <mesh geometry={box(0.034, 0.006 + jaw * 0.014, 0.012)} material={mat("#5a2a24")} position={[0, -0.06, 0.094]} />
-      {c.moustache && (
-        <>
-          <mesh geometry={capsule(0.007, 0.026)} material={bm} position={[0.017, -0.043, 0.094]} rotation={[0, 0, 1.25]} />
-          <mesh geometry={capsule(0.007, 0.026)} material={bm} position={[-0.017, -0.043, 0.094]} rotation={[0, 0, -1.25]} />
-        </>
-      )}
+      {/* lips */}
+      <mesh geometry={capsule(0.007, 0.026)} material={lip} position={[0, -0.059 - jaw * 0.006, 0.097]} rotation={[0, 0, Math.PI / 2]} />
+      <mesh geometry={box(0.03, 0.002 + jaw * 0.014, 0.008)} material={mat("#3a1612")} position={[0, -0.0545 - jaw * 0.004, 0.099]} />
+      {/* moustache: upturned at the ends (the Maratha style) */}
+      {c.moustache &&
+        [1, -1].map((sd) => (
+          <mesh key={sd} geometry={strand("moust", [[0.002, 0, 0], [0.022, -0.008, -0.004], [0.04, 0.004, -0.014]], 0.0058)} material={bm} position={[0, -0.044, 0.104]} scale={[sd, 1, 1]} castShadow={sh} />
+        ))}
+      {/* beard: a pointed chin beard, plus a fuller jaw beard for "full" styles */}
       {c.beard && c.beard !== "none" && (
         <group>
-          {/* chin beard below the mouth, plus jaw-line strips up to the ears */}
-          <mesh geometry={sphere(0.05, 16, 12)} material={bm} position={[0, c.beard === "short" ? -0.088 : -0.1, 0.058]} scale={c.beard === "short" ? [1.25, 0.75, 0.85] : [1.35, 1.25, 0.95]} castShadow={sh} />
-          {[1, -1].map((sd) => (
-            <mesh key={sd} geometry={capsule(0.016, 0.07)} material={bm} position={[sd * 0.072, -0.05, 0.045]} rotation={[0.25, 0, sd * 0.55]} />
-          ))}
+          <mesh geometry={cone(0.026, full ? 0.09 : 0.06, 12)} material={bm} position={[0, full ? -0.12 : -0.112, 0.075]} rotation={[Math.PI + 0.35, 0, 0]} castShadow={sh} />
+          {full && <mesh geometry={geo("jawbeard", () => new THREE.TorusGeometry(0.068, 0.018, 8, 20, Math.PI))} material={bm} position={[0, -0.06, 0.03]} rotation={[0.35, 0, Math.PI]} scale={[1.05, 1.15, 1]} />}
+          {hi && !full && <mesh geometry={geo("jawline", () => new THREE.TorusGeometry(0.07, 0.006, 6, 20, Math.PI))} material={bm} position={[0, -0.058, 0.032]} rotation={[0.35, 0, Math.PI]} />}
         </group>
       )}
-      <Headwear c={c} hair={hair} sh={sh} hi={hi} />
+      <group position={[0, 0.02, 0]}>
+        <Headwear c={c} hair={hair} sh={sh} hi={hi} />
+      </group>
     </group>
   );
 };
@@ -278,12 +290,13 @@ const Headwear: React.FC<{ c: Costume; hair: THREE.Material; sh: boolean; hi: bo
     case "pagadi": // Maratha pagadi: rounded crown, layered wraps, a forward-swept crest and plume
       return (
         <group position={[0, 0.06, -0.005]}>
-          <mesh geometry={sphere(0.112, 24, 16)} material={m} scale={[1.05, 0.72, 1.1]} castShadow={sh} />
-          <mesh geometry={torus(0.1, 0.026)} material={fold} position={[0, -0.025, 0]} rotation={[Math.PI / 2 + 0.12, 0, 0]} />
+          <mesh geometry={sphere(0.112, 24, 16)} material={m} scale={[1.05, 0.74, 1.1]} castShadow={sh} />
+          <mesh geometry={torus(0.1, 0.022)} material={fold} position={[0, -0.012, 0.004]} rotation={[Math.PI / 2 + 0.1, 0, 0]} scale={[1.02, 1.08, 1]} />
           <mesh geometry={torus(0.093, 0.024)} material={m} position={[0, 0.012, 0]} rotation={[Math.PI / 2 - 0.12, 0, 0.06]} />
           <mesh geometry={sphere(0.05, 14, 10)} material={fold} position={[0, 0.06, 0.055]} scale={[1, 0.8, 1.3]} castShadow={sh} />
           {c.plume && <mesh geometry={capsule(0.012, 0.12)} material={mat("#f8f4ea")} position={[0.03, 0.11, 0.02]} rotation={[-0.5, 0, -0.35]} />}
-          {c.plume && <mesh geometry={box(0.026, 0.026, 0.008)} material={mat("#d8b25a", "gold")} position={[0.02, 0.04, 0.115]} />}
+          {c.plume && !c.crown && <mesh geometry={box(0.026, 0.026, 0.008)} material={mat("#d8b25a", "gold")} position={[0.02, 0.04, 0.115]} />}
+          {c.crown && <RoyalCrown sh={sh} hi={hi} />}
         </group>
       );
     case "mughal": // rounded Mughal turban with folds and an aigrette
@@ -331,6 +344,51 @@ const Headwear: React.FC<{ c: Costume; hair: THREE.Material; sh: boolean; hi: bo
     default:
       return <mesh geometry={sphere(0.108, 20, 14)} material={hair} position={[0, 0.025, -0.01]} scale={[0.96, 0.92, 1]} castShadow={sh} />;
   }
+};
+
+/**
+ * Shivaji Maharaj's royal headpiece over the saffron pagadi: a jewelled gold band studded with rubies and
+ * emeralds, a tall gold sarpech with a central ruby at the front, a jigha (jewelled plume holder) carrying the
+ * white kalgi, and two strands of pearls draped across the turban.
+ */
+const RoyalCrown: React.FC<{ sh: boolean; hi: boolean }> = ({ sh, hi }) => {
+  const gold = mat("#e0b44c", "gold");
+  const ruby = mat("#b0102a", "eye");
+  const emerald = mat("#118a4e", "eye");
+  const pearl = mat("#f6f1e4", "eye");
+  return (
+    <group>
+      {/* gold band around the turban */}
+      <mesh geometry={geo("crownband", () => new THREE.CylinderGeometry(0.123, 0.125, 0.03, 32, 1, true))} material={gold} position={[0, -0.01, 0.004]} scale={[1.03, 1, 1.09]} castShadow={sh} />
+      <mesh geometry={torus(0.123, 0.005)} material={gold} position={[0, 0.005, 0.004]} rotation={[Math.PI / 2, 0, 0]} scale={[1.03, 1.09, 1]} />
+      <mesh geometry={torus(0.125, 0.005)} material={gold} position={[0, -0.025, 0.004]} rotation={[Math.PI / 2, 0, 0]} scale={[1.03, 1.09, 1]} />
+      {/* gems set into the band */}
+      {Array.from({ length: hi ? 12 : 6 }, (_, i) => {
+        const a = (i / (hi ? 12 : 6)) * Math.PI * 2;
+        return <mesh key={i} geometry={sphere(0.0085, 8, 6)} material={i % 2 ? emerald : ruby} position={[Math.sin(a) * 0.129, -0.01, Math.cos(a) * 0.14]} />;
+      })}
+      {/* sarpech: tall jewelled ornament on the front */}
+      <group position={[0, 0.012, 0.136]} rotation={[-0.18, 0, 0]}>
+        <mesh geometry={geo("sarpech", () => new THREE.CylinderGeometry(0.004, 0.026, 0.11, 4, 1).scale(1, 1, 0.25))} material={gold} position={[0, 0.05, 0]} castShadow={sh} />
+        <mesh geometry={sphere(0.017, 10, 8)} material={ruby} position={[0, 0.0, 0.008]} scale={[1, 1.25, 0.6]} />
+        <mesh geometry={sphere(0.009, 8, 6)} material={emerald} position={[0, 0.045, 0.006]} scale={[1, 1.2, 0.6]} />
+        {/* pearl drop beneath the ruby */}
+        <mesh geometry={sphere(0.007, 8, 6)} material={pearl} position={[0, -0.028, 0.006]} />
+      </group>
+      {/* jigha holding the white kalgi plume */}
+      <mesh geometry={capsule(0.008, 0.05)} material={gold} position={[0.022, 0.085, 0.07]} rotation={[-0.45, 0, -0.3]} />
+      {/* two strands of pearls draped across the pagadi */}
+      {hi &&
+        [0, 1].map((k) =>
+          Array.from({ length: 22 }, (_, i) => {
+            const t = i / 21;
+            const a = -1.1 + t * 2.2; // front-left to front-right across the face of the turban
+            const sag = Math.sin(t * Math.PI) * (0.03 + k * 0.018);
+            return <mesh key={`${k}-${i}`} geometry={sphere(0.0062, 6, 5)} material={pearl} position={[Math.sin(a) * 0.121, 0.042 - sag - k * 0.012, Math.cos(a) * 0.13]} />;
+          }),
+        )}
+    </group>
+  );
 };
 
 const Scabbard: React.FC = () => {

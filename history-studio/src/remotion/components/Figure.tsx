@@ -27,6 +27,7 @@ export interface Costume {
   turban: "pagadi" | "mughal" | "rajput" | "helmet" | "cloth" | "cap" | "hat" | "none" | "veil";
   turbanColor: string;
   plume?: boolean;
+  crown?: boolean; // royal jewelled headpiece on the turban (Shivaji Maharaj)
   beard?: "full" | "short" | "white" | "grey" | "none";
   moustache?: boolean;
   hair?: string;
@@ -42,7 +43,7 @@ export interface Costume {
 
 const SK = C.skin;
 export const COSTUMES: Record<string, Costume> = {
-  shivaji: { skin: C.skinLight, jama: C.white, trim: C.gold, sash: C.saffron, pants: "#e9e2d0", turban: "pagadi", turbanColor: C.saffron, plume: true, beard: "short", moustache: true, hair: "#1c1410", skirt: "long", necklace: true, bracelet: true, weapon: "sword" },
+  shivaji: { skin: C.skinLight, jama: C.white, trim: C.gold, sash: C.saffron, pants: "#e9e2d0", turban: "pagadi", turbanColor: C.saffron, plume: true, crown: true, beard: "short", moustache: true, hair: "#1c1410", skirt: "long", necklace: true, bracelet: true, weapon: "sword" },
   shivaji_ascetic: { skin: "#9c948a", jama: "#cfa35a", trim: "#cfa35a", pants: "#cfa35a", turban: "none", turbanColor: "#000", beard: "none", moustache: false, hair: "#3a3530", skirt: "dhoti", ash: true, bareChest: true, weapon: "staff" },
   sambhaji: { skin: C.skinLight, jama: "#f1e2a6", trim: C.gold, sash: C.saffron, pants: "#efe7d4", turban: "pagadi", turbanColor: C.saffron, beard: "none", skirt: "long", child: true, necklace: true },
   sambhaji_brahmin: { skin: C.skinLight, jama: C.white, trim: C.white, pants: C.white, turban: "none", turbanColor: "#000", beard: "none", skirt: "dhoti", child: true, sacredThread: true, bareChest: true, hair: "#1c1410" },
